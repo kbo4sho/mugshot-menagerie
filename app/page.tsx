@@ -87,6 +87,31 @@ const ANIMALS: Animal[] = [
   { id: "chameleon", name: "Color-Pop Chameleon", color: "#78C76B", accent: "#E8E85D", dark: "#2D573A" },
   { id: "unicorn", name: "Sparkle Unicorn", color: "#F5ECFF", accent: "#FFB9DF", dark: "#745A94" },
   { id: "crocodile", name: "Grinning Crocodile", color: "#78A94B", accent: "#D4E67C", dark: "#304C2A" },
+  { id: "kangaroo", name: "Boing-Boing Kangaroo", color: "#C88755", accent: "#F2C28D", dark: "#513526" },
+  { id: "rhino", name: "Rumble Rhino", color: "#8D9AA0", accent: "#D6D3C5", dark: "#39454B" },
+  { id: "gorilla", name: "Groove Gorilla", color: "#52505E", accent: "#A28D82", dark: "#252530" },
+  { id: "lemur", name: "Ringtail Lemur", color: "#A9A6B0", accent: "#F7F1DF", dark: "#353542" },
+  { id: "meerkat", name: "Peekaboo Meerkat", color: "#C99B61", accent: "#F4D4A0", dark: "#4B3826" },
+  { id: "redpanda", name: "Red Panda Rocket", color: "#C85F3D", accent: "#FFF0D7", dark: "#4A2D28" },
+  { id: "leopard", name: "Polka-Dot Leopard", color: "#E8B84F", accent: "#F8E6A0", dark: "#3D2D24" },
+  { id: "cheetah", name: "Zoom-Zoom Cheetah", color: "#F0C35C", accent: "#FFF0B0", dark: "#3D3126" },
+  { id: "wolf", name: "Moonlight Wolf", color: "#7B8798", accent: "#DCE3E8", dark: "#2E3442" },
+  { id: "moose", name: "Mighty Moose", color: "#8B5D43", accent: "#C9976D", dark: "#3D2A22" },
+  { id: "ram", name: "Rock-Star Ram", color: "#B7A48F", accent: "#F0DEC5", dark: "#493E34" },
+  { id: "alpaca", name: "Fluffy Alpaca", color: "#F2D8B9", accent: "#FFF4E1", dark: "#6A4C3C" },
+  { id: "toucan", name: "Topsy Toucan", color: "#303645", accent: "#FFD84D", dark: "#1D2130" },
+  { id: "peacock", name: "Proud Peacock", color: "#2E9A8A", accent: "#5FE0C0", dark: "#28385A" },
+  { id: "pelican", name: "Scoop Pelican", color: "#F4E2C0", accent: "#FFB65D", dark: "#574738" },
+  { id: "eagle", name: "Sky-High Eagle", color: "#8B603F", accent: "#F5F0DD", dark: "#38271F" },
+  { id: "bat", name: "Boogie Bat", color: "#6D5B83", accent: "#BCA6D6", dark: "#30283F" },
+  { id: "seal", name: "Splashy Seal", color: "#7D9EA8", accent: "#D8EFF0", dark: "#314A52" },
+  { id: "dolphin", name: "Daring Dolphin", color: "#559DC4", accent: "#CDEFFC", dark: "#24495E" },
+  { id: "whale", name: "Wavy Whale", color: "#506FA5", accent: "#C9E0F4", dark: "#293950" },
+  { id: "crab", name: "Click-Clack Crab", color: "#EF6B52", accent: "#FFB18F", dark: "#623027" },
+  { id: "jellyfish", name: "Jiggly Jellyfish", color: "#8F79D6", accent: "#F0C1F5", dark: "#42345D" },
+  { id: "turtle", name: "Turbo Turtle", color: "#62A76F", accent: "#B9D66E", dark: "#2F5135" },
+  { id: "snake", name: "Sneaky Snake", color: "#73A84C", accent: "#E6D75B", dark: "#304926" },
+  { id: "armadillo", name: "Roll-Up Armadillo", color: "#A27D68", accent: "#D6B49C", dark: "#46352E" },
 ];
 
 const CONFETTI = ["#FF5B45", "#F8E542", "#64E0B8", "#9E82FF", "#FF8BC2"];
@@ -360,6 +385,140 @@ function drawExtraBack(ctx: CanvasRenderingContext2D, animal: Animal) {
         triangle(ctx, [[x - 22, -102], [x, -146 - Math.abs(index - 2) * 2], [x + 22, -102]], animal.dark);
       });
       break;
+    case "kangaroo":
+      [-1, 1].forEach((side) => {
+        ctx.save(); ctx.translate(side * 58, -151); ctx.rotate(side * .16);
+        ellipse(ctx, 0, 0, 27, 78, animal.color); ellipse(ctx, 0, -3, 11, 56, animal.accent); ctx.restore();
+      });
+      break;
+    case "rhino":
+      ellipse(ctx, -100, -83, 36, 45, animal.color); ellipse(ctx, 100, -83, 36, 45, animal.color);
+      ellipse(ctx, -100, -83, 17, 24, animal.accent); ellipse(ctx, 100, -83, 17, 24, animal.accent);
+      triangle(ctx, [[-19, -103], [0, -183], [20, -103]], animal.accent);
+      break;
+    case "gorilla":
+      ellipse(ctx, -116, -24, 61, 76, animal.dark); ellipse(ctx, 116, -24, 61, 76, animal.dark);
+      ellipse(ctx, -119, -20, 36, 48, animal.accent); ellipse(ctx, 119, -20, 36, 48, animal.accent);
+      break;
+    case "lemur":
+      ellipse(ctx, -99, -90, 40, 49, animal.dark); ellipse(ctx, 99, -90, 40, 49, animal.dark);
+      ellipse(ctx, -99, -90, 22, 29, animal.accent); ellipse(ctx, 99, -90, 22, 29, animal.accent);
+      break;
+    case "meerkat":
+      ellipse(ctx, -82, -107, 28, 35, animal.dark); ellipse(ctx, 82, -107, 28, 35, animal.dark);
+      ellipse(ctx, -82, -107, 13, 18, animal.accent); ellipse(ctx, 82, -107, 13, 18, animal.accent);
+      break;
+    case "redpanda":
+      triangle(ctx, [[-83, -76], [-127, -142], [-28, -108]], animal.dark);
+      triangle(ctx, [[83, -76], [127, -142], [28, -108]], animal.dark);
+      triangle(ctx, [[-81, -91], [-114, -128], [-49, -108]], animal.accent);
+      triangle(ctx, [[81, -91], [114, -128], [49, -108]], animal.accent);
+      break;
+    case "leopard":
+    case "cheetah":
+      ellipse(ctx, -91, -101, 35, 40, animal.color); ellipse(ctx, 91, -101, 35, 40, animal.color);
+      ellipse(ctx, -91, -101, 17, 21, animal.accent); ellipse(ctx, 91, -101, 17, 21, animal.accent);
+      break;
+    case "wolf":
+      triangle(ctx, [[-83, -72], [-127, -157], [-27, -109]], animal.color);
+      triangle(ctx, [[83, -72], [127, -157], [27, -109]], animal.color);
+      triangle(ctx, [[-82, -88], [-115, -138], [-47, -109]], animal.accent);
+      triangle(ctx, [[82, -88], [115, -138], [47, -109]], animal.accent);
+      break;
+    case "moose":
+      [-1, 1].forEach((side) => {
+        ctx.strokeStyle = animal.dark; ctx.lineWidth = 18; ctx.beginPath();
+        ctx.moveTo(side * 66, -103); ctx.lineTo(side * 91, -153); ctx.lineTo(side * 122, -178);
+        ctx.moveTo(side * 90, -147); ctx.lineTo(side * 68, -180);
+        ctx.moveTo(side * 106, -163); ctx.lineTo(side * 139, -153); ctx.stroke();
+        ellipse(ctx, side * 104, -166, 21, 31, animal.dark);
+        ellipse(ctx, side * 102, -83, 35, 45, animal.color);
+      });
+      break;
+    case "ram":
+      [-1, 1].forEach((side) => {
+        strokeEllipse(ctx, side * 96, -75, 48, 55, animal.accent, 22);
+        ellipse(ctx, side * 101, -76, 19, 25, animal.dark);
+      });
+      break;
+    case "alpaca":
+      ellipse(ctx, -66, -150, 29, 72, animal.color); ellipse(ctx, 66, -150, 29, 72, animal.color);
+      ellipse(ctx, -66, -152, 12, 51, animal.accent); ellipse(ctx, 66, -152, 12, 51, animal.accent);
+      [-76, -39, 0, 39, 76].forEach((x) => ellipse(ctx, x, -119, 32, 34, animal.accent));
+      break;
+    case "toucan":
+      [-2, -1, 0, 1, 2].forEach((offset) => {
+        ctx.save(); ctx.translate(offset * 20, -126 + Math.abs(offset) * 10); ctx.rotate(offset * .28);
+        ellipse(ctx, 0, -10, 16, 48, offset % 2 ? animal.accent : animal.color); ctx.restore();
+      });
+      break;
+    case "peacock":
+      for (let i = 0; i < 9; i += 1) {
+        const angle = Math.PI + (i / 8) * Math.PI;
+        const x = Math.cos(angle) * 116; const y = Math.sin(angle) * 104 - 32;
+        ellipse(ctx, x, y, 34, 53, i % 2 ? animal.color : animal.accent);
+        ellipse(ctx, x, y - 8, 13, 22, animal.dark);
+      }
+      break;
+    case "pelican":
+      triangle(ctx, [[-91, 5], [-151, 63], [-101, 78]], animal.accent);
+      triangle(ctx, [[91, 5], [151, 63], [101, 78]], animal.accent);
+      [-1, 0, 1].forEach((offset) => ellipse(ctx, offset * 24, -130 + Math.abs(offset) * 9, 18, 48, animal.color));
+      break;
+    case "eagle":
+      triangle(ctx, [[-92, -5], [-158, 48], [-105, 69]], animal.dark);
+      triangle(ctx, [[92, -5], [158, 48], [105, 69]], animal.dark);
+      [-2, -1, 0, 1, 2].forEach((offset) => triangle(ctx, [[offset * 27 - 26, -111], [offset * 27, -155 + Math.abs(offset) * 7], [offset * 27 + 26, -111]], animal.accent));
+      break;
+    case "bat":
+      triangle(ctx, [[-83, -73], [-113, -156], [-30, -109]], animal.dark);
+      triangle(ctx, [[83, -73], [113, -156], [30, -109]], animal.dark);
+      triangle(ctx, [[-101, 10], [-174, -42], [-151, 36], [-185, 75], [-107, 65]], animal.color);
+      triangle(ctx, [[101, 10], [174, -42], [151, 36], [185, 75], [107, 65]], animal.color);
+      break;
+    case "seal":
+      ellipse(ctx, -104, 31, 52, 29, animal.dark); ellipse(ctx, 104, 31, 52, 29, animal.dark);
+      break;
+    case "dolphin":
+      triangle(ctx, [[0, -100], [-11, -170], [49, -108]], animal.dark);
+      triangle(ctx, [[-96, 27], [-154, 64], [-102, 76]], animal.color);
+      triangle(ctx, [[96, 27], [154, 64], [102, 76]], animal.color);
+      break;
+    case "whale":
+      triangle(ctx, [[-95, 29], [-161, 63], [-102, 78]], animal.color);
+      triangle(ctx, [[95, 29], [161, 63], [102, 78]], animal.color);
+      ctx.strokeStyle = animal.accent; ctx.lineWidth = 7; ctx.beginPath();
+      ctx.moveTo(0, -113); ctx.quadraticCurveTo(-22, -152, -52, -158);
+      ctx.moveTo(0, -113); ctx.quadraticCurveTo(22, -152, 52, -158); ctx.stroke();
+      break;
+    case "crab":
+      [-1, 1].forEach((side) => {
+        ctx.strokeStyle = animal.dark; ctx.lineWidth = 12; ctx.beginPath(); ctx.moveTo(side * 83, -18); ctx.lineTo(side * 137, -66); ctx.stroke();
+        ellipse(ctx, side * 151, -76, 39, 32, animal.color);
+        triangle(ctx, [[side * 151, -76], [side * 185, -110], [side * 181, -64]], animal.dark);
+        ctx.strokeStyle = animal.dark; ctx.lineWidth = 9; ctx.beginPath(); ctx.moveTo(side * 48, -103); ctx.lineTo(side * 58, -153); ctx.stroke();
+        ellipse(ctx, side * 59, -159, 22, 25, animal.color);
+      });
+      break;
+    case "jellyfish":
+      [-94, -57, -19, 19, 57, 94].forEach((x, index) => {
+        ctx.strokeStyle = index % 2 ? animal.accent : animal.color; ctx.lineWidth = 22; ctx.beginPath();
+        ctx.moveTo(x, 68); ctx.bezierCurveTo(x - 22, 103, x + 22, 120, x, 155); ctx.stroke();
+      });
+      break;
+    case "turtle":
+      strokeEllipse(ctx, 0, 5, 137, 148, animal.dark, 31);
+      [-1, 1].forEach((side) => { ellipse(ctx, side * 127, 12, 42, 29, animal.color); });
+      break;
+    case "snake":
+      [-1, 1].forEach((side) => triangle(ctx, [[side * 68, -91], [side * 141, -33], [side * 103, 60]], animal.accent));
+      [-62, -31, 0, 31, 62].forEach((x, i) => triangle(ctx, [[x - 18, -112], [x, -146 - Math.abs(i - 2) * 4], [x + 18, -112]], animal.dark));
+      break;
+    case "armadillo":
+      ellipse(ctx, -88, -103, 30, 42, animal.dark); ellipse(ctx, 88, -103, 30, 42, animal.dark);
+      ellipse(ctx, -88, -103, 14, 23, animal.accent); ellipse(ctx, 88, -103, 14, 23, animal.accent);
+      strokeEllipse(ctx, 0, 0, 128, 139, animal.dark, 15);
+      break;
   }
 }
 
@@ -470,18 +629,118 @@ function drawExtraDetails(ctx: CanvasRenderingContext2D, animal: Animal) {
     case "crocodile":
       [[-84, -75], [76, -83], [-104, 4], [98, 11]].forEach(([x, y], index) => ellipse(ctx, x, y, 14 + index * 2, 10 + (index % 2) * 4, animal.dark));
       break;
+    case "kangaroo":
+      triangle(ctx, [[-32, -119], [0, -67], [32, -119]], animal.accent);
+      ellipse(ctx, -78, 18, 20, 14, "rgba(242,194,141,.65)"); ellipse(ctx, 78, 18, 20, 14, "rgba(242,194,141,.65)");
+      break;
+    case "rhino":
+      strokeEllipse(ctx, 0, -11, 104, 111, "rgba(57,69,75,.28)", 8);
+      ctx.strokeStyle = animal.dark; ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(-37, -87); ctx.quadraticCurveTo(0, -72, 37, -87); ctx.stroke();
+      break;
+    case "gorilla":
+      ellipse(ctx, 0, -5, 88, 101, animal.accent);
+      ellipse(ctx, -79, -4, 22, 38, "rgba(255,255,255,.12)"); ellipse(ctx, 79, -4, 22, 38, "rgba(255,255,255,.12)");
+      break;
+    case "lemur":
+      ctx.save(); ctx.rotate(-.12); ellipse(ctx, -48, -25, 57, 39, animal.dark); ctx.restore();
+      ctx.save(); ctx.rotate(.12); ellipse(ctx, 48, -25, 57, 39, animal.dark); ctx.restore();
+      triangle(ctx, [[-28, -119], [0, 66], [28, -119]], animal.accent);
+      break;
+    case "meerkat":
+      [[-76, -63], [76, -63], [-95, 11], [95, 11]].forEach(([x, y]) => ellipse(ctx, x, y, 11, 8, animal.dark));
+      ctx.strokeStyle = animal.dark; ctx.lineWidth = 6; ctx.beginPath(); ctx.moveTo(-104, 61); ctx.lineTo(-72, 55); ctx.moveTo(104, 61); ctx.lineTo(72, 55); ctx.stroke();
+      break;
+    case "redpanda":
+      ellipse(ctx, -49, -30, 53, 45, animal.accent); ellipse(ctx, 49, -30, 53, 45, animal.accent);
+      ellipse(ctx, -49, -30, 37, 29, animal.dark); ellipse(ctx, 49, -30, 37, 29, animal.dark);
+      triangle(ctx, [[-27, -118], [0, 39], [27, -118]], animal.accent);
+      break;
+    case "leopard":
+      [[-77,-75],[-3,-105],[75,-68],[-98,3],[93,14],[-69,75],[66,83]].forEach(([x,y], i) => {
+        strokeEllipse(ctx, x, y, 12 + i % 3, 10 + i % 2, animal.dark, 7);
+      });
+      break;
+    case "cheetah":
+      [[-77,-78],[-19,-110],[71,-73],[-99,9],[94,15],[-77,74],[76,80]].forEach(([x,y], i) => ellipse(ctx, x, y, 7 + i % 3, 7 + i % 2, animal.dark));
+      ctx.strokeStyle = animal.dark; ctx.lineWidth = 8; ctx.beginPath(); ctx.moveTo(-45,-16); ctx.quadraticCurveTo(-48,23,-37,49); ctx.moveTo(45,-16); ctx.quadraticCurveTo(48,23,37,49); ctx.stroke();
+      break;
+    case "wolf":
+      triangle(ctx, [[-118, 12], [0, -53], [-58, 78]], animal.accent); triangle(ctx, [[118, 12], [0, -53], [58, 78]], animal.accent);
+      triangle(ctx, [[-25, -122], [0, 8], [25, -122]], "rgba(255,255,255,.25)");
+      break;
+    case "moose":
+      ellipse(ctx, -81, 12, 22, 16, "rgba(201,151,109,.55)"); ellipse(ctx, 81, 12, 22, 16, "rgba(201,151,109,.55)");
+      triangle(ctx, [[-24, -119], [0, 25], [24, -119]], animal.accent);
+      break;
+    case "ram":
+      [-78,-39,0,39,78].forEach((x) => ellipse(ctx, x, -117, 33, 31, animal.accent));
+      ellipse(ctx, -78, 17, 18, 13, "rgba(240,222,197,.5)"); ellipse(ctx, 78, 17, 18, 13, "rgba(240,222,197,.5)");
+      break;
+    case "alpaca":
+      [-90,-45,0,45,90].forEach((x, i) => ellipse(ctx, x, -103 + Math.abs(i - 2) * 7, 38, 36, animal.accent));
+      ellipse(ctx, -76, 19, 21, 15, "rgba(255,255,255,.45)"); ellipse(ctx, 76, 19, 21, 15, "rgba(255,255,255,.45)");
+      break;
+    case "toucan":
+      ellipse(ctx, -46, -18, 57, 67, "#FFF8E2"); ellipse(ctx, 46, -18, 57, 67, "#FFF8E2");
+      ellipse(ctx, -93, 54, 25, 48, animal.accent);
+      break;
+    case "peacock":
+      ellipse(ctx, -49, -23, 55, 68, animal.accent); ellipse(ctx, 49, -23, 55, 68, animal.accent);
+      [-58, 0, 58].forEach((x) => { ctx.strokeStyle = animal.dark; ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(x, -111); ctx.lineTo(x, -154); ctx.stroke(); ellipse(ctx, x, -160, 12, 18, animal.accent); });
+      break;
+    case "pelican":
+      ellipse(ctx, -49, -28, 56, 73, "#FFFDF5"); ellipse(ctx, 49, -28, 56, 73, "#FFFDF5");
+      break;
+    case "eagle":
+      ellipse(ctx, 0, -27, 108, 101, animal.accent);
+      [-90,-54,-18,18,54,90].forEach((x) => triangle(ctx, [[x-18,36],[x,75],[x+18,36]], animal.accent));
+      break;
+    case "bat":
+      triangle(ctx, [[-112, 22], [0, -48], [-54, 85]], animal.accent); triangle(ctx, [[112, 22], [0, -48], [54, 85]], animal.accent);
+      break;
+    case "seal":
+      [[-87,-71],[80,-80],[-101,3],[94,14]].forEach(([x,y], i) => ellipse(ctx, x, y, 11 + i * 2, 8 + i % 2 * 4, "rgba(49,74,82,.35)"));
+      break;
+    case "dolphin":
+      ellipse(ctx, -80, 23, 17, 12, animal.accent); ellipse(ctx, 80, 23, 17, 12, animal.accent);
+      ctx.strokeStyle = "rgba(205,239,252,.55)"; ctx.lineWidth = 7; ctx.beginPath(); ctx.moveTo(-63,-91); ctx.quadraticCurveTo(0,-69,63,-91); ctx.stroke();
+      break;
+    case "whale":
+      [[-82,-61],[-13,-99],[72,-70],[-99,3],[96,17]].forEach(([x,y], i) => ellipse(ctx, x, y, 8 + i % 3, 7 + i % 2, animal.accent));
+      break;
+    case "crab":
+      ellipse(ctx, -56, -26, 39, 42, animal.accent); ellipse(ctx, 56, -26, 39, 42, animal.accent);
+      [[-92,49],[-53,79],[53,79],[92,49]].forEach(([x,y]) => { ctx.strokeStyle = animal.dark; ctx.lineWidth = 9; ctx.beginPath(); ctx.moveTo(x * .75, y); ctx.lineTo(x, y + 28); ctx.stroke(); });
+      break;
+    case "jellyfish":
+      [[-75,-61],[-12,-103],[69,-63],[-92,17],[89,20]].forEach(([x,y], i) => ellipse(ctx, x, y, 12 + i % 2 * 5, 10 + i % 3, animal.accent));
+      ctx.strokeStyle = animal.dark; ctx.lineWidth = 7; ctx.beginPath(); ctx.moveTo(-111,54); ctx.quadraticCurveTo(-86,79,-61,54); ctx.quadraticCurveTo(-34,79,-7,54); ctx.quadraticCurveTo(20,79,47,54); ctx.quadraticCurveTo(74,79,105,54); ctx.stroke();
+      break;
+    case "turtle":
+      [[0,-92],[-68,-54],[68,-54],[-78,29],[78,29],[0,72]].forEach(([x,y]) => strokeEllipse(ctx, x, y, 30, 29, animal.dark, 6));
+      break;
+    case "snake":
+      [[-79,-65],[-18,-104],[64,-73],[-98,6],[91,20]].forEach(([x,y], i) => ellipse(ctx, x, y, 13 + i % 2 * 4, 9 + i % 3, animal.accent));
+      break;
+    case "armadillo":
+      [-84,-56,-28,0,28,56,84].forEach((x) => { ctx.strokeStyle = animal.dark; ctx.lineWidth = 6; ctx.beginPath(); ctx.moveTo(x,-105); ctx.quadraticCurveTo(x * 1.2,0,x,105); ctx.stroke(); });
+      break;
   }
 }
 
 function drawExtraMouth(ctx: CanvasRenderingContext2D, animal: Animal, pose: Pose, surprised: number) {
   const open = clamp((pose.mouth - 0.08) * 1.55);
-  const muzzleIds = ["panda", "lion", "giraffe", "zebra", "fox", "bunny", "dog", "cat", "sloth", "bear", "deer", "unicorn"];
+  const muzzleIds = [
+    "panda", "lion", "giraffe", "zebra", "fox", "bunny", "dog", "cat", "sloth", "bear", "deer", "unicorn",
+    "kangaroo", "gorilla", "lemur", "meerkat", "redpanda", "leopard", "cheetah", "wolf", "moose", "ram", "alpaca", "bat", "seal", "armadillo",
+  ];
   if (muzzleIds.includes(animal.id)) {
-    const wide = ["lion", "bear", "panda"].includes(animal.id);
+    const wide = ["lion", "bear", "panda", "gorilla", "moose", "seal"].includes(animal.id);
     ellipse(ctx, 0, 39, wide ? 58 : 49, wide ? 46 : 40, animal.accent);
-    ellipse(ctx, 0, 24, animal.id === "bunny" ? 13 : 18, animal.id === "bunny" ? 10 : 13, animal.dark);
+    const tinyNose = ["bunny", "meerkat", "bat"].includes(animal.id);
+    ellipse(ctx, 0, 24, tinyNose ? 13 : 18, tinyNose ? 10 : 13, animal.dark);
     drawMouth(ctx, animal, pose, 68);
-    if (["fox", "bunny", "cat"].includes(animal.id)) {
+    if (["fox", "bunny", "cat", "lemur", "redpanda", "leopard", "cheetah", "wolf", "seal"].includes(animal.id)) {
       ctx.strokeStyle = animal.dark;
       ctx.lineWidth = 3;
       [-1, 1].forEach((side) => {
@@ -579,6 +838,56 @@ function drawExtraMouth(ctx: CanvasRenderingContext2D, animal: Animal, pose: Pos
     ctx.lineWidth = 7;
     ctx.beginPath(); ctx.moveTo(-86, 59); ctx.quadraticCurveTo(0, 70 + open * 20, 86, 59); ctx.stroke();
     [-58, -29, 0, 29, 58].forEach((x) => triangle(ctx, [[x - 7, 58], [x, 73 + open * 10], [x + 7, 58]], "#FFFDF4"));
+    return true;
+  }
+  if (animal.id === "rhino") {
+    ellipse(ctx, 0, 47, 78, 53, animal.accent);
+    ellipse(ctx, -30, 34, 9, 11, animal.dark); ellipse(ctx, 30, 34, 9, 11, animal.dark);
+    drawMouth(ctx, animal, pose, 79);
+    return true;
+  }
+  if (["toucan", "peacock", "pelican", "eagle"].includes(animal.id)) {
+    if (animal.id === "toucan") {
+      ctx.save(); ctx.rotate(-.06); ellipse(ctx, 28, 30, 85, 31, animal.accent); ctx.restore();
+      triangle(ctx, [[74, 22], [123, 33], [73, 47]], "#FF8D42");
+      ctx.strokeStyle = animal.dark; ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(-35, 34); ctx.quadraticCurveTo(30, 46 + open * 17, 102, 34); ctx.stroke();
+    } else if (animal.id === "pelican") {
+      triangle(ctx, [[-42, 18], [0, -2], [77, 25]], animal.accent);
+      ctx.save(); ctx.rotate(-.08); ellipse(ctx, 24, 52, 78, 35 + open * 13, "#FF9C61"); ctx.restore();
+    } else {
+      const beak = animal.id === "peacock" ? "#FFD75B" : "#E7A63D";
+      triangle(ctx, [[-39, 23], [0, -6], [39, 23]], beak);
+      triangle(ctx, [[-35, 27], [0, 58 + surprised * 16], [35, 27]], animal.id === "eagle" ? "#C77B2C" : "#47B9A8");
+    }
+    return true;
+  }
+  if (["dolphin", "whale"].includes(animal.id)) {
+    const isWhale = animal.id === "whale";
+    ellipse(ctx, 0, 44, isWhale ? 87 : 73, isWhale ? 48 : 36, animal.accent);
+    ellipse(ctx, -39, 31, 8, 8, animal.dark); ellipse(ctx, 39, 31, 8, 8, animal.dark);
+    ctx.strokeStyle = animal.dark; ctx.lineWidth = 7; ctx.beginPath(); ctx.moveTo(-61, 58); ctx.quadraticCurveTo(0, 78 + pose.smile * 12 + open * 10, 61, 58); ctx.stroke();
+    return true;
+  }
+  if (animal.id === "crab") {
+    ellipse(ctx, 0, 48, 25 + open * 8, 13 + open * 25, animal.dark);
+    if (open > .3) ellipse(ctx, 0, 59, 12, 6, "#FF7994");
+    return true;
+  }
+  if (animal.id === "jellyfish") {
+    ellipse(ctx, 0, 44, 17 + open * 12, 14 + open * 25, animal.dark);
+    ellipse(ctx, -73, 24, 18, 12, "rgba(240,193,245,.55)"); ellipse(ctx, 73, 24, 18, 12, "rgba(240,193,245,.55)");
+    return true;
+  }
+  if (animal.id === "turtle") {
+    triangle(ctx, [[-35, 25], [0, 5], [35, 25]], animal.accent);
+    triangle(ctx, [[-32, 29], [0, 56 + surprised * 16], [32, 29]], animal.dark);
+    return true;
+  }
+  if (animal.id === "snake") {
+    ctx.strokeStyle = animal.dark; ctx.lineWidth = 7; ctx.beginPath(); ctx.moveTo(-35, 45); ctx.quadraticCurveTo(0, 62 + pose.smile * 12, 35, 45); ctx.stroke();
+    if (open > .16) {
+      ctx.strokeStyle = "#F36B8C"; ctx.lineWidth = 8; ctx.beginPath(); ctx.moveTo(0, 54); ctx.lineTo(0, 95); ctx.moveTo(0, 94); ctx.lineTo(-13, 107); ctx.moveTo(0, 94); ctx.lineTo(13, 107); ctx.stroke();
+    }
     return true;
   }
   return false;
@@ -1131,9 +1440,12 @@ export default function Home() {
 
   return (
     <main className="site-shell">
+      <div className="zoo-canopy canopy-left" aria-hidden="true"><i /><i /><i /><i /></div>
+      <div className="zoo-canopy canopy-right" aria-hidden="true"><i /><i /><i /><i /></div>
+      <div className="paw-trail" aria-hidden="true"><span>●</span><span>●</span><span>●</span><span>●</span></div>
       <header className="topbar">
         <a className="brand" href="#top" aria-label="Giggle Zoo home">
-          <span className="brand-burst" aria-hidden="true">✦</span>
+          <span className="brand-burst" aria-hidden="true">🦁</span>
           <span>Giggle</span>
           <strong>Zoo!</strong>
         </a>
@@ -1145,7 +1457,8 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span>Roar!</span> Welcome to the silliest zoo</p>
+          <div className="admission-sign" aria-hidden="true">Kids enter free · Grown-ups welcome</div>
+          <p className="eyebrow"><span>Roar!</span> Welcome to the wildest little zoo</p>
           <h1>Your face just <em>went wild!</em></h1>
           <p className="lede">
             Jump into the picture and meet your surprise animal twin. Blink, grin, and make your biggest roar-face—the zoo follows along!
@@ -1158,15 +1471,16 @@ export default function Home() {
             <p className="microcopy">Grown-up note: no account and no uploads. Everything happens on this device.</p>
           </div>
           <div className="quick-facts" aria-label="Game facts">
-            <div><strong>35</strong><span>Silly zoo pals</span></div>
+            <div><strong>60</strong><span>Silly zoo pals</span></div>
             <div><strong>6</strong><span>Friends at once</span></div>
             <div><strong>0</strong><span>Photos saved</span></div>
           </div>
         </div>
 
         <div className="game-wrap">
+          <div className="habitat-sign camera-habitat-sign" aria-hidden="true"><span>YOU ARE HERE</span> Face Safari</div>
           <div className={`camera-shell state-${cameraState}`} ref={cameraShellRef}>
-            <div className="tape tape-top" aria-hidden="true">Official zoo business</div>
+            <div className="tape tape-top" aria-hidden="true">Keeper-approved silliness</div>
             <div className="camera-hud">
               <div className={`live-badge ${isLive ? "is-live" : ""}`}>
                 <span /> {isLive ? "Zoo is open" : "Zoo is snoozing"}
@@ -1253,6 +1567,31 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="habitats" aria-labelledby="habitats-heading">
+        <div className="habitats-intro">
+          <p className="eyebrow"><span>Zoo map</span> Pick a path, meet a pal</p>
+          <h2 id="habitats-heading">Every trail leads to a giggle.</h2>
+          <p>Our animal masks come from every corner of the zoo. Who will pop up next?</p>
+        </div>
+        <div className="habitat-map">
+          <article className="habitat-card habitat-savanna">
+            <span className="habitat-icon" aria-hidden="true">☀</span><small>Trail 01</small><h3>Sunny Savanna</h3><p>Lion · Giraffe · Zebra · Rhino · Cheetah</p>
+          </article>
+          <article className="habitat-card habitat-jungle">
+            <span className="habitat-icon" aria-hidden="true">❧</span><small>Trail 02</small><h3>Jungle Jamboree</h3><p>Gorilla · Monkey · Toucan · Chameleon · Sloth</p>
+          </article>
+          <article className="habitat-card habitat-ocean">
+            <span className="habitat-icon" aria-hidden="true">≈</span><small>Trail 03</small><h3>Splash Zone</h3><p>Whale · Dolphin · Shark · Seal · Jellyfish</p>
+          </article>
+          <article className="habitat-card habitat-forest">
+            <span className="habitat-icon" aria-hidden="true">▲</span><small>Trail 04</small><h3>Wiggly Woods</h3><p>Wolf · Moose · Red Panda · Bear · Owl</p>
+          </article>
+          <article className="habitat-card habitat-barnyard">
+            <span className="habitat-icon" aria-hidden="true">✿</span><small>Trail 05</small><h3>Friendly Farm</h3><p>Cow · Pig · Goat · Alpaca · Llama</p>
+          </article>
+        </div>
+      </section>
+
       <section className="how-it-works" aria-labelledby="how-heading">
         <div className="section-heading">
           <p className="eyebrow"><span>Three</span> easy-peasy steps</p>
@@ -1266,7 +1605,7 @@ export default function Home() {
       </section>
 
       <div className="marquee" aria-hidden="true">
-        <div>BUBBLEGUM CAPYBARA ✦ DISCO FROG ✦ PARTY PIGEON ✦ RACCOON RASCAL ✦ HAPPY AXOLOTL ✦ MOO-MOO SUPERSTAR ✦ DRAMA LLAMA ✦ SINGING OTTER ✦ TINY TIGER ✦ BOUNCY GOAT ✦ PANCAKE PANDA ✦ TRUMPET ELEPHANT ✦ SUNSHINE LION ✦ JOLLY GIRAFFE ✦ BANANA MONKEY ✦ CUDDLE KOALA ✦ BUBBLE HIPPO ✦ ZIGZAG ZEBRA ✦ FANTASTIC FOX ✦ HOPSCOTCH BUNNY ✦ PUDDLE PIG ✦ WIGGLE PUPPY ✦ CURIOUS CAT ✦ HOOT-HOOT OWL ✦ WADDLES PENGUIN ✦ SLEEPY SLOTH ✦ HONEY BEAR ✦ TWINKLE DEER ✦ FANCY FLAMINGO ✦ PIRATE PARROT ✦ SUPER SHARK ✦ DISCO OCTOPUS ✦ COLOR-POP CHAMELEON ✦ SPARKLE UNICORN ✦ GRINNING CROCODILE ✦&nbsp;</div>
+        <div>{[...ANIMALS, ...ANIMALS].map((animal, index) => <span key={`${animal.id}-${index}`}>{animal.name} ✦ </span>)}</div>
       </div>
 
       <footer>
