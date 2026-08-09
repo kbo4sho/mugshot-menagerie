@@ -2,6 +2,8 @@
 
 A browser-based webcam game that turns every face it sees into a reactive animal caricature.
 
+**Play it:** https://kbo4sho.github.io/mugshot-menagerie/
+
 ## What it does
 
 - Tracks up to six faces at once
