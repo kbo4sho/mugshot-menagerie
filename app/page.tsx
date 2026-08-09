@@ -166,11 +166,13 @@ function drawAnimal(ctx: CanvasRenderingContext2D, animalIndex: number, pose: Po
   const animal = ANIMALS[animalIndex];
   const bounce = Math.sin(time / 170 + animalIndex) * (2 + pose.smile * 3);
   const surprised = clamp((pose.mouth - 0.2) * 1.2);
+  const coverageX = 1.26;
+  const coverageY = 1.38;
 
   ctx.save();
-  ctx.translate(pose.x, pose.y + bounce);
+  ctx.translate(pose.x, pose.y + bounce - pose.scale * 8);
   ctx.rotate(pose.angle);
-  ctx.scale(pose.scale, pose.scale);
+  ctx.scale(pose.scale * coverageX, pose.scale * coverageY);
   ctx.lineJoin = "round";
   ctx.lineCap = "round";
   ctx.shadowColor = "rgba(31, 19, 46, .26)";
