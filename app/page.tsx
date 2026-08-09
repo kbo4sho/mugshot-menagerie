@@ -52,16 +52,16 @@ type Particle = {
 };
 
 const ANIMALS: Animal[] = [
-  { id: "capybara", name: "CEO Capybara", color: "#B97745", accent: "#FFD166", dark: "#4A2A20" },
+  { id: "capybara", name: "Bubblegum Capybara", color: "#B97745", accent: "#FFD166", dark: "#4A2A20" },
   { id: "frog", name: "Disco Frog", color: "#8BD450", accent: "#F4FF74", dark: "#213C25" },
   { id: "pigeon", name: "Party Pigeon", color: "#8E9DF4", accent: "#54E0C7", dark: "#28345C" },
   { id: "raccoon", name: "Raccoon Rascal", color: "#A9A8B5", accent: "#F1F0EA", dark: "#2C2B3A" },
-  { id: "axolotl", name: "Axolotl Optimist", color: "#FF91B8", accent: "#FFD3E3", dark: "#71334F" },
-  { id: "cow", name: "Moo-donna", color: "#FFF2CF", accent: "#FE6F5E", dark: "#3B2B29" },
+  { id: "axolotl", name: "Happy Axolotl", color: "#FF91B8", accent: "#FFD3E3", dark: "#71334F" },
+  { id: "cow", name: "Moo-Moo Superstar", color: "#FFF2CF", accent: "#FE6F5E", dark: "#3B2B29" },
   { id: "llama", name: "Drama Llama", color: "#E8B5FF", accent: "#FFF1BE", dark: "#57356C" },
-  { id: "otter", name: "Opera Otter", color: "#8A6248", accent: "#E8BD80", dark: "#35251F" },
+  { id: "otter", name: "Singing Otter", color: "#8A6248", accent: "#E8BD80", dark: "#35251F" },
   { id: "tiger", name: "Tiny Tiger", color: "#FF9D3D", accent: "#FFE2A1", dark: "#512D20" },
-  { id: "goat", name: "Goat of Chaos", color: "#C9E5E2", accent: "#F7FFFB", dark: "#344A4A" },
+  { id: "goat", name: "Bouncy Goat", color: "#C9E5E2", accent: "#F7FFFB", dark: "#344A4A" },
 ];
 
 const CONFETTI = ["#FF5B45", "#F8E542", "#64E0B8", "#9E82FF", "#FF8BC2"];
@@ -354,6 +354,7 @@ export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const screenRef = useRef<HTMLDivElement>(null);
+  const cameraShellRef = useRef<HTMLDivElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const landmarkerRef = useRef<FaceLandmarker | null>(null);
   const landmarkerPromiseRef = useRef<Promise<FaceLandmarker> | null>(null);
@@ -371,6 +372,8 @@ export default function Home() {
   const [currentAnimal, setCurrentAnimal] = useState(ANIMALS[3].name);
   const [errorMessage, setErrorMessage] = useState("");
   const [shuffleCount, setShuffleCount] = useState(0);
+  const [canFullscreen, setCanFullscreen] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   const updateCameraState = useCallback((next: CameraState) => {
     stateRef.current = next;
@@ -653,6 +656,29 @@ export default function Home() {
     }
   }, []);
 
+  const toggleFullscreen = useCallback(async () => {
+    const shell = cameraShellRef.current;
+    if (!shell?.requestFullscreen || !document.fullscreenEnabled) return;
+    try {
+      if (document.fullscreenElement) {
+        await document.exitFullscreen();
+      } else {
+        await shell.requestFullscreen();
+      }
+    } catch {
+      setCanFullscreen(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(document.fullscreenElement === cameraShellRef.current);
+    };
+    setCanFullscreen(Boolean(document.fullscreenEnabled && cameraShellRef.current?.requestFullscreen));
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);
+  }, []);
+
   useEffect(() => {
     mountedRef.current = true;
     const keydown = (event: KeyboardEvent) => {
@@ -678,47 +704,47 @@ export default function Home() {
   return (
     <main className="site-shell">
       <header className="topbar">
-        <a className="brand" href="#top" aria-label="Mugshot Menagerie home">
+        <a className="brand" href="#top" aria-label="Giggle Zoo home">
           <span className="brand-burst" aria-hidden="true">✦</span>
-          <span>Mugshot</span>
-          <strong>Menagerie</strong>
+          <span>Giggle</span>
+          <strong>Zoo!</strong>
         </a>
         <div className="privacy-pill">
           <span className="privacy-dot" aria-hidden="true" />
-          Frames stay on this device
+          Camera magic stays on this device
         </div>
       </header>
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span>Live!</span> A very serious webcam game</p>
-          <h1>Borrow a face with <em>zero dignity.</em></h1>
+          <p className="eyebrow"><span>Roar!</span> Welcome to the silliest zoo</p>
+          <h1>Your face just <em>went wild!</em></h1>
           <p className="lede">
-            Step into frame. We’ll match you with a wildly unqualified animal alter ego—then let your eyebrows do the rest.
+            Jump into the picture and meet your surprise animal twin. Blink, grin, and make your biggest roar-face—the zoo follows along!
           </p>
           <div className="hero-cta-row">
             <button className="button button-primary hero-button" type="button" onClick={startCamera} disabled={isBusy || isLive}>
               <span aria-hidden="true">●</span>
-              {isBusy ? "Opening camera…" : isLive ? "You’re live" : "Start the silliness"}
+              {isBusy ? "Opening the zoo…" : isLive ? "The zoo is open!" : "Meet my animal"}
             </button>
-            <p className="microcopy">No account. No uploads. Just your face, locally processed.</p>
+            <p className="microcopy">Grown-up note: no account and no uploads. Everything happens on this device.</p>
           </div>
           <div className="quick-facts" aria-label="Game facts">
-            <div><strong>10</strong><span>Oddball animals</span></div>
-            <div><strong>6</strong><span>Faces at once</span></div>
-            <div><strong>0</strong><span>Photos stored</span></div>
+            <div><strong>10</strong><span>Silly zoo pals</span></div>
+            <div><strong>6</strong><span>Friends at once</span></div>
+            <div><strong>0</strong><span>Photos saved</span></div>
           </div>
         </div>
 
         <div className="game-wrap">
-          <div className={`camera-shell state-${cameraState}`}>
-            <div className="tape tape-top" aria-hidden="true">Property of the zoo</div>
+          <div className={`camera-shell state-${cameraState}`} ref={cameraShellRef}>
+            <div className="tape tape-top" aria-hidden="true">Official zoo business</div>
             <div className="camera-hud">
               <div className={`live-badge ${isLive ? "is-live" : ""}`}>
-                <span /> {isLive ? "Live-ish" : "Backstage"}
+                <span /> {isLive ? "Zoo is open" : "Zoo is snoozing"}
               </div>
               <div className="face-counter" aria-live="polite">
-                {isLive ? `${faceCount} ${faceCount === 1 ? "face" : "faces"} spotted` : "Awaiting a face"}
+                {isLive ? `${faceCount} ${faceCount === 1 ? "explorer" : "explorers"} spotted` : "Waiting for an explorer"}
               </div>
             </div>
 
@@ -729,23 +755,23 @@ export default function Home() {
               {!isLive && !isBusy && cameraState !== "error" && (
                 <div className="poster-state">
                   <DemoMascot />
-                  <p>{cameraState === "off" ? "Camera’s taking five." : "A questionable makeover awaits."}</p>
-                  <span>{cameraState === "off" ? "Your camera is fully off." : "Place face here-ish"}</span>
+                  <p>{cameraState === "off" ? "The zoo is snoozing." : "Which animal will you be?"}</p>
+                  <span>{cameraState === "off" ? "Your camera is safely off." : "Put your face in the picture"}</span>
                 </div>
               )}
 
               {isBusy && (
                 <div className="loading-state" role="status">
                   <div className="loader-face"><i /><i /></div>
-                  <strong>{cameraState === "requesting" ? "Knocking on your camera…" : "Releasing the animals…"}</strong>
-                  <span>{cameraState === "requesting" ? "Your browser may ask for permission." : "The face model is loading in your browser."}</span>
+                  <strong>{cameraState === "requesting" ? "Opening the zoo camera…" : "Waking up the animals…"}</strong>
+                  <span>{cameraState === "requesting" ? "A grown-up can allow camera permission." : "Your animal pals are almost ready."}</span>
                 </div>
               )}
 
               {cameraState === "error" && (
                 <div className="error-state" role="alert">
                   <span className="error-icon" aria-hidden="true">!</span>
-                  <strong>Camera stage fright</strong>
+                  <strong>The zoo camera needs help</strong>
                   <p>{errorMessage}</p>
                   <button className="button button-small" type="button" onClick={startCamera}>Try again</button>
                 </div>
@@ -755,8 +781,8 @@ export default function Home() {
                 <div className="find-face" role="status">
                   <span className="corner corner-a" /><span className="corner corner-b" />
                   <span className="corner corner-c" /><span className="corner corner-d" />
-                  <strong>Wander into frame</strong>
-                  <small>The animals are squinting.</small>
+                  <strong>Jump into the picture</strong>
+                  <small>Your animal pal is looking for you.</small>
                 </div>
               )}
             </div>
@@ -765,48 +791,59 @@ export default function Home() {
               {isLive ? (
                 <>
                   <button className="button button-shuffle" type="button" onClick={shuffle}>
-                    <span aria-hidden="true">↻</span> Shuffle creature
+                    <span aria-hidden="true">↻</span> Meet another animal
                   </button>
                   <button className="button button-quiet" type="button" onClick={() => stopCamera("off")}>
-                    <span className="stop-square" aria-hidden="true" /> Stop camera
+                    <span className="stop-square" aria-hidden="true" /> Close zoo camera
                   </button>
                 </>
               ) : (
                 <button className="button button-shuffle" type="button" onClick={startCamera} disabled={isBusy}>
-                  <span aria-hidden="true">●</span> {isBusy ? "Getting ready…" : cameraState === "off" ? "Turn camera back on" : "Open camera"}
+                  <span aria-hidden="true">●</span> {isBusy ? "Getting ready…" : cameraState === "off" ? "Wake the zoo up" : "Open the zoo camera"}
+                </button>
+              )}
+              {canFullscreen && (
+                <button
+                  className="button button-quiet button-fullscreen"
+                  type="button"
+                  onClick={toggleFullscreen}
+                  aria-pressed={isFullscreen}
+                >
+                  <span className="fullscreen-icon" aria-hidden="true">⛶</span>
+                  {isFullscreen ? "Exit full screen" : "Full screen"}
                 </button>
               )}
             </div>
-            <div className="tape tape-bottom" aria-hidden="true">Please do feed the animals</div>
+            <div className="tape tape-bottom" aria-hidden="true">Big smiles welcome</div>
           </div>
 
           <div className="animal-ticket" aria-live="polite" key={shuffleCount}>
-            <span>Your current bad decision</span>
+            <span>Your zoo pal</span>
             <strong>{currentAnimal}</strong>
-            <small>{isLive ? "Press space to shuffle" : "Camera required for nonsense"}</small>
+            <small>{isLive ? "Press space to meet another" : "Open the camera to meet your pal"}</small>
           </div>
         </div>
       </section>
 
       <section className="how-it-works" aria-labelledby="how-heading">
         <div className="section-heading">
-          <p className="eyebrow"><span>Three</span> deeply scientific steps</p>
-          <h2 id="how-heading">Your dignity had a good run.</h2>
+          <p className="eyebrow"><span>Three</span> easy-peasy steps</p>
+          <h2 id="how-heading">Ready, set, ROAR!</h2>
         </div>
         <div className="steps">
-          <article><b>01</b><span className="step-icon">◎</span><h3>Allow the camera</h3><p>Your browser asks first. We never record, upload, or save your feed.</p></article>
-          <article><b>02</b><span className="step-icon">⌁</span><h3>Make a face</h3><p>Turn, grin, blink, or go full opera. Your animal reacts in real time.</p></article>
-          <article><b>03</b><span className="step-icon">↻</span><h3>Shuffle shamelessly</h3><p>Tap the button or press space. Immediate repeats are forbidden by zoo law.</p></article>
+          <article><b>01</b><span className="step-icon">◎</span><h3>Open the zoo</h3><p>A grown-up can allow the camera. We never record, upload, or save what it sees.</p></article>
+          <article><b>02</b><span className="step-icon">⌁</span><h3>Make your silliest face</h3><p>Blink, grin, tilt, or roar. Your animal pal copies you in real time.</p></article>
+          <article><b>03</b><span className="step-icon">↻</span><h3>Meet the whole zoo</h3><p>Tap the button or press space. You’ll get a different animal every time.</p></article>
         </div>
       </section>
 
       <div className="marquee" aria-hidden="true">
-        <div>CEO CAPYBARA ✦ DISCO FROG ✦ MOO-DONNA ✦ PARTY PIGEON ✦ DRAMA LLAMA ✦ OPERA OTTER ✦ RACCOON RASCAL ✦&nbsp;</div>
+        <div>BUBBLEGUM CAPYBARA ✦ DISCO FROG ✦ MOO-MOO SUPERSTAR ✦ PARTY PIGEON ✦ DRAMA LLAMA ✦ SINGING OTTER ✦ RACCOON RASCAL ✦&nbsp;</div>
       </div>
 
       <footer>
-        <div><strong>Mugshot Menagerie</strong><span>Handmade nonsense for human faces.</span></div>
-        <p><span className="privacy-dot" /> Private by design: face detection runs in your browser.</p>
+        <div><strong>Giggle Zoo!</strong><span>Silly animal magic for curious kids.</span></div>
+        <p><span className="privacy-dot" /> Grown-up approved: face detection runs in your browser.</p>
       </footer>
     </main>
   );

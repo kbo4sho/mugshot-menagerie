@@ -1,6 +1,6 @@
-# Mugshot Menagerie
+# Giggle Zoo!
 
-A browser-based webcam game that turns every face it sees into a reactive animal caricature.
+A playful browser-based webcam game where kids meet a reactive animal twin.
 
 **Play it:** https://kbo4sho.github.io/mugshot-menagerie/
 
@@ -12,6 +12,7 @@ A browser-based webcam game that turns every face it sees into a reactive animal
 - Reacts to blinking, smiling, and opening your mouth
 - Keeps animal assignments stable until you shuffle
 - Supports button, touch, and Space-key controls
+- Includes a full-screen zoo camera mode
 - Stops and releases the camera explicitly
 
 ## Privacy

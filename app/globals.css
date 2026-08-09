@@ -328,6 +328,35 @@ h1 em::after {
   pointer-events: none;
 }
 
+.camera-shell:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  padding: clamp(9px, 1.5vw, 20px);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: var(--violet);
+  box-shadow: none;
+  transform: none;
+}
+
+.camera-shell:fullscreen::before,
+.camera-shell:fullscreen .tape {
+  display: none;
+}
+
+.camera-shell:fullscreen .camera-screen {
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+.camera-shell:fullscreen .camera-controls {
+  min-height: 68px;
+  padding-top: 10px;
+}
+
 .camera-hud {
   height: 48px;
   padding: 0 7px;
@@ -668,6 +697,19 @@ h1 em::after {
   font-size: 9px;
   text-transform: uppercase;
   box-shadow: 3px 3px 0 var(--ink);
+}
+
+.button-fullscreen {
+  white-space: nowrap;
+}
+
+.button-fullscreen[aria-pressed="true"] {
+  background: var(--mint);
+}
+
+.fullscreen-icon {
+  font-size: 18px;
+  line-height: 1;
 }
 
 .stop-square {
@@ -1035,19 +1077,26 @@ footer p {
 
   .camera-controls {
     min-height: 65px;
+    flex-wrap: wrap;
     gap: 8px;
   }
 
   .button-shuffle {
+    flex-basis: 100%;
     min-height: 47px;
     padding-inline: 10px;
     font-size: 11px;
   }
 
   .button-quiet {
+    flex: 1;
     min-height: 47px;
     padding-inline: 10px;
     font-size: 7px;
+  }
+
+  .camera-shell:fullscreen .camera-controls {
+    min-height: 112px;
   }
 
   .animal-ticket {

@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mugshot Menagerie — Your face, but furrier",
-  description: "A private, browser-based webcam game that gives your face a live animal caricature makeover.",
+  title: "Giggle Zoo — Your face just went wild!",
+  description: "A playful, private webcam game where kids meet a reactive animal twin.",
   openGraph: {
-    title: "Mugshot Menagerie",
-    description: "Borrow a face with zero dignity.",
+    title: "Giggle Zoo!",
+    description: "Jump into the picture and meet your surprise animal twin.",
     type: "website",
   },
 };
