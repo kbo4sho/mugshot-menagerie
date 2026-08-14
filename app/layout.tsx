@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Giggle Zoo — Your face just went wild!",
   description: "A playful, private webcam game where kids meet a reactive animal twin.",
+  icons: { icon: "data:," },
   openGraph: {
     title: "Giggle Zoo!",
     description: "Jump into the picture and meet your surprise animal twin.",

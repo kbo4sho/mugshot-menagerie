@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 :root {
   --ink: #241930;
   --cream: #fff8e8;
@@ -19,6 +17,21 @@
 
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+}
+
+img,
+video,
+canvas {
+  display: block;
+}
+
+a {
+  color: inherit;
 }
 
 html {
@@ -838,6 +851,7 @@ h1 em::after {
 .animal-ticket {
   position: absolute;
   z-index: 2;
+  pointer-events: none;
   right: -37px;
   bottom: -8px;
   width: 255px;
@@ -945,7 +959,7 @@ h1 em::after {
 
 .habitat-map {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 17px;
 }
 
@@ -953,7 +967,6 @@ h1 em::after {
   position: relative;
   min-height: 205px;
   padding: 25px 23px;
-  grid-column: span 2;
   overflow: hidden;
   border: 3px solid var(--ink);
   border-radius: 18px;
@@ -968,6 +981,7 @@ h1 em::after {
 .habitat-ocean { background: #bdeaf1; }
 .habitat-forest { background: #c9dcb7; }
 .habitat-barnyard { background: #ffd1dc; }
+.habitat-aviary { background: #e8dcff; }
 
 .habitat-icon {
   position: absolute;
@@ -1139,6 +1153,120 @@ footer strong {
   text-transform: uppercase;
 }
 
+.diagnostic-gallery {
+  min-height: 100vh;
+  padding-bottom: 80px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 4%, rgba(168, 217, 91, .38) 0 7%, transparent 7.4%),
+    radial-gradient(circle at 91% 2%, rgba(174, 228, 237, .5) 0 9%, transparent 9.4%),
+    var(--cream);
+}
+
+.diagnostic-gallery > header {
+  width: min(1400px, calc(100% - 48px));
+  min-height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 2px solid rgba(36,25,48,.2);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.diagnostic-gallery > header a { color: var(--ink); }
+.diagnostic-gallery > header p { margin: 0; }
+
+.diagnostic-intro {
+  width: min(1400px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 66px 0 58px;
+}
+
+.diagnostic-intro h1 {
+  max-width: 900px;
+  margin: 18px 0 20px;
+  font-family: Arial Black, sans-serif;
+  font-size: clamp(48px, 7vw, 104px);
+  line-height: .86;
+  letter-spacing: -.065em;
+  text-transform: uppercase;
+}
+
+.diagnostic-intro h1 em { color: var(--jungle); font-style: normal; }
+.diagnostic-intro > p:last-child { max-width: 680px; margin: 0; font-size: 17px; line-height: 1.55; }
+
+.diagnostic-sheet {
+  width: min(1400px, calc(100% - 48px));
+  margin: 0 auto 54px;
+  overflow-x: auto;
+  border: 4px solid var(--ink);
+  border-radius: 22px;
+  background: #fffdf7;
+  box-shadow: 10px 11px 0 var(--ink);
+}
+
+.diagnostic-sheet-heading {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  width: min(100vw - 56px, 1392px);
+  min-height: 94px;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 3px solid var(--ink);
+  background: var(--yellow);
+}
+
+.diagnostic-sheet[data-gallery-pose="blink"] .diagnostic-sheet-heading { background: var(--mint); }
+.diagnostic-sheet[data-gallery-pose="roar"] .diagnostic-sheet-heading { background: var(--coral); color: #fff; }
+
+.diagnostic-sheet-heading span {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.diagnostic-sheet-heading h2 {
+  margin: 4px 0 0;
+  font-family: Arial Black, sans-serif;
+  font-size: 31px;
+  line-height: .9;
+  text-transform: uppercase;
+}
+
+.diagnostic-sheet-heading button {
+  min-height: 44px;
+  padding: 0 17px;
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  background: #fffdf7;
+  color: var(--ink);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  box-shadow: 3px 4px 0 var(--ink);
+  cursor: pointer;
+}
+
+.diagnostic-sheet canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 footer span,
 footer p {
   color: rgba(36, 25, 48, .58);
@@ -1195,9 +1323,7 @@ footer p {
     padding: 62px 42px;
   }
 
-  .habitat-map { grid-template-columns: repeat(6, 1fr); }
-  .habitat-card { grid-column: span 2; }
-  .habitat-card:nth-child(4) { grid-column: 2 / span 2; }
+  .habitat-map { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 760px) {
@@ -1370,8 +1496,7 @@ footer p {
   .habitats-intro h2 { font-size: 39px; }
   .habitats-intro > p:last-child { font-size: 14px; }
   .habitat-map { grid-template-columns: 1fr; }
-  .habitat-card,
-  .habitat-card:nth-child(4) { grid-column: auto; min-height: 176px; }
+  .habitat-card { min-height: 176px; }
   .habitat-card h3 { margin-top: 34px; }
 
   .how-it-works {
