@@ -1,4 +1,6 @@
 :root {
+  --font-geist-sans: "Geist Variable";
+  --font-geist-mono: "Geist Mono Variable";
   --ink: #241930;
   --cream: #fff8e8;
   --paper: #f5edda;
