@@ -1,0 +1,147 @@
+{
+  "version": "v2",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "webp_quality": 95,
+  "repair": "targeted generated crown transplanted over exact v1, then crown expanded upward 28px",
+  "alpha_bbox": [
+    193,
+    83,
+    1054,
+    1169
+  ],
+  "alpha_centroid": [
+    622.2134283629136,
+    653.8460413517012
+  ],
+  "padding_px": {
+    "left": 193,
+    "top": 83,
+    "right": 200,
+    "bottom": 85
+  },
+  "ear_tip_padding_380_px": 25.151515151515152,
+  "centerline_opaque_head_top_native_y": 410,
+  "centerline_opaque_head_top_380_y": 124.24242424242425,
+  "corner_alpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "alpha_sha256": "d6cc21719be1aecbbf83cc90da4dac4443515efa1e23a1744fc477d8568d8387",
+  "partial_alpha_pixels": 14197,
+  "partial_alpha_green_fringe_pixels_after_cleanup": 0,
+  "partial_alpha_green_pixels_cleaned_by_state": {
+    "neutral": 700,
+    "blink": 0,
+    "roar": 0
+  },
+  "geometry": {
+    "v1_static": {
+      "angle_degrees": 0.0,
+      "bounce_asset_px": 0.0,
+      "landmark_10": [
+        190.0,
+        144.5
+      ],
+      "opaque_edge_y_at_landmark_x": 159,
+      "crown_margin_px": -14.5,
+      "tracked_face_pixels": 19964,
+      "nonopaque_tracked_face_pixels": 764,
+      "nonopaque_tracked_face_percent": 3.8268883991184133,
+      "passes_12px_margin": false,
+      "whole_face_opaque": false
+    },
+    "v2_static": {
+      "angle_degrees": 0.0,
+      "bounce_asset_px": 0.0,
+      "landmark_10": [
+        190.0,
+        144.5
+      ],
+      "opaque_edge_y_at_landmark_x": 125,
+      "crown_margin_px": 19.5,
+      "tracked_face_pixels": 19964,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    },
+    "v2_tilt_left_bounce": {
+      "angle_degrees": -8.0,
+      "bounce_asset_px": 3.5,
+      "landmark_10": [
+        178.47646724050657,
+        141.80580390819796
+      ],
+      "opaque_edge_y_at_landmark_x": 126,
+      "crown_margin_px": 15.805803908197959,
+      "tracked_face_pixels": 19956,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    },
+    "v2_tilt_right_bounce": {
+      "angle_degrees": 8.0,
+      "bounce_asset_px": 3.5,
+      "landmark_10": [
+        201.52353275949343,
+        141.80580390819796
+      ],
+      "opaque_edge_y_at_landmark_x": 126,
+      "crown_margin_px": 15.805803908197959,
+      "tracked_face_pixels": 19956,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/bunny/neutral-v2.webp",
+      "pages_path": "github-pages/public/masks/bunny/neutral-v2.webp",
+      "bytes": 252844,
+      "sha256": "f73cd2c378027d54099e7cd912a1a9e54c9ee0c24fa4a5e4ea56399bcf2492ad",
+      "pages_sha256": "f73cd2c378027d54099e7cd912a1a9e54c9ee0c24fa4a5e4ea56399bcf2492ad",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d6cc21719be1aecbbf83cc90da4dac4443515efa1e23a1744fc477d8568d8387",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/bunny/blink-v2.webp",
+      "pages_path": "github-pages/public/masks/bunny/blink-v2.webp",
+      "bytes": 251806,
+      "sha256": "8f0779739909181309895b3ce650c4d83e354db360de027f997a5cab13efc1b3",
+      "pages_sha256": "8f0779739909181309895b3ce650c4d83e354db360de027f997a5cab13efc1b3",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d6cc21719be1aecbbf83cc90da4dac4443515efa1e23a1744fc477d8568d8387",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/bunny/roar-v2.webp",
+      "pages_path": "github-pages/public/masks/bunny/roar-v2.webp",
+      "bytes": 249632,
+      "sha256": "fb644135335adfda346538ddadf9d53c5347104d136331358d06df1e75331869",
+      "pages_sha256": "fb644135335adfda346538ddadf9d53c5347104d136331358d06df1e75331869",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d6cc21719be1aecbbf83cc90da4dac4443515efa1e23a1744fc477d8568d8387",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

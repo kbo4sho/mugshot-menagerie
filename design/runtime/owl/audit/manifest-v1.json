@@ -1,0 +1,246 @@
+{
+  "animal": "owl",
+  "name": "Winky Owl",
+  "version": "v1",
+  "generation_route": "built-in ImageGen; neutral generated with Bumblebee v1 solely as finish/composition reference; blink and roar each edited from neutral as sole target",
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6,
+    "exact": true
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      297626,
+      298820,
+      291488
+    ]
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "8190727becc075b58527437c1fabe0a8a3fa3e485395cd11b774324a1f7b4ae9",
+    "blink": "8190727becc075b58527437c1fabe0a8a3fa3e485395cd11b774324a1f7b4ae9",
+    "roar": "8190727becc075b58527437c1fabe0a8a3fa3e485395cd11b774324a1f7b4ae9"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "localization_mask_nonzero_pixels": {
+    "blink": 338380,
+    "roar": 254790
+  },
+  "outside_localization_max_channel_delta": {
+    "blink": 0,
+    "roar": 0
+  },
+  "states": {
+    "neutral": {
+      "imagegen_source": "design/runtime/owl/audit/generated-neutral-v1.png",
+      "alpha_master": "design/runtime/owl/alpha/neutral-v1.png",
+      "alpha_sha256": "31ba2efda904c49775a9b45b85cc5a443e26cc8479dd3a30d6880cf5de4f7689",
+      "chroma_master": "design/runtime/owl/chroma/neutral-v1.png",
+      "chroma_sha256": "370813a885477cbcd313182517e97e3ebe36ad1a413943aadef45ce772f9eaee",
+      "runtime": "public/masks/owl/neutral-v1.webp",
+      "runtime_bytes": 297626,
+      "runtime_sha256": "7ad7e3c8707e6a6d8b2c086242a5ac68a77a2ca18ec9f7a09f53f4f8f1a9383d",
+      "github_pages_sha256": "7ad7e3c8707e6a6d8b2c086242a5ac68a77a2ca18ec9f7a09f53f4f8f1a9383d",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          102,
+          170,
+          1152,
+          1088
+        ],
+        "padding_px_left_top_right_bottom": [
+          102,
+          170,
+          102,
+          166
+        ],
+        "alpha_weighted_centroid": [
+          626.632,
+          628.777
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 749748,
+        "partially_transparent_pixels": 9003,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 749748,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    },
+    "blink": {
+      "imagegen_source": "design/runtime/owl/audit/generated-blink-v1.png",
+      "alpha_master": "design/runtime/owl/alpha/blink-v1.png",
+      "alpha_sha256": "c471a43403d7495da50649e6c5b307a5760c2318198b023113c0d327987af78e",
+      "chroma_master": "design/runtime/owl/chroma/blink-v1.png",
+      "chroma_sha256": "a81507d40f95db2b94ee0456d1a156db3a78ed83825cdcf7921d828a88dfafcb",
+      "runtime": "public/masks/owl/blink-v1.webp",
+      "runtime_bytes": 298820,
+      "runtime_sha256": "de6b45ae09d24e5de0552bf077fff7e40325a56f09c3786e4accc60c9c3afbee",
+      "github_pages_sha256": "de6b45ae09d24e5de0552bf077fff7e40325a56f09c3786e4accc60c9c3afbee",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          102,
+          170,
+          1152,
+          1088
+        ],
+        "padding_px_left_top_right_bottom": [
+          102,
+          170,
+          102,
+          166
+        ],
+        "alpha_weighted_centroid": [
+          626.632,
+          628.777
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 749748,
+        "partially_transparent_pixels": 9003,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 749748,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    },
+    "roar": {
+      "imagegen_source": "design/runtime/owl/audit/generated-roar-v1.png",
+      "alpha_master": "design/runtime/owl/alpha/roar-v1.png",
+      "alpha_sha256": "d139e6cdad14ff8ad7e51be2bbcfcf89e1c7995946d56d0f1ec3403b0c872e63",
+      "chroma_master": "design/runtime/owl/chroma/roar-v1.png",
+      "chroma_sha256": "fbc610483d38256c9ef90e94eb94a1000191aef066d34573c1d2f0af7687d6ba",
+      "runtime": "public/masks/owl/roar-v1.webp",
+      "runtime_bytes": 291488,
+      "runtime_sha256": "0acd672af012728ea65a0eeaced80309f763acc0de2868c05c19ef031105646e",
+      "github_pages_sha256": "0acd672af012728ea65a0eeaced80309f763acc0de2868c05c19ef031105646e",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          102,
+          170,
+          1152,
+          1088
+        ],
+        "padding_px_left_top_right_bottom": [
+          102,
+          170,
+          102,
+          166
+        ],
+        "alpha_weighted_centroid": [
+          626.632,
+          628.777
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 749748,
+        "partially_transparent_pixels": 9003,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 749748,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    }
+  }
+}

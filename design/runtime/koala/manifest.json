@@ -1,0 +1,41 @@
+{
+  "animal": "koala",
+  "name": "Cuddle Koala",
+  "version": "v1",
+  "generator": "built-in ImageGen",
+  "master_dimensions": [1254, 1254],
+  "runtime_dimensions": [1254, 1254],
+  "runtime_encoding": {
+    "format": "WebP RGBA",
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6,
+    "metadata": "none"
+  },
+  "states": {
+    "neutral": {
+      "source": "design/runtime/koala/chroma/neutral-v1.png",
+      "alpha_master": "design/runtime/koala/alpha/neutral-v1.png",
+      "runtime": "public/masks/koala/neutral-v1.webp",
+      "pages_copy": "github-pages/public/masks/koala/neutral-v1.webp",
+      "bytes": 303584,
+      "sha256": "efe8d46e1a77de7ddd38588f2a531effc19e1df6acbbb2144a6d05d17fa1a531"
+    },
+    "blink": {
+      "source": "design/runtime/koala/chroma/blink-v1.png",
+      "alpha_master": "design/runtime/koala/alpha/blink-v1.png",
+      "runtime": "public/masks/koala/blink-v1.webp",
+      "pages_copy": "github-pages/public/masks/koala/blink-v1.webp",
+      "bytes": 301196,
+      "sha256": "702ba90a3d6f6f5dcc8fb4fb0e3fe82163a2b369ee0953a101e6b46ba0d16b65"
+    },
+    "roar": {
+      "source": "design/runtime/koala/chroma/roar-v1.png",
+      "alpha_master": "design/runtime/koala/alpha/roar-v1.png",
+      "runtime": "public/masks/koala/roar-v1.webp",
+      "pages_copy": "github-pages/public/masks/koala/roar-v1.webp",
+      "bytes": 292444,
+      "sha256": "94bbdff7ec12cd855803395d838c732ea0babfb16b5457fe680a7eaf1dc7d603"
+    }
+  }
+}

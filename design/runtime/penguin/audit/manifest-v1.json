@@ -1,0 +1,160 @@
+{
+  "animal": "penguin",
+  "name": "Party Penguin",
+  "version": "v1",
+  "generation_route": "built-in ImageGen neutral using Bumblebee v1 as finish/composition reference; blink and roar edits used neutral as sole target; expression RGB localized onto neutral",
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      244206,
+      233478,
+      239084
+    ]
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "58bb43d499e9163f4565955cf6e877405213fdbbf5c8e6b1b657b11317f49589",
+    "blink": "58bb43d499e9163f4565955cf6e877405213fdbbf5c8e6b1b657b11317f49589",
+    "roar": "58bb43d499e9163f4565955cf6e877405213fdbbf5c8e6b1b657b11317f49589"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "outside_localization_max_channel_delta": {
+    "blink": 0,
+    "roar": 0
+  },
+  "states": {
+    "neutral": {
+      "chroma_source": "design/runtime/penguin/audit/imagegen/neutral-v1.generated.png",
+      "alpha_master": "design/runtime/penguin/alpha/neutral-v1.png",
+      "alpha_sha256": "c8ddd3b3e96934895d3d1d910b5a03420e6cc9bbd8446b79ae920dbc0e16ec24",
+      "runtime": "public/masks/penguin/neutral-v1.webp",
+      "runtime_bytes": 244206,
+      "runtime_sha256": "5debcbde804cdc30d0bdb4c85a45174377f3bccbe993f4e4eefe8229379000db",
+      "github_pages_sha256": "5debcbde804cdc30d0bdb4c85a45174377f3bccbe993f4e4eefe8229379000db",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "58bb43d499e9163f4565955cf6e877405213fdbbf5c8e6b1b657b11317f49589",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          137,
+          139,
+          1113,
+          1076
+        ],
+        "padding_px_left_top_right_bottom": [
+          137,
+          139,
+          141,
+          178
+        ],
+        "alpha_weighted_centroid": [
+          624.571,
+          644.109
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3800,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "chroma_source": "design/runtime/penguin/audit/imagegen/blink-v1.generated.png",
+      "alpha_master": "design/runtime/penguin/alpha/blink-v1.png",
+      "alpha_sha256": "345cbf01d52f25c86e08309ed4a2384b5e4cb1f53bddb2bc458c696dbeeeec22",
+      "runtime": "public/masks/penguin/blink-v1.webp",
+      "runtime_bytes": 233478,
+      "runtime_sha256": "37ac14ee95e67271ce9dc713b53220364682a69c52bb305d1ebbc05a0c4fe3a1",
+      "github_pages_sha256": "37ac14ee95e67271ce9dc713b53220364682a69c52bb305d1ebbc05a0c4fe3a1",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "58bb43d499e9163f4565955cf6e877405213fdbbf5c8e6b1b657b11317f49589",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          137,
+          139,
+          1113,
+          1076
+        ],
+        "padding_px_left_top_right_bottom": [
+          137,
+          139,
+          141,
+          178
+        ],
+        "alpha_weighted_centroid": [
+          624.571,
+          644.109
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3800,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "chroma_source": "design/runtime/penguin/audit/imagegen/roar-v1.generated.png",
+      "alpha_master": "design/runtime/penguin/alpha/roar-v1.png",
+      "alpha_sha256": "4c9100be04188ab45a645812b9c1914a2f6b3ae3c635bb236fb35e6ffc30bbf2",
+      "runtime": "public/masks/penguin/roar-v1.webp",
+      "runtime_bytes": 239084,
+      "runtime_sha256": "f194a879e73a4489e728cc7daad017e1b8685b820344c7e534d19c9220441774",
+      "github_pages_sha256": "f194a879e73a4489e728cc7daad017e1b8685b820344c7e534d19c9220441774",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "58bb43d499e9163f4565955cf6e877405213fdbbf5c8e6b1b657b11317f49589",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          137,
+          139,
+          1113,
+          1076
+        ],
+        "padding_px_left_top_right_bottom": [
+          137,
+          139,
+          141,
+          178
+        ],
+        "alpha_weighted_centroid": [
+          624.571,
+          644.109
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3800,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  }
+}

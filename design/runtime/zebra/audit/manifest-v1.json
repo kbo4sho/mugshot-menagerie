@@ -1,0 +1,119 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "alpha_bbox": [
+    167,
+    76,
+    1083,
+    1151
+  ],
+  "alpha_centroid": [
+    624.0705635341225,
+    620.8229899519163
+  ],
+  "padding_px": {
+    "left": 167,
+    "top": 76,
+    "right": 171,
+    "bottom": 103
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 753477,
+  "partial_alpha_pixels": 4812,
+  "interior_hole_pixels": 0,
+  "partial_alpha_green_fringe_pixels": 0,
+  "alpha_sha256": "e5e51d8a91930d6a587005750786803c5c4d307dc225c72972c1126f23096a0a",
+  "chroma_border": {
+    "neutral": {
+      "unique_border_colors": 1,
+      "exact_00ff00": true
+    },
+    "blink": {
+      "unique_border_colors": 1,
+      "exact_00ff00": true
+    },
+    "roar": {
+      "unique_border_colors": 1,
+      "exact_00ff00": true
+    }
+  },
+  "localization": {
+    "blink": {
+      "master_changed_bbox": [
+        285,
+        560,
+        970,
+        866
+      ],
+      "master_changed_pixels": 139709,
+      "master_changed_pixels_outside_localization_mask": 0,
+      "master_max_delta_outside_localization_mask": 0,
+      "decoded_q95_stripe_like_mean_delta_outside_roi": 1.4095254057961146,
+      "decoded_q95_stripe_like_max_delta_outside_roi": 12
+    },
+    "roar": {
+      "master_changed_bbox": [
+        520,
+        987,
+        739,
+        1143
+      ],
+      "master_changed_pixels": 26789,
+      "master_changed_pixels_outside_localization_mask": 0,
+      "master_max_delta_outside_localization_mask": 0,
+      "decoded_q95_stripe_like_mean_delta_outside_roi": 0.00022129465001106472,
+      "decoded_q95_stripe_like_max_delta_outside_roi": 5
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/zebra/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/zebra/neutral-v1.webp",
+      "bytes": 231016,
+      "sha256": "7af9b59c938602a034c2aa4e846f47a365d3d86670e7894523aa64461c22315e",
+      "pages_sha256": "7af9b59c938602a034c2aa4e846f47a365d3d86670e7894523aa64461c22315e",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "e5e51d8a91930d6a587005750786803c5c4d307dc225c72972c1126f23096a0a",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/zebra/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/zebra/blink-v1.webp",
+      "bytes": 218572,
+      "sha256": "5abf65de0fd8ae7d3ebdebe6c76e1f2016d70718f40ca36fa61fd08aa33c02d8",
+      "pages_sha256": "5abf65de0fd8ae7d3ebdebe6c76e1f2016d70718f40ca36fa61fd08aa33c02d8",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "e5e51d8a91930d6a587005750786803c5c4d307dc225c72972c1126f23096a0a",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/zebra/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/zebra/roar-v1.webp",
+      "bytes": 228510,
+      "sha256": "899ea6caa43e7ae3e9aa649ddce2e03e616a229993956928d29d950ad221b6c8",
+      "pages_sha256": "899ea6caa43e7ae3e9aa649ddce2e03e616a229993956928d29d950ad221b6c8",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "e5e51d8a91930d6a587005750786803c5c4d307dc225c72972c1126f23096a0a",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

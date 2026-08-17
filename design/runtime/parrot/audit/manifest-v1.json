@@ -1,0 +1,225 @@
+{
+  "animal": "parrot",
+  "name": "Party Parrot",
+  "version": "v1",
+  "generation_route": "built-in ImageGen; Bumblebee v1 was finish/composition reference only; blink and roar used the generated neutral as sole edit target; expression changes were localized onto the neutral/shared alpha",
+  "generated_sources": {
+    "neutral": "design/runtime/parrot/chroma/neutral-v1.png",
+    "blink": "design/runtime/parrot/audit/blink-generated-full-v1.png",
+    "roar": "design/runtime/parrot/audit/roar-generated-full-v1.png"
+  },
+  "runtime_export": {
+    "side_px": 1344,
+    "quality": 95,
+    "method": 6,
+    "alpha_quality": 100
+  },
+  "candidate_sizes_bytes": {
+    "1254-q94": [
+      186488,
+      179650,
+      181198
+    ],
+    "1254-q95": [
+      199614,
+      197518,
+      193594
+    ],
+    "1344-q94": [
+      208772,
+      201010,
+      203054
+    ],
+    "1344-q95": [
+      223286,
+      221446,
+      216740
+    ],
+    "1408-q94": [
+      224734,
+      213704,
+      218286
+    ],
+    "1408-q95": [
+      246348,
+      235806,
+      238868
+    ]
+  },
+  "master_alpha_pixel_hashes": {
+    "neutral": "194cf253f0d9fee300199c702463092c5e866c4cb523fdb021f4ed13cf47c1fa",
+    "blink": "194cf253f0d9fee300199c702463092c5e866c4cb523fdb021f4ed13cf47c1fa",
+    "roar": "194cf253f0d9fee300199c702463092c5e866c4cb523fdb021f4ed13cf47c1fa"
+  },
+  "master_alpha_pixel_hashes_identical": true,
+  "runtime_alpha_pixel_hashes": {
+    "neutral": "831617d7a970897c95babf08f418e0f17fe6c69e6cbaa88effc426c956691276",
+    "blink": "831617d7a970897c95babf08f418e0f17fe6c69e6cbaa88effc426c956691276",
+    "roar": "831617d7a970897c95babf08f418e0f17fe6c69e6cbaa88effc426c956691276"
+  },
+  "runtime_alpha_pixel_hashes_identical": true,
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 182860,
+      "changed_visible_percent": 29.0218,
+      "changed_bbox": [
+        259,
+        287,
+        1007,
+        794
+      ],
+      "outside_localization_max_channel_delta": 2
+    },
+    "roar": {
+      "changed_visible_pixels": 235902,
+      "changed_visible_percent": 37.4401,
+      "changed_bbox": [
+        271,
+        271,
+        985,
+        1071
+      ],
+      "outside_localization_max_channel_delta": 2
+    }
+  },
+  "states": {
+    "neutral": {
+      "chroma": "design/runtime/parrot/chroma/neutral-v1.png",
+      "chroma_sha256": "1ad4d3e5d92c6df59419dfb39cb2f35c4086ab327e0c106f489575a1299f4500",
+      "alpha_master": "design/runtime/parrot/alpha/neutral-v1.png",
+      "alpha_sha256": "ea95c15ec80137ba0c144bb60504419008ae5f85b343424e92d5e6de6a2e7284",
+      "runtime": "public/masks/parrot/neutral-v1.webp",
+      "runtime_bytes": 223286,
+      "runtime_sha256": "5d9023def9fb6ced8c85245164f0357c60ac29729a9c135cf4f025cd8e1d587f",
+      "github_pages_sha256": "5d9023def9fb6ced8c85245164f0357c60ac29729a9c135cf4f025cd8e1d587f",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          140,
+          79,
+          1120,
+          1071
+        ],
+        "coverage_percent": 78.15,
+        "padding_px_left_top_right_bottom": [
+          140,
+          79,
+          134,
+          183
+        ],
+        "alpha_weighted_centroid": [
+          629.025,
+          636.971
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 14610,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "chroma": "design/runtime/parrot/chroma/blink-v1.png",
+      "chroma_sha256": "a53a8e7af7478e0a2fdd877d7b019761a25be3a396a55c7bbfc89abef1da5278",
+      "alpha_master": "design/runtime/parrot/alpha/blink-v1.png",
+      "alpha_sha256": "5ecf1892c2a3126f559787a30b040223f3c3e99b8f79873dce43b02df30c0346",
+      "runtime": "public/masks/parrot/blink-v1.webp",
+      "runtime_bytes": 221446,
+      "runtime_sha256": "d67ef90fd3b749ff57b716851b1f48ca228aac93cc8b7786c9f747c10a2edcb7",
+      "github_pages_sha256": "d67ef90fd3b749ff57b716851b1f48ca228aac93cc8b7786c9f747c10a2edcb7",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          140,
+          79,
+          1120,
+          1071
+        ],
+        "coverage_percent": 78.15,
+        "padding_px_left_top_right_bottom": [
+          140,
+          79,
+          134,
+          183
+        ],
+        "alpha_weighted_centroid": [
+          629.025,
+          636.971
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 14610,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "chroma": "design/runtime/parrot/chroma/roar-v1.png",
+      "chroma_sha256": "c52dc080187ffd7c068be90960ead3d66b62cbc84ca153defddedcade9014895",
+      "alpha_master": "design/runtime/parrot/alpha/roar-v1.png",
+      "alpha_sha256": "552bb751b618f2622fe85ea0f410f454921f5a7083854b3a3db870b53bcaf9bc",
+      "runtime": "public/masks/parrot/roar-v1.webp",
+      "runtime_bytes": 216740,
+      "runtime_sha256": "b1a0aa8541ae6505eb46ac615ef3ec1ad12296cef53091c42b1fbc95eab1d5c2",
+      "github_pages_sha256": "b1a0aa8541ae6505eb46ac615ef3ec1ad12296cef53091c42b1fbc95eab1d5c2",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          140,
+          79,
+          1120,
+          1071
+        ],
+        "coverage_percent": 78.15,
+        "padding_px_left_top_right_bottom": [
+          140,
+          79,
+          134,
+          183
+        ],
+        "alpha_weighted_centroid": [
+          629.025,
+          636.971
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 14610,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  },
+  "audit_evidence": [
+    "design/runtime/parrot/audit/native-states-v1.jpg",
+    "design/runtime/parrot/audit/native-96-380-states-v1.png",
+    "design/runtime/parrot/audit/hostile-380-states-v1.png",
+    "design/runtime/parrot/audit/copy-lighter-crossfades-380-v1.png"
+  ]
+}

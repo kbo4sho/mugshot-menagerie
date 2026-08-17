@@ -1,0 +1,183 @@
+{
+  "animal": "sloth",
+  "name": "Sleepy Sloth",
+  "version": "v1",
+  "generation_route": "built-in ImageGen; neutral generated with Bumblebee v1 as finish/composition reference; blink and roar used neutral as sole edit target",
+  "runtime_export": {
+    "side_px": 1024,
+    "quality": 95,
+    "method": 6,
+    "alpha_quality": 100
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      423654,
+      420034,
+      414370
+    ],
+    "1254-q94": [
+      387422,
+      383966,
+      378538
+    ],
+    "1152-q95": [
+      374500,
+      379722,
+      367330
+    ],
+    "1152-q94": [
+      351878,
+      355448,
+      341182
+    ],
+    "1024-q95": [
+      304994,
+      302412,
+      299702
+    ]
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "dec0097e101680317b56c3da50a1277effb47fd723b30eb66b1c08b243d51a48",
+    "blink": "dec0097e101680317b56c3da50a1277effb47fd723b30eb66b1c08b243d51a48",
+    "roar": "dec0097e101680317b56c3da50a1277effb47fd723b30eb66b1c08b243d51a48"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "outside_localization_max_channel_delta": {
+    "blink": 0,
+    "roar": 0
+  },
+  "states": {
+    "neutral": {
+      "generated_source": "design/runtime/sloth/audit/generated-neutral-v1.png",
+      "generated_sha256": "d320b7ae927f6a38646cda316303b3563ff8466714fbea5edc77ce1a99c1599f",
+      "chroma_master": "design/runtime/sloth/chroma/neutral-v1.png",
+      "chroma_sha256": "fe48effa4d640978aee633bad44bc8448226e8242382aa6e093bfd8815ee26f8",
+      "alpha_master": "design/runtime/sloth/alpha/neutral-v1.png",
+      "alpha_sha256": "69db3e44c076a681677860a32dda710b29b547a91ca31f30aba1aa0e70f7e721",
+      "runtime": "public/masks/sloth/neutral-v1.webp",
+      "runtime_bytes": 304994,
+      "runtime_sha256": "6f6aa01a67a8407244ab29c24c01fc9277b9383d0feabaf4e5403b31c9d72d41",
+      "github_pages_sha256": "6f6aa01a67a8407244ab29c24c01fc9277b9383d0feabaf4e5403b31c9d72d41",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          77,
+          150,
+          1177,
+          1108
+        ],
+        "padding_px_left_top_right_bottom": [
+          77,
+          150,
+          77,
+          146
+        ],
+        "alpha_weighted_centroid": [
+          625.104,
+          651.748
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 20261,
+        "enclosed_fully_transparent_holes": 631,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "generated_source": "design/runtime/sloth/audit/generated-blink-v1.png",
+      "generated_sha256": "b2677bbfd6cbb3652108e82ec65d40a1759e3813be80c030d24161068923c565",
+      "chroma_master": "design/runtime/sloth/chroma/blink-v1.png",
+      "chroma_sha256": "74d7376457eb60b5f343a0143458a071ba392ce9a06e9f58d867366fbda902c3",
+      "alpha_master": "design/runtime/sloth/alpha/blink-v1.png",
+      "alpha_sha256": "40a27fabba80b75db4b6773f90d7c36d5063f553d6ddf612170fed48e6dd7836",
+      "runtime": "public/masks/sloth/blink-v1.webp",
+      "runtime_bytes": 302412,
+      "runtime_sha256": "3a54d131827f3167fa3a69e08db1af7c1d10c742d9908167f89a5263ee1072b0",
+      "github_pages_sha256": "3a54d131827f3167fa3a69e08db1af7c1d10c742d9908167f89a5263ee1072b0",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          77,
+          150,
+          1177,
+          1108
+        ],
+        "padding_px_left_top_right_bottom": [
+          77,
+          150,
+          77,
+          146
+        ],
+        "alpha_weighted_centroid": [
+          625.104,
+          651.748
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 20261,
+        "enclosed_fully_transparent_holes": 631,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "generated_source": "design/runtime/sloth/audit/generated-roar-v1.png",
+      "generated_sha256": "f9b2a96842b17c6e4e06991b8110629a8604926bd2a9af3403728c813a7af532",
+      "chroma_master": "design/runtime/sloth/chroma/roar-v1.png",
+      "chroma_sha256": "26778fe259406293c714163f6ba340a124b435f1994ee168a38f9f2a7319df5a",
+      "alpha_master": "design/runtime/sloth/alpha/roar-v1.png",
+      "alpha_sha256": "6500bd5215c413b88c66434a6f2c19e1662804828c32a0a0efcc26f671f233cd",
+      "runtime": "public/masks/sloth/roar-v1.webp",
+      "runtime_bytes": 299702,
+      "runtime_sha256": "8cf1c8b78a5376d93d396793254a9b41724c0b909dd45cae89632a0961e9a6db",
+      "github_pages_sha256": "8cf1c8b78a5376d93d396793254a9b41724c0b909dd45cae89632a0961e9a6db",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          77,
+          150,
+          1177,
+          1108
+        ],
+        "padding_px_left_top_right_bottom": [
+          77,
+          150,
+          77,
+          146
+        ],
+        "alpha_weighted_centroid": [
+          625.104,
+          651.748
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 20261,
+        "enclosed_fully_transparent_holes": 631,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "animal": "kangaroo",
+  "name": "Kooky Kangaroo",
+  "version": "v1",
+  "generation_route": "built-in ImageGen; neutral used Bumblebee v1 solely as style/finish/composition reference; one targeted species correction produced the selected neutral; blink and roar edited selected neutral as sole target",
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6,
+    "exact": true
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      257558,
+      264618,
+      252968,
+      251512
+    ]
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "ef7bce44e7b03e2e0115c126b5bada8e88758bb55da40b8c24ca1e4744340b6d",
+    "blink": "ef7bce44e7b03e2e0115c126b5bada8e88758bb55da40b8c24ca1e4744340b6d",
+    "roar-mid": "ef7bce44e7b03e2e0115c126b5bada8e88758bb55da40b8c24ca1e4744340b6d",
+    "roar": "ef7bce44e7b03e2e0115c126b5bada8e88758bb55da40b8c24ca1e4744340b6d"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "outside_localization_max_channel_delta": {
+    "blink": 0,
+    "roar-mid": 0,
+    "roar": 0
+  },
+  "roar_mid_cavity_repair_nonzero_pixels": 5421,
+  "roar_cavity_repair_nonzero_pixels": 7903,
+  "states": {
+    "neutral": {
+      "imagegen_source": "design/runtime/kangaroo/audit/raw/neutral-generated-v1.png",
+      "alpha_master": "design/runtime/kangaroo/alpha/neutral-v1.png",
+      "alpha_sha256": "dfd32acd9d1536d8e01c831047255e7830a7e4369193be89af3c9786dda24750",
+      "chroma_master": "design/runtime/kangaroo/chroma/neutral-v1.png",
+      "chroma_sha256": "eb18905a97f568fb696f5ee7ccd6f71a4c780a09756b2b928036de2eec4163e8",
+      "runtime": "public/masks/kangaroo/neutral-v1.webp",
+      "runtime_bytes": 257558,
+      "runtime_sha256": "d577c64b0d3e02d51126ecd8685cb61b12326996a3501f750c9269c59f2563fc",
+      "github_pages_sha256": "d577c64b0d3e02d51126ecd8685cb61b12326996a3501f750c9269c59f2563fc",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          219,
+          66,
+          1035,
+          1213
+        ],
+        "padding_px_left_top_right_bottom": [
+          219,
+          66,
+          219,
+          41
+        ],
+        "alpha_weighted_centroid": [
+          624.661,
+          647.18
+        ],
+        "alpha_coverage_fraction": 0.350955,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 1020634,
+        "partially_transparent_pixels": 3770,
+        "enclosed_fully_transparent_holes": 0,
+        "connected_components_alpha_gt_8": 1,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 1020634,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    },
+    "blink": {
+      "imagegen_source": "design/runtime/kangaroo/audit/raw/blink-generated-v1.png",
+      "alpha_master": "design/runtime/kangaroo/alpha/blink-v1.png",
+      "alpha_sha256": "67d13c98d0f5aaacc1583228ba93faf761f2a15798539a18ce9de915cd8d3985",
+      "chroma_master": "design/runtime/kangaroo/chroma/blink-v1.png",
+      "chroma_sha256": "34c8f0cce548145ac20d75d45d61dbfb179217c88d95196af2e99c57e40d66d2",
+      "runtime": "public/masks/kangaroo/blink-v1.webp",
+      "runtime_bytes": 264618,
+      "runtime_sha256": "74b397e9085d2a9b9501b0ebcb5f6ee2210d30be35a6706ebb34c7b406e21244",
+      "github_pages_sha256": "74b397e9085d2a9b9501b0ebcb5f6ee2210d30be35a6706ebb34c7b406e21244",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          219,
+          66,
+          1035,
+          1213
+        ],
+        "padding_px_left_top_right_bottom": [
+          219,
+          66,
+          219,
+          41
+        ],
+        "alpha_weighted_centroid": [
+          624.661,
+          647.18
+        ],
+        "alpha_coverage_fraction": 0.350955,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 1020634,
+        "partially_transparent_pixels": 3770,
+        "enclosed_fully_transparent_holes": 0,
+        "connected_components_alpha_gt_8": 1,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 1020634,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    },
+    "roar-mid": {
+      "imagegen_source": "design/runtime/kangaroo/audit/raw/roar-mid-generated-v1.png",
+      "alpha_master": "design/runtime/kangaroo/alpha/roar-mid-v1.png",
+      "alpha_sha256": "4498168d9b07ece553cc24feba9bdec785b4a57ceb154c95d2e0dc17087455ca",
+      "chroma_master": "design/runtime/kangaroo/chroma/roar-mid-v1.png",
+      "chroma_sha256": "14420922bf47fafc77e30de076377a200693a7eebf527a58e5bf5a94d257eefb",
+      "runtime": "public/masks/kangaroo/roar-mid-v1.webp",
+      "runtime_bytes": 252968,
+      "runtime_sha256": "59d489d71d48b377c135df9d29e14dcf21c73469378631e50893cae27244b058",
+      "github_pages_sha256": "59d489d71d48b377c135df9d29e14dcf21c73469378631e50893cae27244b058",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          219,
+          66,
+          1035,
+          1213
+        ],
+        "padding_px_left_top_right_bottom": [
+          219,
+          66,
+          219,
+          41
+        ],
+        "alpha_weighted_centroid": [
+          624.661,
+          647.18
+        ],
+        "alpha_coverage_fraction": 0.350955,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 1020634,
+        "partially_transparent_pixels": 3770,
+        "enclosed_fully_transparent_holes": 0,
+        "connected_components_alpha_gt_8": 1,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 1020634,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    },
+    "roar": {
+      "imagegen_source": "design/runtime/kangaroo/audit/raw/roar-generated-v1.png",
+      "alpha_master": "design/runtime/kangaroo/alpha/roar-v1.png",
+      "alpha_sha256": "0f780d28e25f115b5321ea15e5a0fa6b30c76275949ccd8d593982451cd46855",
+      "chroma_master": "design/runtime/kangaroo/chroma/roar-v1.png",
+      "chroma_sha256": "cb861169c354e967c6f432a23b6a4251283fe78fe69171152b61baf06a7e58de",
+      "runtime": "public/masks/kangaroo/roar-v1.webp",
+      "runtime_bytes": 251512,
+      "runtime_sha256": "7b7f14ba79a12cf8cf2fe00350e4b6dd126e228d40e5b469a041fa78d33ee36a",
+      "github_pages_sha256": "7b7f14ba79a12cf8cf2fe00350e4b6dd126e228d40e5b469a041fa78d33ee36a",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          219,
+          66,
+          1035,
+          1213
+        ],
+        "padding_px_left_top_right_bottom": [
+          219,
+          66,
+          219,
+          41
+        ],
+        "alpha_weighted_centroid": [
+          624.661,
+          647.18
+        ],
+        "alpha_coverage_fraction": 0.350955,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 1020634,
+        "partially_transparent_pixels": 3770,
+        "enclosed_fully_transparent_holes": 0,
+        "connected_components_alpha_gt_8": 1,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 1020634,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    }
+  }
+}

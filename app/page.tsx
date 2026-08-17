@@ -12,6 +12,7 @@ import {
   type FaceLandmarkerResult,
   type NormalizedLandmark,
 } from "@mediapipe/tasks-vision";
+import { blendRenderedMaskRgba, getRenderedMaskBlendWeights } from "./rendered-mask-blend.mjs";
 
 type CameraState = "idle" | "requesting" | "warming" | "live" | "error" | "off";
 
@@ -51,7 +52,10 @@ type Particle = {
   spin: number;
 };
 
-const ANIMALS: Animal[] = [
+type RenderedMaskState = "neutral" | "blink" | "roar";
+type RenderedMaskSources = Record<RenderedMaskState, string> & { roarMid?: string };
+
+const ANIMAL_ROSTER: Animal[] = [
   { id: "capybara", name: "Bubblegum Capybara", color: "#B97745", accent: "#FFD166", dark: "#4A2A20" },
   { id: "frog", name: "Disco Frog", color: "#8BD450", accent: "#F4FF74", dark: "#213C25" },
   { id: "pigeon", name: "Party Pigeon", color: "#8E9DF4", accent: "#54E0C7", dark: "#28345C" },
@@ -137,9 +141,152 @@ const ANIMALS: Animal[] = [
   { id: "seahorse", name: "Curly Seahorse", color: "#E6A84D", accent: "#FFF08C", dark: "#4B3B31" },
   { id: "stingray", name: "Flapjack Stingray", color: "#6F8FA8", accent: "#C8EDF1", dark: "#2D3C4B" },
   { id: "pufferfish", name: "Poppy Pufferfish", color: "#E6B84E", accent: "#FFF3A2", dark: "#493B2C" },
+  { id: "horse", name: "Galloping Glitter Horse", color: "#B9784D", accent: "#F3C98B", dark: "#4B3027" },
+  { id: "donkey", name: "Hee-Haw Donkey", color: "#8B8D96", accent: "#D9C5B2", dark: "#353640" },
+  { id: "sheep", name: "Baa-Baa Bounce Sheep", color: "#F2E9D5", accent: "#E9B7C2", dark: "#514A48" },
+  { id: "squirrel", name: "Acorn Acrobat Squirrel", color: "#B96F3F", accent: "#F0B875", dark: "#4A2E25" },
+  { id: "mouse", name: "Teeny-Twinkle Mouse", color: "#A9A5B5", accent: "#F5B8C8", dark: "#3D3948" },
+  { id: "hamster", name: "Cheeky Hamster", color: "#D99957", accent: "#FFF0CF", dark: "#563A2C" },
+  { id: "duck", name: "Quack Attack Duck", color: "#F2D34F", accent: "#FF9E45", dark: "#4D4126" },
+  { id: "goose", name: "Goose on the Loose", color: "#F2F0E4", accent: "#F0A54B", dark: "#414653" },
+  { id: "swan", name: "Swirly Swan", color: "#FFF9EB", accent: "#F2A8B7", dark: "#3D4050" },
+  { id: "crow", name: "Clever-Cackle Crow", color: "#394052", accent: "#747FA6", dark: "#1D2230" },
+  { id: "bumblebee", name: "Buzzy Bumblebee", color: "#F5C84B", accent: "#FFF1A1", dark: "#3D332B" },
+  { id: "butterfly", name: "Flutter-By Butterfly", color: "#A879E6", accent: "#FFB7D5", dark: "#49335F" },
+  { id: "ladybug", name: "Lucky Ladybug", color: "#EE594F", accent: "#FFAAA0", dark: "#3A292E" },
+  { id: "mantis", name: "Mighty Mantis", color: "#78BD52", accent: "#D8EE78", dark: "#315036" },
+  { id: "snail", name: "Silly-Swirl Snail", color: "#8BCB8C", accent: "#F2A66F", dark: "#3B513C" },
 ];
 
 const CONFETTI = ["#FF5B45", "#F8E542", "#64E0B8", "#9E82FF", "#FF8BC2"];
+
+const RENDERED_MASK_VERSIONS: Record<string, string> = {
+  axolotl: "v2",
+  bear: "v1",
+  bumblebee: "v1",
+  bunny: "v2",
+  capybara: "v2",
+  cat: "v1",
+  chameleon: "v2",
+  cow: "v2",
+  crocodile: "v1",
+  deer: "v1",
+  dog: "v1",
+  elephant: "v2",
+  flamingo: "v1",
+  fox: "v1",
+  frog: "v1",
+  giraffe: "v1",
+  goat: "v1",
+  gorilla: "v2",
+  hippo: "v1",
+  kangaroo: "v9",
+  koala: "v1",
+  lemur: "v7",
+  lion: "v1",
+  llama: "v1",
+  meerkat: "v1",
+  monkey: "v1",
+  octopus: "v1",
+  otter: "v2",
+  owl: "v1",
+  panda: "v2",
+  parrot: "v3",
+  pigeon: "v2",
+  pig: "v1",
+  penguin: "v2",
+  raccoon: "v1",
+  rhino: "v2",
+  shark: "v2",
+  sloth: "v5",
+  tiger: "v3",
+  unicorn: "v2",
+  zebra: "v1",
+};
+
+const ANIMALS: Animal[] = ANIMAL_ROSTER.filter((animal) => animal.id in RENDERED_MASK_VERSIONS);
+
+const RENDERED_MASK_ROAR_MID_VERSIONS: Partial<Record<string, string>> = {
+  chameleon: "v2",
+  gorilla: "v2",
+  kangaroo: "v9",
+  lemur: "v7",
+  rhino: "v2",
+  sloth: "v5",
+};
+
+const RENDERED_MASK_IDS = Object.keys(RENDERED_MASK_VERSIONS);
+
+const RENDERED_MASK_SOURCES: Partial<Record<string, RenderedMaskSources>> = Object.fromEntries(
+  Object.entries(RENDERED_MASK_VERSIONS).map(([id, version]) => {
+    const roarMidVersion = RENDERED_MASK_ROAR_MID_VERSIONS[id];
+    return [id, {
+      neutral: `./masks/${id}/neutral-${version}.webp`,
+      blink: `./masks/${id}/blink-${version}.webp`,
+      roar: `./masks/${id}/roar-${version}.webp`,
+      ...(roarMidVersion ? { roarMid: `./masks/${id}/roar-mid-${roarMidVersion}.webp` } : {}),
+    }];
+  }),
+);
+
+const renderedMaskImages = new Map<string, HTMLImageElement>();
+const renderedMaskPixels = new Map<string, Uint8ClampedArray>();
+let renderedMaskBlendCanvas: HTMLCanvasElement | null = null;
+let renderedMaskDecodeCanvas: HTMLCanvasElement | null = null;
+let renderedMaskOutput: ImageData | null = null;
+
+function getRenderedMaskBlendSurface(size: number) {
+  if (typeof document === "undefined") return null;
+  if (!renderedMaskBlendCanvas) renderedMaskBlendCanvas = document.createElement("canvas");
+  if (renderedMaskBlendCanvas.width !== size || renderedMaskBlendCanvas.height !== size) {
+    renderedMaskBlendCanvas.width = size;
+    renderedMaskBlendCanvas.height = size;
+    renderedMaskOutput = null;
+  }
+  const context = renderedMaskBlendCanvas.getContext("2d");
+  if (context) context.imageSmoothingQuality = "high";
+  return context ? { canvas: renderedMaskBlendCanvas, context } : null;
+}
+
+function getRenderedMaskPixels(image: HTMLImageElement, size: number) {
+  const key = `${image.src}@${size}`;
+  const cached = renderedMaskPixels.get(key);
+  if (cached) return cached;
+  if (typeof document === "undefined" || !image.complete || image.naturalWidth <= 0) return null;
+  if (!renderedMaskDecodeCanvas) renderedMaskDecodeCanvas = document.createElement("canvas");
+  if (renderedMaskDecodeCanvas.width !== size || renderedMaskDecodeCanvas.height !== size) {
+    renderedMaskDecodeCanvas.width = size;
+    renderedMaskDecodeCanvas.height = size;
+  }
+  const context = renderedMaskDecodeCanvas.getContext("2d");
+  if (!context) return null;
+  context.clearRect(0, 0, size, size);
+  context.drawImage(image, 0, 0, size, size);
+  const pixels = context.getImageData(0, 0, size, size).data;
+  renderedMaskPixels.set(key, pixels);
+  return pixels;
+}
+
+function loadRenderedMask(src: string) {
+  if (typeof window === "undefined") return null;
+  const cached = renderedMaskImages.get(src);
+  if (cached) return cached;
+  const image = new window.Image();
+  image.decoding = "async";
+  image.src = src;
+  renderedMaskImages.set(src, image);
+  return image;
+}
+
+function preloadRenderedMask(animalId: string) {
+  const states = RENDERED_MASK_SOURCES[animalId];
+  if (!states) return [];
+  return Object.values(states).map(loadRenderedMask).filter((image): image is HTMLImageElement => Boolean(image));
+}
+
+function preloadRenderedMasks() {
+  return RENDERED_MASK_IDS.flatMap(preloadRenderedMask);
+}
 
 const clamp = (value: number, min = 0, max = 1) => Math.max(min, Math.min(max, value));
 const mix = (from: number, to: number, amount: number) => from + (to - from) * amount;
@@ -216,6 +363,46 @@ function drawEye(
     ctx.lineCap = "round";
     ctx.stroke();
   }
+}
+
+function drawBumblebeeEye(
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  blink: number,
+  surprised: number,
+  dark: string,
+) {
+  const height = Math.max(3, 34 * (1 - blink * .94) + surprised * 8);
+
+  if (height <= 7) {
+    ctx.beginPath();
+    ctx.moveTo(x - 27, y);
+    ctx.quadraticCurveTo(x, y + 11, x + 27, y);
+    ctx.strokeStyle = dark;
+    ctx.lineWidth = 7;
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x - 18, y - 4); ctx.lineTo(x - 25, y - 9);
+    ctx.moveTo(x + 18, y - 4); ctx.lineTo(x + 25, y - 9);
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    return;
+  }
+
+  ellipse(ctx, x, y, 36, height, "#FFFBEA");
+  strokeEllipse(ctx, x, y, 36, height, dark, 5);
+  ellipse(ctx, x, y + 3, 17 + surprised * 2, 21 + surprised * 4, "#DB8B2C");
+  ellipse(ctx, x, y + 5, 9 + surprised * 2, 14 + surprised * 3, dark);
+  ellipse(ctx, x - 6, y - 7, 6, 7, "#FFFDF4");
+  ellipse(ctx, x + 5, y + 2, 2.5, 3, "rgba(255,255,255,.72)");
+
+  ctx.beginPath();
+  ctx.moveTo(x - 26, y - height - 8 - surprised * 4);
+  ctx.quadraticCurveTo(x, y - height - 16 - surprised * 7, x + 26, y - height - 8 - surprised * 4);
+  ctx.strokeStyle = dark;
+  ctx.lineWidth = 6;
+  ctx.stroke();
 }
 
 function drawMouth(ctx: CanvasRenderingContext2D, animal: Animal, pose: Pose, y = 69) {
@@ -697,6 +884,93 @@ function drawExtraBack(ctx: CanvasRenderingContext2D, animal: Animal) {
         triangle(ctx, [[x + Math.cos(side) * 13, y + Math.sin(side) * 13], [tipX, tipY], [x - Math.cos(side) * 13, y - Math.sin(side) * 13]], i % 2 ? animal.accent : animal.dark);
       }
       break;
+    case "horse":
+      triangle(ctx, [[-79,-78],[-134,-151],[-102,-35]], animal.color); triangle(ctx, [[79,-78],[134,-151],[102,-35]], animal.color);
+      triangle(ctx, [[-82,-88],[-119,-134],[-103,-59]], animal.accent); triangle(ctx, [[82,-88],[119,-134],[103,-59]], animal.accent);
+      [-46,-17,14,45].forEach((x, index) => ellipse(ctx, x, -134 - (index % 2) * 12, 25, 43, index % 2 ? animal.dark : animal.accent));
+      break;
+    case "donkey":
+      ellipse(ctx, -78, -151, 27, 82, animal.color); ellipse(ctx, 78, -151, 27, 82, animal.color);
+      ellipse(ctx, -78, -154, 11, 59, animal.accent); ellipse(ctx, 78, -154, 11, 59, animal.accent);
+      [-30,0,30].forEach((x) => ellipse(ctx, x, -132, 22, 37, animal.dark));
+      break;
+    case "sheep":
+      for (let i = 0; i < 16; i += 1) {
+        const angle = (i / 16) * Math.PI * 2;
+        ellipse(ctx, Math.cos(angle) * 112, Math.sin(angle) * 126 - 7, 42, 43, i % 2 ? animal.color : "#FFF9EA");
+      }
+      ellipse(ctx, -108, -50, 37, 53, animal.dark); ellipse(ctx, 108, -50, 37, 53, animal.dark);
+      break;
+    case "squirrel":
+      triangle(ctx, [[-81,-79],[-130,-143],[-105,-40]], animal.color); triangle(ctx, [[81,-79],[130,-143],[105,-40]], animal.color);
+      ellipse(ctx, 151, 12, 72, 111, animal.dark); ellipse(ctx, 148, 6, 47, 82, animal.accent);
+      break;
+    case "mouse":
+      ellipse(ctx, -105, -91, 58, 62, animal.color); ellipse(ctx, 105, -91, 58, 62, animal.color);
+      ellipse(ctx, -105, -91, 35, 39, animal.accent); ellipse(ctx, 105, -91, 35, 39, animal.accent);
+      break;
+    case "hamster":
+      ellipse(ctx, -91, -105, 37, 42, animal.dark); ellipse(ctx, 91, -105, 37, 42, animal.dark);
+      ellipse(ctx, -91, -105, 19, 22, animal.accent); ellipse(ctx, 91, -105, 19, 22, animal.accent);
+      break;
+    case "duck":
+      [-55,-19,19,55].forEach((x, index) => ellipse(ctx, x, -130 - (index === 1 || index === 2 ? 13 : 0), 27, 43, index % 2 ? animal.accent : animal.color));
+      triangle(ctx, [[-91,15],[-151,61],[-103,76]], animal.accent); triangle(ctx, [[91,15],[151,61],[103,76]], animal.accent);
+      break;
+    case "goose":
+      triangle(ctx, [[-92,11],[-158,56],[-104,77]], animal.color); triangle(ctx, [[92,11],[158,56],[104,77]], animal.color);
+      ellipse(ctx, 0, -137, 34, 54, animal.color); ellipse(ctx, 0, -169, 26, 23, animal.dark);
+      break;
+    case "swan":
+      triangle(ctx, [[-91,6],[-168,44],[-105,81]], animal.color); triangle(ctx, [[91,6],[168,44],[105,81]], animal.color);
+      ctx.strokeStyle = animal.color; ctx.lineWidth = 32; ctx.beginPath(); ctx.moveTo(-66,-85); ctx.bezierCurveTo(-128,-162,-24,-190,18,-140); ctx.stroke();
+      break;
+    case "crow":
+      triangle(ctx, [[-93,-4],[-164,-75],[-108,73]], animal.dark); triangle(ctx, [[93,-4],[164,-75],[108,73]], animal.dark);
+      [-43,-14,15,44].forEach((x) => triangle(ctx, [[x-20,-109],[x,-158],[x+20,-109]], animal.accent));
+      break;
+    case "bumblebee":
+      for (let index = 0; index < 14; index += 1) {
+        const angle = (index / 14) * Math.PI * 2;
+        ellipse(ctx, Math.cos(angle) * 108, Math.sin(angle) * 114 - 1, 43, 41, index % 2 ? animal.dark : "#57432C");
+      }
+      [-1,1].forEach((side) => {
+        ctx.save(); ctx.translate(side * 126, -36); ctx.rotate(side * .2);
+        ellipse(ctx, 0, 0, 63, 72, "rgba(218,246,255,.82)");
+        strokeEllipse(ctx, 0, 0, 63, 72, "rgba(61,51,43,.52)", 7);
+        ctx.strokeStyle = "rgba(61,51,43,.35)"; ctx.lineWidth = 5; ctx.beginPath();
+        ctx.moveTo(side * -34, 39); ctx.quadraticCurveTo(0, -6, side * 27, -53);
+        ctx.moveTo(side * -22, 49); ctx.quadraticCurveTo(7, 14, side * 42, -20); ctx.stroke(); ctx.restore();
+        ctx.save(); ctx.translate(side * 134, 46); ctx.rotate(side * .14);
+        ellipse(ctx, 0, 0, 49, 56, "rgba(195,235,255,.7)");
+        strokeEllipse(ctx, 0, 0, 49, 56, "rgba(61,51,43,.42)", 6); ctx.restore();
+        ctx.strokeStyle = animal.dark; ctx.lineWidth = 9; ctx.beginPath();
+        ctx.moveTo(side * 38, -101); ctx.quadraticCurveTo(side * 54, -148, side * 84, -151); ctx.stroke();
+        ellipse(ctx, side * 88, -153, 20, 20, animal.accent); strokeEllipse(ctx, side * 88, -153, 20, 20, animal.dark, 6);
+      });
+      break;
+    case "butterfly":
+      [-1,1].forEach((side) => {
+        ellipse(ctx, side * 132,-46,73,86,animal.color); ellipse(ctx,side * 144,63,58,68,animal.accent);
+        ellipse(ctx,side * 137,-48,28,35,"#FFE36E"); ellipse(ctx,side * 148,62,20,25,"#68D6C2");
+        ctx.strokeStyle = animal.dark; ctx.lineWidth = 7; ctx.beginPath(); ctx.moveTo(side * 31,-105); ctx.quadraticCurveTo(side * 67,-169,side * 104,-164); ctx.stroke();
+      });
+      break;
+    case "ladybug":
+      ellipse(ctx,-103,-11,69,116,animal.color); ellipse(ctx,103,-11,69,116,animal.color);
+      [-1,1].forEach((side) => { ctx.strokeStyle = animal.dark; ctx.lineWidth = 8; ctx.beginPath(); ctx.moveTo(side * 39,-103); ctx.quadraticCurveTo(side * 72,-165,side * 101,-158); ctx.stroke(); ellipse(ctx,side * 104,-160,14,14,animal.dark); });
+      break;
+    case "mantis":
+      [-1,1].forEach((side) => {
+        ctx.strokeStyle = animal.dark; ctx.lineWidth = 12; ctx.beginPath(); ctx.moveTo(side * 74,20); ctx.lineTo(side * 143,-48); ctx.lineTo(side * 181,9); ctx.stroke();
+        ctx.lineWidth = 7; ctx.beginPath(); ctx.moveTo(side * 42,-106); ctx.quadraticCurveTo(side * 74,-175,side * 120,-178); ctx.stroke(); ellipse(ctx,side * 123,-180,13,13,animal.accent);
+      });
+      triangle(ctx,[[-89,-79],[-139,-134],[-106,-27]],animal.color); triangle(ctx,[[89,-79],[139,-134],[106,-27]],animal.color);
+      break;
+    case "snail":
+      ellipse(ctx,137,25,91,101,animal.accent); strokeEllipse(ctx,137,25,55,62,animal.dark,10); strokeEllipse(ctx,137,25,24,29,animal.dark,8);
+      [-1,1].forEach((side) => { ctx.strokeStyle = animal.dark; ctx.lineWidth = 10; ctx.beginPath(); ctx.moveTo(side * 46,-101); ctx.quadraticCurveTo(side * 70,-164,side * 103,-169); ctx.stroke(); ellipse(ctx,side * 106,-171,17,17,animal.dark); });
+      break;
   }
 }
 
@@ -1006,6 +1280,78 @@ function drawExtraDetails(ctx: CanvasRenderingContext2D, animal: Animal) {
       [[-73,-73],[-10,-102],[65,-69],[-91,2],[88,10],[-65,72],[61,79]].forEach(([x,y], index) => ellipse(ctx, x, y, 10 + index % 2 * 4, 9 + index % 3, animal.dark));
       ellipse(ctx, -75, 28, 21, 15, "rgba(255,243,162,.65)"); ellipse(ctx, 75, 28, 21, 15, "rgba(255,243,162,.65)");
       break;
+    case "horse":
+      triangle(ctx, [[-23,-119],[0,-43],[23,-119]], animal.accent);
+      ellipse(ctx,-78,25,21,15,"rgba(243,201,139,.52)"); ellipse(ctx,78,25,21,15,"rgba(243,201,139,.52)");
+      break;
+    case "donkey":
+      ellipse(ctx,0,39,66,64,animal.accent);
+      ctx.strokeStyle = animal.dark; ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(-92,-2); ctx.quadraticCurveTo(-68,11,-49,-2); ctx.moveTo(92,-2); ctx.quadraticCurveTo(68,11,49,-2); ctx.stroke();
+      break;
+    case "sheep":
+      [-69,-35,0,35,69].forEach((x,index) => ellipse(ctx,x,-113 - (index % 2) * 9,35,34,"#FFF9EA"));
+      ellipse(ctx,-72,23,22,16,"rgba(233,183,194,.5)"); ellipse(ctx,72,23,22,16,"rgba(233,183,194,.5)");
+      break;
+    case "squirrel":
+      ellipse(ctx,-76,30,30,27,animal.accent); ellipse(ctx,76,30,30,27,animal.accent);
+      triangle(ctx,[[-20,-116],[0,-68],[20,-116]],animal.accent);
+      break;
+    case "mouse":
+      ellipse(ctx,-75,27,25,21,"rgba(245,184,200,.65)"); ellipse(ctx,75,27,25,21,"rgba(245,184,200,.65)");
+      break;
+    case "hamster":
+      ellipse(ctx,-78,25,40,47,animal.accent); ellipse(ctx,78,25,40,47,animal.accent);
+      ellipse(ctx,-62,-68,35,31,"rgba(255,240,207,.65)");
+      break;
+    case "duck":
+      ellipse(ctx,-48,-27,56,67,"rgba(255,247,205,.7)"); ellipse(ctx,48,-27,56,67,"rgba(255,247,205,.7)");
+      break;
+    case "goose":
+      ellipse(ctx,-49,-26,57,72,"#FFFDF5"); ellipse(ctx,49,-26,57,72,"#FFFDF5");
+      triangle(ctx,[[-18,-113],[0,-83],[18,-113]],animal.accent);
+      break;
+    case "swan":
+      ellipse(ctx,-50,-27,58,73,"#FFFDF8"); ellipse(ctx,50,-27,58,73,"#FFFDF8");
+      ctx.strokeStyle = animal.accent; ctx.lineWidth = 9; ctx.beginPath(); ctx.moveTo(-83,43); ctx.quadraticCurveTo(0,84,83,43); ctx.stroke();
+      break;
+    case "crow":
+      ellipse(ctx,-51,-29,58,73,animal.accent); ellipse(ctx,51,-29,58,73,animal.accent);
+      triangle(ctx,[[-22,-117],[0,-74],[22,-117]],animal.dark);
+      break;
+    case "bumblebee":
+      ctx.save();
+      ctx.beginPath(); ctx.ellipse(0, -1, 128, 123, 0, 0, Math.PI * 2); ctx.clip();
+      ctx.strokeStyle = animal.dark;
+      [-91, 86].forEach((y, index) => {
+        ctx.lineWidth = index ? 18 : 16;
+        ctx.beginPath(); ctx.moveTo(-138, y + 5);
+        ctx.quadraticCurveTo(0, y - 9 - index * 2, 138, y + 5); ctx.stroke();
+      });
+      ctx.restore();
+      [-66,-33,0,33,66].forEach((x, index) => ellipse(ctx, x, -107 - (index % 2) * 6, 36, 32, index % 2 ? animal.color : animal.accent));
+      [-1,1].forEach((side) => {
+        ctx.strokeStyle = animal.dark; ctx.lineWidth = 13; ctx.beginPath();
+        ctx.moveTo(side * 89, -1); ctx.quadraticCurveTo(side * 106, 5, side * 119, 13); ctx.stroke();
+      });
+      ellipse(ctx, -83, 35, 31, 24, "rgba(247,126,108,.62)"); ellipse(ctx, 83, 35, 31, 24, "rgba(247,126,108,.62)");
+      [[-105,-51],[104,-51],[-108,59],[108,58]].forEach(([x,y]) => ellipse(ctx,x,y,8,8,"rgba(255,247,194,.78)"));
+      break;
+    case "butterfly":
+      ellipse(ctx,0,-43,30,75,animal.dark); ellipse(ctx,0,61,39,67,animal.dark);
+      ellipse(ctx,-74,22,22,18,"rgba(255,227,110,.7)"); ellipse(ctx,74,22,22,18,"rgba(255,227,110,.7)");
+      break;
+    case "ladybug":
+      [[-73,-70],[0,-91],[72,-68],[-87,8],[86,9],[-61,73],[61,73]].forEach(([x,y]) => ellipse(ctx,x,y,17,19,animal.dark));
+      ctx.strokeStyle = animal.dark; ctx.lineWidth = 10; ctx.beginPath(); ctx.moveTo(0,-112); ctx.lineTo(0,109); ctx.stroke();
+      break;
+    case "mantis":
+      triangle(ctx,[[-105,-74],[-31,-34],[-93,36]],animal.accent); triangle(ctx,[[105,-74],[31,-34],[93,36]],animal.accent);
+      ellipse(ctx,0,3,34,105,animal.dark); ellipse(ctx,0,-8,15,82,animal.accent);
+      break;
+    case "snail":
+      [[-74,-69],[-9,-98],[67,-70],[-88,3],[83,15],[-57,72],[57,76]].forEach(([x,y],index) => ellipse(ctx,x,y,11 + index % 2 * 4,9 + index % 3,animal.accent));
+      ellipse(ctx,-73,27,21,15,"rgba(242,166,111,.45)"); ellipse(ctx,73,27,21,15,"rgba(242,166,111,.45)");
+      break;
   }
 }
 
@@ -1014,15 +1360,15 @@ function drawExtraMouth(ctx: CanvasRenderingContext2D, animal: Animal, pose: Pos
   const muzzleIds = [
     "panda", "lion", "giraffe", "zebra", "fox", "bunny", "dog", "cat", "sloth", "bear", "deer", "unicorn",
     "kangaroo", "gorilla", "lemur", "meerkat", "redpanda", "leopard", "cheetah", "wolf", "moose", "ram", "alpaca", "bat", "seal", "armadillo",
-    "okapi", "hyena", "porcupine", "skunk", "hedgehog",
+    "okapi", "hyena", "porcupine", "skunk", "hedgehog", "horse", "donkey", "sheep", "squirrel", "mouse", "hamster",
   ];
   if (muzzleIds.includes(animal.id)) {
-    const wide = ["lion", "bear", "panda", "gorilla", "moose", "seal", "hyena", "porcupine", "hedgehog"].includes(animal.id);
+    const wide = ["lion", "bear", "panda", "gorilla", "moose", "seal", "hyena", "porcupine", "hedgehog", "horse", "donkey", "sheep", "hamster"].includes(animal.id);
     ellipse(ctx, 0, 39, wide ? 58 : 49, wide ? 46 : 40, animal.accent);
-    const tinyNose = ["bunny", "meerkat", "bat", "hedgehog"].includes(animal.id);
+    const tinyNose = ["bunny", "meerkat", "bat", "hedgehog", "squirrel", "mouse", "hamster"].includes(animal.id);
     ellipse(ctx, 0, 24, tinyNose ? 13 : 18, tinyNose ? 10 : 13, animal.dark);
     drawMouth(ctx, animal, pose, 68);
-    if (["fox", "bunny", "cat", "lemur", "redpanda", "leopard", "cheetah", "wolf", "seal", "porcupine", "skunk", "hedgehog"].includes(animal.id)) {
+    if (["fox", "bunny", "cat", "lemur", "redpanda", "leopard", "cheetah", "wolf", "seal", "porcupine", "skunk", "hedgehog", "squirrel", "mouse", "hamster"].includes(animal.id)) {
       ctx.strokeStyle = animal.dark;
       ctx.lineWidth = 3;
       [-1, 1].forEach((side) => {
@@ -1080,6 +1426,14 @@ function drawExtraMouth(ctx: CanvasRenderingContext2D, animal: Animal, pose: Pos
     const beak = animal.id === "parrot" ? "#FF9E43" : animal.id === "penguin" ? "#FFB23E" : animal.accent;
     triangle(ctx, [[-36, 27], [0, -2], [36, 27]], beak);
     triangle(ctx, [[-34, 29], [0, 55 + surprised * 18], [34, 29]], animal.id === "owl" ? "#E5A642" : "#F17842");
+    return true;
+  }
+  if (["duck", "goose", "swan", "crow"].includes(animal.id)) {
+    const halfWidth = animal.id === "goose" ? 58 : animal.id === "swan" ? 52 : animal.id === "duck" ? 64 : 47;
+    const beak = animal.id === "crow" ? animal.dark : animal.id === "swan" ? "#F08066" : animal.accent;
+    triangle(ctx, [[-halfWidth,24],[0,-4],[halfWidth,24]], beak);
+    triangle(ctx, [[-halfWidth + 5,29],[0,59 + surprised * 20],[halfWidth - 5,29]], animal.id === "crow" ? animal.accent : "#E77F39");
+    if (animal.id === "swan") ellipse(ctx, 0, 8, 12, 9, animal.dark);
     return true;
   }
   if (animal.id === "flamingo") {
@@ -1285,7 +1639,92 @@ function drawExtraMouth(ctx: CanvasRenderingContext2D, animal: Animal, pose: Pos
     if (open > .28) ellipse(ctx, 0, 47 + open * 7, 15 + open * 5, 11 + open * 7, animal.dark);
     return true;
   }
+  if (animal.id === "bumblebee") {
+    ellipse(ctx, -18, 37, 34, 30, animal.accent); ellipse(ctx, 18, 37, 34, 30, animal.accent);
+    strokeEllipse(ctx, 0, 39, 53, 39, "rgba(61,51,43,.3)", 5);
+    ellipse(ctx, 0, 29, 8, 7, animal.dark);
+    if (open > .06) {
+      ellipse(ctx, 0, 54 + open * 6, 22 + open * 9, 7 + open * 25, animal.dark);
+      if (open > .3) ellipse(ctx, 0, 64 + open * 12, 16 + open * 3, 6 + open * 7, "#FF7794");
+      if (open > .68) {
+        ellipse(ctx, -8, 47, 8, 6, "#FFFBEA"); ellipse(ctx, 8, 47, 8, 6, "#FFFBEA");
+      }
+    } else {
+      ctx.beginPath(); ctx.moveTo(-24, 54); ctx.quadraticCurveTo(0, 72 + pose.smile * 7, 24, 54);
+      ctx.strokeStyle = animal.dark; ctx.lineWidth = 6; ctx.stroke();
+      ellipse(ctx, -27, 54, 4, 4, animal.dark); ellipse(ctx, 27, 54, 4, 4, animal.dark);
+    }
+    return true;
+  }
+  if (["butterfly", "ladybug", "mantis"].includes(animal.id)) {
+    const mouthWidth = animal.id === "mantis" ? 39 : animal.id === "butterfly" ? 44 : 34;
+    ellipse(ctx, 0, 48 + open * 7, mouthWidth, 12 + open * 24, animal.dark);
+    if (open > .28) ellipse(ctx, 0, 57 + open * 10, mouthWidth * .55, 6 + open * 7, "#FF85A2");
+    return true;
+  }
+  if (animal.id === "snail") {
+    ctx.strokeStyle = animal.dark; ctx.lineWidth = 8; ctx.beginPath(); ctx.moveTo(-46,45); ctx.quadraticCurveTo(0,72 + pose.smile * 13 + open * 15,46,45); ctx.stroke();
+    if (open > .32) ellipse(ctx,0,59 + open * 8,18 + open * 8,7 + open * 11,"#FF8E9D");
+    return true;
+  }
   return false;
+}
+
+function drawRenderedMask(
+  ctx: CanvasRenderingContext2D,
+  animal: Animal,
+  pose: Pose,
+  coverageX: number,
+  coverageY: number,
+) {
+  const sources = RENDERED_MASK_SOURCES[animal.id];
+  if (!sources) return false;
+  const neutral = loadRenderedMask(sources.neutral);
+  const blink = loadRenderedMask(sources.blink);
+  const roar = loadRenderedMask(sources.roar);
+  const roarMid = sources.roarMid ? loadRenderedMask(sources.roarMid) : null;
+  const images = [neutral, blink, roar, ...(sources.roarMid ? [roarMid] : [])];
+  if (!images.every((image) => image?.complete && image.naturalWidth > 0)) return false;
+
+  const blinkWeight = clamp(Math.max(pose.blinkLeft, pose.blinkRight) * 1.14);
+  const roarWeight = clamp((pose.mouth - .08) * 1.22);
+  const blendWeights = getRenderedMaskBlendWeights(blinkWeight, roarWeight, Boolean(sources.roarMid));
+  const drawX = -190;
+  const drawY = -225;
+  const drawSize = 380;
+  const blendSurface = getRenderedMaskBlendSurface(drawSize);
+  if (!blendSurface) return false;
+  const neutralPixels = getRenderedMaskPixels(neutral!, drawSize);
+  const blinkPixels = getRenderedMaskPixels(blink!, drawSize);
+  const roarPixels = getRenderedMaskPixels(roar!, drawSize);
+  const roarMidPixels = roarMid ? getRenderedMaskPixels(roarMid, drawSize) : null;
+  if (!neutralPixels || !blinkPixels || !roarPixels || (roarMid && !roarMidPixels)) return false;
+
+  const { canvas: blendCanvas, context: blendCtx } = blendSurface;
+  if (!renderedMaskOutput || renderedMaskOutput.width !== drawSize) {
+    renderedMaskOutput = blendCtx.createImageData(drawSize, drawSize);
+  }
+  blendRenderedMaskRgba(
+    {
+      neutral: neutralPixels,
+      blink: blinkPixels,
+      roarMid: roarMidPixels,
+      roar: roarPixels,
+    },
+    blendWeights,
+    renderedMaskOutput.data,
+  );
+  blendCtx.putImageData(renderedMaskOutput, 0, 0);
+
+  ctx.save();
+  ctx.scale(1, coverageX / coverageY);
+  ctx.globalAlpha = 1;
+  ctx.drawImage(blendCanvas, drawX, drawY, drawSize, drawSize);
+  ctx.shadowColor = "transparent";
+  ctx.shadowBlur = 0;
+  ctx.shadowOffsetY = 0;
+  ctx.restore();
+  return true;
 }
 
 function drawAnimal(ctx: CanvasRenderingContext2D, animalIndex: number, pose: Pose, time: number) {
@@ -1304,6 +1743,11 @@ function drawAnimal(ctx: CanvasRenderingContext2D, animalIndex: number, pose: Po
   ctx.shadowColor = "rgba(31, 19, 46, .26)";
   ctx.shadowBlur = 20;
   ctx.shadowOffsetY = 9;
+
+  if (drawRenderedMask(ctx, animal, pose, coverageX, coverageY)) {
+    ctx.restore();
+    return;
+  }
 
   if (animal.id === "capybara") {
     ellipse(ctx, -92, -96, 30, 42, animal.dark);
@@ -1374,8 +1818,11 @@ function drawAnimal(ctx: CanvasRenderingContext2D, animalIndex: number, pose: Po
   }
 
   ctx.shadowBlur = 0;
-  ellipse(ctx, 0, -5, 124, 139, animal.color);
-  strokeEllipse(ctx, 0, -5, 124, 139, animal.dark, 7);
+  const faceX = animal.id === "bumblebee" ? 132 : 124;
+  const faceY = animal.id === "bumblebee" ? 126 : 139;
+  const faceCenterY = animal.id === "bumblebee" ? -1 : -5;
+  ellipse(ctx, 0, faceCenterY, faceX, faceY, animal.color);
+  strokeEllipse(ctx, 0, faceCenterY, faceX, faceY, animal.dark, 7);
 
   if (animal.id === "raccoon") {
     ctx.save();
@@ -1418,10 +1865,15 @@ function drawAnimal(ctx: CanvasRenderingContext2D, animalIndex: number, pose: Po
 
   drawExtraDetails(ctx, animal);
 
-  const eyeY = animal.id === "frog" ? -50 : animal.id === "owl" ? -32 : -35;
-  const eyeX = animal.id === "frog" ? 72 : ["owl", "chameleon"].includes(animal.id) ? 62 : 48;
-  drawEye(ctx, -eyeX, eyeY, pose.blinkLeft, animal.dark, surprised);
-  drawEye(ctx, eyeX, eyeY, pose.blinkRight, animal.dark, surprised);
+  if (animal.id === "bumblebee") {
+    drawBumblebeeEye(ctx, -43, -40, pose.blinkLeft, surprised, animal.dark);
+    drawBumblebeeEye(ctx, 43, -40, pose.blinkRight, surprised, animal.dark);
+  } else {
+    const eyeY = animal.id === "frog" ? -50 : animal.id === "owl" ? -32 : animal.id === "mantis" ? -43 : -35;
+    const eyeX = animal.id === "frog" ? 72 : ["owl", "chameleon", "mantis", "snail"].includes(animal.id) ? 62 : 48;
+    drawEye(ctx, -eyeX, eyeY, pose.blinkLeft, animal.dark, surprised);
+    drawEye(ctx, eyeX, eyeY, pose.blinkRight, animal.dark, surprised);
+  }
 
   if (drawExtraMouth(ctx, animal, pose, surprised)) {
     // Extra zoo animals draw their own distinct muzzles, beaks, trunks, and smiles.
@@ -1471,6 +1923,14 @@ const GALLERY_POSES: Record<GalleryPose, Omit<Pose, "x" | "y" | "scale" | "angle
   roar: { blinkLeft: .04, blinkRight: .04, mouth: 1, smile: .92 },
 };
 
+const RENDERED_BASELINES: Partial<Record<string, Record<GalleryPose, string>>> = {
+  bumblebee: {
+    neutral: "./design/baselines/bumblebee-chibi-neutral-v1.webp",
+    blink: "./design/baselines/bumblebee-chibi-blink-v1.webp",
+    roar: "./design/baselines/bumblebee-chibi-roar-v1.webp",
+  },
+};
+
 function DiagnosticSheet({ poseName }: { poseName: GalleryPose }) {
   const ref = useRef<HTMLCanvasElement>(null);
 
@@ -1485,38 +1945,47 @@ function DiagnosticSheet({ poseName }: { poseName: GalleryPose }) {
     canvas.height = rows * cellHeight;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
-    ctx.fillStyle = "#FFF8E8";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ANIMALS.forEach((animal, animalIndex) => {
-      const column = animalIndex % columns;
-      const row = Math.floor(animalIndex / columns);
-      const x = column * cellWidth;
-      const y = row * cellHeight;
-      ctx.fillStyle = (column + row) % 2 ? "#FFFDF7" : "#F4EBD7";
-      ctx.fillRect(x + 6, y + 6, cellWidth - 12, cellHeight - 12);
-      ctx.strokeStyle = "rgba(36,25,48,.18)";
-      ctx.lineWidth = 3;
-      ctx.strokeRect(x + 6, y + 6, cellWidth - 12, cellHeight - 12);
-      drawAnimal(ctx, animalIndex, {
-        x: x + cellWidth / 2,
-        y: y + 142,
-        scale: .47,
-        angle: 0,
-        ...GALLERY_POSES[poseName],
-      }, 0);
-      ctx.shadowColor = "transparent";
-      ctx.fillStyle = "#241930";
-      ctx.textAlign = "center";
-      ctx.font = "900 15px Arial";
-      ctx.fillText(`${String(animalIndex + 1).padStart(2, "0")} · ${animal.name}`, x + cellWidth / 2, y + 276);
+    let cancelled = false;
+    const draw = () => {
+      ctx.fillStyle = "#FFF8E8";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ANIMALS.forEach((animal, animalIndex) => {
+        const column = animalIndex % columns;
+        const row = Math.floor(animalIndex / columns);
+        const x = column * cellWidth;
+        const y = row * cellHeight;
+        ctx.fillStyle = (column + row) % 2 ? "#FFFDF7" : "#F4EBD7";
+        ctx.fillRect(x + 6, y + 6, cellWidth - 12, cellHeight - 12);
+        ctx.strokeStyle = "rgba(36,25,48,.18)";
+        ctx.lineWidth = 3;
+        ctx.strokeRect(x + 6, y + 6, cellWidth - 12, cellHeight - 12);
+        drawAnimal(ctx, animalIndex, {
+          x: x + cellWidth / 2,
+          y: y + 142,
+          scale: .47,
+          angle: 0,
+          ...GALLERY_POSES[poseName],
+        }, 0);
+        ctx.shadowColor = "transparent";
+        ctx.fillStyle = "#241930";
+        ctx.textAlign = "center";
+        ctx.font = "900 15px Arial";
+        ctx.fillText(`${String(animalIndex + 1).padStart(2, "0")} · ${animal.name}`, x + cellWidth / 2, y + 276);
+      });
+    };
+
+    draw();
+    Promise.all(preloadRenderedMasks().map((image) => image.decode().catch(() => undefined))).then(() => {
+      if (!cancelled) draw();
     });
+    return () => { cancelled = true; };
   }, [poseName]);
 
   const download = () => {
     const canvas = ref.current;
     if (!canvas) return;
     const link = document.createElement("a");
-    link.download = `giggle-zoo-${poseName}-85.png`;
+    link.download = `giggle-zoo-${poseName}-${ANIMALS.length}.png`;
     link.href = canvas.toDataURL("image/png");
     link.click();
   };
@@ -1524,15 +1993,154 @@ function DiagnosticSheet({ poseName }: { poseName: GalleryPose }) {
   return (
     <section className="diagnostic-sheet" data-gallery-pose={poseName}>
       <div className="diagnostic-sheet-heading">
-        <div><span>Actual renderer · 85 / 85</span><h2>{poseName} pose</h2></div>
+        <div><span>Actual renderer · {ANIMALS.length} / {ANIMALS.length}</span><h2>{poseName} pose</h2></div>
         <button type="button" onClick={download}>Download PNG</button>
       </div>
-      <canvas ref={ref} aria-label={`All 85 Giggle Zoo masks in the ${poseName} pose`} />
+      <canvas ref={ref} aria-label={`All ${ANIMALS.length} Giggle Zoo masks in the ${poseName} pose`} />
     </section>
   );
 }
 
-function DiagnosticGallery() {
+function DiagnosticSpotlight({ animalIndex, poseName }: { animalIndex: number; poseName: GalleryPose }) {
+  const ref = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = ref.current;
+    if (!canvas) return;
+    canvas.width = 520;
+    canvas.height = 520;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    ctx.fillStyle = poseName === "neutral" ? "#FFE058" : poseName === "blink" ? "#31D3B4" : "#FF5B49";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "rgba(255,253,247,.82)";
+    ctx.beginPath(); ctx.arc(260, 248, 205, 0, Math.PI * 2); ctx.fill();
+    drawAnimal(ctx, animalIndex, {
+      x: 260,
+      y: 255,
+      scale: .78,
+      angle: 0,
+      ...GALLERY_POSES[poseName],
+    }, 0);
+  }, [animalIndex, poseName]);
+
+  return (
+    <article className="diagnostic-spotlight-card" data-gallery-pose={poseName}>
+      <div><span>{poseName === "neutral" ? "Hello" : poseName === "blink" ? "Blink" : "Big roar"}</span><strong>{poseName}</strong></div>
+      <canvas ref={ref} aria-label={`${ANIMALS[animalIndex].name} in the ${poseName} pose`} />
+    </article>
+  );
+}
+
+function RenderedSpotlight({ animal, poseName, src }: { animal: Animal; poseName: GalleryPose; src: string }) {
+  return (
+    <article className="diagnostic-spotlight-card diagnostic-rendered-card" data-gallery-pose={poseName} data-render-source="imagegen">
+      <div><span>{poseName === "neutral" ? "Hello" : poseName === "blink" ? "Blink" : "Big roar"}</span><strong>{poseName}</strong></div>
+      <img src={src} alt={`${animal.name} rendered in the ${poseName} pose`} />
+    </article>
+  );
+}
+
+function RenderedMaskProof({ animalIndex }: { animalIndex: number }) {
+  const ref = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    preloadRenderedMask(ANIMALS[animalIndex].id);
+    const canvas = ref.current;
+    const ctx = canvas?.getContext("2d");
+    if (!canvas || !ctx) return;
+    canvas.width = 920;
+    canvas.height = 560;
+    let frame = 0;
+    const start = performance.now();
+    const ease = (value: number) => {
+      const safe = clamp(value);
+      return safe * safe * (3 - 2 * safe);
+    };
+
+    const render = (now: number) => {
+      const phase = ((now - start) % 7200) / 7200;
+      const blinkIn = ease((phase - .18) / .035);
+      const blinkOut = 1 - ease((phase - .34) / .055);
+      const blink = clamp(Math.min(blinkIn, blinkOut));
+      const roarIn = ease((phase - .5) / .13);
+      const roarOut = 1 - ease((phase - .82) / .13);
+      const mouth = .08 + .92 * clamp(Math.min(roarIn, roarOut));
+
+      const backdrop = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+      backdrop.addColorStop(0, "#31D3B4");
+      backdrop.addColorStop(.52, "#FFE058");
+      backdrop.addColorStop(1, "#FF7562");
+      ctx.fillStyle = backdrop;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "rgba(255,253,247,.58)";
+      ctx.beginPath(); ctx.arc(460, 280, 245, 0, Math.PI * 2); ctx.fill();
+      drawAnimal(ctx, animalIndex, {
+        x: 460,
+        y: 304,
+        scale: 1.12,
+        angle: Math.sin(now / 900) * .025,
+        blinkLeft: blink,
+        blinkRight: blink,
+        mouth,
+        smile: .82,
+      }, now);
+      frame = requestAnimationFrame(render);
+    };
+
+    frame = requestAnimationFrame(render);
+    return () => cancelAnimationFrame(frame);
+  }, [animalIndex]);
+
+  return (
+    <section className="runtime-mask-proof" data-runtime-mask={ANIMALS[animalIndex].id}>
+      <div><span>Runtime proof</span><strong>Neutral → blink → roar</strong><p>Transparent rendered states, smoothly blended by the same expression inputs used by the live camera.</p></div>
+      <canvas ref={ref} aria-label={`${ANIMALS[animalIndex].name} animated rendered-mask transition proof`} />
+    </section>
+  );
+}
+
+function DiagnosticGallery({ focusId }: { focusId?: string }) {
+  const focusIndex = focusId ? ANIMALS.findIndex((animal) => animal.id === focusId) : -1;
+
+  if (focusIndex >= 0) {
+    const animal = ANIMALS[focusIndex];
+    const renderedBaseline = RENDERED_BASELINES[animal.id];
+    const renderedMask = RENDERED_MASK_SOURCES[animal.id];
+    const renderedStates = renderedBaseline ?? renderedMask;
+    return (
+      <main className="diagnostic-gallery diagnostic-gallery-focus" data-animal-count={ANIMALS.length} data-focus-animal={animal.id} data-review-source={renderedStates ? "imagegen" : "canvas"}>
+        <header>
+          <a href="./">← Giggle Zoo!</a>
+          <a href="?gallery=1">See all {ANIMALS.length} masks →</a>
+        </header>
+        <div className="diagnostic-intro">
+          <p className="eyebrow"><span>{renderedStates ? "Rendered mask" : "Approval candidate"}</span> {renderedStates ? "ImageGen character states" : "Same renderer as the live camera"}</p>
+          <h1>{animal.name}.<br /><em>Three big moods.</em></h1>
+          <p>{renderedStates ? "The actual rendered character states used by the live asset-based mask system." : "One character, enlarged for a close look at silhouette, surface detail, eye language, and mouth response before the visual system expands across the whole zoo."}</p>
+        </div>
+        <section className="diagnostic-spotlight-grid" aria-label={`${animal.name} state comparison`}>
+          {renderedStates ? (
+            (Object.keys(GALLERY_POSES) as GalleryPose[]).map((poseName) => (
+              <RenderedSpotlight key={poseName} animal={animal} poseName={poseName} src={renderedStates[poseName]} />
+            ))
+          ) : (
+            <>
+              <DiagnosticSpotlight animalIndex={focusIndex} poseName="neutral" />
+              <DiagnosticSpotlight animalIndex={focusIndex} poseName="blink" />
+              <DiagnosticSpotlight animalIndex={focusIndex} poseName="roar" />
+            </>
+          )}
+        </section>
+        {renderedMask ? <RenderedMaskProof animalIndex={focusIndex} /> : null}
+        <section className="diagnostic-approval-note">
+          <span>{renderedStates ? "Rendered quality bar" : "What this direction establishes"}</span>
+          <p>{renderedStates ? "This animal uses a consistent rendered state set. The live mask layer positions and transitions those assets instead of redrawing them as simplified procedural shapes." : "A chibi-forward species silhouette, oversized expressive eyes, compact plush proportions, layered materials, and reactions that stay cute without losing the character."}</p>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <main className="diagnostic-gallery" data-animal-count={ANIMALS.length}>
       <header>
@@ -1541,7 +2149,7 @@ function DiagnosticGallery() {
       </header>
       <div className="diagnostic-intro">
         <p className="eyebrow"><span>Keeper check</span> Same drawing code as the live camera</p>
-        <h1>All 85 faces.<br /><em>Three big moods.</em></h1>
+        <h1>All {ANIMALS.length} faces.<br /><em>Three big moods.</em></h1>
         <p>Every tile below calls the exact canvas mask renderer used on tracked faces. Download a full-resolution sheet for close inspection.</p>
       </div>
       <DiagnosticSheet poseName="neutral" />
@@ -1586,6 +2194,7 @@ export default function Home() {
   const countRef = useRef(0);
   const particlesRef = useRef<Particle[]>([]);
   const featuredAnimalRef = useRef(3);
+  const forcedAnimalRef = useRef<number | null>(null);
   const mountedRef = useRef(true);
   const stateRef = useRef<CameraState>("idle");
   const [cameraState, setCameraState] = useState<CameraState>("idle");
@@ -1595,7 +2204,7 @@ export default function Home() {
   const [shuffleCount, setShuffleCount] = useState(0);
   const [canFullscreen, setCanFullscreen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [diagnosticMode, setDiagnosticMode] = useState(false);
+  const [diagnosticMode, setDiagnosticMode] = useState<string | null>(null);
 
   const updateCameraState = useCallback((next: CameraState) => {
     stateRef.current = next;
@@ -1753,9 +2362,11 @@ export default function Home() {
           },
         });
       } else {
+        const animalIndex = forcedAnimalRef.current ?? randomAnimal();
+        preloadRenderedMask(ANIMALS[animalIndex].id);
         updated.push({
           id: nextTrackIdRef.current++,
-          animal: randomAnimal(),
+          animal: animalIndex,
           pose,
           lastSeen: now,
         });
@@ -1856,9 +2467,11 @@ export default function Home() {
     let featured = randomAnimal(featuredAnimalRef.current);
     tracksRef.current = tracksRef.current.map((track, index) => {
       const next = randomAnimal(track.animal);
+      preloadRenderedMask(ANIMALS[next].id);
       if (index === 0) featured = next;
       return { ...track, animal: next };
     });
+    preloadRenderedMask(ANIMALS[featured].id);
     featuredAnimalRef.current = featured;
     setCurrentAnimal(ANIMALS[featured].name);
     setShuffleCount((count) => count + 1);
@@ -1902,7 +2515,16 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    setDiagnosticMode(new URLSearchParams(window.location.search).get("gallery") === "1");
+    const params = new URLSearchParams(window.location.search);
+    setDiagnosticMode(params.get("gallery"));
+    const forcedId = params.get("animal");
+    const forcedIndex = forcedId ? ANIMALS.findIndex((animal) => animal.id === forcedId) : -1;
+    forcedAnimalRef.current = forcedIndex >= 0 ? forcedIndex : null;
+    if (forcedIndex >= 0) {
+      featuredAnimalRef.current = forcedIndex;
+      preloadRenderedMask(ANIMALS[forcedIndex].id);
+      setCurrentAnimal(ANIMALS[forcedIndex].name);
+    }
   }, []);
 
   useEffect(() => {
@@ -1927,7 +2549,7 @@ export default function Home() {
   const isBusy = cameraState === "requesting" || cameraState === "warming";
   const isLive = cameraState === "live";
 
-  if (diagnosticMode) return <DiagnosticGallery />;
+  if (diagnosticMode) return <DiagnosticGallery focusId={diagnosticMode === "1" ? undefined : diagnosticMode} />;
 
   return (
     <main className="site-shell">
@@ -1962,7 +2584,7 @@ export default function Home() {
             <p className="microcopy">Grown-up note: no account and no uploads. Everything happens on this device.</p>
           </div>
           <div className="quick-facts" aria-label="Game facts">
-            <div><strong>85</strong><span>Silly zoo pals</span></div>
+            <div><strong>{ANIMALS.length}</strong><span>Silly zoo pals</span></div>
             <div><strong>6</strong><span>Friends at once</span></div>
             <div><strong>0</strong><span>Photos saved</span></div>
           </div>

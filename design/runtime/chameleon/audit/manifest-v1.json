@@ -1,0 +1,268 @@
+{
+  "animal": "chameleon",
+  "name": "Color-Pop Chameleon",
+  "version": "v1",
+  "generation_route": "built-in ImageGen; Bumblebee v1 was finish/composition reference only; blink, semantic roar midpoint, and roar used generated neutral as sole edit target",
+  "semantic_roar_midpoint": "Authored because the three-state neutral-to-roar audit showed a separate smile and O-mouth at early weights.",
+  "chroma_key": "#ff00ff",
+  "generated_sources_preserved_under_audit": {
+    "neutral": "design/runtime/chameleon/audit/generated-neutral-v1.png",
+    "blink": "design/runtime/chameleon/audit/generated-blink-v1.png",
+    "roar-mid": "design/runtime/chameleon/audit/generated-roar-mid-v1.png",
+    "roar": "design/runtime/chameleon/audit/generated-roar-v1.png"
+  },
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "method": 6,
+    "alpha_quality": 100
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      297904,
+      310338,
+      294050,
+      292332
+    ]
+  },
+  "master_alpha_pixel_hashes": {
+    "neutral": "2f849179b87cb3d8d46cf77764ec64b5ea89dbe6e923ec35c653903a36065b6b",
+    "blink": "2f849179b87cb3d8d46cf77764ec64b5ea89dbe6e923ec35c653903a36065b6b",
+    "roar-mid": "2f849179b87cb3d8d46cf77764ec64b5ea89dbe6e923ec35c653903a36065b6b",
+    "roar": "2f849179b87cb3d8d46cf77764ec64b5ea89dbe6e923ec35c653903a36065b6b"
+  },
+  "master_alpha_pixel_hashes_identical": true,
+  "runtime_alpha_pixel_hashes": {
+    "neutral": "2f849179b87cb3d8d46cf77764ec64b5ea89dbe6e923ec35c653903a36065b6b",
+    "blink": "2f849179b87cb3d8d46cf77764ec64b5ea89dbe6e923ec35c653903a36065b6b",
+    "roar-mid": "2f849179b87cb3d8d46cf77764ec64b5ea89dbe6e923ec35c653903a36065b6b",
+    "roar": "2f849179b87cb3d8d46cf77764ec64b5ea89dbe6e923ec35c653903a36065b6b"
+  },
+  "runtime_alpha_pixel_hashes_identical": true,
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 259604,
+      "changed_visible_percent": 37.6135,
+      "changed_bbox": [
+        156,
+        413,
+        1095,
+        905
+      ],
+      "outside_localization_max_channel_delta": 0
+    },
+    "roar-mid": {
+      "changed_visible_pixels": 60663,
+      "changed_visible_percent": 8.7893,
+      "changed_bbox": [
+        471,
+        823,
+        781,
+        1110
+      ],
+      "outside_localization_max_channel_delta": 0
+    },
+    "roar": {
+      "changed_visible_pixels": 62056,
+      "changed_visible_percent": 8.9912,
+      "changed_bbox": [
+        471,
+        823,
+        783,
+        1110
+      ],
+      "outside_localization_max_channel_delta": 0
+    }
+  },
+  "species_read": {
+    "chameleon_markers": [
+      "tall casque ridge",
+      "paired turret-eye domes",
+      "pebbled reptile skin",
+      "curled cheek silhouette"
+    ],
+    "frog_confusion_check": "Compared against shipped Disco Frog; chameleon keeps a tall dorsal casque and turret-eye architecture.",
+    "lizard_confusion_check": "No generic-lizard pack exists; omission of body/tail plus the casque and turret eyes keeps the face specifically chameleon."
+  },
+  "states": {
+    "neutral": {
+      "chroma": "design/runtime/chameleon/chroma/neutral-v1.png",
+      "chroma_sha256": "269e39a09e74d12d2f0ac86e1f5c9f48c5e4871f2ed8b5814f328498a4f04d7d",
+      "alpha_master": "design/runtime/chameleon/alpha/neutral-v1.png",
+      "alpha_sha256": "2a923fe5c8fc5cee7d6c18f06f4a0dbc3e4de9c6aba14bf677d21609899920fa",
+      "runtime": "public/masks/chameleon/neutral-v1.webp",
+      "runtime_bytes": 297904,
+      "runtime_sha256": "35a40fc94676fd6504c3bda0cd7c4a2c887933a00199466c5403798155c520e9",
+      "github_pages_sha256": "35a40fc94676fd6504c3bda0cd7c4a2c887933a00199466c5403798155c520e9",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          130,
+          139,
+          1122,
+          1133
+        ],
+        "padding_px_left_top_right_bottom": [
+          130,
+          139,
+          132,
+          121
+        ],
+        "alpha_weighted_centroid": [
+          625.141,
+          705.926
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3052,
+        "enclosed_fully_transparent_holes": 0,
+        "magenta_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "chroma": "design/runtime/chameleon/chroma/blink-v1.png",
+      "chroma_sha256": "40a3c59c675e741719294c0104a4de3b44216e3c6275fc8f789f6a0de57e3e9c",
+      "alpha_master": "design/runtime/chameleon/alpha/blink-v1.png",
+      "alpha_sha256": "2d0c1c1450b1a40672189fba52186ffebc600223ee7d3813c92a6bf68e9fd84e",
+      "runtime": "public/masks/chameleon/blink-v1.webp",
+      "runtime_bytes": 310338,
+      "runtime_sha256": "d0d4d169dba58512cc59fd86a49311696f411d8acaa4563e5bf23c125278b97b",
+      "github_pages_sha256": "d0d4d169dba58512cc59fd86a49311696f411d8acaa4563e5bf23c125278b97b",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          130,
+          139,
+          1122,
+          1133
+        ],
+        "padding_px_left_top_right_bottom": [
+          130,
+          139,
+          132,
+          121
+        ],
+        "alpha_weighted_centroid": [
+          625.141,
+          705.926
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3052,
+        "enclosed_fully_transparent_holes": 0,
+        "magenta_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar-mid": {
+      "chroma": "design/runtime/chameleon/chroma/roar-mid-v1.png",
+      "chroma_sha256": "bdfbbfa58e3af9bfff01d18d967e92b19b81f77a17c3dcdcbafe8af2914827eb",
+      "alpha_master": "design/runtime/chameleon/alpha/roar-mid-v1.png",
+      "alpha_sha256": "3d3b2919e536b9499089a378fa87b4fc784a90f52ef7f9526ac82b5f54ccf220",
+      "runtime": "public/masks/chameleon/roar-mid-v1.webp",
+      "runtime_bytes": 294050,
+      "runtime_sha256": "f15f8239997ffd36f3dbd2953ec881e9fd61c0282d0265a7e65abf90bf47bb05",
+      "github_pages_sha256": "f15f8239997ffd36f3dbd2953ec881e9fd61c0282d0265a7e65abf90bf47bb05",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          130,
+          139,
+          1122,
+          1133
+        ],
+        "padding_px_left_top_right_bottom": [
+          130,
+          139,
+          132,
+          121
+        ],
+        "alpha_weighted_centroid": [
+          625.141,
+          705.926
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3052,
+        "enclosed_fully_transparent_holes": 0,
+        "magenta_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "chroma": "design/runtime/chameleon/chroma/roar-v1.png",
+      "chroma_sha256": "c7f7d847024ba4128e860b02acb9a49cd9ab5df3dccd1ec4e103571924d7f556",
+      "alpha_master": "design/runtime/chameleon/alpha/roar-v1.png",
+      "alpha_sha256": "601347171ee65bd84b798d2fc598349d613851c0fcf2f8b9fd3fc074096c9501",
+      "runtime": "public/masks/chameleon/roar-v1.webp",
+      "runtime_bytes": 292332,
+      "runtime_sha256": "079ef2dd620875e4f4538328c10a7ad7992e40581fd4021726ccc3ae1d363a90",
+      "github_pages_sha256": "079ef2dd620875e4f4538328c10a7ad7992e40581fd4021726ccc3ae1d363a90",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          130,
+          139,
+          1122,
+          1133
+        ],
+        "padding_px_left_top_right_bottom": [
+          130,
+          139,
+          132,
+          121
+        ],
+        "alpha_weighted_centroid": [
+          625.141,
+          705.926
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3052,
+        "enclosed_fully_transparent_holes": 0,
+        "magenta_dominant_partial_alpha_pixels": 0
+      }
+    }
+  },
+  "audit_evidence": [
+    "design/runtime/chameleon/audit/native-states-v1.jpg",
+    "design/runtime/chameleon/audit/native-96-380-states-v1.png",
+    "design/runtime/chameleon/audit/hostile-380-states-v1.png",
+    "design/runtime/chameleon/audit/copy-lighter-crossfades-380-v1.png",
+    "design/runtime/chameleon/audit/species-comparison-380-v1.png"
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "animal": "shark",
+  "name": "Silly Shark",
+  "version": "v1",
+  "generation_route": "built-in ImageGen neutral using Bumblebee v1 solely as finish/composition reference; blink and roar edits used shark neutral as sole target; state RGB localized onto neutral",
+  "provenance": "design/runtime/shark/audit/provenance-v1.md",
+  "targeted_retries": {
+    "neutral": 0,
+    "blink": 0,
+    "roar": 0
+  },
+  "manual_visual_assertions_for_independent_review": {
+    "species": "front-facing blue-gray shark head; attached dorsal crown cue; three gill slits per side; blunt snout; no body, tail, water, or detached fins",
+    "neutral": "gentle closed smile and zero teeth",
+    "blink": "two happy closed arcs and closed smile",
+    "roar": "compact centered O mouth, warm tongue, exactly two small rounded upper teeth; no row or fangs",
+    "safety": "joyful, non-aggressive, child-safe in all three states"
+  },
+  "localization": {
+    "shared_alpha": true,
+    "blink_scope": "eye and brow regions only",
+    "roar_scope": "mouth and brow regions only",
+    "outside_localization_max_channel_delta": {
+      "blink": 0,
+      "roar": 0
+    }
+  },
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      272196,
+      276048,
+      261258
+    ]
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "f1196069c89e68b3fc9f41f035755944940542a7daf4a5ec3980cd8cdee1e4e3",
+    "blink": "f1196069c89e68b3fc9f41f035755944940542a7daf4a5ec3980cd8cdee1e4e3",
+    "roar": "f1196069c89e68b3fc9f41f035755944940542a7daf4a5ec3980cd8cdee1e4e3"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "runtime_decoded_alpha_pixel_hashes": {
+    "neutral": "f1196069c89e68b3fc9f41f035755944940542a7daf4a5ec3980cd8cdee1e4e3",
+    "blink": "f1196069c89e68b3fc9f41f035755944940542a7daf4a5ec3980cd8cdee1e4e3",
+    "roar": "f1196069c89e68b3fc9f41f035755944940542a7daf4a5ec3980cd8cdee1e4e3"
+  },
+  "runtime_decoded_alpha_pixel_hashes_identical": true,
+  "canonical_geometry": {
+    "static": {
+      "angle_degrees": 0.0,
+      "bounce_asset_px": 0.0,
+      "landmark_10": [
+        190.0,
+        144.5
+      ],
+      "opaque_edge_y_at_landmark_x": 15,
+      "crown_margin_px": 129.5,
+      "tracked_face_pixels": 19964,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    },
+    "tilt_left_bounce": {
+      "angle_degrees": -8.0,
+      "bounce_asset_px": 3.5,
+      "landmark_10": [
+        178.476,
+        141.806
+      ],
+      "opaque_edge_y_at_landmark_x": 29,
+      "crown_margin_px": 112.806,
+      "tracked_face_pixels": 19956,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    },
+    "tilt_right_bounce": {
+      "angle_degrees": 8.0,
+      "bounce_asset_px": 3.5,
+      "landmark_10": [
+        201.524,
+        141.806
+      ],
+      "opaque_edge_y_at_landmark_x": 26,
+      "crown_margin_px": 115.806,
+      "tracked_face_pixels": 19956,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    }
+  },
+  "states": {
+    "neutral": {
+      "generated_chroma_source": "design/runtime/shark/audit/neutral-generated-v1.png",
+      "generated_source_sha256": "273aa0259e39addd4d78318c3e70106342a7be65d40a43c359c788e7f7ad8ce4",
+      "localized_chroma_master": "design/runtime/shark/chroma/neutral-v1.png",
+      "localized_chroma_sha256": "82b93cf1757eac626154bb30116207531f4d7706c1fb9b10ffe05d75df3c3801",
+      "alpha_master": "design/runtime/shark/alpha/neutral-v1.png",
+      "alpha_sha256": "5eafd005f448b8eb1ae975d85516a77e66752c32290f5b1f9293055aebc65da2",
+      "runtime": "public/masks/shark/neutral-v1.webp",
+      "runtime_bytes": 272196,
+      "runtime_sha256": "a832182bc58929ba41cdf59f135144d2ac08ea1810c063a5b494423fb39af438",
+      "github_pages_sha256": "a832182bc58929ba41cdf59f135144d2ac08ea1810c063a5b494423fb39af438",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          67,
+          47,
+          1187,
+          1161
+        ],
+        "padding_px_left_top_right_bottom": [
+          67,
+          47,
+          67,
+          93
+        ],
+        "alpha_weighted_centroid": [
+          627.082,
+          697.377
+        ],
+        "centerline_opaque_span_y": [
+          49,
+          1159
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3788,
+        "enclosed_fully_transparent_hole_pixels": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "generated_chroma_source": "design/runtime/shark/audit/blink-generated-v1.png",
+      "generated_source_sha256": "263c24912610f66222d587d3a504dea3a57cc6e456474d3c78c937fe768aeb52",
+      "localized_chroma_master": "design/runtime/shark/chroma/blink-v1.png",
+      "localized_chroma_sha256": "afdd7e377fe2ec0c17b8923bb5e5a40328dce7ae66d8b57405008134be3caa08",
+      "alpha_master": "design/runtime/shark/alpha/blink-v1.png",
+      "alpha_sha256": "76be7c5063e1a7888c799417efec5a2a6819188a8af986802a6f18147a9fa7f8",
+      "runtime": "public/masks/shark/blink-v1.webp",
+      "runtime_bytes": 276048,
+      "runtime_sha256": "caef9824266b4c718bb0a54e5259f67bd00c2fc467875bc0ba8eebab0873fcc4",
+      "github_pages_sha256": "caef9824266b4c718bb0a54e5259f67bd00c2fc467875bc0ba8eebab0873fcc4",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          67,
+          47,
+          1187,
+          1161
+        ],
+        "padding_px_left_top_right_bottom": [
+          67,
+          47,
+          67,
+          93
+        ],
+        "alpha_weighted_centroid": [
+          627.082,
+          697.377
+        ],
+        "centerline_opaque_span_y": [
+          49,
+          1159
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3788,
+        "enclosed_fully_transparent_hole_pixels": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "generated_chroma_source": "design/runtime/shark/audit/roar-generated-v1.png",
+      "generated_source_sha256": "efb1a1e5ebaddc08f3c372961a40108581c0da69d66088995684f5251d837ac4",
+      "localized_chroma_master": "design/runtime/shark/chroma/roar-v1.png",
+      "localized_chroma_sha256": "6452537bcd8f318ccde445d0929a835cbd187b012c62b7e9f7d9e132cf79ea0a",
+      "alpha_master": "design/runtime/shark/alpha/roar-v1.png",
+      "alpha_sha256": "0f4b250165086e523d23f7cb8f90a113dcc010a69a54889a30b9ad16984c5a32",
+      "runtime": "public/masks/shark/roar-v1.webp",
+      "runtime_bytes": 261258,
+      "runtime_sha256": "49bff23ca697ef0872a34163db85d95ccefb6da20d58dee606f5a849d4aea706",
+      "github_pages_sha256": "49bff23ca697ef0872a34163db85d95ccefb6da20d58dee606f5a849d4aea706",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          67,
+          47,
+          1187,
+          1161
+        ],
+        "padding_px_left_top_right_bottom": [
+          67,
+          47,
+          67,
+          93
+        ],
+        "alpha_weighted_centroid": [
+          627.082,
+          697.377
+        ],
+        "centerline_opaque_span_y": [
+          49,
+          1159
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3788,
+        "enclosed_fully_transparent_hole_pixels": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "animal": "cat",
+  "name": "Sassy Cat",
+  "version": "v1",
+  "generation_mode": "built-in ImageGen",
+  "reference": {
+    "path": "design/runtime/bumblebee/chroma/neutral-v1.png",
+    "role": "finish, composition, scale, lighting, eye-size, and premium 2.5D plush-clay micro-fuzz reference only"
+  },
+  "sources": {
+    "neutral": {
+      "built_in_path": "/Users/kevinbolander/.codex/generated_images/01a00c11-45dd-7c82-ba94-c319f902e595/exec-57039bda-35f5-4428-ba6f-fc2a47463e3c.png",
+      "workspace_copy": "design/runtime/cat/audit/generated-neutral-v1.png"
+    },
+    "blink": {
+      "built_in_path": "/Users/kevinbolander/.codex/generated_images/01a00c11-45dd-7c82-ba94-c319f902e595/exec-4037c109-8da3-40ef-9093-c41f907c03b6.png",
+      "workspace_copy": "design/runtime/cat/audit/generated-blink-v1.png"
+    },
+    "roar": {
+      "built_in_path": "/Users/kevinbolander/.codex/generated_images/01a00c11-45dd-7c82-ba94-c319f902e595/exec-0054dfe6-dc53-4d52-9613-4bb4c071fa6a.png",
+      "workspace_copy": "design/runtime/cat/audit/generated-roar-v1.png"
+    }
+  },
+  "prompts": {
+    "neutral": "Use case: stylized-concept\nAsset type: reactive browser game face-mask character, neutral state master\nPrimary request: Create one original front-facing chibi cat head on a perfectly flat solid #00FF00 chroma-key background for later removal.\nInput images: Image 1 is a finish, composition, scale, lighting, eye-size, and premium 2.5D plush-clay micro-fuzz reference only. Do not copy its bee anatomy, colors, stripes, wings, antennae, or silhouette.\nSubject: An unmistakable unlabeled warm ginger tabby cat head only, with a very broad rounded chibi face, two pointed triangular ears with soft pink inner fur, subtle feline cheek ruff, three restrained darker ginger forehead tabby markings, compact cream muzzle pads, a small inverted pink triangular nose, whisker dots and three short crisp dark whiskers per cheek, warm blush, and giant honey-brown glossy eyes with a subtly feline almond-round shape. Neutral expression has a gentle small closed smile and absolutely no visible teeth.\nStyle/medium: premium 2.5D plush-clay character render, tactile soft micro-fuzz, clean sculpted forms, polished kid-safe game art, matching the reference's high-end material finish and warm studio-lit dimensionality.\nComposition/framing: exactly centered and symmetrical, straight-on eye-level portrait, cat head fills most of a square canvas while retaining generous even padding on all sides; ears fully visible; no neck, body, paws, or shoulders.\nLighting/mood: soft frontal studio lighting contained entirely on the subject; cheerful, gentle, mischievous-cute.\nColor palette: warm ginger and cream cat; honey-brown eyes; pink inner ears and nose; do not use chroma green anywhere in the subject.\nScene/backdrop: one perfectly uniform exact #00FF00 flat field, edge-to-edge, with no floor plane, gradient, noise, texture, shadow, reflection, glow, vignette, or lighting variation.\nConstraints: unmistakably a domestic cat, not a fox or dog; preserve a clean strong face-mask silhouette; generous centered padding; crisp fur/whisker edges for chroma removal; no chroma color inside the subject.\nAvoid: collar, tag, bow, body, neck, paws, yarn, toys, props, costume, text, labels, logos, watermark, extra animals, floor, cast shadow, contact shadow, teeth, fangs, open mouth, photorealism, illustration outlines, bee traits.",
+    "blink": "Use case: precise-object-edit\nAsset type: reactive browser game face-mask character, blink state master\nInput images: Image 1 is the sole edit target and exact identity/layout source.\nPrimary request: Change only the cat's expression into a happy blink. Replace both open eyes with clean, gently upturned closed lash arcs; add a subtle happy cheek lift. Keep the small closed smile exactly child-safe and closed, with no teeth.\nSource-preservation contract: Preserve exactly the same cat identity, head silhouette, head scale, crop, ear positions and shapes, cheek ruff, ginger color, cream muzzle, pink nose and inner ears, forehead tabby markings, whisker dots, whiskers, blush placement, plush micro-fuzz texture, lighting, camera, and perfectly flat green backdrop. Do not redesign or regenerate the cat.\nComposition/framing: pixel-consistent centered straight-on head, unchanged from Image 1.\nConstraints: both eyes fully closed as attractive dark curved lash arcs; no eyeballs visible; edit only compact eye/upper-cheek regions; no other surface drift.\nAvoid: open eyes, one-eye wink, eyebrows that alter forehead markings, open mouth, teeth, fangs, collar, body, paws, props, extra elements, text, logo, watermark, background change, silhouette change, tabby-marking change, whisker change, fur-texture change.",
+    "roar": "Use case: precise-object-edit\nAsset type: reactive browser game face-mask character, delighted roar state master\nInput images: Image 1 is the sole edit target and exact identity/layout source.\nPrimary request: Change only the cat's facial expression into a delighted child-safe roar. Replace the small closed smile with one compact centered vertical rounded O-shaped open mouth directly below the nose, dark warm interior, a small pink tongue visible at the lower inside edge, and absolutely no teeth or fangs. Lift the upper eyelids and brows subtly into delighted surprise while keeping both giant honey-brown eyes open and retaining their identity.\nSource-preservation contract: Preserve exactly the same cat identity, head silhouette, head scale, crop, ear positions and shapes, cheek ruff, ginger color, cream muzzle, pink nose and inner ears, forehead tabby markings, whisker dots, whiskers, blush placement, giant honey-brown eye color/size/spacing, plush micro-fuzz texture, lighting, camera, and perfectly flat green backdrop. Do not redesign or regenerate the cat.\nComposition/framing: pixel-consistent centered straight-on head, unchanged from Image 1.\nConstraints: joyful not scary; compact O mouth; tongue only; no visible teeth; edit only the compact mouth/lower-muzzle region and subtle brow/upper-eye expression regions; no other surface drift.\nAvoid: teeth, fangs, tusks, snarling, giant jaw, side mouth, closed eyes, eye recoloring, collar, body, paws, props, extra elements, text, logo, watermark, background change, silhouette change, tabby-marking change, whisker change, fur-texture change."
+  },
+  "post_process": {
+    "background_extraction": "remove_chroma_key.py --auto-key border --soft-matte --transparent-threshold 12 --opaque-threshold 220 --despill --edge-contract 1",
+    "expression_localization": "Blink and roar RGB were feather-composited only inside compact face ROIs over the exact neutral RGB, with the neutral alpha locked across all states.",
+    "runtime_export": "1152 x 1152 WebP, quality 94, alpha_quality 100, method 6, exact true"
+  }
+}

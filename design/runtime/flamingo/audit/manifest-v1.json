@@ -1,0 +1,186 @@
+{
+  "animal": "flamingo",
+  "name": "Fancy Flamingo",
+  "version": "v1",
+  "generation_route": "built-in ImageGen neutral using Bumblebee v1 as finish/composition reference; blink and roar edits used neutral as sole target; expression RGB localized onto neutral",
+  "targeted_retries": {
+    "neutral": 0,
+    "blink": 0,
+    "roar": 1
+  },
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      258200,
+      270252,
+      249232
+    ]
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "dff9eb3c7043c6630f42c8aced9779f43e9982b3a102da9c74a34b2436f89434",
+    "blink": "dff9eb3c7043c6630f42c8aced9779f43e9982b3a102da9c74a34b2436f89434",
+    "roar": "dff9eb3c7043c6630f42c8aced9779f43e9982b3a102da9c74a34b2436f89434"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "outside_localization_max_channel_delta": {
+    "blink": 0,
+    "roar": 0
+  },
+  "states": {
+    "neutral": {
+      "raw_chroma_source": "design/runtime/flamingo/chroma/neutral-raw-v1.png",
+      "localized_chroma_master": "design/runtime/flamingo/chroma/neutral-v1.png",
+      "alpha_master": "design/runtime/flamingo/alpha/neutral-v1.png",
+      "alpha_sha256": "93507dbab7d01f275ae02267fb31556d9bb4552aede58eff392a6d89123d8b77",
+      "runtime": "public/masks/flamingo/neutral-v1.webp",
+      "runtime_bytes": 258200,
+      "runtime_sha256": "91f4da352d60ba878441ec3429dca1593c74832a46319111acdb64b08cfe4202",
+      "github_pages_sha256": "91f4da352d60ba878441ec3429dca1593c74832a46319111acdb64b08cfe4202",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "dff9eb3c7043c6630f42c8aced9779f43e9982b3a102da9c74a34b2436f89434",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          136,
+          74,
+          1119,
+          1180
+        ],
+        "padding_px_left_top_right_bottom": [
+          136,
+          74,
+          135,
+          74
+        ],
+        "alpha_weighted_centroid": [
+          628.625,
+          645.505
+        ],
+        "centerline_opaque_span_y": [
+          94,
+          1177
+        ],
+        "canonical_face_opaque_coverage_at_380": 1.0,
+        "canonical_forehead_opaque_coverage_at_380": 1.0,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3289,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "raw_chroma_source": "design/runtime/flamingo/chroma/blink-raw-v1.png",
+      "localized_chroma_master": "design/runtime/flamingo/chroma/blink-v1.png",
+      "alpha_master": "design/runtime/flamingo/alpha/blink-v1.png",
+      "alpha_sha256": "e2ec9a4a3e7ad112e25bc075a942a22ba5cfa729f5dc7db400d03a53ff782f9e",
+      "runtime": "public/masks/flamingo/blink-v1.webp",
+      "runtime_bytes": 270252,
+      "runtime_sha256": "a3b60643292ab80d18f35e3baba3f0e60d3935799ce250c1ee57faace5351f9e",
+      "github_pages_sha256": "a3b60643292ab80d18f35e3baba3f0e60d3935799ce250c1ee57faace5351f9e",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "dff9eb3c7043c6630f42c8aced9779f43e9982b3a102da9c74a34b2436f89434",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          136,
+          74,
+          1119,
+          1180
+        ],
+        "padding_px_left_top_right_bottom": [
+          136,
+          74,
+          135,
+          74
+        ],
+        "alpha_weighted_centroid": [
+          628.625,
+          645.505
+        ],
+        "centerline_opaque_span_y": [
+          94,
+          1177
+        ],
+        "canonical_face_opaque_coverage_at_380": 1.0,
+        "canonical_forehead_opaque_coverage_at_380": 1.0,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3289,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "raw_chroma_source": "design/runtime/flamingo/chroma/roar-raw-v1.png",
+      "localized_chroma_master": "design/runtime/flamingo/chroma/roar-v1.png",
+      "alpha_master": "design/runtime/flamingo/alpha/roar-v1.png",
+      "alpha_sha256": "b5b045e36b155b0a51f98a74173a8c9c5e31b008d7f9285cf51f3c08c4f4d776",
+      "runtime": "public/masks/flamingo/roar-v1.webp",
+      "runtime_bytes": 249232,
+      "runtime_sha256": "8397fd0b10db5f649819a98e8c0104b717e3e1a3743adfa8e9c94984a988ca8a",
+      "github_pages_sha256": "8397fd0b10db5f649819a98e8c0104b717e3e1a3743adfa8e9c94984a988ca8a",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "dff9eb3c7043c6630f42c8aced9779f43e9982b3a102da9c74a34b2436f89434",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          136,
+          74,
+          1119,
+          1180
+        ],
+        "padding_px_left_top_right_bottom": [
+          136,
+          74,
+          135,
+          74
+        ],
+        "alpha_weighted_centroid": [
+          628.625,
+          645.505
+        ],
+        "centerline_opaque_span_y": [
+          94,
+          1177
+        ],
+        "canonical_face_opaque_coverage_at_380": 1.0,
+        "canonical_forehead_opaque_coverage_at_380": 1.0,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3289,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  }
+}

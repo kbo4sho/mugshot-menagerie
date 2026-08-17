@@ -1,0 +1,213 @@
+{
+  "animal": "cat",
+  "name": "Sassy Cat",
+  "version": "v1",
+  "generation_route": "built-in ImageGen; Bumblebee v1 was finish/composition reference only; blink and roar used the generated neutral as sole edit target",
+  "generated_sources": {
+    "neutral": "design/runtime/cat/audit/generated-neutral-v1.png",
+    "blink": "design/runtime/cat/audit/generated-blink-v1.png",
+    "roar": "design/runtime/cat/audit/generated-roar-v1.png"
+  },
+  "runtime_export": {
+    "side_px": 1152,
+    "quality": 94,
+    "method": 6,
+    "alpha_quality": 100
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      387616,
+      389122,
+      361966
+    ],
+    "1254-q94": [
+      357642,
+      359200,
+      346374
+    ],
+    "1152-q95": [
+      351468,
+      353568,
+      341938
+    ],
+    "1152-q94": [
+      325070,
+      327566,
+      315822
+    ]
+  },
+  "master_alpha_pixel_hashes": {
+    "neutral": "1a828326c58666f88bb6f976863f012619b0e2c30fffd943af5cde236c62c082",
+    "blink": "1a828326c58666f88bb6f976863f012619b0e2c30fffd943af5cde236c62c082",
+    "roar": "1a828326c58666f88bb6f976863f012619b0e2c30fffd943af5cde236c62c082"
+  },
+  "master_alpha_pixel_hashes_identical": true,
+  "runtime_alpha_pixel_hashes": {
+    "neutral": "184c1328a00f3c9e296344c68d31e3a09322f59ad665b23fdfc46a142dbe1896",
+    "blink": "184c1328a00f3c9e296344c68d31e3a09322f59ad665b23fdfc46a142dbe1896",
+    "roar": "184c1328a00f3c9e296344c68d31e3a09322f59ad665b23fdfc46a142dbe1896"
+  },
+  "runtime_alpha_pixel_hashes_identical": true,
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 163434,
+      "changed_visible_percent": 19.0211,
+      "changed_bbox": [
+        231,
+        516,
+        1025,
+        864
+      ],
+      "outside_localization_max_channel_delta": 0
+    },
+    "roar": {
+      "changed_visible_pixels": 134934,
+      "changed_visible_percent": 15.7041,
+      "changed_bbox": [
+        277,
+        382,
+        976,
+        1100
+      ],
+      "outside_localization_max_channel_delta": 0
+    }
+  },
+  "states": {
+    "neutral": {
+      "chroma": "design/runtime/cat/chroma/neutral-v1.png",
+      "chroma_sha256": "3bb5089fde9963ef7da3173cd26883cc753b06b2a1ab49c000f9280995429c63",
+      "alpha_master": "design/runtime/cat/alpha/neutral-v1.png",
+      "alpha_sha256": "a1658d3d9a33f4b613885bca5153fd8d0b284af43d7c53d9a776ad863c6cfbec",
+      "runtime": "public/masks/cat/neutral-v1.webp",
+      "runtime_bytes": 325070,
+      "runtime_sha256": "6486cf4c7c3a81236e4de90bbed3440fc3cff223e8ba5b91e6a988825a2354d9",
+      "github_pages_sha256": "6486cf4c7c3a81236e4de90bbed3440fc3cff223e8ba5b91e6a988825a2354d9",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          72,
+          132,
+          1190,
+          1121
+        ],
+        "padding_px_left_top_right_bottom": [
+          72,
+          132,
+          64,
+          133
+        ],
+        "alpha_weighted_centroid": [
+          630.281,
+          641.315
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4028,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "chroma": "design/runtime/cat/chroma/blink-v1.png",
+      "chroma_sha256": "ae4d64f6eedb820305c3b8eaa76ac38e3a0afb4dc9895d5339aec76a1d55f439",
+      "alpha_master": "design/runtime/cat/alpha/blink-v1.png",
+      "alpha_sha256": "ecf98e1d645680c5354b7a5d10bcad83fc42ba30c4a3d8cf6b1aef157c7f2cdc",
+      "runtime": "public/masks/cat/blink-v1.webp",
+      "runtime_bytes": 327566,
+      "runtime_sha256": "9fa304654f10bb974e728c93d01b4801fa0135867ed814005b9e2d8a1995af23",
+      "github_pages_sha256": "9fa304654f10bb974e728c93d01b4801fa0135867ed814005b9e2d8a1995af23",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          72,
+          132,
+          1190,
+          1121
+        ],
+        "padding_px_left_top_right_bottom": [
+          72,
+          132,
+          64,
+          133
+        ],
+        "alpha_weighted_centroid": [
+          630.281,
+          641.315
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4028,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "chroma": "design/runtime/cat/chroma/roar-v1.png",
+      "chroma_sha256": "042ac28ba0be7f30c72e992c6e07fe338087e37df29ee3530794930ce5a82020",
+      "alpha_master": "design/runtime/cat/alpha/roar-v1.png",
+      "alpha_sha256": "f6a7f18fede02012114e533ad61d8e6ab55869de905781dfcfff8489f37383c8",
+      "runtime": "public/masks/cat/roar-v1.webp",
+      "runtime_bytes": 315822,
+      "runtime_sha256": "e7d711c9e121dd55a2f7363f803df2bd05e0e0b4fd098295c3872eebe6180457",
+      "github_pages_sha256": "e7d711c9e121dd55a2f7363f803df2bd05e0e0b4fd098295c3872eebe6180457",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          72,
+          132,
+          1190,
+          1121
+        ],
+        "padding_px_left_top_right_bottom": [
+          72,
+          132,
+          64,
+          133
+        ],
+        "alpha_weighted_centroid": [
+          630.281,
+          641.315
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4028,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  },
+  "audit_evidence": [
+    "design/runtime/cat/audit/native-states-v1.jpg",
+    "design/runtime/cat/audit/native-96-380-states-v1.png",
+    "design/runtime/cat/audit/hostile-380-states-v1.png",
+    "design/runtime/cat/audit/whisker-matte-detail-v1.png",
+    "design/runtime/cat/audit/copy-lighter-crossfades-380-v1.png"
+  ]
+}

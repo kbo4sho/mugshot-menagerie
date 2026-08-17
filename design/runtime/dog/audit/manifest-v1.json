@@ -1,0 +1,151 @@
+{
+  "animal": "dog",
+  "name": "Party-Pup Dog",
+  "version": "v1",
+  "generation_route": "built-in ImageGen; neutral generated with Bumblebee v1 as finish/composition reference; state edits used neutral as sole target",
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "method": 6,
+    "alpha_quality": 100
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      304622,
+      318534,
+      294344
+    ]
+  },
+  "states": {
+    "neutral": {
+      "alpha_master": "design/runtime/dog/alpha/neutral-v1.png",
+      "alpha_sha256": "15271a109f826fc4ca3776ccbee3c7fb8a2f3efc334e3011230e2b9214c4ed9b",
+      "runtime": "public/masks/dog/neutral-v1.webp",
+      "runtime_bytes": 304622,
+      "runtime_sha256": "e72f23366b0fdf591c45787140d500b5fddfadcc267510562a07949a12785043",
+      "github_pages_sha256": "e72f23366b0fdf591c45787140d500b5fddfadcc267510562a07949a12785043",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          30,
+          175,
+          1223,
+          1028
+        ],
+        "padding_px_left_top_right_bottom": [
+          30,
+          175,
+          31,
+          226
+        ],
+        "alpha_weighted_centroid": [
+          626.011,
+          650.001
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3823,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "alpha_master": "design/runtime/dog/alpha/blink-v1.png",
+      "alpha_sha256": "b4e7429659c085e38ce5612ab2a359c8dbdc9de63295a80d13037f85e32723ee",
+      "runtime": "public/masks/dog/blink-v1.webp",
+      "runtime_bytes": 318534,
+      "runtime_sha256": "996cd8a4dda4b95e01ac8391e0b910dfabac6ba77d29e914e400f5f23811e27e",
+      "github_pages_sha256": "996cd8a4dda4b95e01ac8391e0b910dfabac6ba77d29e914e400f5f23811e27e",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          30,
+          175,
+          1223,
+          1028
+        ],
+        "padding_px_left_top_right_bottom": [
+          30,
+          175,
+          31,
+          226
+        ],
+        "alpha_weighted_centroid": [
+          626.011,
+          650.001
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3823,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "alpha_master": "design/runtime/dog/alpha/roar-v1.png",
+      "alpha_sha256": "a7a0b6b15782516cfaf6645cd358eedf63a9e16572e6d5d9c965f5e3e99f4368",
+      "runtime": "public/masks/dog/roar-v1.webp",
+      "runtime_bytes": 294344,
+      "runtime_sha256": "f2810e5f71afb4d48321a13784fc6ca1ac80119cc0bedf7e8c66286e74be1fc7",
+      "github_pages_sha256": "f2810e5f71afb4d48321a13784fc6ca1ac80119cc0bedf7e8c66286e74be1fc7",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          30,
+          175,
+          1223,
+          1028
+        ],
+        "padding_px_left_top_right_bottom": [
+          30,
+          175,
+          31,
+          226
+        ],
+        "alpha_weighted_centroid": [
+          626.011,
+          650.001
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3823,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "79bff52aac2e5b1b429f8eda72f89b7a2af7ee010f95a92f99e9464fcc47bf92",
+    "blink": "79bff52aac2e5b1b429f8eda72f89b7a2af7ee010f95a92f99e9464fcc47bf92",
+    "roar": "79bff52aac2e5b1b429f8eda72f89b7a2af7ee010f95a92f99e9464fcc47bf92"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "outside_localization_max_channel_delta": {
+    "blink": 0,
+    "roar": 0
+  }
+}

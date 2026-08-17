@@ -1,0 +1,1 @@
+Repaired enclosed fully transparent pixels: 23

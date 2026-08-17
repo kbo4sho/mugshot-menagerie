@@ -1,0 +1,103 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "alpha_bbox": [
+    103,
+    161,
+    1150,
+    1126
+  ],
+  "alpha_centroid": [
+    625.8120081650907,
+    651.817708821712
+  ],
+  "padding_px": {
+    "left": 103,
+    "top": 161,
+    "right": 104,
+    "bottom": 128
+  },
+  "nonzero_alpha_pixels": 831834,
+  "partial_alpha_pixels": 4041,
+  "corner_alpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "enclosed_hole_pixels": 0,
+  "alpha_sha256": "e44feda06e87c8901504f4850178437c20dc8d829953ca0f457e6a066585e503",
+  "state_stability": {
+    "neutral": {
+      "green_dominant_partial_alpha_pixels": 0
+    },
+    "blink": {
+      "green_dominant_partial_alpha_pixels": 0,
+      "changed_visible_pixels": 177903,
+      "changed_visible_percent": 21.386839201090602,
+      "changed_bbox": [
+        217,
+        437,
+        1036,
+        780
+      ]
+    },
+    "roar": {
+      "green_dominant_partial_alpha_pixels": 0,
+      "changed_visible_pixels": 115534,
+      "changed_visible_percent": 13.88906921332862,
+      "changed_bbox": [
+        276,
+        238,
+        979,
+        1117
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/hippo/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/hippo/neutral-v1.webp",
+      "bytes": 255948,
+      "sha256": "0e3d322386bcb33dc95f9a41714d3e028ed9df9adeae2ddbd4566ef5519ae831",
+      "pages_sha256": "0e3d322386bcb33dc95f9a41714d3e028ed9df9adeae2ddbd4566ef5519ae831",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "e44feda06e87c8901504f4850178437c20dc8d829953ca0f457e6a066585e503",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/hippo/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/hippo/blink-v1.webp",
+      "bytes": 255502,
+      "sha256": "c602e10262208728572ccf0a66b3b8094dea05aec8bd55e4e28d2e5d022023a3",
+      "pages_sha256": "c602e10262208728572ccf0a66b3b8094dea05aec8bd55e4e28d2e5d022023a3",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "e44feda06e87c8901504f4850178437c20dc8d829953ca0f457e6a066585e503",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/hippo/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/hippo/roar-v1.webp",
+      "bytes": 247364,
+      "sha256": "1edc44c4cd5292ab0ef898074dc6cda2e85edf8b2e544b9101ea1d6d0ffe3a6c",
+      "pages_sha256": "1edc44c4cd5292ab0ef898074dc6cda2e85edf8b2e544b9101ea1d6d0ffe3a6c",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "e44feda06e87c8901504f4850178437c20dc8d829953ca0f457e6a066585e503",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

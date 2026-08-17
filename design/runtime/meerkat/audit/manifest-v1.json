@@ -1,0 +1,161 @@
+{
+  "animal": "meerkat",
+  "name": "Peekaboo Meerkat",
+  "version": "v1",
+  "generation_route": "Codex ImageGen chroma sources; helper extracts the neutral silhouette; blink/roar RGB is localized onto the approved neutral and every state receives the identical alpha plane",
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6,
+    "exact": true
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      251536,
+      249520,
+      239744
+    ]
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "5b6ab655dc9880a87475e82348a361d9f0229660771ae5f22a9d1434390f50e4",
+    "blink": "5b6ab655dc9880a87475e82348a361d9f0229660771ae5f22a9d1434390f50e4",
+    "roar": "5b6ab655dc9880a87475e82348a361d9f0229660771ae5f22a9d1434390f50e4"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "outside_localization_max_channel_delta": {
+    "blink": 0,
+    "roar": 0
+  },
+  "states": {
+    "neutral": {
+      "generated_chroma_source": "design/runtime/meerkat/audit/neutral-generated-v1.png",
+      "localized_chroma_master": "design/runtime/meerkat/chroma/neutral-v1.png",
+      "alpha_master": "design/runtime/meerkat/alpha/neutral-v1.png",
+      "alpha_sha256": "b67c39ce52c108d4ab8e750d503ddec0d56621902aa93104aa73ee40dac541c9",
+      "runtime": "public/masks/meerkat/neutral-v1.webp",
+      "runtime_bytes": 251536,
+      "runtime_sha256": "9ca62c70892462a1012ef8f8a3987d536254db97676dc6508b18d7793715e628",
+      "github_pages_sha256": "9ca62c70892462a1012ef8f8a3987d536254db97676dc6508b18d7793715e628",
+      "runtime_copies_identical": true,
+      "decoded_alpha_sha256": "5b6ab655dc9880a87475e82348a361d9f0229660771ae5f22a9d1434390f50e4",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          204,
+          131,
+          1050,
+          1125
+        ],
+        "padding_px_left_top_right_bottom": [
+          204,
+          131,
+          204,
+          129
+        ],
+        "alpha_weighted_centroid": [
+          626.278,
+          614.811
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 2198,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "generated_chroma_source": "design/runtime/meerkat/audit/blink-generated-v1.png",
+      "localized_chroma_master": "design/runtime/meerkat/chroma/blink-v1.png",
+      "alpha_master": "design/runtime/meerkat/alpha/blink-v1.png",
+      "alpha_sha256": "2f09dd76954dce91698b829bad43e48b01b7003ac426186fdd94cc169f399b65",
+      "runtime": "public/masks/meerkat/blink-v1.webp",
+      "runtime_bytes": 249520,
+      "runtime_sha256": "87627967a6d86db3dfea15f242b9780398b59e49f3efdbc588cb3c35aa4e7ba2",
+      "github_pages_sha256": "87627967a6d86db3dfea15f242b9780398b59e49f3efdbc588cb3c35aa4e7ba2",
+      "runtime_copies_identical": true,
+      "decoded_alpha_sha256": "5b6ab655dc9880a87475e82348a361d9f0229660771ae5f22a9d1434390f50e4",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          204,
+          131,
+          1050,
+          1125
+        ],
+        "padding_px_left_top_right_bottom": [
+          204,
+          131,
+          204,
+          129
+        ],
+        "alpha_weighted_centroid": [
+          626.278,
+          614.811
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 2198,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "generated_chroma_source": "design/runtime/meerkat/audit/roar-generated-v1.png",
+      "localized_chroma_master": "design/runtime/meerkat/chroma/roar-v1.png",
+      "alpha_master": "design/runtime/meerkat/alpha/roar-v1.png",
+      "alpha_sha256": "dfa470744319a15d83e977bc86f15225e92bfe4f27b860f9ff8778fab213a09b",
+      "runtime": "public/masks/meerkat/roar-v1.webp",
+      "runtime_bytes": 239744,
+      "runtime_sha256": "5b4b22e4206801ec0013a56b2ad97c1c8836e032ec5b682b4a14b6ce17b0a534",
+      "github_pages_sha256": "5b4b22e4206801ec0013a56b2ad97c1c8836e032ec5b682b4a14b6ce17b0a534",
+      "runtime_copies_identical": true,
+      "decoded_alpha_sha256": "5b6ab655dc9880a87475e82348a361d9f0229660771ae5f22a9d1434390f50e4",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          204,
+          131,
+          1050,
+          1125
+        ],
+        "padding_px_left_top_right_bottom": [
+          204,
+          131,
+          204,
+          129
+        ],
+        "alpha_weighted_centroid": [
+          626.278,
+          614.811
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 2198,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  }
+}

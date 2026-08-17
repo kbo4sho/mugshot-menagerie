@@ -1,0 +1,229 @@
+{
+  "animal": "octopus",
+  "display_name": "Bubbly Octopus",
+  "version": "v1",
+  "generation_route": "built-in ImageGen neutral using Bumblebee v1 only as finish/composition reference; blink and roar generated from Octopus neutral as sole edit target; one targeted roar retry removed a tongue",
+  "localization": {
+    "shared_neutral_alpha": true,
+    "blink_scope": "bilateral eye islands",
+    "roar_scope": "one compact mouth island plus two brow islands",
+    "outside_localization_max_rgb_delta": {
+      "blink": 0,
+      "roar": 0
+    }
+  },
+  "runtime_export": {
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6,
+    "target_bytes_per_state": [
+      200000,
+      350000
+    ],
+    "sizes": {
+      "neutral": 263272,
+      "blink": 256356,
+      "roar": 244154
+    }
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "1fab9ae2b5dd2d4d32dd7510e828e89734ff80939deab1906b4e1f0df46a09fc",
+    "blink": "1fab9ae2b5dd2d4d32dd7510e828e89734ff80939deab1906b4e1f0df46a09fc",
+    "roar": "1fab9ae2b5dd2d4d32dd7510e828e89734ff80939deab1906b4e1f0df46a09fc"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "runtime_decoded_alpha_pixel_hashes": {
+    "neutral": "1fab9ae2b5dd2d4d32dd7510e828e89734ff80939deab1906b4e1f0df46a09fc",
+    "blink": "1fab9ae2b5dd2d4d32dd7510e828e89734ff80939deab1906b4e1f0df46a09fc",
+    "roar": "1fab9ae2b5dd2d4d32dd7510e828e89734ff80939deab1906b4e1f0df46a09fc"
+  },
+  "runtime_decoded_alpha_pixel_hashes_identical": true,
+  "canonical_geometry": {
+    "static": {
+      "angle_degrees": 0.0,
+      "bounce_asset_px": 0.0,
+      "landmark_10": [
+        190.0,
+        144.5
+      ],
+      "opaque_edge_y_at_landmark_x": 44,
+      "crown_margin_px": 100.5,
+      "tracked_face_pixels": 19964,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    },
+    "tilt_left_bounce": {
+      "angle_degrees": -8.0,
+      "bounce_asset_px": 3.5,
+      "landmark_10": [
+        178.476,
+        141.806
+      ],
+      "opaque_edge_y_at_landmark_x": 44,
+      "crown_margin_px": 97.806,
+      "tracked_face_pixels": 19956,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    },
+    "tilt_right_bounce": {
+      "angle_degrees": 8.0,
+      "bounce_asset_px": 3.5,
+      "landmark_10": [
+        201.524,
+        141.806
+      ],
+      "opaque_edge_y_at_landmark_x": 44,
+      "crown_margin_px": 97.806,
+      "tracked_face_pixels": 19956,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    }
+  },
+  "states": {
+    "neutral": {
+      "alpha_master": "design/runtime/octopus/alpha/neutral-v1.png",
+      "alpha_sha256": "67ae86c3b0569bdb9af1df8496fa23bdfd4c74b447399bcbba925e1cc8c71395",
+      "chroma_master": "design/runtime/octopus/chroma/neutral-v1.png",
+      "chroma_sha256": "8145a1b6d1fcb2a12292f1baa255cda5c13019dea7ecd73116d3f9bc919dd4e8",
+      "public_runtime": "public/masks/octopus/neutral-v1.webp",
+      "public_sha256": "9aeb87ea8cabf697eb14865fd29d7c5d18b4aebc46d23d430d3a02f81f5f2c22",
+      "pages_runtime": "github-pages/public/masks/octopus/neutral-v1.webp",
+      "pages_sha256": "9aeb87ea8cabf697eb14865fd29d7c5d18b4aebc46d23d430d3a02f81f5f2c22",
+      "public_pages_byte_identical": true,
+      "metrics": {
+        "bbox_alpha_gt_8": [
+          116,
+          141,
+          1130,
+          1116
+        ],
+        "padding_ltrb": [
+          116,
+          141,
+          124,
+          138
+        ],
+        "alpha_weighted_centroid": [
+          624.914,
+          649.614
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "opaque_pixels": 738237,
+        "partial_alpha_pixels": 3469,
+        "green_dominant_partial_alpha_pixels": 0,
+        "enclosed_fully_transparent_hole_pixels": 0,
+        "nearly_opaque_center_ellipse_fraction": 1.0
+      },
+      "chroma_metrics": {
+        "exterior_pixels": 830810,
+        "exterior_exact_green_pixels": 830810,
+        "exterior_exact_green_fraction": 1.0
+      }
+    },
+    "blink": {
+      "alpha_master": "design/runtime/octopus/alpha/blink-v1.png",
+      "alpha_sha256": "a073f18ff6f16b439f8a98ea480bc5548b779affd69d47ebc343f405372acd31",
+      "chroma_master": "design/runtime/octopus/chroma/blink-v1.png",
+      "chroma_sha256": "be5a8c8dad1a1729b35c3233a05fa9ff3b295a84984d0b4bb9e014e75459d198",
+      "public_runtime": "public/masks/octopus/blink-v1.webp",
+      "public_sha256": "3c02fd32ef3b2ac0eee58edd6d0bd61f6785655c649e793153b7430d91ae9dcd",
+      "pages_runtime": "github-pages/public/masks/octopus/blink-v1.webp",
+      "pages_sha256": "3c02fd32ef3b2ac0eee58edd6d0bd61f6785655c649e793153b7430d91ae9dcd",
+      "public_pages_byte_identical": true,
+      "metrics": {
+        "bbox_alpha_gt_8": [
+          116,
+          141,
+          1130,
+          1116
+        ],
+        "padding_ltrb": [
+          116,
+          141,
+          124,
+          138
+        ],
+        "alpha_weighted_centroid": [
+          624.914,
+          649.614
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "opaque_pixels": 738237,
+        "partial_alpha_pixels": 3469,
+        "green_dominant_partial_alpha_pixels": 0,
+        "enclosed_fully_transparent_hole_pixels": 0,
+        "nearly_opaque_center_ellipse_fraction": 1.0
+      },
+      "chroma_metrics": {
+        "exterior_pixels": 830810,
+        "exterior_exact_green_pixels": 830810,
+        "exterior_exact_green_fraction": 1.0
+      }
+    },
+    "roar": {
+      "alpha_master": "design/runtime/octopus/alpha/roar-v1.png",
+      "alpha_sha256": "6a5107467a9a54820d669c42d54ddb4929a0900e798d5fd0190a6592fc8668e6",
+      "chroma_master": "design/runtime/octopus/chroma/roar-v1.png",
+      "chroma_sha256": "aef493669155fb3858d658b395f352e2fda1a8f9dcbbfcc7bcebdad0f0d50b9c",
+      "public_runtime": "public/masks/octopus/roar-v1.webp",
+      "public_sha256": "abffd715617e5f18da353bf01b9ca4e68ffe7d94760fd09649807597f57760fc",
+      "pages_runtime": "github-pages/public/masks/octopus/roar-v1.webp",
+      "pages_sha256": "abffd715617e5f18da353bf01b9ca4e68ffe7d94760fd09649807597f57760fc",
+      "public_pages_byte_identical": true,
+      "metrics": {
+        "bbox_alpha_gt_8": [
+          116,
+          141,
+          1130,
+          1116
+        ],
+        "padding_ltrb": [
+          116,
+          141,
+          124,
+          138
+        ],
+        "alpha_weighted_centroid": [
+          624.914,
+          649.614
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "opaque_pixels": 738237,
+        "partial_alpha_pixels": 3469,
+        "green_dominant_partial_alpha_pixels": 0,
+        "enclosed_fully_transparent_hole_pixels": 0,
+        "nearly_opaque_center_ellipse_fraction": 1.0
+      },
+      "chroma_metrics": {
+        "exterior_pixels": 830810,
+        "exterior_exact_green_pixels": 830810,
+        "exterior_exact_green_fraction": 1.0
+      }
+    }
+  }
+}

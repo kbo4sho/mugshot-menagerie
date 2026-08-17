@@ -1,0 +1,692 @@
+{
+  "animal": "sloth",
+  "name": "Sleepy Sloth",
+  "version": "v2",
+  "repair_scope": "roar mouth transition only; v1 neutral, blink, alpha, silhouette, and matte preserved",
+  "generation_route": "one built-in ImageGen mouth-only repair from the v1 neutral target, then deterministic localization",
+  "runtime_export": {
+    "side_px": 1024,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      423654,
+      420034,
+      417506
+    ],
+    "1254-q94": [
+      387422,
+      383966,
+      381708
+    ],
+    "1152-q95": [
+      374500,
+      379722,
+      369702
+    ],
+    "1152-q94": [
+      351878,
+      355448,
+      343742
+    ],
+    "1024-q95": [
+      304994,
+      302412,
+      301206
+    ]
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "dec0097e101680317b56c3da50a1277effb47fd723b30eb66b1c08b243d51a48",
+    "blink": "dec0097e101680317b56c3da50a1277effb47fd723b30eb66b1c08b243d51a48",
+    "roar": "dec0097e101680317b56c3da50a1277effb47fd723b30eb66b1c08b243d51a48"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "neutral_v1_v2_pixels_identical": true,
+  "blink_v1_v2_pixels_identical": true,
+  "roar_outside_localization_max_channel_delta": 0,
+  "harmonized_connected_cavity_pixels": 11199,
+  "production_weight_mouth_metrics_380": {
+    "0.00": {
+      "roi_xyxy": [
+        162,
+        252,
+        218,
+        300
+      ],
+      "dark_threshold_luminance_lt": 92,
+      "dark_pixels": 173,
+      "significant_dark_components": 1,
+      "largest_dark_component": {
+        "area": 173,
+        "bbox_xyxy": [
+          0,
+          0,
+          53,
+          11
+        ],
+        "centroid_xy": [
+          25.798,
+          6.272
+        ]
+      },
+      "mean_abs_rgb_delta_from_neutral": 0.0,
+      "max_rgb_delta_from_neutral": 0
+    },
+    "0.10": {
+      "roi_xyxy": [
+        162,
+        252,
+        218,
+        300
+      ],
+      "dark_threshold_luminance_lt": 92,
+      "dark_pixels": 177,
+      "significant_dark_components": 1,
+      "largest_dark_component": {
+        "area": 177,
+        "bbox_xyxy": [
+          0,
+          0,
+          53,
+          12
+        ],
+        "centroid_xy": [
+          25.458,
+          6.39
+        ]
+      },
+      "mean_abs_rgb_delta_from_neutral": 5.64633,
+      "max_rgb_delta_from_neutral": 21
+    },
+    "0.25": {
+      "roi_xyxy": [
+        162,
+        252,
+        218,
+        300
+      ],
+      "dark_threshold_luminance_lt": 92,
+      "dark_pixels": 178,
+      "significant_dark_components": 1,
+      "largest_dark_component": {
+        "area": 178,
+        "bbox_xyxy": [
+          0,
+          0,
+          53,
+          12
+        ],
+        "centroid_xy": [
+          25.579,
+          6.691
+        ]
+      },
+      "mean_abs_rgb_delta_from_neutral": 14.18118,
+      "max_rgb_delta_from_neutral": 51
+    },
+    "0.50": {
+      "roi_xyxy": [
+        162,
+        252,
+        218,
+        300
+      ],
+      "dark_threshold_luminance_lt": 92,
+      "dark_pixels": 182,
+      "significant_dark_components": 1,
+      "largest_dark_component": {
+        "area": 180,
+        "bbox_xyxy": [
+          11,
+          1,
+          41,
+          12
+        ],
+        "centroid_xy": [
+          25.394,
+          7.45
+        ]
+      },
+      "mean_abs_rgb_delta_from_neutral": 28.43626,
+      "max_rgb_delta_from_neutral": 103
+    },
+    "0.75": {
+      "roi_xyxy": [
+        162,
+        252,
+        218,
+        300
+      ],
+      "dark_threshold_luminance_lt": 92,
+      "dark_pixels": 950,
+      "significant_dark_components": 1,
+      "largest_dark_component": {
+        "area": 950,
+        "bbox_xyxy": [
+          11,
+          0,
+          42,
+          38
+        ],
+        "centroid_xy": [
+          25.495,
+          18.531
+        ]
+      },
+      "mean_abs_rgb_delta_from_neutral": 42.67894,
+      "max_rgb_delta_from_neutral": 154
+    },
+    "1.00": {
+      "roi_xyxy": [
+        162,
+        252,
+        218,
+        300
+      ],
+      "dark_threshold_luminance_lt": 92,
+      "dark_pixels": 987,
+      "significant_dark_components": 1,
+      "largest_dark_component": {
+        "area": 987,
+        "bbox_xyxy": [
+          10,
+          0,
+          42,
+          38
+        ],
+        "centroid_xy": [
+          25.555,
+          18.502
+        ]
+      },
+      "mean_abs_rgb_delta_from_neutral": 56.88529,
+      "max_rgb_delta_from_neutral": 205
+    }
+  },
+  "mouth_delta_from_neutral_monotonic": true,
+  "mouth_dark_area_monotonic": true,
+  "single_significant_mouth_component_all_requested_weights": true,
+  "gallery_ramp": {
+    "production_source_duration_ms": 936,
+    "sampled_frames": 24,
+    "encoded_gif_duration_ms": 960,
+    "encoded_frame_duration_ms": 40,
+    "curve": "smoothstep roarIn, then mouth=.08+.92*roarIn and roarWeight=clamp((mouth-.08)*1.22)",
+    "metrics_380": [
+      {
+        "frame": 0,
+        "time_ms": 0.0,
+        "progress": 0.0,
+        "production_roar_weight": 0.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0
+      },
+      {
+        "frame": 1,
+        "time_ms": 40.696,
+        "progress": 0.043478,
+        "production_roar_weight": 0.006181,
+        "mean_abs_rgb_delta_from_previous_frame": 0.006452
+      },
+      {
+        "frame": 2,
+        "time_ms": 81.391,
+        "progress": 0.086957,
+        "production_roar_weight": 0.023985,
+        "mean_abs_rgb_delta_from_previous_frame": 0.018467
+      },
+      {
+        "frame": 3,
+        "time_ms": 122.087,
+        "progress": 0.130435,
+        "production_roar_weight": 0.052305,
+        "mean_abs_rgb_delta_from_previous_frame": 0.030974
+      },
+      {
+        "frame": 4,
+        "time_ms": 162.783,
+        "progress": 0.173913,
+        "production_roar_weight": 0.090036,
+        "mean_abs_rgb_delta_from_previous_frame": 0.042131
+      },
+      {
+        "frame": 5,
+        "time_ms": 203.478,
+        "progress": 0.217391,
+        "production_roar_weight": 0.136068,
+        "mean_abs_rgb_delta_from_previous_frame": 0.051674
+      },
+      {
+        "frame": 6,
+        "time_ms": 244.174,
+        "progress": 0.26087,
+        "production_roar_weight": 0.189296,
+        "mean_abs_rgb_delta_from_previous_frame": 0.060413
+      },
+      {
+        "frame": 7,
+        "time_ms": 284.87,
+        "progress": 0.304348,
+        "production_roar_weight": 0.248612,
+        "mean_abs_rgb_delta_from_previous_frame": 0.063412
+      },
+      {
+        "frame": 8,
+        "time_ms": 325.565,
+        "progress": 0.347826,
+        "production_roar_weight": 0.31291,
+        "mean_abs_rgb_delta_from_previous_frame": 0.078959
+      },
+      {
+        "frame": 9,
+        "time_ms": 366.261,
+        "progress": 0.391304,
+        "production_roar_weight": 0.381083,
+        "mean_abs_rgb_delta_from_previous_frame": 0.074552
+      },
+      {
+        "frame": 10,
+        "time_ms": 406.957,
+        "progress": 0.434783,
+        "production_roar_weight": 0.452023,
+        "mean_abs_rgb_delta_from_previous_frame": 0.077267
+      },
+      {
+        "frame": 11,
+        "time_ms": 447.652,
+        "progress": 0.478261,
+        "production_roar_weight": 0.524623,
+        "mean_abs_rgb_delta_from_previous_frame": 0.123031
+      },
+      {
+        "frame": 12,
+        "time_ms": 488.348,
+        "progress": 0.521739,
+        "production_roar_weight": 0.597777,
+        "mean_abs_rgb_delta_from_previous_frame": 0.079335
+      },
+      {
+        "frame": 13,
+        "time_ms": 529.043,
+        "progress": 0.565217,
+        "production_roar_weight": 0.670377,
+        "mean_abs_rgb_delta_from_previous_frame": 0.079531
+      },
+      {
+        "frame": 14,
+        "time_ms": 569.739,
+        "progress": 0.608696,
+        "production_roar_weight": 0.741317,
+        "mean_abs_rgb_delta_from_previous_frame": 0.077438
+      },
+      {
+        "frame": 15,
+        "time_ms": 610.435,
+        "progress": 0.652174,
+        "production_roar_weight": 0.80949,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0815
+      },
+      {
+        "frame": 16,
+        "time_ms": 651.13,
+        "progress": 0.695652,
+        "production_roar_weight": 0.873788,
+        "mean_abs_rgb_delta_from_previous_frame": 0.071916
+      },
+      {
+        "frame": 17,
+        "time_ms": 691.826,
+        "progress": 0.73913,
+        "production_roar_weight": 0.933104,
+        "mean_abs_rgb_delta_from_previous_frame": 0.067375
+      },
+      {
+        "frame": 18,
+        "time_ms": 732.522,
+        "progress": 0.782609,
+        "production_roar_weight": 0.986332,
+        "mean_abs_rgb_delta_from_previous_frame": 0.058737
+      },
+      {
+        "frame": 19,
+        "time_ms": 773.217,
+        "progress": 0.826087,
+        "production_roar_weight": 1.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.013333
+      },
+      {
+        "frame": 20,
+        "time_ms": 813.913,
+        "progress": 0.869565,
+        "production_roar_weight": 1.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0
+      },
+      {
+        "frame": 21,
+        "time_ms": 854.609,
+        "progress": 0.913043,
+        "production_roar_weight": 1.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0
+      },
+      {
+        "frame": 22,
+        "time_ms": 895.304,
+        "progress": 0.956522,
+        "production_roar_weight": 1.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0
+      },
+      {
+        "frame": 23,
+        "time_ms": 936.0,
+        "progress": 1.0,
+        "production_roar_weight": 1.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0
+      }
+    ],
+    "metrics_96": [
+      {
+        "frame": 0,
+        "time_ms": 0.0,
+        "progress": 0.0,
+        "production_roar_weight": 0.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0
+      },
+      {
+        "frame": 1,
+        "time_ms": 40.696,
+        "progress": 0.043478,
+        "production_roar_weight": 0.006181,
+        "mean_abs_rgb_delta_from_previous_frame": 0.007053
+      },
+      {
+        "frame": 2,
+        "time_ms": 81.391,
+        "progress": 0.086957,
+        "production_roar_weight": 0.023985,
+        "mean_abs_rgb_delta_from_previous_frame": 0.018808
+      },
+      {
+        "frame": 3,
+        "time_ms": 122.087,
+        "progress": 0.130435,
+        "production_roar_weight": 0.052305,
+        "mean_abs_rgb_delta_from_previous_frame": 0.031829
+      },
+      {
+        "frame": 4,
+        "time_ms": 162.783,
+        "progress": 0.173913,
+        "production_roar_weight": 0.090036,
+        "mean_abs_rgb_delta_from_previous_frame": 0.042643
+      },
+      {
+        "frame": 5,
+        "time_ms": 203.478,
+        "progress": 0.217391,
+        "production_roar_weight": 0.136068,
+        "mean_abs_rgb_delta_from_previous_frame": 0.051577
+      },
+      {
+        "frame": 6,
+        "time_ms": 244.174,
+        "progress": 0.26087,
+        "production_roar_weight": 0.189296,
+        "mean_abs_rgb_delta_from_previous_frame": 0.060619
+      },
+      {
+        "frame": 7,
+        "time_ms": 284.87,
+        "progress": 0.304348,
+        "production_roar_weight": 0.248612,
+        "mean_abs_rgb_delta_from_previous_frame": 0.06514
+      },
+      {
+        "frame": 8,
+        "time_ms": 325.565,
+        "progress": 0.347826,
+        "production_roar_weight": 0.31291,
+        "mean_abs_rgb_delta_from_previous_frame": 0.080295
+      },
+      {
+        "frame": 9,
+        "time_ms": 366.261,
+        "progress": 0.391304,
+        "production_roar_weight": 0.381083,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0744
+      },
+      {
+        "frame": 10,
+        "time_ms": 406.957,
+        "progress": 0.434783,
+        "production_roar_weight": 0.452023,
+        "mean_abs_rgb_delta_from_previous_frame": 0.081163
+      },
+      {
+        "frame": 11,
+        "time_ms": 447.652,
+        "progress": 0.478261,
+        "production_roar_weight": 0.524623,
+        "mean_abs_rgb_delta_from_previous_frame": 0.115162
+      },
+      {
+        "frame": 12,
+        "time_ms": 488.348,
+        "progress": 0.521739,
+        "production_roar_weight": 0.597777,
+        "mean_abs_rgb_delta_from_previous_frame": 0.081489
+      },
+      {
+        "frame": 13,
+        "time_ms": 529.043,
+        "progress": 0.565217,
+        "production_roar_weight": 0.670377,
+        "mean_abs_rgb_delta_from_previous_frame": 0.08044
+      },
+      {
+        "frame": 14,
+        "time_ms": 569.739,
+        "progress": 0.608696,
+        "production_roar_weight": 0.741317,
+        "mean_abs_rgb_delta_from_previous_frame": 0.077799
+      },
+      {
+        "frame": 15,
+        "time_ms": 610.435,
+        "progress": 0.652174,
+        "production_roar_weight": 0.80949,
+        "mean_abs_rgb_delta_from_previous_frame": 0.082972
+      },
+      {
+        "frame": 16,
+        "time_ms": 651.13,
+        "progress": 0.695652,
+        "production_roar_weight": 0.873788,
+        "mean_abs_rgb_delta_from_previous_frame": 0.072555
+      },
+      {
+        "frame": 17,
+        "time_ms": 691.826,
+        "progress": 0.73913,
+        "production_roar_weight": 0.933104,
+        "mean_abs_rgb_delta_from_previous_frame": 0.067889
+      },
+      {
+        "frame": 18,
+        "time_ms": 732.522,
+        "progress": 0.782609,
+        "production_roar_weight": 0.986332,
+        "mean_abs_rgb_delta_from_previous_frame": 0.059353
+      },
+      {
+        "frame": 19,
+        "time_ms": 773.217,
+        "progress": 0.826087,
+        "production_roar_weight": 1.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.01407
+      },
+      {
+        "frame": 20,
+        "time_ms": 813.913,
+        "progress": 0.869565,
+        "production_roar_weight": 1.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0
+      },
+      {
+        "frame": 21,
+        "time_ms": 854.609,
+        "progress": 0.913043,
+        "production_roar_weight": 1.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0
+      },
+      {
+        "frame": 22,
+        "time_ms": 895.304,
+        "progress": 0.956522,
+        "production_roar_weight": 1.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0
+      },
+      {
+        "frame": 23,
+        "time_ms": 936.0,
+        "progress": 1.0,
+        "production_roar_weight": 1.0,
+        "mean_abs_rgb_delta_from_previous_frame": 0.0
+      }
+    ]
+  },
+  "states": {
+    "neutral": {
+      "chroma_master": "design/runtime/sloth/chroma/neutral-v2.png",
+      "chroma_sha256": "fe48effa4d640978aee633bad44bc8448226e8242382aa6e093bfd8815ee26f8",
+      "alpha_master": "design/runtime/sloth/alpha/neutral-v2.png",
+      "alpha_sha256": "69db3e44c076a681677860a32dda710b29b547a91ca31f30aba1aa0e70f7e721",
+      "runtime": "public/masks/sloth/neutral-v2.webp",
+      "runtime_bytes": 304994,
+      "runtime_sha256": "6f6aa01a67a8407244ab29c24c01fc9277b9383d0feabaf4e5403b31c9d72d41",
+      "github_pages_sha256": "6f6aa01a67a8407244ab29c24c01fc9277b9383d0feabaf4e5403b31c9d72d41",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          77,
+          150,
+          1177,
+          1108
+        ],
+        "padding_px_left_top_right_bottom": [
+          77,
+          150,
+          77,
+          146
+        ],
+        "alpha_weighted_centroid": [
+          625.104,
+          651.748
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 20261,
+        "enclosed_fully_transparent_holes": 631,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "chroma_master": "design/runtime/sloth/chroma/blink-v2.png",
+      "chroma_sha256": "74d7376457eb60b5f343a0143458a071ba392ce9a06e9f58d867366fbda902c3",
+      "alpha_master": "design/runtime/sloth/alpha/blink-v2.png",
+      "alpha_sha256": "40a27fabba80b75db4b6773f90d7c36d5063f553d6ddf612170fed48e6dd7836",
+      "runtime": "public/masks/sloth/blink-v2.webp",
+      "runtime_bytes": 302412,
+      "runtime_sha256": "3a54d131827f3167fa3a69e08db1af7c1d10c742d9908167f89a5263ee1072b0",
+      "github_pages_sha256": "3a54d131827f3167fa3a69e08db1af7c1d10c742d9908167f89a5263ee1072b0",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          77,
+          150,
+          1177,
+          1108
+        ],
+        "padding_px_left_top_right_bottom": [
+          77,
+          150,
+          77,
+          146
+        ],
+        "alpha_weighted_centroid": [
+          625.104,
+          651.748
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 20261,
+        "enclosed_fully_transparent_holes": 631,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "chroma_master": "design/runtime/sloth/chroma/roar-v2.png",
+      "chroma_sha256": "d3448974f3b4c6b8c4594dbc7288a0bc6dd868d6e89de6cf685c82685fa4dabb",
+      "alpha_master": "design/runtime/sloth/alpha/roar-v2.png",
+      "alpha_sha256": "37b3e8c95fea978ca8bf58589f771db97930880472bb5a49387fc3b999e2f913",
+      "runtime": "public/masks/sloth/roar-v2.webp",
+      "runtime_bytes": 301206,
+      "runtime_sha256": "4f88cb050f2e4ca56f651bf3ddc153f24ec370594535b6366572de19ecb21fb2",
+      "github_pages_sha256": "4f88cb050f2e4ca56f651bf3ddc153f24ec370594535b6366572de19ecb21fb2",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          77,
+          150,
+          1177,
+          1108
+        ],
+        "padding_px_left_top_right_bottom": [
+          77,
+          150,
+          77,
+          146
+        ],
+        "alpha_weighted_centroid": [
+          625.104,
+          651.748
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 20261,
+        "enclosed_fully_transparent_holes": 631,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  },
+  "generated_roar_source": {
+    "path": "design/runtime/sloth/audit/generated-roar-v2.png",
+    "sha256": "8e7408227a8a66fd084a4e7901bd763e95906b21c4022491e2cd66a538b12169",
+    "harmonized_path": "design/runtime/sloth/audit/generated-roar-harmonized-v2.png",
+    "harmonized_sha256": "210e8515262a5fd1dacdccbb85ac43ca029f256244a4836d391a5a78d8b93e82"
+  }
+}

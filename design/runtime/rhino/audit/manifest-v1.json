@@ -1,0 +1,260 @@
+{
+  "animal": "rhino",
+  "name": "Rumble Rhino",
+  "version": "v1",
+  "generation_route": "built-in ImageGen; Bumblebee v1 was finish/composition reference only; blink, roar-mid, and roar used the generated Rhino neutral as sole edit target",
+  "deterministic_processing": "installed chroma helper; localized expressions; shared neutral alpha; compact vertical registration of the neutral-targeted full-roar mouth; q95 WebP export",
+  "generated_sources": {
+    "neutral": "design/runtime/rhino/audit/generated-neutral-v1.png",
+    "blink": "design/runtime/rhino/audit/generated-blink-v1.png",
+    "roar-mid": "design/runtime/rhino/audit/generated-roar-mid-v1.png",
+    "roar": "design/runtime/rhino/audit/generated-roar-v1.png"
+  },
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "method": 6,
+    "alpha_quality": 100
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      288938,
+      285804,
+      280082,
+      280658
+    ]
+  },
+  "master_alpha_pixel_hashes": {
+    "neutral": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0",
+    "blink": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0",
+    "roar-mid": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0",
+    "roar": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0"
+  },
+  "master_alpha_pixel_hashes_identical": true,
+  "runtime_alpha_pixel_hashes": {
+    "neutral": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0",
+    "blink": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0",
+    "roar-mid": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0",
+    "roar": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0"
+  },
+  "runtime_alpha_pixel_hashes_identical": true,
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 177066,
+      "changed_visible_percent": 21.6939,
+      "changed_bbox": [
+        226,
+        448,
+        1031,
+        839
+      ],
+      "outside_localization_max_channel_delta": 0
+    },
+    "roar-mid": {
+      "changed_visible_pixels": 139817,
+      "changed_visible_percent": 17.1302,
+      "changed_bbox": [
+        261,
+        301,
+        996,
+        1120
+      ],
+      "outside_localization_max_channel_delta": 0
+    },
+    "roar": {
+      "changed_visible_pixels": 107566,
+      "changed_visible_percent": 13.1789,
+      "changed_bbox": [
+        271,
+        315,
+        985,
+        1120
+      ],
+      "outside_localization_max_channel_delta": 0
+    }
+  },
+  "states": {
+    "neutral": {
+      "chroma": "design/runtime/rhino/chroma/neutral-v1.png",
+      "chroma_sha256": "b8a29821e7327ef45b4eae898a952231715ab18e1ea2a7e9baa9ffa39da33c71",
+      "alpha_master": "design/runtime/rhino/alpha/neutral-v1.png",
+      "alpha_sha256": "4a53e7035f75ee86e911e1ac89fccbddaccb91356159d7fcfedde7c52f9b344a",
+      "runtime": "public/masks/rhino/neutral-v1.webp",
+      "runtime_bytes": 288938,
+      "runtime_sha256": "1309d98f73bd22dee389acabbfe5fdae24fc77c3c1a06f6c3ae7b3e9ae8e9f75",
+      "github_pages_sha256": "1309d98f73bd22dee389acabbfe5fdae24fc77c3c1a06f6c3ae7b3e9ae8e9f75",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          129,
+          145,
+          1125,
+          1140
+        ],
+        "padding_px_left_top_right_bottom": [
+          129,
+          145,
+          129,
+          114
+        ],
+        "alpha_weighted_centroid": [
+          626.525,
+          644.093
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4677,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "chroma": "design/runtime/rhino/chroma/blink-v1.png",
+      "chroma_sha256": "c43220962d49055d3f2188c24304e670b5acaf5bf8d6dd43f2d2e529f3573260",
+      "alpha_master": "design/runtime/rhino/alpha/blink-v1.png",
+      "alpha_sha256": "0a33e8514f1ba0ef1df4158ed2d5172a963a208cbbd7670cc0445172795b14a2",
+      "runtime": "public/masks/rhino/blink-v1.webp",
+      "runtime_bytes": 285804,
+      "runtime_sha256": "1619da18cc9987edb9b286114bba4c79a915d79a8fcc74d7f8c6e798714f92ff",
+      "github_pages_sha256": "1619da18cc9987edb9b286114bba4c79a915d79a8fcc74d7f8c6e798714f92ff",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          129,
+          145,
+          1125,
+          1140
+        ],
+        "padding_px_left_top_right_bottom": [
+          129,
+          145,
+          129,
+          114
+        ],
+        "alpha_weighted_centroid": [
+          626.525,
+          644.093
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4677,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar-mid": {
+      "chroma": "design/runtime/rhino/chroma/roar-mid-v1.png",
+      "chroma_sha256": "c0ad812d65951b209fc279581756584392cda9622e9d049f47799186ed41452a",
+      "alpha_master": "design/runtime/rhino/alpha/roar-mid-v1.png",
+      "alpha_sha256": "7f3c0ccfde7b41f5d1cf3a86cf909b1c52e1e3b48fb55a320a74e6f0927657e5",
+      "runtime": "public/masks/rhino/roar-mid-v1.webp",
+      "runtime_bytes": 280082,
+      "runtime_sha256": "62e3215379f750dc81d95e0d641b531d27f752bd4257eb0c766c2655a0d21aca",
+      "github_pages_sha256": "62e3215379f750dc81d95e0d641b531d27f752bd4257eb0c766c2655a0d21aca",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          129,
+          145,
+          1125,
+          1140
+        ],
+        "padding_px_left_top_right_bottom": [
+          129,
+          145,
+          129,
+          114
+        ],
+        "alpha_weighted_centroid": [
+          626.525,
+          644.093
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4677,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "chroma": "design/runtime/rhino/chroma/roar-v1.png",
+      "chroma_sha256": "92af96b1e539ddfde3bae7ec8187d64566bf006f4dcd4466f7f7b0b0d0ef82b2",
+      "alpha_master": "design/runtime/rhino/alpha/roar-v1.png",
+      "alpha_sha256": "86e6e03126454e6e3be214dcc284f684cfe789616c95a0fa2bda65f7c32b5d70",
+      "runtime": "public/masks/rhino/roar-v1.webp",
+      "runtime_bytes": 280658,
+      "runtime_sha256": "be91dfa176166894f41f33c0523a0b3b4c503038d199b725f57520092f00333e",
+      "github_pages_sha256": "be91dfa176166894f41f33c0523a0b3b4c503038d199b725f57520092f00333e",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          129,
+          145,
+          1125,
+          1140
+        ],
+        "padding_px_left_top_right_bottom": [
+          129,
+          145,
+          129,
+          114
+        ],
+        "alpha_weighted_centroid": [
+          626.525,
+          644.093
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4677,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  },
+  "audit_evidence": [
+    "design/runtime/rhino/audit/native-states-v1.jpg",
+    "design/runtime/rhino/audit/native-96-380-states-v1.png",
+    "design/runtime/rhino/audit/hostile-380-states-v1.png",
+    "design/runtime/rhino/audit/copy-lighter-crossfades-380-v1.png",
+    "design/runtime/rhino/audit/semantic-mouth-crossfade-v1.png",
+    "design/runtime/rhino/audit/species-vs-hippo-380-v1.png",
+    "design/runtime/rhino/audit/canonical-placement-380-v1.png",
+    "design/runtime/rhino/audit/prompts-and-provenance-v1.md"
+  ]
+}

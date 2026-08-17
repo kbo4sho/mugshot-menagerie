@@ -1,0 +1,111 @@
+{
+  "version": "v1",
+  "alpha_hashes_identical": true,
+  "states": {
+    "neutral": {
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_bbox": [
+        101,
+        147,
+        1151,
+        1118
+      ],
+      "padding_px": {
+        "left": 101,
+        "top": 147,
+        "right": 103,
+        "bottom": 136
+      },
+      "alpha_coverage": 0.473586,
+      "alpha_centroid": [
+        624.57,
+        655.46
+      ],
+      "transparent_pixels": 824960,
+      "partially_transparent_pixels": 3795,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edge_green_fringe_pixels": 0,
+      "webp_bytes": 279702,
+      "public_sha256": "49a4e16aed801014bc86d4e30d9a37a67ccb15f914cfdabb6faad259e347596c",
+      "mirror_sha256": "49a4e16aed801014bc86d4e30d9a37a67ccb15f914cfdabb6faad259e347596c"
+    },
+    "blink": {
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_bbox": [
+        101,
+        147,
+        1151,
+        1118
+      ],
+      "padding_px": {
+        "left": 101,
+        "top": 147,
+        "right": 103,
+        "bottom": 136
+      },
+      "alpha_coverage": 0.473586,
+      "alpha_centroid": [
+        624.57,
+        655.46
+      ],
+      "transparent_pixels": 824960,
+      "partially_transparent_pixels": 3795,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edge_green_fringe_pixels": 0,
+      "webp_bytes": 276112,
+      "public_sha256": "811fe687e591feac9732373ed7d724a390544e6a6810caf61f1e37dcebf45694",
+      "mirror_sha256": "811fe687e591feac9732373ed7d724a390544e6a6810caf61f1e37dcebf45694"
+    },
+    "roar": {
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_bbox": [
+        101,
+        147,
+        1151,
+        1118
+      ],
+      "padding_px": {
+        "left": 101,
+        "top": 147,
+        "right": 103,
+        "bottom": 136
+      },
+      "alpha_coverage": 0.473586,
+      "alpha_centroid": [
+        624.57,
+        655.46
+      ],
+      "transparent_pixels": 824960,
+      "partially_transparent_pixels": 3795,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edge_green_fringe_pixels": 0,
+      "webp_bytes": 278134,
+      "public_sha256": "92d3b510fcc49e8e5c4f5a44e23b9a08f6d599c2cae578b3b90ae90a3e7f7515",
+      "mirror_sha256": "92d3b510fcc49e8e5c4f5a44e23b9a08f6d599c2cae578b3b90ae90a3e7f7515"
+    }
+  }
+}

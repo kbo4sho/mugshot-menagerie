@@ -1,0 +1,452 @@
+{
+  "animal": "parrot",
+  "name": "Party Parrot",
+  "version": "v3",
+  "repair": "critic-directed deterministic v2 mouth-bottom repair: detached dark crescent replaced with sampled scarlet feather texture; existing compact lower horn widened laterally while kept attached to the continuous v2 burgundy cavity",
+  "imagegen_used": false,
+  "runtime_export": {
+    "side_px": 1344,
+    "quality": 95,
+    "method": 6,
+    "alpha_quality": 100
+  },
+  "preservation": {
+    "v1_v2_files_still_present": true,
+    "neutral_master_pixels_identical_v1_v2_v3": true,
+    "blink_master_pixels_identical_v1_v2_v3": true,
+    "neutral_runtime_bytes_identical_v2_v3": true,
+    "blink_runtime_bytes_identical_v2_v3": true
+  },
+  "master_alpha_pixel_hashes": {
+    "neutral": "194cf253f0d9fee300199c702463092c5e866c4cb523fdb021f4ed13cf47c1fa",
+    "blink": "194cf253f0d9fee300199c702463092c5e866c4cb523fdb021f4ed13cf47c1fa",
+    "roar": "194cf253f0d9fee300199c702463092c5e866c4cb523fdb021f4ed13cf47c1fa"
+  },
+  "master_alpha_pixel_hashes_identical": true,
+  "runtime_alpha_pixel_hashes": {
+    "neutral": "831617d7a970897c95babf08f418e0f17fe6c69e6cbaa88effc426c956691276",
+    "blink": "831617d7a970897c95babf08f418e0f17fe6c69e6cbaa88effc426c956691276",
+    "roar": "831617d7a970897c95babf08f418e0f17fe6c69e6cbaa88effc426c956691276"
+  },
+  "runtime_alpha_pixel_hashes_identical": true,
+  "roar_v2_to_v3_localization": {
+    "changed_bbox": [
+      562,
+      929,
+      695,
+      1024
+    ],
+    "changed_pixels": 8851,
+    "localization_mask_nonzero_pixels": 10443,
+    "outside_roi_max_channel_delta": 0,
+    "outside_roi_changed_pixels": 0,
+    "changed_pixels_above_y929": 0
+  },
+  "critic_artifact_metrics": {
+    "detached_crescent_core_xyxy": [
+      575,
+      978,
+      685,
+      1008
+    ],
+    "detached_crescent_dark_pixels_v2": 197,
+    "detached_crescent_dark_pixels_v3": 0,
+    "detached_crescent_charcoal_pixels_v2": 22,
+    "detached_crescent_charcoal_pixels_v3": 0,
+    "attached_lower_horn_dark_bbox_v2": [
+      615,
+      944,
+      645,
+      962
+    ],
+    "attached_lower_horn_dark_bbox_v3": [
+      612,
+      944,
+      648,
+      962
+    ],
+    "attached_lower_horn_dark_width_v2": 30,
+    "attached_lower_horn_dark_width_v3": 36
+  },
+  "multi_threshold_topology": {
+    "0.10": {
+      "thresholds": {
+        "2": {
+          "active_pixels": 23822,
+          "components_ge_4px": 8,
+          "largest_component_pixels": 22054,
+          "largest_component_share": 0.926
+        },
+        "8": {
+          "active_pixels": 8207,
+          "components_ge_4px": 6,
+          "largest_component_pixels": 3616,
+          "largest_component_share": 0.4415
+        },
+        "16": {
+          "active_pixels": 949,
+          "components_ge_4px": 5,
+          "largest_component_pixels": 557,
+          "largest_component_share": 0.5888
+        },
+        "32": {
+          "active_pixels": 0,
+          "components_ge_4px": 0,
+          "largest_component_pixels": 0,
+          "largest_component_share": null
+        }
+      }
+    },
+    "0.33": {
+      "thresholds": {
+        "2": {
+          "active_pixels": 29028,
+          "components_ge_4px": 5,
+          "largest_component_pixels": 28359,
+          "largest_component_share": 0.9775
+        },
+        "8": {
+          "active_pixels": 22365,
+          "components_ge_4px": 11,
+          "largest_component_pixels": 20619,
+          "largest_component_share": 0.9222
+        },
+        "16": {
+          "active_pixels": 14540,
+          "components_ge_4px": 18,
+          "largest_component_pixels": 13856,
+          "largest_component_share": 0.9543
+        },
+        "32": {
+          "active_pixels": 6036,
+          "components_ge_4px": 9,
+          "largest_component_pixels": 2999,
+          "largest_component_share": 0.4978
+        }
+      }
+    },
+    "0.50": {
+      "thresholds": {
+        "2": {
+          "active_pixels": 30762,
+          "components_ge_4px": 3,
+          "largest_component_pixels": 29735,
+          "largest_component_share": 0.967
+        },
+        "8": {
+          "active_pixels": 25121,
+          "components_ge_4px": 9,
+          "largest_component_pixels": 23138,
+          "largest_component_share": 0.9217
+        },
+        "16": {
+          "active_pixels": 20242,
+          "components_ge_4px": 16,
+          "largest_component_pixels": 18999,
+          "largest_component_share": 0.9391
+        },
+        "32": {
+          "active_pixels": 10768,
+          "components_ge_4px": 4,
+          "largest_component_pixels": 6562,
+          "largest_component_share": 0.6101
+        }
+      }
+    },
+    "0.67": {
+      "thresholds": {
+        "2": {
+          "active_pixels": 31475,
+          "components_ge_4px": 3,
+          "largest_component_pixels": 30264,
+          "largest_component_share": 0.9618
+        },
+        "8": {
+          "active_pixels": 26648,
+          "components_ge_4px": 8,
+          "largest_component_pixels": 24615,
+          "largest_component_share": 0.9242
+        },
+        "16": {
+          "active_pixels": 22662,
+          "components_ge_4px": 11,
+          "largest_component_pixels": 20809,
+          "largest_component_share": 0.9184
+        },
+        "32": {
+          "active_pixels": 14841,
+          "components_ge_4px": 21,
+          "largest_component_pixels": 14061,
+          "largest_component_share": 0.9494
+        }
+      }
+    },
+    "0.75": {
+      "thresholds": {
+        "2": {
+          "active_pixels": 31475,
+          "components_ge_4px": 3,
+          "largest_component_pixels": 30264,
+          "largest_component_share": 0.9618
+        },
+        "8": {
+          "active_pixels": 27082,
+          "components_ge_4px": 8,
+          "largest_component_pixels": 24961,
+          "largest_component_share": 0.9221
+        },
+        "16": {
+          "active_pixels": 23270,
+          "components_ge_4px": 9,
+          "largest_component_pixels": 21500,
+          "largest_component_share": 0.9241
+        },
+        "32": {
+          "active_pixels": 16493,
+          "components_ge_4px": 17,
+          "largest_component_pixels": 15020,
+          "largest_component_share": 0.912
+        }
+      }
+    }
+  },
+  "states": {
+    "neutral": {
+      "alpha_master": "design/runtime/parrot/alpha/neutral-v3.png",
+      "alpha_sha256": "ea95c15ec80137ba0c144bb60504419008ae5f85b343424e92d5e6de6a2e7284",
+      "chroma": "design/runtime/parrot/chroma/neutral-v3.png",
+      "chroma_sha256": "1ad4d3e5d92c6df59419dfb39cb2f35c4086ab327e0c106f489575a1299f4500",
+      "runtime": "public/masks/parrot/neutral-v3.webp",
+      "runtime_bytes": 223286,
+      "runtime_sha256": "5d9023def9fb6ced8c85245164f0357c60ac29729a9c135cf4f025cd8e1d587f",
+      "github_pages_sha256": "5d9023def9fb6ced8c85245164f0357c60ac29729a9c135cf4f025cd8e1d587f",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "alpha_metrics_master": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          140,
+          79,
+          1120,
+          1071
+        ],
+        "coverage_percent": 78.15,
+        "padding_px_left_top_right_bottom": [
+          140,
+          79,
+          134,
+          183
+        ],
+        "alpha_weighted_centroid": [
+          629.025,
+          636.971
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 14610,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "alpha_metrics_runtime": {
+        "dimensions": [
+          1344,
+          1344
+        ],
+        "bbox_alpha_gt_8": [
+          150,
+          85,
+          1200,
+          1147
+        ],
+        "coverage_percent": 78.125,
+        "padding_px_left_top_right_bottom": [
+          150,
+          85,
+          144,
+          197
+        ],
+        "alpha_weighted_centroid": [
+          674.204,
+          682.721
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 20985,
+        "enclosed_fully_transparent_holes": 1078,
+        "green_dominant_partial_alpha_pixels": 198
+      }
+    },
+    "blink": {
+      "alpha_master": "design/runtime/parrot/alpha/blink-v3.png",
+      "alpha_sha256": "5ecf1892c2a3126f559787a30b040223f3c3e99b8f79873dce43b02df30c0346",
+      "chroma": "design/runtime/parrot/chroma/blink-v3.png",
+      "chroma_sha256": "a53a8e7af7478e0a2fdd877d7b019761a25be3a396a55c7bbfc89abef1da5278",
+      "runtime": "public/masks/parrot/blink-v3.webp",
+      "runtime_bytes": 221446,
+      "runtime_sha256": "d67ef90fd3b749ff57b716851b1f48ca228aac93cc8b7786c9f747c10a2edcb7",
+      "github_pages_sha256": "d67ef90fd3b749ff57b716851b1f48ca228aac93cc8b7786c9f747c10a2edcb7",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "alpha_metrics_master": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          140,
+          79,
+          1120,
+          1071
+        ],
+        "coverage_percent": 78.15,
+        "padding_px_left_top_right_bottom": [
+          140,
+          79,
+          134,
+          183
+        ],
+        "alpha_weighted_centroid": [
+          629.025,
+          636.971
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 14610,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "alpha_metrics_runtime": {
+        "dimensions": [
+          1344,
+          1344
+        ],
+        "bbox_alpha_gt_8": [
+          150,
+          85,
+          1200,
+          1147
+        ],
+        "coverage_percent": 78.125,
+        "padding_px_left_top_right_bottom": [
+          150,
+          85,
+          144,
+          197
+        ],
+        "alpha_weighted_centroid": [
+          674.204,
+          682.721
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 20985,
+        "enclosed_fully_transparent_holes": 1078,
+        "green_dominant_partial_alpha_pixels": 195
+      }
+    },
+    "roar": {
+      "alpha_master": "design/runtime/parrot/alpha/roar-v3.png",
+      "alpha_sha256": "21041dfc43b9d7c6342aaad87a5392689eae9e6d53dd504821553fef93fd5d5b",
+      "chroma": "design/runtime/parrot/chroma/roar-v3.png",
+      "chroma_sha256": "691dd7b0a981b1a892673fa64d3ed81ee86ea4a1105626ab76cef967f8813444",
+      "runtime": "public/masks/parrot/roar-v3.webp",
+      "runtime_bytes": 224004,
+      "runtime_sha256": "ab696c501a71fcef7bd7cb2a4b885cc291011633427fcab8702c74ac9e006c86",
+      "github_pages_sha256": "ab696c501a71fcef7bd7cb2a4b885cc291011633427fcab8702c74ac9e006c86",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "alpha_metrics_master": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          140,
+          79,
+          1120,
+          1071
+        ],
+        "coverage_percent": 78.15,
+        "padding_px_left_top_right_bottom": [
+          140,
+          79,
+          134,
+          183
+        ],
+        "alpha_weighted_centroid": [
+          629.025,
+          636.971
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 14610,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "alpha_metrics_runtime": {
+        "dimensions": [
+          1344,
+          1344
+        ],
+        "bbox_alpha_gt_8": [
+          150,
+          85,
+          1200,
+          1147
+        ],
+        "coverage_percent": 78.125,
+        "padding_px_left_top_right_bottom": [
+          150,
+          85,
+          144,
+          197
+        ],
+        "alpha_weighted_centroid": [
+          674.204,
+          682.721
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 20985,
+        "enclosed_fully_transparent_holes": 1078,
+        "green_dominant_partial_alpha_pixels": 176
+      }
+    }
+  },
+  "audit_evidence": [
+    "design/runtime/parrot/v3-audit/repair-record-v3.md",
+    "design/runtime/parrot/v3-audit/native-states-v3.jpg",
+    "design/runtime/parrot/v3-audit/native-96-380-states-v3.png",
+    "design/runtime/parrot/v3-audit/hostile-380-states-v3.png",
+    "design/runtime/parrot/v3-audit/roar-transition-96-v3.png",
+    "design/runtime/parrot/v3-audit/roar-transition-380-v3.png",
+    "design/runtime/parrot/v3-audit/v2-v3-roar-comparison-380.png"
+  ]
+}

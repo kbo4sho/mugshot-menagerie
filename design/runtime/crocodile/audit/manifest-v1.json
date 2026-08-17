@@ -1,0 +1,223 @@
+{
+  "animal": "crocodile",
+  "name": "Chomp-Chomp Crocodile",
+  "version": "v1",
+  "generation_route": "built-in ImageGen; Bumblebee v1 was finish/composition reference only; blink and roar used the generated neutral as sole edit target",
+  "chroma_key": "#ff00ff",
+  "generated_sources": {
+    "neutral": "design/runtime/crocodile/audit/generated-neutral-v1.png",
+    "blink": "design/runtime/crocodile/audit/generated-blink-v1.png",
+    "roar": "design/runtime/crocodile/audit/generated-roar-v1.png"
+  },
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 94,
+    "method": 6,
+    "alpha_quality": 100
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      344192,
+      380100,
+      327114
+    ],
+    "1254-q94": [
+      325104,
+      337908,
+      308724
+    ]
+  },
+  "master_alpha_pixel_hashes": {
+    "neutral": "a193cd9fd17cdb5b17ff34555bc1a74b74e6742666028937b13faf10982bcd61",
+    "blink": "a193cd9fd17cdb5b17ff34555bc1a74b74e6742666028937b13faf10982bcd61",
+    "roar": "a193cd9fd17cdb5b17ff34555bc1a74b74e6742666028937b13faf10982bcd61"
+  },
+  "master_alpha_pixel_hashes_identical": true,
+  "runtime_alpha_pixel_hashes": {
+    "neutral": "a193cd9fd17cdb5b17ff34555bc1a74b74e6742666028937b13faf10982bcd61",
+    "blink": "a193cd9fd17cdb5b17ff34555bc1a74b74e6742666028937b13faf10982bcd61",
+    "roar": "a193cd9fd17cdb5b17ff34555bc1a74b74e6742666028937b13faf10982bcd61"
+  },
+  "runtime_alpha_pixel_hashes_identical": true,
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 267428,
+      "changed_visible_percent": 35.4738,
+      "changed_bbox": [
+        177,
+        302,
+        1079,
+        747
+      ],
+      "outside_localization_max_channel_delta": 0
+    },
+    "roar": {
+      "changed_visible_pixels": 126676,
+      "changed_visible_percent": 16.8033,
+      "changed_bbox": [
+        318,
+        785,
+        936,
+        1068
+      ],
+      "outside_localization_max_channel_delta": 0
+    }
+  },
+  "species_read": {
+    "crocodilian_markers": [
+      "broad low armored cranium",
+      "long contained blunt snout",
+      "paired nostrils at the snout tip",
+      "raised eye ridges",
+      "pebbled scutes"
+    ],
+    "alligator_crocodile_note": "The mask is intentionally a friendly generalized crocodilian; a broad blunt snout may read alligator to some viewers, which the brief permits.",
+    "generic_lizard_check": "The long broad snout and dorsal/cheek scute architecture distinguish it from the shipped chameleon.",
+    "hippo_check": "The dorsal scutes, reptile skin, eye ridges, and snout-tip nostrils distinguish it from the shipped hippo."
+  },
+  "child_safe_roar": {
+    "visible_teeth": 4,
+    "teeth_shape": "tiny blunt rounded",
+    "cavity": "uniform warm coral-burgundy",
+    "rows_or_fangs": false
+  },
+  "states": {
+    "neutral": {
+      "chroma": "design/runtime/crocodile/chroma/neutral-v1.png",
+      "chroma_sha256": "d710efc36cf68f91e40f2b0bb12b00b10e900a335a95015e72d3300feb6735c8",
+      "alpha_master": "design/runtime/crocodile/alpha/neutral-v1.png",
+      "alpha_sha256": "eea63af2b234ee9d4a2343d3f983eb700733bafbf6209da078baf8cc49652761",
+      "runtime": "public/masks/crocodile/neutral-v1.webp",
+      "runtime_bytes": 325104,
+      "runtime_sha256": "543587fd4804c0054d441127a1a41e13d0d9562d7f4992e88923a45de63148ce",
+      "github_pages_sha256": "543587fd4804c0054d441127a1a41e13d0d9562d7f4992e88923a45de63148ce",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          81,
+          189,
+          1175,
+          1089
+        ],
+        "padding_px_left_top_right_bottom": [
+          81,
+          189,
+          79,
+          165
+        ],
+        "alpha_weighted_centroid": [
+          627.87,
+          660.302
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3340,
+        "enclosed_fully_transparent_holes": 0,
+        "magenta_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "chroma": "design/runtime/crocodile/chroma/blink-v1.png",
+      "chroma_sha256": "889a5d3e09760f5842d368568c069bb671bbc2c734990c2cc3a0d7f511346176",
+      "alpha_master": "design/runtime/crocodile/alpha/blink-v1.png",
+      "alpha_sha256": "708d071bb61206a0cb04c5f057c79c261124ee058121eeb39cecb44518eb35eb",
+      "runtime": "public/masks/crocodile/blink-v1.webp",
+      "runtime_bytes": 337908,
+      "runtime_sha256": "cea6a5e93a7c3e1678c3faedab77be3c3c8a79488798f6fb5d426a54fa1bebba",
+      "github_pages_sha256": "cea6a5e93a7c3e1678c3faedab77be3c3c8a79488798f6fb5d426a54fa1bebba",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          81,
+          189,
+          1175,
+          1089
+        ],
+        "padding_px_left_top_right_bottom": [
+          81,
+          189,
+          79,
+          165
+        ],
+        "alpha_weighted_centroid": [
+          627.87,
+          660.302
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3340,
+        "enclosed_fully_transparent_holes": 0,
+        "magenta_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "chroma": "design/runtime/crocodile/chroma/roar-v1.png",
+      "chroma_sha256": "f6d85317ce0bce68c5b3a58a2b5cabb87a0efb0e47613f9498cb52d4cda0743c",
+      "alpha_master": "design/runtime/crocodile/alpha/roar-v1.png",
+      "alpha_sha256": "b963ef7ab2108e3841a15141ff4e1f7754e5333d02ffb5b18cb4c1583dc9137e",
+      "runtime": "public/masks/crocodile/roar-v1.webp",
+      "runtime_bytes": 308724,
+      "runtime_sha256": "fa9ab5fcbfaa0bd6ae184f4f4b6e0b4fb1842f3e37f22ce043f2f0c4ce8909c2",
+      "github_pages_sha256": "fa9ab5fcbfaa0bd6ae184f4f4b6e0b4fb1842f3e37f22ce043f2f0c4ce8909c2",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          81,
+          189,
+          1175,
+          1089
+        ],
+        "padding_px_left_top_right_bottom": [
+          81,
+          189,
+          79,
+          165
+        ],
+        "alpha_weighted_centroid": [
+          627.87,
+          660.302
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 3340,
+        "enclosed_fully_transparent_holes": 0,
+        "magenta_dominant_partial_alpha_pixels": 0
+      }
+    }
+  },
+  "audit_evidence": [
+    "design/runtime/crocodile/audit/native-states-v1.jpg",
+    "design/runtime/crocodile/audit/native-96-380-states-v1.png",
+    "design/runtime/crocodile/audit/hostile-380-states-v1.png",
+    "design/runtime/crocodile/audit/species-comparison-380-v1.png",
+    "design/runtime/crocodile/audit/snout-matte-detail-v1.png",
+    "design/runtime/crocodile/audit/copy-lighter-crossfades-380-v1.png"
+  ]
+}

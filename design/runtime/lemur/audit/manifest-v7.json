@@ -1,0 +1,226 @@
+{
+  "animal": "lemur",
+  "name": "Ringtail Lemur",
+  "version": "v7",
+  "generation_route": "v1/v2 ImageGen identity preserved; v5 two-size smile-rim cocoa opening plus cream\u00d7cavity snap in mix_rendered_mask_images / blendRenderedMaskSample; no new ImageGen",
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6,
+    "exact": true
+  },
+  "cavity_rgb": [
+    32,
+    16,
+    12
+  ],
+  "cavity_geometry": {
+    "x_span_native_inclusive": [
+      560,
+      682
+    ],
+    "upper_rim_native_y_min_max": [
+      978.0,
+      984.0
+    ],
+    "mid_lower_native_y_min_max": [
+      988.0,
+      1008.54
+    ],
+    "roar_lower_native_y_min_max": [
+      992.0,
+      1031.31
+    ],
+    "mid_center_depth": 26.0,
+    "roar_center_depth": 50.0
+  },
+  "new_dark_px_threshold_70": {
+    "roar-mid_vs_neutral": 2112,
+    "roar_vs_neutral": 4387,
+    "roar_vs_roar-mid": 2275
+  },
+  "extra_depth": {
+    "px": 3138,
+    "jaw_0625_mean_rgb": [
+      44,
+      30,
+      25
+    ],
+    "jaw_0750_mean_rgb": [
+      43,
+      30,
+      25
+    ],
+    "mid_vs_roar_max_delta": 158
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "576486bae9eb85ea78e962d8c5fc32329805b7993000332b9700d738331caba8",
+    "blink": "576486bae9eb85ea78e962d8c5fc32329805b7993000332b9700d738331caba8",
+    "roar-mid": "576486bae9eb85ea78e962d8c5fc32329805b7993000332b9700d738331caba8",
+    "roar": "576486bae9eb85ea78e962d8c5fc32329805b7993000332b9700d738331caba8"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "states": {
+    "neutral": {
+      "alpha_master": "design/runtime/lemur/alpha/neutral-v7.png",
+      "alpha_sha256": "e7a2aa9ae89d2dc87688314ff745f25cf14409eb3ef8d01f6f83d7ab047774e5",
+      "runtime": "public/masks/lemur/neutral-v7.webp",
+      "runtime_bytes": 265114,
+      "runtime_sha256": "20bdfec40fd3456c23fc238868bdedc2d8be22f6d7fe1374e26b5e1399ceaed4",
+      "github_pages_sha256": "20bdfec40fd3456c23fc238868bdedc2d8be22f6d7fe1374e26b5e1399ceaed4",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          51,
+          199,
+          1199,
+          1076
+        ],
+        "padding_px_left_top_right_bottom": [
+          51,
+          199,
+          55,
+          178
+        ],
+        "alpha_weighted_centroid": [
+          623.733,
+          620.738
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 7229,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "alpha_master": "design/runtime/lemur/alpha/blink-v7.png",
+      "alpha_sha256": "ad9b539850d463bb2895bf01e4a9b6e557255bdf96454b11eb905bdfaaee9be2",
+      "runtime": "public/masks/lemur/blink-v7.webp",
+      "runtime_bytes": 272300,
+      "runtime_sha256": "2e66c16b0b89d713b26dccf7425843dc301791843885c5f18fe0bdcbf2bb3b24",
+      "github_pages_sha256": "2e66c16b0b89d713b26dccf7425843dc301791843885c5f18fe0bdcbf2bb3b24",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          51,
+          199,
+          1199,
+          1076
+        ],
+        "padding_px_left_top_right_bottom": [
+          51,
+          199,
+          55,
+          178
+        ],
+        "alpha_weighted_centroid": [
+          623.733,
+          620.738
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 7229,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar-mid": {
+      "alpha_master": "design/runtime/lemur/alpha/roar-mid-v7.png",
+      "alpha_sha256": "3bae65d159217bba6224f96d737bda2948aa972541a60feaec28cf25e4630c3f",
+      "runtime": "public/masks/lemur/roar-mid-v7.webp",
+      "runtime_bytes": 264628,
+      "runtime_sha256": "3513b8f27d9c126667e758e2e3a6a981376ea215e4088140039bedc460c62d25",
+      "github_pages_sha256": "3513b8f27d9c126667e758e2e3a6a981376ea215e4088140039bedc460c62d25",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          51,
+          199,
+          1199,
+          1076
+        ],
+        "padding_px_left_top_right_bottom": [
+          51,
+          199,
+          55,
+          178
+        ],
+        "alpha_weighted_centroid": [
+          623.733,
+          620.738
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 7229,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "alpha_master": "design/runtime/lemur/alpha/roar-v7.png",
+      "alpha_sha256": "4fe5bac7c98530973eb58b7f483d82fd2ffc95b8e5a9acabaabb1665ae4aedc8",
+      "runtime": "public/masks/lemur/roar-v7.webp",
+      "runtime_bytes": 263510,
+      "runtime_sha256": "304e3a98c3228858d4654efdbcb6c8aac2b18b2d4e2eb7e741a45f78b54d8570",
+      "github_pages_sha256": "304e3a98c3228858d4654efdbcb6c8aac2b18b2d4e2eb7e741a45f78b54d8570",
+      "runtime_copies_identical": true,
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          51,
+          199,
+          1199,
+          1076
+        ],
+        "padding_px_left_top_right_bottom": [
+          51,
+          199,
+          55,
+          178
+        ],
+        "alpha_weighted_centroid": [
+          623.733,
+          620.738
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 7229,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  }
+}

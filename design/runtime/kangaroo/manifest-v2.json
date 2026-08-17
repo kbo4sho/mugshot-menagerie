@@ -1,0 +1,1066 @@
+{
+  "animal": "kangaroo",
+  "name": "Kooky Kangaroo",
+  "version": "v2",
+  "v1_preserved": true,
+  "generation_route": "v1 neutral and blink preserved; built-in ImageGen supplied a v2 shallow-mouth source; roar-mid localized jaw-only, then roar deterministically extended downward from the exact same upper rim",
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6,
+    "exact": true
+  },
+  "jaw_roi_native_xyxy": [
+    510,
+    1080,
+    740,
+    1212
+  ],
+  "cavity_rgb": [
+    64,
+    24,
+    18
+  ],
+  "alpha_pixel_hashes": {
+    "neutral": "ef7bce44e7b03e2e0115c126b5bada8e88758bb55da40b8c24ca1e4744340b6d",
+    "blink": "ef7bce44e7b03e2e0115c126b5bada8e88758bb55da40b8c24ca1e4744340b6d",
+    "roar-mid": "ef7bce44e7b03e2e0115c126b5bada8e88758bb55da40b8c24ca1e4744340b6d",
+    "roar": "ef7bce44e7b03e2e0115c126b5bada8e88758bb55da40b8c24ca1e4744340b6d"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "neutral_v1_v2_alpha_pixels_identical": true,
+  "outside_jaw_roi_max_channel_delta": {
+    "roar-mid": 0,
+    "roar": 0
+  },
+  "helper_jaw_sweep": {
+    "0.000": {
+      "weights_neutral_blink_mid_roar": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "at_380": {
+        "jaw_roi_xyxy": [
+          161,
+          338,
+          218,
+          367
+        ],
+        "threshold_70": {
+          "significant_components": 2,
+          "largest_area_px": 45,
+          "largest_bbox_local_xyxy": [
+            12,
+            0,
+            43,
+            10
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 79,
+          "largest_bbox_local_xyxy": [
+            8,
+            0,
+            48,
+            10
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 2,
+          "largest_area_px": 109,
+          "largest_bbox_local_xyxy": [
+            7,
+            0,
+            49,
+            10
+          ]
+        }
+      },
+      "at_96": {
+        "jaw_roi_xyxy": [
+          41,
+          85,
+          55,
+          93
+        ],
+        "threshold_70": {
+          "significant_components": 0,
+          "largest_area_px": 0,
+          "largest_bbox_local_xyxy": null
+        },
+        "threshold_100": {
+          "significant_components": 0,
+          "largest_area_px": 0,
+          "largest_bbox_local_xyxy": null
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 9,
+          "largest_bbox_local_xyxy": [
+            2,
+            1,
+            10,
+            3
+          ]
+        }
+      }
+    },
+    "0.125": {
+      "weights_neutral_blink_mid_roar": [
+        0.75,
+        0.0,
+        0.25,
+        0.0
+      ],
+      "at_380": {
+        "jaw_roi_xyxy": [
+          161,
+          338,
+          218,
+          367
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 53,
+          "largest_bbox_local_xyxy": [
+            12,
+            3,
+            45,
+            10
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 81,
+          "largest_bbox_local_xyxy": [
+            8,
+            0,
+            46,
+            10
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 2,
+          "largest_area_px": 212,
+          "largest_bbox_local_xyxy": [
+            7,
+            0,
+            49,
+            11
+          ]
+        }
+      },
+      "at_96": {
+        "jaw_roi_xyxy": [
+          41,
+          85,
+          55,
+          93
+        ],
+        "threshold_70": {
+          "significant_components": 0,
+          "largest_area_px": 0,
+          "largest_bbox_local_xyxy": null
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 8,
+          "largest_bbox_local_xyxy": [
+            3,
+            1,
+            10,
+            3
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 14,
+          "largest_bbox_local_xyxy": [
+            2,
+            1,
+            12,
+            3
+          ]
+        }
+      }
+    },
+    "0.250": {
+      "weights_neutral_blink_mid_roar": [
+        0.5,
+        0.0,
+        0.5,
+        0.0
+      ],
+      "at_380": {
+        "jaw_roi_xyxy": [
+          161,
+          338,
+          218,
+          367
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 66,
+          "largest_bbox_local_xyxy": [
+            11,
+            4,
+            45,
+            10
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 167,
+          "largest_bbox_local_xyxy": [
+            10,
+            3,
+            46,
+            11
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 2,
+          "largest_area_px": 347,
+          "largest_bbox_local_xyxy": [
+            5,
+            0,
+            50,
+            13
+          ]
+        }
+      },
+      "at_96": {
+        "jaw_roi_xyxy": [
+          41,
+          85,
+          55,
+          93
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 7,
+          "largest_bbox_local_xyxy": [
+            3,
+            2,
+            10,
+            3
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 9,
+          "largest_bbox_local_xyxy": [
+            3,
+            1,
+            11,
+            3
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 26,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            12,
+            4
+          ]
+        }
+      }
+    },
+    "0.375": {
+      "weights_neutral_blink_mid_roar": [
+        0.25,
+        0.0,
+        0.75,
+        0.0
+      ],
+      "at_380": {
+        "jaw_roi_xyxy": [
+          161,
+          338,
+          218,
+          367
+        ],
+        "threshold_70": {
+          "significant_components": 2,
+          "largest_area_px": 212,
+          "largest_bbox_local_xyxy": [
+            6,
+            4,
+            46,
+            12
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 304,
+          "largest_bbox_local_xyxy": [
+            6,
+            4,
+            50,
+            13
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 370,
+          "largest_bbox_local_xyxy": [
+            5,
+            1,
+            51,
+            14
+          ]
+        }
+      },
+      "at_96": {
+        "jaw_roi_xyxy": [
+          41,
+          85,
+          55,
+          93
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 9,
+          "largest_bbox_local_xyxy": [
+            2,
+            2,
+            11,
+            3
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 15,
+          "largest_bbox_local_xyxy": [
+            2,
+            1,
+            11,
+            4
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 29,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            12,
+            4
+          ]
+        }
+      }
+    },
+    "0.500": {
+      "weights_neutral_blink_mid_roar": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "at_380": {
+        "jaw_roi_xyxy": [
+          161,
+          338,
+          218,
+          367
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 302,
+          "largest_bbox_local_xyxy": [
+            6,
+            4,
+            50,
+            13
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 332,
+          "largest_bbox_local_xyxy": [
+            5,
+            3,
+            50,
+            14
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 380,
+          "largest_bbox_local_xyxy": [
+            5,
+            3,
+            51,
+            14
+          ]
+        }
+      },
+      "at_96": {
+        "jaw_roi_xyxy": [
+          41,
+          85,
+          55,
+          93
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 15,
+          "largest_bbox_local_xyxy": [
+            2,
+            1,
+            12,
+            4
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 24,
+          "largest_bbox_local_xyxy": [
+            2,
+            1,
+            12,
+            4
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 29,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            12,
+            4
+          ]
+        }
+      }
+    },
+    "0.625": {
+      "weights_neutral_blink_mid_roar": [
+        0.0,
+        0.0,
+        0.75,
+        0.25
+      ],
+      "at_380": {
+        "jaw_roi_xyxy": [
+          161,
+          338,
+          218,
+          367
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 306,
+          "largest_bbox_local_xyxy": [
+            6,
+            4,
+            50,
+            13
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 345,
+          "largest_bbox_local_xyxy": [
+            5,
+            3,
+            50,
+            14
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 700,
+          "largest_bbox_local_xyxy": [
+            5,
+            3,
+            51,
+            26
+          ]
+        }
+      },
+      "at_96": {
+        "jaw_roi_xyxy": [
+          41,
+          85,
+          55,
+          93
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 18,
+          "largest_bbox_local_xyxy": [
+            2,
+            1,
+            12,
+            4
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 26,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            12,
+            4
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 45,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            12,
+            7
+          ]
+        }
+      }
+    },
+    "0.750": {
+      "weights_neutral_blink_mid_roar": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "at_380": {
+        "jaw_roi_xyxy": [
+          161,
+          338,
+          218,
+          367
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 321,
+          "largest_bbox_local_xyxy": [
+            6,
+            4,
+            50,
+            14
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 594,
+          "largest_bbox_local_xyxy": [
+            5,
+            3,
+            50,
+            24
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 2,
+          "largest_area_px": 833,
+          "largest_bbox_local_xyxy": [
+            5,
+            3,
+            51,
+            25
+          ]
+        }
+      },
+      "at_96": {
+        "jaw_roi_xyxy": [
+          41,
+          85,
+          55,
+          93
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 19,
+          "largest_bbox_local_xyxy": [
+            2,
+            1,
+            12,
+            4
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 37,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            12,
+            6
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 58,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            12,
+            7
+          ]
+        }
+      }
+    },
+    "0.875": {
+      "weights_neutral_blink_mid_roar": [
+        0.0,
+        0.0,
+        0.25,
+        0.75
+      ],
+      "at_380": {
+        "jaw_roi_xyxy": [
+          161,
+          338,
+          218,
+          367
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 661,
+          "largest_bbox_local_xyxy": [
+            6,
+            4,
+            50,
+            24
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 793,
+          "largest_bbox_local_xyxy": [
+            5,
+            3,
+            50,
+            25
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 2,
+          "largest_area_px": 837,
+          "largest_bbox_local_xyxy": [
+            5,
+            3,
+            51,
+            25
+          ]
+        }
+      },
+      "at_96": {
+        "jaw_roi_xyxy": [
+          41,
+          85,
+          55,
+          93
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 34,
+          "largest_bbox_local_xyxy": [
+            2,
+            1,
+            12,
+            6
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 51,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            12,
+            7
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 60,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            13,
+            7
+          ]
+        }
+      }
+    },
+    "1.000": {
+      "weights_neutral_blink_mid_roar": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "at_380": {
+        "jaw_roi_xyxy": [
+          161,
+          338,
+          218,
+          367
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 759,
+          "largest_bbox_local_xyxy": [
+            6,
+            3,
+            50,
+            25
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 803,
+          "largest_bbox_local_xyxy": [
+            5,
+            3,
+            51,
+            25
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 2,
+          "largest_area_px": 840,
+          "largest_bbox_local_xyxy": [
+            5,
+            3,
+            51,
+            25
+          ]
+        }
+      },
+      "at_96": {
+        "jaw_roi_xyxy": [
+          41,
+          85,
+          55,
+          93
+        ],
+        "threshold_70": {
+          "significant_components": 1,
+          "largest_area_px": 43,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            12,
+            6
+          ]
+        },
+        "threshold_100": {
+          "significant_components": 1,
+          "largest_area_px": 53,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            12,
+            7
+          ]
+        },
+        "threshold_140": {
+          "significant_components": 1,
+          "largest_area_px": 62,
+          "largest_bbox_local_xyxy": [
+            1,
+            1,
+            13,
+            7
+          ]
+        }
+      }
+    }
+  },
+  "states": {
+    "neutral": {
+      "alpha_master": "design/runtime/kangaroo/alpha/neutral-v2.png",
+      "alpha_sha256": "dfd32acd9d1536d8e01c831047255e7830a7e4369193be89af3c9786dda24750",
+      "chroma_master": "design/runtime/kangaroo/chroma/neutral-v2.png",
+      "chroma_sha256": "eb18905a97f568fb696f5ee7ccd6f71a4c780a09756b2b928036de2eec4163e8",
+      "runtime": "public/masks/kangaroo/neutral-v2.webp",
+      "runtime_bytes": 257558,
+      "runtime_sha256": "d577c64b0d3e02d51126ecd8685cb61b12326996a3501f750c9269c59f2563fc",
+      "github_pages_sha256": "d577c64b0d3e02d51126ecd8685cb61b12326996a3501f750c9269c59f2563fc",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          219,
+          66,
+          1035,
+          1213
+        ],
+        "padding_px_left_top_right_bottom": [
+          219,
+          66,
+          219,
+          41
+        ],
+        "alpha_weighted_centroid": [
+          624.661,
+          647.18
+        ],
+        "alpha_coverage_fraction": 0.350955,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 1020634,
+        "partially_transparent_pixels": 3770,
+        "enclosed_fully_transparent_holes": 0,
+        "connected_components_alpha_gt_8": 1,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 1020634,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    },
+    "blink": {
+      "alpha_master": "design/runtime/kangaroo/alpha/blink-v2.png",
+      "alpha_sha256": "67d13c98d0f5aaacc1583228ba93faf761f2a15798539a18ce9de915cd8d3985",
+      "chroma_master": "design/runtime/kangaroo/chroma/blink-v2.png",
+      "chroma_sha256": "34c8f0cce548145ac20d75d45d61dbfb179217c88d95196af2e99c57e40d66d2",
+      "runtime": "public/masks/kangaroo/blink-v2.webp",
+      "runtime_bytes": 264618,
+      "runtime_sha256": "74b397e9085d2a9b9501b0ebcb5f6ee2210d30be35a6706ebb34c7b406e21244",
+      "github_pages_sha256": "74b397e9085d2a9b9501b0ebcb5f6ee2210d30be35a6706ebb34c7b406e21244",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          219,
+          66,
+          1035,
+          1213
+        ],
+        "padding_px_left_top_right_bottom": [
+          219,
+          66,
+          219,
+          41
+        ],
+        "alpha_weighted_centroid": [
+          624.661,
+          647.18
+        ],
+        "alpha_coverage_fraction": 0.350955,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 1020634,
+        "partially_transparent_pixels": 3770,
+        "enclosed_fully_transparent_holes": 0,
+        "connected_components_alpha_gt_8": 1,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 1020634,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    },
+    "roar-mid": {
+      "alpha_master": "design/runtime/kangaroo/alpha/roar-mid-v2.png",
+      "alpha_sha256": "1f9a53e2ef9077f0fbd79f4a897074b499935aff1525ac56c0ea33bb4127c8d3",
+      "chroma_master": "design/runtime/kangaroo/chroma/roar-mid-v2.png",
+      "chroma_sha256": "5dd12b3bc43c09c1b565fc1cdea9e8a369f4862cdb9c152b501b7fa8d290216c",
+      "runtime": "public/masks/kangaroo/roar-mid-v2.webp",
+      "runtime_bytes": 255812,
+      "runtime_sha256": "c6bfc24f74b2bc4b9f6b84190cc19668bab59f5e18bfde1b624c79399b1fd80c",
+      "github_pages_sha256": "c6bfc24f74b2bc4b9f6b84190cc19668bab59f5e18bfde1b624c79399b1fd80c",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          219,
+          66,
+          1035,
+          1213
+        ],
+        "padding_px_left_top_right_bottom": [
+          219,
+          66,
+          219,
+          41
+        ],
+        "alpha_weighted_centroid": [
+          624.661,
+          647.18
+        ],
+        "alpha_coverage_fraction": 0.350955,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 1020634,
+        "partially_transparent_pixels": 3770,
+        "enclosed_fully_transparent_holes": 0,
+        "connected_components_alpha_gt_8": 1,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 1020634,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    },
+    "roar": {
+      "alpha_master": "design/runtime/kangaroo/alpha/roar-v2.png",
+      "alpha_sha256": "59522920968afb8ffab6c452a3dc487157ea483bd5df77f9d31cf06b1d543286",
+      "chroma_master": "design/runtime/kangaroo/chroma/roar-v2.png",
+      "chroma_sha256": "0059e66b72f7995322f32d91dfe8664ed289ac27751308fc0356cfd17f54a114",
+      "runtime": "public/masks/kangaroo/roar-v2.webp",
+      "runtime_bytes": 254550,
+      "runtime_sha256": "b4595fdc709cd7f4adb6da2ef894540f8eee64e51163f3bab3009f89bb6dd05f",
+      "github_pages_sha256": "b4595fdc709cd7f4adb6da2ef894540f8eee64e51163f3bab3009f89bb6dd05f",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          219,
+          66,
+          1035,
+          1213
+        ],
+        "padding_px_left_top_right_bottom": [
+          219,
+          66,
+          219,
+          41
+        ],
+        "alpha_weighted_centroid": [
+          624.661,
+          647.18
+        ],
+        "alpha_coverage_fraction": 0.350955,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 1020634,
+        "partially_transparent_pixels": 3770,
+        "enclosed_fully_transparent_holes": 0,
+        "connected_components_alpha_gt_8": 1,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 1020634,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    }
+  }
+}

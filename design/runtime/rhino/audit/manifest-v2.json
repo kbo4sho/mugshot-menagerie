@@ -1,0 +1,809 @@
+{
+  "animal": "rhino",
+  "name": "Rumble Rhino",
+  "version": "v2",
+  "source_version": "v1",
+  "critic_gap": "v1 full roar retained only 21 native centerline pixels below the cavity, collapsing to one clear row at 96px and visually merging under light/black rotation",
+  "repair": "raised/shortened only the full-roar lower cavity boundary and filled the removed region with canonical neutral muzzle/chin texture; upper rim and roar-mid alignment retained",
+  "generation_route": "deterministic local source-preservation repair; no new ImageGen call",
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6
+  },
+  "clearance_pass_requirement": "at least 3 clearly lavender opaque pixels below the full-roar cavity at 96px on light/black and -7/0/+7 degree rotations",
+  "clearance_metrics": {
+    "1254": {
+      "-7": {
+        "light": {
+          "side_px": 1254,
+          "angle_degrees": -7,
+          "cavity_component_pixels": 8147,
+          "cavity_bottom_row": 1083,
+          "probe_x": 573,
+          "clear_lavender_opaque_rows": [
+            1084,
+            1085,
+            1086,
+            1087,
+            1088,
+            1089,
+            1090,
+            1091,
+            1092,
+            1093,
+            1094,
+            1095,
+            1096,
+            1097,
+            1098,
+            1099,
+            1100,
+            1101,
+            1102,
+            1103,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109,
+            1110,
+            1111,
+            1112,
+            1113
+          ],
+          "clear_lavender_opaque_count": 30
+        },
+        "black": {
+          "side_px": 1254,
+          "angle_degrees": -7,
+          "cavity_component_pixels": 8147,
+          "cavity_bottom_row": 1083,
+          "probe_x": 573,
+          "clear_lavender_opaque_rows": [
+            1084,
+            1085,
+            1086,
+            1087,
+            1088,
+            1089,
+            1090,
+            1091,
+            1092,
+            1093,
+            1094,
+            1095,
+            1096,
+            1097,
+            1098,
+            1099,
+            1100,
+            1101,
+            1102,
+            1103,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109,
+            1110,
+            1111,
+            1112,
+            1113
+          ],
+          "clear_lavender_opaque_count": 30
+        }
+      },
+      "0": {
+        "light": {
+          "side_px": 1254,
+          "angle_degrees": 0,
+          "cavity_component_pixels": 8130,
+          "cavity_bottom_row": 1083,
+          "probe_x": 624,
+          "clear_lavender_opaque_rows": [
+            1084,
+            1085,
+            1086,
+            1087,
+            1088,
+            1089,
+            1090,
+            1091,
+            1092,
+            1093,
+            1094,
+            1095,
+            1096,
+            1097,
+            1098,
+            1099,
+            1100,
+            1101,
+            1102,
+            1103,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109,
+            1110,
+            1111,
+            1112,
+            1113,
+            1114,
+            1115,
+            1116,
+            1117,
+            1118,
+            1119,
+            1120,
+            1121,
+            1122,
+            1123
+          ],
+          "clear_lavender_opaque_count": 40
+        },
+        "black": {
+          "side_px": 1254,
+          "angle_degrees": 0,
+          "cavity_component_pixels": 8130,
+          "cavity_bottom_row": 1083,
+          "probe_x": 624,
+          "clear_lavender_opaque_rows": [
+            1084,
+            1085,
+            1086,
+            1087,
+            1088,
+            1089,
+            1090,
+            1091,
+            1092,
+            1093,
+            1094,
+            1095,
+            1096,
+            1097,
+            1098,
+            1099,
+            1100,
+            1101,
+            1102,
+            1103,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109,
+            1110,
+            1111,
+            1112,
+            1113,
+            1114,
+            1115,
+            1116,
+            1117,
+            1118,
+            1119,
+            1120,
+            1121,
+            1122,
+            1123
+          ],
+          "clear_lavender_opaque_count": 40
+        }
+      },
+      "7": {
+        "light": {
+          "side_px": 1254,
+          "angle_degrees": 7,
+          "cavity_component_pixels": 8165,
+          "cavity_bottom_row": 1082,
+          "probe_x": 676,
+          "clear_lavender_opaque_rows": [
+            1083,
+            1084,
+            1085,
+            1086,
+            1087,
+            1088,
+            1089,
+            1090,
+            1091,
+            1092,
+            1093,
+            1094,
+            1095,
+            1096,
+            1097,
+            1098,
+            1099,
+            1100,
+            1101,
+            1102,
+            1103,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109,
+            1110,
+            1111
+          ],
+          "clear_lavender_opaque_count": 29
+        },
+        "black": {
+          "side_px": 1254,
+          "angle_degrees": 7,
+          "cavity_component_pixels": 8165,
+          "cavity_bottom_row": 1082,
+          "probe_x": 676,
+          "clear_lavender_opaque_rows": [
+            1083,
+            1084,
+            1085,
+            1086,
+            1087,
+            1088,
+            1089,
+            1090,
+            1091,
+            1092,
+            1093,
+            1094,
+            1095,
+            1096,
+            1097,
+            1098,
+            1099,
+            1100,
+            1101,
+            1102,
+            1103,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109,
+            1110,
+            1111
+          ],
+          "clear_lavender_opaque_count": 29
+        }
+      }
+    },
+    "380": {
+      "-7": {
+        "light": {
+          "side_px": 380,
+          "angle_degrees": -7,
+          "cavity_component_pixels": 752,
+          "cavity_bottom_row": 327,
+          "probe_x": 173,
+          "clear_lavender_opaque_rows": [
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343
+          ],
+          "clear_lavender_opaque_count": 16
+        },
+        "black": {
+          "side_px": 380,
+          "angle_degrees": -7,
+          "cavity_component_pixels": 752,
+          "cavity_bottom_row": 327,
+          "probe_x": 173,
+          "clear_lavender_opaque_rows": [
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343
+          ],
+          "clear_lavender_opaque_count": 16
+        }
+      },
+      "0": {
+        "light": {
+          "side_px": 380,
+          "angle_degrees": 0,
+          "cavity_component_pixels": 747,
+          "cavity_bottom_row": 327,
+          "probe_x": 189,
+          "clear_lavender_opaque_rows": [
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344
+          ],
+          "clear_lavender_opaque_count": 16
+        },
+        "black": {
+          "side_px": 380,
+          "angle_degrees": 0,
+          "cavity_component_pixels": 747,
+          "cavity_bottom_row": 327,
+          "probe_x": 189,
+          "clear_lavender_opaque_rows": [
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344
+          ],
+          "clear_lavender_opaque_count": 16
+        }
+      },
+      "7": {
+        "light": {
+          "side_px": 380,
+          "angle_degrees": 7,
+          "cavity_component_pixels": 755,
+          "cavity_bottom_row": 327,
+          "probe_x": 204,
+          "clear_lavender_opaque_rows": [
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343
+          ],
+          "clear_lavender_opaque_count": 16
+        },
+        "black": {
+          "side_px": 380,
+          "angle_degrees": 7,
+          "cavity_component_pixels": 755,
+          "cavity_bottom_row": 327,
+          "probe_x": 204,
+          "clear_lavender_opaque_rows": [
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343
+          ],
+          "clear_lavender_opaque_count": 16
+        }
+      }
+    },
+    "96": {
+      "-7": {
+        "light": {
+          "side_px": 96,
+          "angle_degrees": -7,
+          "cavity_component_pixels": 52,
+          "cavity_bottom_row": 82,
+          "probe_x": 44,
+          "clear_lavender_opaque_rows": [
+            83,
+            84,
+            85
+          ],
+          "clear_lavender_opaque_count": 3
+        },
+        "black": {
+          "side_px": 96,
+          "angle_degrees": -7,
+          "cavity_component_pixels": 52,
+          "cavity_bottom_row": 82,
+          "probe_x": 44,
+          "clear_lavender_opaque_rows": [
+            83,
+            84,
+            85
+          ],
+          "clear_lavender_opaque_count": 3
+        }
+      },
+      "0": {
+        "light": {
+          "side_px": 96,
+          "angle_degrees": 0,
+          "cavity_component_pixels": 50,
+          "cavity_bottom_row": 82,
+          "probe_x": 48,
+          "clear_lavender_opaque_rows": [
+            83,
+            84,
+            85,
+            86
+          ],
+          "clear_lavender_opaque_count": 4
+        },
+        "black": {
+          "side_px": 96,
+          "angle_degrees": 0,
+          "cavity_component_pixels": 50,
+          "cavity_bottom_row": 82,
+          "probe_x": 48,
+          "clear_lavender_opaque_rows": [
+            83,
+            84,
+            85,
+            86
+          ],
+          "clear_lavender_opaque_count": 4
+        }
+      },
+      "7": {
+        "light": {
+          "side_px": 96,
+          "angle_degrees": 7,
+          "cavity_component_pixels": 50,
+          "cavity_bottom_row": 82,
+          "probe_x": 51,
+          "clear_lavender_opaque_rows": [
+            83,
+            84,
+            85
+          ],
+          "clear_lavender_opaque_count": 3
+        },
+        "black": {
+          "side_px": 96,
+          "angle_degrees": 7,
+          "cavity_component_pixels": 50,
+          "cavity_bottom_row": 82,
+          "probe_x": 51,
+          "clear_lavender_opaque_rows": [
+            83,
+            84,
+            85
+          ],
+          "clear_lavender_opaque_count": 3
+        }
+      }
+    }
+  },
+  "helper_component_metrics": {
+    "0.000": {
+      "dark_component_threshold": 55,
+      "minimum_reported_component_pixels": 100,
+      "reported_component_count": 1,
+      "reported_component_sizes": [
+        1886
+      ],
+      "single_connected_mouth_component": true
+    },
+    "0.125": {
+      "dark_component_threshold": 55,
+      "minimum_reported_component_pixels": 100,
+      "reported_component_count": 1,
+      "reported_component_sizes": [
+        1950
+      ],
+      "single_connected_mouth_component": true
+    },
+    "0.250": {
+      "dark_component_threshold": 55,
+      "minimum_reported_component_pixels": 100,
+      "reported_component_count": 1,
+      "reported_component_sizes": [
+        2831
+      ],
+      "single_connected_mouth_component": true
+    },
+    "0.375": {
+      "dark_component_threshold": 55,
+      "minimum_reported_component_pixels": 100,
+      "reported_component_count": 1,
+      "reported_component_sizes": [
+        6201
+      ],
+      "single_connected_mouth_component": true
+    },
+    "0.500": {
+      "dark_component_threshold": 55,
+      "minimum_reported_component_pixels": 100,
+      "reported_component_count": 1,
+      "reported_component_sizes": [
+        9200
+      ],
+      "single_connected_mouth_component": true
+    },
+    "0.625": {
+      "dark_component_threshold": 55,
+      "minimum_reported_component_pixels": 100,
+      "reported_component_count": 1,
+      "reported_component_sizes": [
+        8504
+      ],
+      "single_connected_mouth_component": true
+    },
+    "0.750": {
+      "dark_component_threshold": 55,
+      "minimum_reported_component_pixels": 100,
+      "reported_component_count": 1,
+      "reported_component_sizes": [
+        6947
+      ],
+      "single_connected_mouth_component": true
+    },
+    "0.875": {
+      "dark_component_threshold": 55,
+      "minimum_reported_component_pixels": 100,
+      "reported_component_count": 1,
+      "reported_component_sizes": [
+        7553
+      ],
+      "single_connected_mouth_component": true
+    },
+    "1.000": {
+      "dark_component_threshold": 55,
+      "minimum_reported_component_pixels": 100,
+      "reported_component_count": 1,
+      "reported_component_sizes": [
+        7393
+      ],
+      "single_connected_mouth_component": true
+    }
+  },
+  "all_helper_steps_single_connected_mouth_component": true,
+  "repair_metrics": {
+    "changed_rgb_pixels": 9258,
+    "changed_bbox": [
+      524,
+      1050,
+      730,
+      1120
+    ],
+    "outside_repair_roi_max_channel_delta": 0,
+    "neutral_v1_v2_pixel_delta": 0,
+    "blink_v1_v2_pixel_delta": 0,
+    "roar_mid_v1_v2_pixel_delta": 0
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0",
+    "blink": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0",
+    "roar-mid": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0",
+    "roar": "2f25dae5778c2c375910e36d1d9a3a1729b874aae424ee87a5016484c70fd8c0"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "states": {
+    "neutral": {
+      "alpha": "design/runtime/rhino/alpha/neutral-v2.png",
+      "alpha_sha256": "4a53e7035f75ee86e911e1ac89fccbddaccb91356159d7fcfedde7c52f9b344a",
+      "chroma": "design/runtime/rhino/chroma/neutral-v2.png",
+      "chroma_sha256": "b8a29821e7327ef45b4eae898a952231715ab18e1ea2a7e9baa9ffa39da33c71",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          129,
+          145,
+          1125,
+          1140
+        ],
+        "padding_px_left_top_right_bottom": [
+          129,
+          145,
+          129,
+          114
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4677,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "blink": {
+      "alpha": "design/runtime/rhino/alpha/blink-v2.png",
+      "alpha_sha256": "0a33e8514f1ba0ef1df4158ed2d5172a963a208cbbd7670cc0445172795b14a2",
+      "chroma": "design/runtime/rhino/chroma/blink-v2.png",
+      "chroma_sha256": "c43220962d49055d3f2188c24304e670b5acaf5bf8d6dd43f2d2e529f3573260",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          129,
+          145,
+          1125,
+          1140
+        ],
+        "padding_px_left_top_right_bottom": [
+          129,
+          145,
+          129,
+          114
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4677,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar-mid": {
+      "alpha": "design/runtime/rhino/alpha/roar-mid-v2.png",
+      "alpha_sha256": "7f3c0ccfde7b41f5d1cf3a86cf909b1c52e1e3b48fb55a320a74e6f0927657e5",
+      "chroma": "design/runtime/rhino/chroma/roar-mid-v2.png",
+      "chroma_sha256": "c0ad812d65951b209fc279581756584392cda9622e9d049f47799186ed41452a",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          129,
+          145,
+          1125,
+          1140
+        ],
+        "padding_px_left_top_right_bottom": [
+          129,
+          145,
+          129,
+          114
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4677,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    },
+    "roar": {
+      "alpha": "design/runtime/rhino/alpha/roar-v2.png",
+      "alpha_sha256": "f987497e4345fe2c4c8ddb9dfcb2182eda586c51802a46aa2ad9e21a567d4824",
+      "chroma": "design/runtime/rhino/chroma/roar-v2.png",
+      "chroma_sha256": "67a109e0741b91e7a8cf0e5098caa66039a3b8965c7ac3171bacb6b84773d155",
+      "metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          129,
+          145,
+          1125,
+          1140
+        ],
+        "padding_px_left_top_right_bottom": [
+          129,
+          145,
+          129,
+          114
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "partially_transparent_pixels": 4677,
+        "green_dominant_partial_alpha_pixels": 0
+      }
+    }
+  },
+  "exports": {
+    "neutral": {
+      "bytes": 288938,
+      "public_sha256": "1309d98f73bd22dee389acabbfe5fdae24fc77c3c1a06f6c3ae7b3e9ae8e9f75",
+      "pages_sha256": "1309d98f73bd22dee389acabbfe5fdae24fc77c3c1a06f6c3ae7b3e9ae8e9f75",
+      "public_pages_byte_identical": true,
+      "contains_alph_chunk": true
+    },
+    "blink": {
+      "bytes": 285804,
+      "public_sha256": "1619da18cc9987edb9b286114bba4c79a915d79a8fcc74d7f8c6e798714f92ff",
+      "pages_sha256": "1619da18cc9987edb9b286114bba4c79a915d79a8fcc74d7f8c6e798714f92ff",
+      "public_pages_byte_identical": true,
+      "contains_alph_chunk": true
+    },
+    "roar-mid": {
+      "bytes": 280082,
+      "public_sha256": "62e3215379f750dc81d95e0d641b531d27f752bd4257eb0c766c2655a0d21aca",
+      "pages_sha256": "62e3215379f750dc81d95e0d641b531d27f752bd4257eb0c766c2655a0d21aca",
+      "public_pages_byte_identical": true,
+      "contains_alph_chunk": true
+    },
+    "roar": {
+      "bytes": 281424,
+      "public_sha256": "ab80c4d95e5bb93bd1ea3d7a4f14ed39f40a7eefd79807fa01969ac94e11f974",
+      "pages_sha256": "ab80c4d95e5bb93bd1ea3d7a4f14ed39f40a7eefd79807fa01969ac94e11f974",
+      "public_pages_byte_identical": true,
+      "contains_alph_chunk": true
+    }
+  },
+  "evidence": [
+    "design/runtime/rhino/audit/states-380-96-v2.png",
+    "design/runtime/rhino/audit/roar-clearance-v1-v2-380.png",
+    "design/runtime/rhino/audit/hostile-rotation-clearance-380-v2.png",
+    "design/runtime/rhino/audit/hostile-rotation-clearance-96-v2.png",
+    "design/runtime/rhino/audit/helper-eighth-steps-380-v2.png",
+    "design/runtime/rhino/audit/roar-lower-clearance-repair-mask-v2.png",
+    "design/runtime/rhino/audit/prompts-and-provenance-v2.md"
+  ]
+}

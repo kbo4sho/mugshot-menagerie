@@ -1,0 +1,243 @@
+{
+  "animal": "parrot",
+  "name": "Party Parrot",
+  "version": "v2",
+  "repair": "critic-directed deterministic mouth/beak ROI repair; v1 preserved; the one permitted ImageGen target was audited but rejected because its dark U still wrapped the cavity",
+  "runtime_export": {
+    "side_px": 1344,
+    "quality": 95,
+    "method": 6,
+    "alpha_quality": 100
+  },
+  "v1_preservation": {
+    "neutral_master_pixels_identical_v1_v2": true,
+    "blink_master_pixels_identical_v1_v2": true,
+    "neutral_runtime_bytes_identical_v1_v2": true,
+    "blink_runtime_bytes_identical_v1_v2": true
+  },
+  "master_alpha_pixel_hashes": {
+    "neutral": "194cf253f0d9fee300199c702463092c5e866c4cb523fdb021f4ed13cf47c1fa",
+    "blink": "194cf253f0d9fee300199c702463092c5e866c4cb523fdb021f4ed13cf47c1fa",
+    "roar": "194cf253f0d9fee300199c702463092c5e866c4cb523fdb021f4ed13cf47c1fa"
+  },
+  "master_alpha_pixel_hashes_identical": true,
+  "runtime_alpha_pixel_hashes": {
+    "neutral": "831617d7a970897c95babf08f418e0f17fe6c69e6cbaa88effc426c956691276",
+    "blink": "831617d7a970897c95babf08f418e0f17fe6c69e6cbaa88effc426c956691276",
+    "roar": "831617d7a970897c95babf08f418e0f17fe6c69e6cbaa88effc426c956691276"
+  },
+  "runtime_alpha_pixel_hashes_identical": true,
+  "roar_repair_localization": {
+    "changed_bbox": [
+      487,
+      779,
+      771,
+      1007
+    ],
+    "changed_pixels": 31868,
+    "localization_mask_nonzero_pixels": 35357,
+    "outside_roi_max_channel_delta": 0,
+    "outside_roi_changed_pixels": 0
+  },
+  "multi_threshold_topology": {
+    "0.10": {
+      "thresholds": {
+        "2": {
+          "active_pixels": 22102,
+          "components_ge_4px": 5,
+          "largest_component_pixels": 21759,
+          "largest_component_share": 0.9846
+        },
+        "8": {
+          "active_pixels": 8193,
+          "components_ge_4px": 6,
+          "largest_component_pixels": 3616,
+          "largest_component_share": 0.4422
+        },
+        "16": {
+          "active_pixels": 949,
+          "components_ge_4px": 5,
+          "largest_component_pixels": 557,
+          "largest_component_share": 0.5888
+        },
+        "32": {
+          "active_pixels": 0,
+          "components_ge_4px": 0,
+          "largest_component_pixels": 0,
+          "largest_component_share": null
+        }
+      },
+      "pale_side_wrap_pixels": 223,
+      "pale_side_wrap_domain_pixels": 12650,
+      "pale_side_wrap_share": 0.01763
+    },
+    "0.33": {
+      "thresholds": {
+        "2": {
+          "active_pixels": 25874,
+          "components_ge_4px": 3,
+          "largest_component_pixels": 25541,
+          "largest_component_share": 0.9873
+        },
+        "8": {
+          "active_pixels": 20968,
+          "components_ge_4px": 7,
+          "largest_component_pixels": 20422,
+          "largest_component_share": 0.974
+        },
+        "16": {
+          "active_pixels": 14335,
+          "components_ge_4px": 8,
+          "largest_component_pixels": 13820,
+          "largest_component_share": 0.965
+        },
+        "32": {
+          "active_pixels": 6057,
+          "components_ge_4px": 8,
+          "largest_component_pixels": 2999,
+          "largest_component_share": 0.4961
+        }
+      },
+      "pale_side_wrap_pixels": 190,
+      "pale_side_wrap_domain_pixels": 12650,
+      "pale_side_wrap_share": 0.01502
+    },
+    "0.50": {
+      "thresholds": {
+        "2": {
+          "active_pixels": 26852,
+          "components_ge_4px": 3,
+          "largest_component_pixels": 26420,
+          "largest_component_share": 0.9839
+        },
+        "8": {
+          "active_pixels": 23108,
+          "components_ge_4px": 6,
+          "largest_component_pixels": 22652,
+          "largest_component_share": 0.9804
+        },
+        "16": {
+          "active_pixels": 19248,
+          "components_ge_4px": 11,
+          "largest_component_pixels": 18846,
+          "largest_component_share": 0.9795
+        },
+        "32": {
+          "active_pixels": 10731,
+          "components_ge_4px": 4,
+          "largest_component_pixels": 6559,
+          "largest_component_share": 0.6115
+        }
+      },
+      "pale_side_wrap_pixels": 118,
+      "pale_side_wrap_domain_pixels": 12650,
+      "pale_side_wrap_share": 0.00933
+    },
+    "0.67": {
+      "thresholds": {
+        "2": {
+          "active_pixels": 27273,
+          "components_ge_4px": 4,
+          "largest_component_pixels": 26748,
+          "largest_component_share": 0.9809
+        },
+        "8": {
+          "active_pixels": 24259,
+          "components_ge_4px": 3,
+          "largest_component_pixels": 24042,
+          "largest_component_share": 0.9911
+        },
+        "16": {
+          "active_pixels": 21209,
+          "components_ge_4px": 7,
+          "largest_component_pixels": 20607,
+          "largest_component_share": 0.9717
+        },
+        "32": {
+          "active_pixels": 14600,
+          "components_ge_4px": 9,
+          "largest_component_pixels": 14023,
+          "largest_component_share": 0.9623
+        }
+      },
+      "pale_side_wrap_pixels": 79,
+      "pale_side_wrap_domain_pixels": 12650,
+      "pale_side_wrap_share": 0.00625
+    },
+    "0.75": {
+      "thresholds": {
+        "2": {
+          "active_pixels": 27273,
+          "components_ge_4px": 4,
+          "largest_component_pixels": 26748,
+          "largest_component_share": 0.9809
+        },
+        "8": {
+          "active_pixels": 24590,
+          "components_ge_4px": 3,
+          "largest_component_pixels": 24346,
+          "largest_component_share": 0.9901
+        },
+        "16": {
+          "active_pixels": 21679,
+          "components_ge_4px": 6,
+          "largest_component_pixels": 21238,
+          "largest_component_share": 0.9798
+        },
+        "32": {
+          "active_pixels": 16050,
+          "components_ge_4px": 11,
+          "largest_component_pixels": 14986,
+          "largest_component_share": 0.9346
+        }
+      },
+      "pale_side_wrap_pixels": 69,
+      "pale_side_wrap_domain_pixels": 12650,
+      "pale_side_wrap_share": 0.00545
+    }
+  },
+  "states": {
+    "neutral": {
+      "alpha_master": "design/runtime/parrot/alpha/neutral-v2.png",
+      "alpha_sha256": "ea95c15ec80137ba0c144bb60504419008ae5f85b343424e92d5e6de6a2e7284",
+      "chroma": "design/runtime/parrot/chroma/neutral-v2.png",
+      "chroma_sha256": "1ad4d3e5d92c6df59419dfb39cb2f35c4086ab327e0c106f489575a1299f4500",
+      "runtime": "public/masks/parrot/neutral-v2.webp",
+      "runtime_bytes": 223286,
+      "runtime_sha256": "5d9023def9fb6ced8c85245164f0357c60ac29729a9c135cf4f025cd8e1d587f",
+      "github_pages_sha256": "5d9023def9fb6ced8c85245164f0357c60ac29729a9c135cf4f025cd8e1d587f",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true
+    },
+    "blink": {
+      "alpha_master": "design/runtime/parrot/alpha/blink-v2.png",
+      "alpha_sha256": "5ecf1892c2a3126f559787a30b040223f3c3e99b8f79873dce43b02df30c0346",
+      "chroma": "design/runtime/parrot/chroma/blink-v2.png",
+      "chroma_sha256": "a53a8e7af7478e0a2fdd877d7b019761a25be3a396a55c7bbfc89abef1da5278",
+      "runtime": "public/masks/parrot/blink-v2.webp",
+      "runtime_bytes": 221446,
+      "runtime_sha256": "d67ef90fd3b749ff57b716851b1f48ca228aac93cc8b7786c9f747c10a2edcb7",
+      "github_pages_sha256": "d67ef90fd3b749ff57b716851b1f48ca228aac93cc8b7786c9f747c10a2edcb7",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true
+    },
+    "roar": {
+      "alpha_master": "design/runtime/parrot/alpha/roar-v2.png",
+      "alpha_sha256": "18de2f4dd4b76b302198a85df25f6235c109b8e8064775fd180e386018f19145",
+      "chroma": "design/runtime/parrot/chroma/roar-v2.png",
+      "chroma_sha256": "ac828b2717a77baf47f632545a4f4f1060a4274026cd751ead0eff5548684306",
+      "runtime": "public/masks/parrot/roar-v2.webp",
+      "runtime_bytes": 215542,
+      "runtime_sha256": "6f19a34a1a169ded937494c6bce7af3aede948aafc70a36bc2022598a2d78640",
+      "github_pages_sha256": "6f19a34a1a169ded937494c6bce7af3aede948aafc70a36bc2022598a2d78640",
+      "runtime_copies_identical": true,
+      "contains_alph_chunk": true
+    }
+  },
+  "audit_evidence": [
+    "design/runtime/parrot/v2-audit/roar-transition-96-v2.png",
+    "design/runtime/parrot/v2-audit/roar-transition-380-v2.png",
+    "design/runtime/parrot/v2-audit/v1-v2-roar-comparison-380.png",
+    "design/runtime/parrot/v2-audit/native-96-380-states-v2.png"
+  ]
+}

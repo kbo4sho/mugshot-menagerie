@@ -1,0 +1,183 @@
+{
+  "version": "v2",
+  "source_version": "v1 generated sources and localized expressions",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "post_key_subject_scale": 0.92,
+  "webp_quality": 95,
+  "mint_repair_source_pixels": 3349,
+  "mint_repair_source_bbox": [
+    650,
+    270,
+    820,
+    550
+  ],
+  "mint_repair_residual_partial_source_pixels": 0,
+  "canonical_face_forehead_native": {
+    "mask_pixels": 313489,
+    "alpha_gte_250_pixels": 313489,
+    "alpha_gte_250_ratio": 1.0,
+    "minimum_alpha": 255
+  },
+  "canonical_face_forehead_380": {
+    "mask_pixels": 28980,
+    "alpha_gte_250_pixels": 28980,
+    "alpha_gte_250_ratio": 1.0,
+    "minimum_alpha": 255
+  },
+  "v1_to_v2_alpha_change": {
+    "changed_pixels": 2200,
+    "changed_bbox": [
+      661,
+      420,
+      778,
+      541
+    ],
+    "changed_pixels_outside_inner_crown_safety_box": 0,
+    "new_nonzero_alpha_pixels": 0,
+    "maximum_alpha_increase": 167,
+    "minimum_alpha_change": 0
+  },
+  "v1_to_v2_master_changes": {
+    "neutral": {
+      "changed_rgba_pixels": 2852,
+      "changed_bbox": [
+        661,
+        418,
+        779,
+        541
+      ],
+      "changed_pixels_outside_inner_crown_safety_box": 0
+    },
+    "blink": {
+      "changed_rgba_pixels": 2852,
+      "changed_bbox": [
+        661,
+        418,
+        779,
+        541
+      ],
+      "changed_pixels_outside_inner_crown_safety_box": 0
+    },
+    "roar": {
+      "changed_rgba_pixels": 2852,
+      "changed_bbox": [
+        661,
+        418,
+        779,
+        541
+      ],
+      "changed_pixels_outside_inner_crown_safety_box": 0
+    }
+  },
+  "alpha": {
+    "bbox_alpha_gt_8": [
+      125,
+      91,
+      1138,
+      1149
+    ],
+    "bbox_canvas_coverage_percent": [
+      80.78149920255183,
+      84.37001594896331
+    ],
+    "centroid_nonzero_alpha": [
+      629.3792817859988,
+      675.0661741845306
+    ],
+    "padding_px": {
+      "left": 125,
+      "top": 91,
+      "right": 116,
+      "bottom": 105
+    },
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "nonzero_alpha_pixels": 770049,
+    "partial_alpha_pixels": 26763,
+    "interior_hole_pixels_alpha_le_32": 0
+  },
+  "partial_alpha_green_flags": {
+    "pixels": 691,
+    "alpha_minimum": 1,
+    "alpha_maximum": 141,
+    "pixels_alpha_lte_64": 642,
+    "percent_alpha_lte_64": 92.90882778581766,
+    "pixels_inside_canonical_face_forehead": 0,
+    "bbox": [
+      124,
+      91,
+      1138,
+      1151
+    ]
+  },
+  "shared_alpha_sha256": "aaad84c89c11a1cd4378253f8665c663a84e22fef6f782fb9f1c26400633e1dc",
+  "state_alpha_hashes": {
+    "neutral": "aaad84c89c11a1cd4378253f8665c663a84e22fef6f782fb9f1c26400633e1dc",
+    "blink": "aaad84c89c11a1cd4378253f8665c663a84e22fef6f782fb9f1c26400633e1dc",
+    "roar": "aaad84c89c11a1cd4378253f8665c663a84e22fef6f782fb9f1c26400633e1dc"
+  },
+  "state_alpha_hashes_identical": true,
+  "final_chroma_exterior_is_exact_00ff00": true,
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/unicorn/neutral-v2.webp",
+      "pages_path": "github-pages/public/masks/unicorn/neutral-v2.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "bytes": 287632,
+      "sha256": "75abb0b92664cc1e14c7981dd7a1be1131eecafe6285af1d98bc452ff81333e9",
+      "pages_sha256": "75abb0b92664cc1e14c7981dd7a1be1131eecafe6285af1d98bc452ff81333e9",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "aaad84c89c11a1cd4378253f8665c663a84e22fef6f782fb9f1c26400633e1dc",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/unicorn/blink-v2.webp",
+      "pages_path": "github-pages/public/masks/unicorn/blink-v2.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "bytes": 273758,
+      "sha256": "74db283a42890def83fcb126aa077abd9a474fe8f4c4a8f4f0e2f42b18a119bc",
+      "pages_sha256": "74db283a42890def83fcb126aa077abd9a474fe8f4c4a8f4f0e2f42b18a119bc",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "aaad84c89c11a1cd4378253f8665c663a84e22fef6f782fb9f1c26400633e1dc",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/unicorn/roar-v2.webp",
+      "pages_path": "github-pages/public/masks/unicorn/roar-v2.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "bytes": 284844,
+      "sha256": "ff5f38af4cf3a4cacdcd5485980b9de3c80a3e435340bd191eea6fe1a2c7ba6a",
+      "pages_sha256": "ff5f38af4cf3a4cacdcd5485980b9de3c80a3e435340bd191eea6fe1a2c7ba6a",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "aaad84c89c11a1cd4378253f8665c663a84e22fef6f782fb9f1c26400633e1dc",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "animal": "deer",
+  "name": "Dapper Deer",
+  "version": "v1",
+  "generation_route": "built-in ImageGen; neutral generated with Bumblebee v1 solely as finish/composition reference; blink and roar each edited from neutral as sole target",
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6,
+    "exact": true
+  },
+  "candidate_sizes_bytes": {
+    "1254-q95": [
+      261984,
+      244828,
+      257198
+    ]
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "2969d5a9734b28b303f14903c000cf8b7b0a94b89011a928e7c8ca4790b3532d",
+    "blink": "2969d5a9734b28b303f14903c000cf8b7b0a94b89011a928e7c8ca4790b3532d",
+    "roar": "2969d5a9734b28b303f14903c000cf8b7b0a94b89011a928e7c8ca4790b3532d"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "runtime_decoded_alpha_pixel_hashes": {
+    "neutral": "2969d5a9734b28b303f14903c000cf8b7b0a94b89011a928e7c8ca4790b3532d",
+    "blink": "2969d5a9734b28b303f14903c000cf8b7b0a94b89011a928e7c8ca4790b3532d",
+    "roar": "2969d5a9734b28b303f14903c000cf8b7b0a94b89011a928e7c8ca4790b3532d"
+  },
+  "runtime_decoded_alpha_pixel_hashes_identical": true,
+  "localization_mask_nonzero_pixels": {
+    "blink": 231636,
+    "roar": 100015
+  },
+  "neutral_enclosed_alpha_hole_pixels_repaired": 1,
+  "canonical_forehead_geometry_380": {
+    "static": {
+      "angle_degrees": 0.0,
+      "bounce_asset_px": 0.0,
+      "landmark_10": [
+        190.0,
+        144.5
+      ],
+      "opaque_edge_y_at_landmark_x": 107,
+      "crown_margin_px": 37.5,
+      "tracked_face_pixels": 19964,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    },
+    "tilt_left_bounce": {
+      "angle_degrees": -8.0,
+      "bounce_asset_px": 3.5,
+      "landmark_10": [
+        178.476,
+        141.806
+      ],
+      "opaque_edge_y_at_landmark_x": 107,
+      "crown_margin_px": 34.806,
+      "tracked_face_pixels": 19956,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    },
+    "tilt_right_bounce": {
+      "angle_degrees": 8.0,
+      "bounce_asset_px": 3.5,
+      "landmark_10": [
+        201.524,
+        141.806
+      ],
+      "opaque_edge_y_at_landmark_x": 107,
+      "crown_margin_px": 34.806,
+      "tracked_face_pixels": 19956,
+      "nonopaque_tracked_face_pixels": 0,
+      "nonopaque_tracked_face_percent": 0.0,
+      "passes_12px_margin": true,
+      "whole_face_opaque": true
+    }
+  },
+  "outside_localization_max_channel_delta": {
+    "blink": 0,
+    "roar": 0
+  },
+  "states": {
+    "neutral": {
+      "imagegen_source": "design/runtime/deer/audit/imagegen/neutral-v1.generated.png",
+      "alpha_master": "design/runtime/deer/alpha/neutral-v1.png",
+      "alpha_sha256": "ee28170512e3eea6e727d6aa66d56b1e1c2c5cb2ba26081f8c9c7fc8cbedfd35",
+      "chroma_master": "design/runtime/deer/chroma/neutral-v1.png",
+      "chroma_sha256": "7609e58d8cc507c7dd34637f8b804970040df663594e1b7033d490e8fed35dca",
+      "runtime": "public/masks/deer/neutral-v1.webp",
+      "runtime_bytes": 261984,
+      "runtime_sha256": "25be9956f14bdcaa270594d8d24b5b38ac2b01ee2f2560ffdd5f9a93d788835c",
+      "github_pages_sha256": "25be9956f14bdcaa270594d8d24b5b38ac2b01ee2f2560ffdd5f9a93d788835c",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          47,
+          150,
+          1205,
+          1089
+        ],
+        "padding_px_left_top_right_bottom": [
+          47,
+          150,
+          49,
+          165
+        ],
+        "alpha_weighted_centroid": [
+          625.523,
+          631.888
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 889614,
+        "partially_transparent_pixels": 4687,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 889614,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    },
+    "blink": {
+      "imagegen_source": "design/runtime/deer/audit/imagegen/blink-v1.generated.png",
+      "alpha_master": "design/runtime/deer/alpha/blink-v1.png",
+      "alpha_sha256": "a44ff654ecbb111e55ba52f933f273793a8b91aa38d1c8e9861885a9055b4642",
+      "chroma_master": "design/runtime/deer/chroma/blink-v1.png",
+      "chroma_sha256": "1d2f8a2c4158bef2bb38aaa9b8902452c97701a083d1d5cf02eaa8eb73bf32d5",
+      "runtime": "public/masks/deer/blink-v1.webp",
+      "runtime_bytes": 244828,
+      "runtime_sha256": "4c2e2fdd5462b10986d3a125ad55dcf491dc23bd35886ec1bda5b6cdd070e26d",
+      "github_pages_sha256": "4c2e2fdd5462b10986d3a125ad55dcf491dc23bd35886ec1bda5b6cdd070e26d",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          47,
+          150,
+          1205,
+          1089
+        ],
+        "padding_px_left_top_right_bottom": [
+          47,
+          150,
+          49,
+          165
+        ],
+        "alpha_weighted_centroid": [
+          625.523,
+          631.888
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 889614,
+        "partially_transparent_pixels": 4687,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 889614,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    },
+    "roar": {
+      "imagegen_source": "design/runtime/deer/audit/imagegen/roar-v1.generated.png",
+      "alpha_master": "design/runtime/deer/alpha/roar-v1.png",
+      "alpha_sha256": "b3de00d05a3b78143beb0884cdc07613f3736176810e6532655201d34cffe510",
+      "chroma_master": "design/runtime/deer/chroma/roar-v1.png",
+      "chroma_sha256": "1514a07a4e27e78a7543bc5dbc1218f42cc05cb36772ce717303dede38737035",
+      "runtime": "public/masks/deer/roar-v1.webp",
+      "runtime_bytes": 257198,
+      "runtime_sha256": "88e2e9ea29e6bc4cd2920ffa9b3f0502e2a744b0f612a57d24861e2005d9e8e0",
+      "github_pages_sha256": "88e2e9ea29e6bc4cd2920ffa9b3f0502e2a744b0f612a57d24861e2005d9e8e0",
+      "runtime_copies_identical": true,
+      "alpha_metrics": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "bbox_alpha_gt_8": [
+          47,
+          150,
+          1205,
+          1089
+        ],
+        "padding_px_left_top_right_bottom": [
+          47,
+          150,
+          49,
+          165
+        ],
+        "alpha_weighted_centroid": [
+          625.523,
+          631.888
+        ],
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 889614,
+        "partially_transparent_pixels": 4687,
+        "enclosed_fully_transparent_holes": 0,
+        "green_dominant_partial_alpha_pixels": 0
+      },
+      "chroma_metrics": {
+        "transparent_field_pixels": 889614,
+        "transparent_field_max_channel_delta_from_00ff00": 0,
+        "corners_rgb": [
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ],
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      }
+    }
+  }
+}

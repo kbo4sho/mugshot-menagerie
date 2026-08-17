@@ -1,0 +1,44 @@
+{
+  "animal": "fox",
+  "display_name": "Fantastic Fox",
+  "version": "v1",
+  "dimensions": [1254, 1254],
+  "runtime_export": {
+    "format": "webp",
+    "quality": 95,
+    "method": 6,
+    "exact_alpha": true
+  },
+  "states": {
+    "neutral": {
+      "chroma": "design/runtime/fox/chroma/neutral-v1.png",
+      "alpha": "design/runtime/fox/alpha/neutral-v1.png",
+      "public": "public/masks/fox/neutral-v1.webp",
+      "github_pages": "github-pages/public/masks/fox/neutral-v1.webp",
+      "webp_bytes": 279702,
+      "public_sha256": "49a4e16aed801014bc86d4e30d9a37a67ccb15f914cfdabb6faad259e347596c"
+    },
+    "blink": {
+      "chroma": "design/runtime/fox/chroma/blink-v1.png",
+      "alpha": "design/runtime/fox/alpha/blink-v1.png",
+      "public": "public/masks/fox/blink-v1.webp",
+      "github_pages": "github-pages/public/masks/fox/blink-v1.webp",
+      "webp_bytes": 276112,
+      "public_sha256": "811fe687e591feac9732373ed7d724a390544e6a6810caf61f1e37dcebf45694"
+    },
+    "roar": {
+      "chroma": "design/runtime/fox/chroma/roar-v1.png",
+      "alpha": "design/runtime/fox/alpha/roar-v1.png",
+      "public": "public/masks/fox/roar-v1.webp",
+      "github_pages": "github-pages/public/masks/fox/roar-v1.webp",
+      "webp_bytes": 278134,
+      "public_sha256": "92d3b510fcc49e8e5c4f5a44e23b9a08f6d599c2cae578b3b90ae90a3e7f7515"
+    }
+  },
+  "audit": {
+    "metrics": "design/runtime/fox/audit/metrics-v1.json",
+    "states_hostile_380": "design/runtime/fox/audit/fox-v1-states-hostile-380.png",
+    "transitions_380": "design/runtime/fox/audit/fox-v1-transitions-380.png",
+    "thumbnail_96": "design/runtime/fox/audit/fox-v1-thumbnail-96.png"
+  }
+}

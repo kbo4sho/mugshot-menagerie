@@ -1,0 +1,153 @@
+{
+  "animal": "penguin",
+  "name": "Party Penguin",
+  "version": "v2",
+  "method": "deterministic localized mouth-cavity repair; no ImageGen retry",
+  "source_version": "v1",
+  "neutral_and_blink_master_bytes_identical_to_v1": {
+    "neutral": true,
+    "blink": true
+  },
+  "neutral_and_blink_runtime_bytes_identical_to_v1": {
+    "neutral": true,
+    "blink": true
+  },
+  "repair": {
+    "cavity_box_xyxy": [
+      569,
+      777,
+      685,
+      870
+    ],
+    "cavity_center_rgb": [
+      232,
+      77,
+      66
+    ],
+    "cavity_edge_rgb": [
+      159,
+      28,
+      24
+    ],
+    "shading": "continuous radial fourth-power edge falloff; no horizontal tonal split",
+    "antialias_supersampling": 4,
+    "changed_pixel_bbox_xyxy": [
+      567,
+      776,
+      688,
+      873
+    ],
+    "changed_pixels": 8836,
+    "outside_repair_mask_max_channel_delta": 0
+  },
+  "runtime_export": {
+    "side_px": 1254,
+    "quality": 95,
+    "alpha_quality": 100,
+    "method": 6
+  },
+  "alpha_pixel_hashes": {
+    "neutral": "58bb43d499e9163f4565955cf6e877405213fdbbf5c8e6b1b657b11317f49589",
+    "blink": "58bb43d499e9163f4565955cf6e877405213fdbbf5c8e6b1b657b11317f49589",
+    "roar": "58bb43d499e9163f4565955cf6e877405213fdbbf5c8e6b1b657b11317f49589"
+  },
+  "alpha_pixel_hashes_identical": true,
+  "states": {
+    "neutral": {
+      "alpha_master": "design/runtime/penguin/alpha/neutral-v2.png",
+      "alpha_sha256": "c8ddd3b3e96934895d3d1d910b5a03420e6cc9bbd8446b79ae920dbc0e16ec24",
+      "runtime": "public/masks/penguin/neutral-v2.webp",
+      "runtime_bytes": 244206,
+      "runtime_sha256": "5debcbde804cdc30d0bdb4c85a45174377f3bccbe993f4e4eefe8229379000db",
+      "github_pages_sha256": "5debcbde804cdc30d0bdb4c85a45174377f3bccbe993f4e4eefe8229379000db",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "bbox_alpha_gt_8": [
+        137,
+        139,
+        1113,
+        1076
+      ],
+      "padding_px_left_top_right_bottom": [
+        137,
+        139,
+        141,
+        178
+      ],
+      "alpha_weighted_centroid": [
+        624.571,
+        644.109
+      ],
+      "transparent_corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "blink": {
+      "alpha_master": "design/runtime/penguin/alpha/blink-v2.png",
+      "alpha_sha256": "345cbf01d52f25c86e08309ed4a2384b5e4cb1f53bddb2bc458c696dbeeeec22",
+      "runtime": "public/masks/penguin/blink-v2.webp",
+      "runtime_bytes": 233478,
+      "runtime_sha256": "37ac14ee95e67271ce9dc713b53220364682a69c52bb305d1ebbc05a0c4fe3a1",
+      "github_pages_sha256": "37ac14ee95e67271ce9dc713b53220364682a69c52bb305d1ebbc05a0c4fe3a1",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "bbox_alpha_gt_8": [
+        137,
+        139,
+        1113,
+        1076
+      ],
+      "padding_px_left_top_right_bottom": [
+        137,
+        139,
+        141,
+        178
+      ],
+      "alpha_weighted_centroid": [
+        624.571,
+        644.109
+      ],
+      "transparent_corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "roar": {
+      "alpha_master": "design/runtime/penguin/alpha/roar-v2.png",
+      "alpha_sha256": "2619a938fdac645436e4a1b9426c95a2e33a3c4ffec148385c5a1230001d0dcf",
+      "runtime": "public/masks/penguin/roar-v2.webp",
+      "runtime_bytes": 238582,
+      "runtime_sha256": "449b9393b3a1624ba6952e610b1aec255ba0699506644b9f38dcb5dd1daf8530",
+      "github_pages_sha256": "449b9393b3a1624ba6952e610b1aec255ba0699506644b9f38dcb5dd1daf8530",
+      "runtime_copies_identical": true,
+      "has_alph_chunk": true,
+      "bbox_alpha_gt_8": [
+        137,
+        139,
+        1113,
+        1076
+      ],
+      "padding_px_left_top_right_bottom": [
+        137,
+        139,
+        141,
+        178
+      ],
+      "alpha_weighted_centroid": [
+        624.571,
+        644.109
+      ],
+      "transparent_corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}
