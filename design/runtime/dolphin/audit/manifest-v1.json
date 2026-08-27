@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    193,
+    135,
+    1058,
+    1073
+  ],
+  "alpha_centroid": [
+    624.6065572071948,
+    666.5372516785013
+  ],
+  "padding_px": {
+    "left": 193,
+    "top": 135,
+    "right": 196,
+    "bottom": 181
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 579088,
+  "partial_alpha_pixels": 9376,
+  "interior_hole_pixels": 1241,
+  "partial_alpha_green_fringe_pixels": 601,
+  "alpha_sha256": "7320a5ae02ced4710bae1a423c88747a7353cf95ccdbdcf1d431a490e72d8880",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 154018,
+      "changed_visible_percent": 26.596648523195093,
+      "changed_bbox": [
+        279,
+        495,
+        972,
+        828
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 107594,
+      "changed_visible_percent": 18.57990495399663,
+      "changed_bbox": [
+        354,
+        497,
+        898,
+        1051
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/dolphin/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/dolphin/neutral-v1.webp",
+      "bytes": 196736,
+      "sha256": "e57018a89555db222eaf771651a0a1622f2fba9aa4203daefc3a81fe923b11fb",
+      "pages_sha256": "e57018a89555db222eaf771651a0a1622f2fba9aa4203daefc3a81fe923b11fb",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "7320a5ae02ced4710bae1a423c88747a7353cf95ccdbdcf1d431a490e72d8880",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/dolphin/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/dolphin/blink-v1.webp",
+      "bytes": 197572,
+      "sha256": "58e36db6b7b495f6491b4614dd60900e5006997580346a5f6da613d4c1a0194e",
+      "pages_sha256": "58e36db6b7b495f6491b4614dd60900e5006997580346a5f6da613d4c1a0194e",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "7320a5ae02ced4710bae1a423c88747a7353cf95ccdbdcf1d431a490e72d8880",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/dolphin/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/dolphin/roar-v1.webp",
+      "bytes": 193086,
+      "sha256": "9a7e7195cba8fb4b77dbfd7c299b12966d2366269d23c228eb450fe9268cd232",
+      "pages_sha256": "9a7e7195cba8fb4b77dbfd7c299b12966d2366269d23c228eb450fe9268cd232",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "7320a5ae02ced4710bae1a423c88747a7353cf95ccdbdcf1d431a490e72d8880",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

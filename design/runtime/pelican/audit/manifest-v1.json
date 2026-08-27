@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    172,
+    106,
+    1076,
+    1138
+  ],
+  "alpha_centroid": [
+    625.0595623942646,
+    644.618825090731
+  ],
+  "padding_px": {
+    "left": 172,
+    "top": 106,
+    "right": 178,
+    "bottom": 116
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 638977,
+  "partial_alpha_pixels": 9808,
+  "interior_hole_pixels": 1153,
+  "partial_alpha_green_fringe_pixels": 290,
+  "alpha_sha256": "7b2a59bac76a0575cbeaf7c6f97796f842ddbc9c6d4437a720a96c550fc56578",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 158121,
+      "changed_visible_percent": 24.745961122231318,
+      "changed_bbox": [
+        279,
+        484,
+        978,
+        826
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 145507,
+      "changed_visible_percent": 22.771868158008818,
+      "changed_bbox": [
+        357,
+        487,
+        903,
+        1099
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/pelican/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/pelican/neutral-v1.webp",
+      "bytes": 249682,
+      "sha256": "a5bc10c724a3c2d3820a01cc1a06d48847adf9abba446bbf267b53a0817a0108",
+      "pages_sha256": "a5bc10c724a3c2d3820a01cc1a06d48847adf9abba446bbf267b53a0817a0108",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "7b2a59bac76a0575cbeaf7c6f97796f842ddbc9c6d4437a720a96c550fc56578",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/pelican/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/pelican/blink-v1.webp",
+      "bytes": 237022,
+      "sha256": "a50a95eee2c576d41b68791fb860eda6e3b4f4278ff53ac6f793883890d18ca1",
+      "pages_sha256": "a50a95eee2c576d41b68791fb860eda6e3b4f4278ff53ac6f793883890d18ca1",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "7b2a59bac76a0575cbeaf7c6f97796f842ddbc9c6d4437a720a96c550fc56578",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/pelican/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/pelican/roar-v1.webp",
+      "bytes": 239494,
+      "sha256": "ac1be8ed79baf6100de4c2646a0ae4f2c60f105cf517c436fa2cf7e4464f62ee",
+      "pages_sha256": "ac1be8ed79baf6100de4c2646a0ae4f2c60f105cf517c436fa2cf7e4464f62ee",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "7b2a59bac76a0575cbeaf7c6f97796f842ddbc9c6d4437a720a96c550fc56578",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}
