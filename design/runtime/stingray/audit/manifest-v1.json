@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    69,
+    276,
+    1185,
+    947
+  ],
+  "alpha_centroid": [
+    627.7850959592054,
+    652.3434493456397
+  ],
+  "padding_px": {
+    "left": 69,
+    "top": 276,
+    "right": 69,
+    "bottom": 307
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 439666,
+  "partial_alpha_pixels": 8918,
+  "interior_hole_pixels": 1112,
+  "partial_alpha_green_fringe_pixels": 270,
+  "alpha_sha256": "dc1d114d03a8c59f9d233b0f1392cf8a9bd96f67c9c34241c2d98ff4196cda3a",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 155672,
+      "changed_visible_percent": 35.40687703847921,
+      "changed_bbox": [
+        275,
+        493,
+        977,
+        826
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 100408,
+      "changed_visible_percent": 22.837335613852332,
+      "changed_bbox": [
+        348,
+        494,
+        906,
+        926
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/stingray/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/stingray/neutral-v1.webp",
+      "bytes": 194190,
+      "sha256": "13b32f64629bdcaa4d328cdb6a828b0256108664ee8fab70bcbbf9e67d735850",
+      "pages_sha256": "13b32f64629bdcaa4d328cdb6a828b0256108664ee8fab70bcbbf9e67d735850",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "dc1d114d03a8c59f9d233b0f1392cf8a9bd96f67c9c34241c2d98ff4196cda3a",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/stingray/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/stingray/blink-v1.webp",
+      "bytes": 190974,
+      "sha256": "96cdb14c4ac4fc0b149fc18040a0e9d3b0b48ceda8e9714f39d37d7bb4756fd1",
+      "pages_sha256": "96cdb14c4ac4fc0b149fc18040a0e9d3b0b48ceda8e9714f39d37d7bb4756fd1",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "dc1d114d03a8c59f9d233b0f1392cf8a9bd96f67c9c34241c2d98ff4196cda3a",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/stingray/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/stingray/roar-v1.webp",
+      "bytes": 187308,
+      "sha256": "f646046cbb22864f8d21430b9ce06a9146d3981a9f0fdac4f74ec77208f6b4e3",
+      "pages_sha256": "f646046cbb22864f8d21430b9ce06a9146d3981a9f0fdac4f74ec77208f6b4e3",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "dc1d114d03a8c59f9d233b0f1392cf8a9bd96f67c9c34241c2d98ff4196cda3a",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

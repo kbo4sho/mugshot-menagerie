@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    92,
+    85,
+    1162,
+    1125
+  ],
+  "alpha_centroid": [
+    626.7267479153303,
+    682.873741161896
+  ],
+  "padding_px": {
+    "left": 92,
+    "top": 85,
+    "right": 92,
+    "bottom": 129
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 681283,
+  "partial_alpha_pixels": 16554,
+  "interior_hole_pixels": 1965,
+  "partial_alpha_green_fringe_pixels": 1072,
+  "alpha_sha256": "57554fd8d7ebe81a4c28fe5751c6788bcae313e845cbe5624310423b9d900da4",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 418889,
+      "changed_visible_percent": 61.48531520674961,
+      "changed_bbox": [
+        163,
+        416,
+        1093,
+        1064
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 139744,
+      "changed_visible_percent": 20.51188713060505,
+      "changed_bbox": [
+        351,
+        493,
+        904,
+        1098
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/seahorse/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/seahorse/neutral-v1.webp",
+      "bytes": 365456,
+      "sha256": "e9d4ecc7b1dc23b7d3cf2e337e95f26f8277111319526a382cc09baf7ee41d84",
+      "pages_sha256": "e9d4ecc7b1dc23b7d3cf2e337e95f26f8277111319526a382cc09baf7ee41d84",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "57554fd8d7ebe81a4c28fe5751c6788bcae313e845cbe5624310423b9d900da4",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/seahorse/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/seahorse/blink-v1.webp",
+      "bytes": 330670,
+      "sha256": "ff54915ce98433eb4dd7e692b622488b4e45519fef2e0b12d9454abfdc1f236b",
+      "pages_sha256": "ff54915ce98433eb4dd7e692b622488b4e45519fef2e0b12d9454abfdc1f236b",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "57554fd8d7ebe81a4c28fe5751c6788bcae313e845cbe5624310423b9d900da4",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/seahorse/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/seahorse/roar-v1.webp",
+      "bytes": 358968,
+      "sha256": "969e14f88cfdf9a74accf8b3f99cd7517fa57ece497514a12b82ada10ae5f1b0",
+      "pages_sha256": "969e14f88cfdf9a74accf8b3f99cd7517fa57ece497514a12b82ada10ae5f1b0",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "57554fd8d7ebe81a4c28fe5751c6788bcae313e845cbe5624310423b9d900da4",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

@@ -241,6 +241,12 @@ const RENDERED_MASK_VERSIONS: Record<string, string> = {
   turkey: "v1",
   puffin: "v1",
   cockatoo: "v1",
+  ostrich: "v1",
+  squid: "v1",
+  lobster: "v1",
+  seahorse: "v1",
+  stingray: "v1",
+  pufferfish: "v1",
 };
 
 const ANIMALS: Animal[] = ANIMAL_ROSTER.filter((animal) => animal.id in RENDERED_MASK_VERSIONS);

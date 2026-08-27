@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    89,
+    151,
+    1164,
+    1081
+  ],
+  "alpha_centroid": [
+    626.1177828712921,
+    686.3109762867672
+  ],
+  "padding_px": {
+    "left": 89,
+    "top": 151,
+    "right": 90,
+    "bottom": 173
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 657481,
+  "partial_alpha_pixels": 15391,
+  "interior_hole_pixels": 2551,
+  "partial_alpha_green_fringe_pixels": 1478,
+  "alpha_sha256": "7fdc4ede3bb9374ec82a9c0e788f9a627d298f5ee734b3d26098c92d84490574",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 159973,
+      "changed_visible_percent": 24.331197403423065,
+      "changed_bbox": [
+        281,
+        493,
+        976,
+        830
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 108333,
+      "changed_visible_percent": 16.47697804195102,
+      "changed_bbox": [
+        355,
+        493,
+        901,
+        1004
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/lobster/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/lobster/neutral-v1.webp",
+      "bytes": 302322,
+      "sha256": "a1fee380d0873b8632f9fff7daaf2d2b1f936cd41104d38c969a2e444052acb0",
+      "pages_sha256": "a1fee380d0873b8632f9fff7daaf2d2b1f936cd41104d38c969a2e444052acb0",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "7fdc4ede3bb9374ec82a9c0e788f9a627d298f5ee734b3d26098c92d84490574",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/lobster/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/lobster/blink-v1.webp",
+      "bytes": 303552,
+      "sha256": "44df40886d2540dc05024190a6787df37818889e3692603316f172e22eff7d31",
+      "pages_sha256": "44df40886d2540dc05024190a6787df37818889e3692603316f172e22eff7d31",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "7fdc4ede3bb9374ec82a9c0e788f9a627d298f5ee734b3d26098c92d84490574",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/lobster/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/lobster/roar-v1.webp",
+      "bytes": 303180,
+      "sha256": "93fae84fdb14c737d6b640cc2c3e91afb1c895c5f07a4d321b19807275c029d0",
+      "pages_sha256": "93fae84fdb14c737d6b640cc2c3e91afb1c895c5f07a4d321b19807275c029d0",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "7fdc4ede3bb9374ec82a9c0e788f9a627d298f5ee734b3d26098c92d84490574",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

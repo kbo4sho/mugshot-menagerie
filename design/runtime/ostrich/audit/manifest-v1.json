@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    149,
+    67,
+    1105,
+    1149
+  ],
+  "alpha_centroid": [
+    626.7275541959452,
+    624.4386727134938
+  ],
+  "padding_px": {
+    "left": 149,
+    "top": 67,
+    "right": 149,
+    "bottom": 105
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 756099,
+  "partial_alpha_pixels": 38733,
+  "interior_hole_pixels": 565,
+  "partial_alpha_green_fringe_pixels": 397,
+  "alpha_sha256": "57aab5b2167193ae76235f8bd2a83ca8b93656a9034b46da04f30b594cd8282f",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 165226,
+      "changed_visible_percent": 21.85242937763441,
+      "changed_bbox": [
+        269,
+        487,
+        986,
+        823
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 121911,
+      "changed_visible_percent": 16.123682216217716,
+      "changed_bbox": [
+        349,
+        497,
+        908,
+        1099
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/ostrich/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/ostrich/neutral-v1.webp",
+      "bytes": 330210,
+      "sha256": "b27b50f289b87c7ce6a827374208d4c679238374284303fe7fa6f6931ab24563",
+      "pages_sha256": "b27b50f289b87c7ce6a827374208d4c679238374284303fe7fa6f6931ab24563",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "57aab5b2167193ae76235f8bd2a83ca8b93656a9034b46da04f30b594cd8282f",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/ostrich/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/ostrich/blink-v1.webp",
+      "bytes": 329238,
+      "sha256": "4bc318631258e612ad471b44919a3243476f61d628c51d061bf95d287e03f7c5",
+      "pages_sha256": "4bc318631258e612ad471b44919a3243476f61d628c51d061bf95d287e03f7c5",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "57aab5b2167193ae76235f8bd2a83ca8b93656a9034b46da04f30b594cd8282f",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/ostrich/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/ostrich/roar-v1.webp",
+      "bytes": 320192,
+      "sha256": "52f2fdcbcf090cbc4a0a8d2317384a71ebf068dc5355bf8cdca39556a4f5b7d9",
+      "pages_sha256": "52f2fdcbcf090cbc4a0a8d2317384a71ebf068dc5355bf8cdca39556a4f5b7d9",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "57aab5b2167193ae76235f8bd2a83ca8b93656a9034b46da04f30b594cd8282f",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

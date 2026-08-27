@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    110,
+    144,
+    1143,
+    1096
+  ],
+  "alpha_centroid": [
+    625.9013314644118,
+    666.0703191192945
+  ],
+  "padding_px": {
+    "left": 110,
+    "top": 144,
+    "right": 111,
+    "bottom": 158
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 703436,
+  "partial_alpha_pixels": 13541,
+  "interior_hole_pixels": 1873,
+  "partial_alpha_green_fringe_pixels": 946,
+  "alpha_sha256": "2719fc2120e12637acef524681cea2b1cc90e1267dcd241a52e5d7f782eccfe0",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 167219,
+      "changed_visible_percent": 23.771743271598268,
+      "changed_bbox": [
+        279,
+        489,
+        976,
+        835
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 126079,
+      "changed_visible_percent": 17.923307877333546,
+      "changed_bbox": [
+        353,
+        493,
+        903,
+        1063
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/squid/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/squid/neutral-v1.webp",
+      "bytes": 339768,
+      "sha256": "89e68a2094bfc6fc8573b5f92e33e9c1d8ec47748bf3be9fadbbe4ca535bc5b2",
+      "pages_sha256": "89e68a2094bfc6fc8573b5f92e33e9c1d8ec47748bf3be9fadbbe4ca535bc5b2",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "2719fc2120e12637acef524681cea2b1cc90e1267dcd241a52e5d7f782eccfe0",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/squid/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/squid/blink-v1.webp",
+      "bytes": 343602,
+      "sha256": "9e8b5948fc73b8621deeca48d29265067719b244c427030fd71a38081197bf57",
+      "pages_sha256": "9e8b5948fc73b8621deeca48d29265067719b244c427030fd71a38081197bf57",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "2719fc2120e12637acef524681cea2b1cc90e1267dcd241a52e5d7f782eccfe0",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/squid/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/squid/roar-v1.webp",
+      "bytes": 330150,
+      "sha256": "942ade7fd10378f4c6eed055b04ffd8277cc93f20fd3d086a2f84a2b1beaf4bb",
+      "pages_sha256": "942ade7fd10378f4c6eed055b04ffd8277cc93f20fd3d086a2f84a2b1beaf4bb",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "2719fc2120e12637acef524681cea2b1cc90e1267dcd241a52e5d7f782eccfe0",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

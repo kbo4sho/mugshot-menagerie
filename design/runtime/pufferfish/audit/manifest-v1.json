@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    63,
+    147,
+    1190,
+    1113
+  ],
+  "alpha_centroid": [
+    625.3371325979434,
+    646.3538461754757
+  ],
+  "padding_px": {
+    "left": 63,
+    "top": 147,
+    "right": 64,
+    "bottom": 141
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 711278,
+  "partial_alpha_pixels": 13000,
+  "interior_hole_pixels": 1812,
+  "partial_alpha_green_fringe_pixels": 615,
+  "alpha_sha256": "e9335c2ff82acb8c6782e16d12e974c69491335dd07ab07de3beb0983767b80d",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 163338,
+      "changed_visible_percent": 22.96401688228794,
+      "changed_bbox": [
+        275,
+        491,
+        978,
+        827
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 115364,
+      "changed_visible_percent": 16.219256043347325,
+      "changed_bbox": [
+        347,
+        495,
+        908,
+        1076
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/pufferfish/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/pufferfish/neutral-v1.webp",
+      "bytes": 339466,
+      "sha256": "ba188b52c2408ad5fd9e16178f94270b0c38d05e5a73e7223dd9d03c88285d57",
+      "pages_sha256": "ba188b52c2408ad5fd9e16178f94270b0c38d05e5a73e7223dd9d03c88285d57",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "e9335c2ff82acb8c6782e16d12e974c69491335dd07ab07de3beb0983767b80d",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/pufferfish/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/pufferfish/blink-v1.webp",
+      "bytes": 340286,
+      "sha256": "5ec04319c8d2242ce76e1ab765f9d85979542ea4c9b1b0082fa72ec6c467e6d0",
+      "pages_sha256": "5ec04319c8d2242ce76e1ab765f9d85979542ea4c9b1b0082fa72ec6c467e6d0",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "e9335c2ff82acb8c6782e16d12e974c69491335dd07ab07de3beb0983767b80d",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/pufferfish/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/pufferfish/roar-v1.webp",
+      "bytes": 332202,
+      "sha256": "4935c3eb559f4a2b1e46c9b8444a59e5c1b396f4970a4eefe97062e836814d03",
+      "pages_sha256": "4935c3eb559f4a2b1e46c9b8444a59e5c1b396f4970a4eefe97062e836814d03",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "e9335c2ff82acb8c6782e16d12e974c69491335dd07ab07de3beb0983767b80d",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}
