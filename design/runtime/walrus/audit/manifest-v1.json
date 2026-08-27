@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    99,
+    119,
+    1152,
+    1129
+  ],
+  "alpha_centroid": [
+    624.5534330477902,
+    640.7498260380128
+  ],
+  "padding_px": {
+    "left": 99,
+    "top": 119,
+    "right": 102,
+    "bottom": 125
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 842138,
+  "partial_alpha_pixels": 11026,
+  "interior_hole_pixels": 1654,
+  "partial_alpha_green_fringe_pixels": 1211,
+  "alpha_sha256": "78be99a871df1facc7d4d5d0fd92e6442987529aa85db78103cf8ecfdb20b438",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 420810,
+      "changed_visible_percent": 49.96924494560274,
+      "changed_bbox": [
+        165,
+        259,
+        1085,
+        849
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 115196,
+      "changed_visible_percent": 13.678993229138218,
+      "changed_bbox": [
+        359,
+        493,
+        902,
+        1089
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/walrus/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/walrus/neutral-v1.webp",
+      "bytes": 363646,
+      "sha256": "29a81cb8bdc9d98e242381f25ea03e4d3153365fbd8b67a8230ce9fbcb5c684f",
+      "pages_sha256": "29a81cb8bdc9d98e242381f25ea03e4d3153365fbd8b67a8230ce9fbcb5c684f",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "78be99a871df1facc7d4d5d0fd92e6442987529aa85db78103cf8ecfdb20b438",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/walrus/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/walrus/blink-v1.webp",
+      "bytes": 353616,
+      "sha256": "8804f1c5f11d921f1f685646ec99a616b4d5899b4d8bf0fe331d20e2c277508c",
+      "pages_sha256": "8804f1c5f11d921f1f685646ec99a616b4d5899b4d8bf0fe331d20e2c277508c",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "78be99a871df1facc7d4d5d0fd92e6442987529aa85db78103cf8ecfdb20b438",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/walrus/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/walrus/roar-v1.webp",
+      "bytes": 354646,
+      "sha256": "ec4f7a31d7eb3438e3d3c04eab3ca0a8fa33865c8b19c2ae820a83ffbf136112",
+      "pages_sha256": "ec4f7a31d7eb3438e3d3c04eab3ca0a8fa33865c8b19c2ae820a83ffbf136112",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "78be99a871df1facc7d4d5d0fd92e6442987529aa85db78103cf8ecfdb20b438",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

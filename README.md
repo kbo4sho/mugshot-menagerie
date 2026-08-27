@@ -7,7 +7,7 @@ A playful browser-based webcam game where kids meet a reactive animal twin.
 ## What it does
 
 - Tracks up to six faces at once
-- Draws 56 original rendered animal masks directly on a canvas
+- Draws 62 original rendered animal masks directly on a canvas
 - Follows face position, scale, and head tilt
 - Reacts to blinking, smiling, and opening your mouth
 - Keeps animal assignments stable until you shuffle

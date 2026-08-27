@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    63,
+    119,
+    1190,
+    1130
+  ],
+  "alpha_centroid": [
+    626.5905926056837,
+    632.0543390608523
+  ],
+  "padding_px": {
+    "left": 63,
+    "top": 119,
+    "right": 64,
+    "bottom": 124
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 854413,
+  "partial_alpha_pixels": 16458,
+  "interior_hole_pixels": 2014,
+  "partial_alpha_green_fringe_pixels": 652,
+  "alpha_sha256": "1a2a8d74da49fc8e3777d9e7f2fc577a3e96d8ae68e908f781cea53fe9e844b5",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 147869,
+      "changed_visible_percent": 17.30650165669296,
+      "changed_bbox": [
+        282,
+        491,
+        975,
+        823
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 96979,
+      "changed_visible_percent": 11.350365689660622,
+      "changed_bbox": [
+        356,
+        500,
+        902,
+        1089
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/jellyfish/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/jellyfish/neutral-v1.webp",
+      "bytes": 314150,
+      "sha256": "0e0365eec8c3b3e84852e3cfb96aaa8c9239852a765074bee901340406c0ccb8",
+      "pages_sha256": "0e0365eec8c3b3e84852e3cfb96aaa8c9239852a765074bee901340406c0ccb8",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "1a2a8d74da49fc8e3777d9e7f2fc577a3e96d8ae68e908f781cea53fe9e844b5",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/jellyfish/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/jellyfish/blink-v1.webp",
+      "bytes": 295682,
+      "sha256": "796e74ae2200a4f6d3b99d206de97e10f63a6e5e21250e74a4c0d166a0f18e48",
+      "pages_sha256": "796e74ae2200a4f6d3b99d206de97e10f63a6e5e21250e74a4c0d166a0f18e48",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "1a2a8d74da49fc8e3777d9e7f2fc577a3e96d8ae68e908f781cea53fe9e844b5",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/jellyfish/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/jellyfish/roar-v1.webp",
+      "bytes": 299586,
+      "sha256": "f6cbe75cbf409b597306a797c8ef7fe3b59f6bd2f54c8e4d216168d63dbc3ce1",
+      "pages_sha256": "f6cbe75cbf409b597306a797c8ef7fe3b59f6bd2f54c8e4d216168d63dbc3ce1",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "1a2a8d74da49fc8e3777d9e7f2fc577a3e96d8ae68e908f781cea53fe9e844b5",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}
