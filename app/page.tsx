@@ -223,6 +223,12 @@ const RENDERED_MASK_VERSIONS: Record<string, string> = {
   snake: "v1",
   armadillo: "v1",
   walrus: "v1",
+  orangutan: "v1",
+  baboon: "v1",
+  platypus: "v1",
+  anteater: "v1",
+  tapir: "v1",
+  okapi: "v1",
 };
 
 const ANIMALS: Animal[] = ANIMAL_ROSTER.filter((animal) => animal.id in RENDERED_MASK_VERSIONS);

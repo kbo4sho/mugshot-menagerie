@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    128,
+    163,
+    1125,
+    1122
+  ],
+  "alpha_centroid": [
+    626.1757964255347,
+    600.1542116461865
+  ],
+  "padding_px": {
+    "left": 128,
+    "top": 163,
+    "right": 129,
+    "bottom": 132
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 742097,
+  "partial_alpha_pixels": 11435,
+  "interior_hole_pixels": 1449,
+  "partial_alpha_green_fringe_pixels": 560,
+  "alpha_sha256": "b18895c14bd07598b833b8c88a6f0610538a03c6b6df954c5dea3b217ac1fa63",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 162249,
+      "changed_visible_percent": 21.86358387111119,
+      "changed_bbox": [
+        275,
+        491,
+        979,
+        830
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 117000,
+      "changed_visible_percent": 15.766132998785872,
+      "changed_bbox": [
+        353,
+        493,
+        906,
+        1100
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/anteater/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/anteater/neutral-v1.webp",
+      "bytes": 379932,
+      "sha256": "17fe8a6a2b84df4fead04e1001550d20abbbd772f8f7ba195a6b05607322df96",
+      "pages_sha256": "17fe8a6a2b84df4fead04e1001550d20abbbd772f8f7ba195a6b05607322df96",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "b18895c14bd07598b833b8c88a6f0610538a03c6b6df954c5dea3b217ac1fa63",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/anteater/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/anteater/blink-v1.webp",
+      "bytes": 385296,
+      "sha256": "485a8574a9e8c8672827952787481966de67aa001f25afb6dbe6f9f35b7b39a9",
+      "pages_sha256": "485a8574a9e8c8672827952787481966de67aa001f25afb6dbe6f9f35b7b39a9",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "b18895c14bd07598b833b8c88a6f0610538a03c6b6df954c5dea3b217ac1fa63",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/anteater/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/anteater/roar-v1.webp",
+      "bytes": 371662,
+      "sha256": "58dca184e69b45850d32de82f934460bf346035bb7cd8ba5d9e29b0894847635",
+      "pages_sha256": "58dca184e69b45850d32de82f934460bf346035bb7cd8ba5d9e29b0894847635",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "b18895c14bd07598b833b8c88a6f0610538a03c6b6df954c5dea3b217ac1fa63",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    73,
+    163,
+    1180,
+    1120
+  ],
+  "alpha_centroid": [
+    625.7146753857791,
+    659.122415384707
+  ],
+  "padding_px": {
+    "left": 73,
+    "top": 163,
+    "right": 74,
+    "bottom": 134
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 839535,
+  "partial_alpha_pixels": 11058,
+  "interior_hole_pixels": 1659,
+  "partial_alpha_green_fringe_pixels": 1149,
+  "alpha_sha256": "578c0d8c1c2269db362e221d9b1e53f6c1254f2824312f266c87404cb19b3bef",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 171463,
+      "changed_visible_percent": 20.42356780837011,
+      "changed_bbox": [
+        270,
+        490,
+        983,
+        828
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 113078,
+      "changed_visible_percent": 13.46912278821014,
+      "changed_bbox": [
+        358,
+        490,
+        903,
+        1090
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/platypus/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/platypus/neutral-v1.webp",
+      "bytes": 448828,
+      "sha256": "159cd969ff038b8dd32d5066f3654fa6c3cabf5c29bfacb007a836b128bf358b",
+      "pages_sha256": "159cd969ff038b8dd32d5066f3654fa6c3cabf5c29bfacb007a836b128bf358b",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "578c0d8c1c2269db362e221d9b1e53f6c1254f2824312f266c87404cb19b3bef",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/platypus/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/platypus/blink-v1.webp",
+      "bytes": 465464,
+      "sha256": "f7ee3ebda9197fe2a6a314158d51a38e46da09e63598d4b62bb759813606a56f",
+      "pages_sha256": "f7ee3ebda9197fe2a6a314158d51a38e46da09e63598d4b62bb759813606a56f",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "578c0d8c1c2269db362e221d9b1e53f6c1254f2824312f266c87404cb19b3bef",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/platypus/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/platypus/roar-v1.webp",
+      "bytes": 442098,
+      "sha256": "2b4aa4d632a89115198b8f652d11ae38299d966b4a6ddce56a6a13c644a7e444",
+      "pages_sha256": "2b4aa4d632a89115198b8f652d11ae38299d966b4a6ddce56a6a13c644a7e444",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "578c0d8c1c2269db362e221d9b1e53f6c1254f2824312f266c87404cb19b3bef",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

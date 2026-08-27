@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    72,
+    85,
+    1181,
+    1181
+  ],
+  "alpha_centroid": [
+    627.2003848756086,
+    675.040855599552
+  ],
+  "padding_px": {
+    "left": 72,
+    "top": 85,
+    "right": 73,
+    "bottom": 73
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 901590,
+  "partial_alpha_pixels": 18692,
+  "interior_hole_pixels": 1327,
+  "partial_alpha_green_fringe_pixels": 789,
+  "alpha_sha256": "ec60324d47904428fcf7476c2958e7d5447675be996a4419d0d110a75270d176",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 169401,
+      "changed_visible_percent": 18.78913918743553,
+      "changed_bbox": [
+        273,
+        488,
+        979,
+        831
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 123311,
+      "changed_visible_percent": 13.677059417251744,
+      "changed_bbox": [
+        353,
+        490,
+        902,
+        1098
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/orangutan/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/orangutan/neutral-v1.webp",
+      "bytes": 483418,
+      "sha256": "2f772ac319b679f1f41753a63ec502e89c13380905c304cf8f14cfbd52d9b12b",
+      "pages_sha256": "2f772ac319b679f1f41753a63ec502e89c13380905c304cf8f14cfbd52d9b12b",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "ec60324d47904428fcf7476c2958e7d5447675be996a4419d0d110a75270d176",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/orangutan/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/orangutan/blink-v1.webp",
+      "bytes": 493004,
+      "sha256": "bc45539d2960186efb55cf7b786b5e7599ae690c14fd5e29cebea017a95eed28",
+      "pages_sha256": "bc45539d2960186efb55cf7b786b5e7599ae690c14fd5e29cebea017a95eed28",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "ec60324d47904428fcf7476c2958e7d5447675be996a4419d0d110a75270d176",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/orangutan/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/orangutan/roar-v1.webp",
+      "bytes": 471464,
+      "sha256": "55a8cee6b5e6828c17f540d08b4c9cb06a2b1854aab2857f71f742a7d901a447",
+      "pages_sha256": "55a8cee6b5e6828c17f540d08b4c9cb06a2b1854aab2857f71f742a7d901a447",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "ec60324d47904428fcf7476c2958e7d5447675be996a4419d0d110a75270d176",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

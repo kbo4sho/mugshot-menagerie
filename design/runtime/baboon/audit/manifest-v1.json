@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    63,
+    141,
+    1190,
+    1127
+  ],
+  "alpha_centroid": [
+    626.2451272180158,
+    631.5543793819708
+  ],
+  "padding_px": {
+    "left": 63,
+    "top": 141,
+    "right": 64,
+    "bottom": 127
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 820835,
+  "partial_alpha_pixels": 11553,
+  "interior_hole_pixels": 1204,
+  "partial_alpha_green_fringe_pixels": 546,
+  "alpha_sha256": "06d06c2e096d2437e48175cbb0195bcc243b6be3e9eab4cae0ab6ece8fbbb6f7",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 170259,
+      "changed_visible_percent": 20.74217108188613,
+      "changed_bbox": [
+        274,
+        486,
+        980,
+        833
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 104446,
+      "changed_visible_percent": 12.724359950538172,
+      "changed_bbox": [
+        364,
+        501,
+        889,
+        1096
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/baboon/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/baboon/neutral-v1.webp",
+      "bytes": 446342,
+      "sha256": "ca39a052323f3918756d475838ac4d4c0d9f171fb96ceb93e7ad459f3eec8f70",
+      "pages_sha256": "ca39a052323f3918756d475838ac4d4c0d9f171fb96ceb93e7ad459f3eec8f70",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "06d06c2e096d2437e48175cbb0195bcc243b6be3e9eab4cae0ab6ece8fbbb6f7",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/baboon/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/baboon/blink-v1.webp",
+      "bytes": 453512,
+      "sha256": "a44201cd80c38d92e46d5d992b6c6a823ca9cfac83a867d49eb134522a7adf79",
+      "pages_sha256": "a44201cd80c38d92e46d5d992b6c6a823ca9cfac83a867d49eb134522a7adf79",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "06d06c2e096d2437e48175cbb0195bcc243b6be3e9eab4cae0ab6ece8fbbb6f7",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/baboon/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/baboon/roar-v1.webp",
+      "bytes": 438408,
+      "sha256": "d448396994414a2d00adc7d46aa5dbcfc1a0c56159aa28c7c1b37dd77a3a0e60",
+      "pages_sha256": "d448396994414a2d00adc7d46aa5dbcfc1a0c56159aa28c7c1b37dd77a3a0e60",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "06d06c2e096d2437e48175cbb0195bcc243b6be3e9eab4cae0ab6ece8fbbb6f7",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

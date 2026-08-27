@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    60,
+    143,
+    1194,
+    1103
+  ],
+  "alpha_centroid": [
+    626.0406643854292,
+    591.87933357946
+  ],
+  "padding_px": {
+    "left": 60,
+    "top": 143,
+    "right": 60,
+    "bottom": 151
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 766543,
+  "partial_alpha_pixels": 14023,
+  "interior_hole_pixels": 2255,
+  "partial_alpha_green_fringe_pixels": 1709,
+  "alpha_sha256": "0aa64dd373ad6b4c3838bc7a4633368eda3cebf8035f80d3fe3db52d7cfac009",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 162946,
+      "changed_visible_percent": 21.257254974606774,
+      "changed_bbox": [
+        278,
+        486,
+        976,
+        833
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 118455,
+      "changed_visible_percent": 15.45314483336225,
+      "changed_bbox": [
+        352,
+        491,
+        906,
+        1081
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/okapi/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/okapi/neutral-v1.webp",
+      "bytes": 410680,
+      "sha256": "601fbaf7546aa368ff0858f89aeba413c992b740140303cf663b5aeedfad0a7e",
+      "pages_sha256": "601fbaf7546aa368ff0858f89aeba413c992b740140303cf663b5aeedfad0a7e",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "0aa64dd373ad6b4c3838bc7a4633368eda3cebf8035f80d3fe3db52d7cfac009",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/okapi/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/okapi/blink-v1.webp",
+      "bytes": 412770,
+      "sha256": "75876ddbcdf231983459905398297b664659682a0c29bbb9a28eb2939b9f5869",
+      "pages_sha256": "75876ddbcdf231983459905398297b664659682a0c29bbb9a28eb2939b9f5869",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "0aa64dd373ad6b4c3838bc7a4633368eda3cebf8035f80d3fe3db52d7cfac009",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/okapi/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/okapi/roar-v1.webp",
+      "bytes": 400724,
+      "sha256": "da6dfacdc7c1fedd54f4eed1aca8c54d9fe2a3c5941a277668b4f8ba92d20096",
+      "pages_sha256": "da6dfacdc7c1fedd54f4eed1aca8c54d9fe2a3c5941a277668b4f8ba92d20096",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "0aa64dd373ad6b4c3838bc7a4633368eda3cebf8035f80d3fe3db52d7cfac009",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}
