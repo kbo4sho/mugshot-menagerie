@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    218,
+    62,
+    1031,
+    1152
+  ],
+  "alpha_centroid": [
+    623.7056904102925,
+    622.190828378731
+  ],
+  "padding_px": {
+    "left": 218,
+    "top": 62,
+    "right": 223,
+    "bottom": 102
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 563281,
+  "partial_alpha_pixels": 10780,
+  "interior_hole_pixels": 1397,
+  "partial_alpha_green_fringe_pixels": 182,
+  "alpha_sha256": "9e6f418a67e05d4f24dda63f752a2340c9869dace9075134b0e67144c4da51b7",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 253921,
+      "changed_visible_percent": 45.07892153294714,
+      "changed_bbox": [
+        245,
+        314,
+        1004,
+        897
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 115635,
+      "changed_visible_percent": 20.52883019310078,
+      "changed_bbox": [
+        355,
+        499,
+        904,
+        1103
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/swan/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/swan/neutral-v1.webp",
+      "bytes": 150392,
+      "sha256": "e1d0ec60e1f5bb8425711b29224f479c16a127d400d0fdcb52636db93ea856fc",
+      "pages_sha256": "e1d0ec60e1f5bb8425711b29224f479c16a127d400d0fdcb52636db93ea856fc",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "9e6f418a67e05d4f24dda63f752a2340c9869dace9075134b0e67144c4da51b7",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/swan/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/swan/blink-v1.webp",
+      "bytes": 132972,
+      "sha256": "10d7eb304410de15f3ac4a410e1c3f6758608549f4ced3b9d0643b2b2a4e838a",
+      "pages_sha256": "10d7eb304410de15f3ac4a410e1c3f6758608549f4ced3b9d0643b2b2a4e838a",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "9e6f418a67e05d4f24dda63f752a2340c9869dace9075134b0e67144c4da51b7",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/swan/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/swan/roar-v1.webp",
+      "bytes": 145036,
+      "sha256": "2086b8542c19a4f0bf015dfb704afb26151c958aee2ac8202c46834f85809337",
+      "pages_sha256": "2086b8542c19a4f0bf015dfb704afb26151c958aee2ac8202c46834f85809337",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "9e6f418a67e05d4f24dda63f752a2340c9869dace9075134b0e67144c4da51b7",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

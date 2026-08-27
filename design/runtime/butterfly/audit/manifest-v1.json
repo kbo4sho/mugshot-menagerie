@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    72,
+    142,
+    1180,
+    1110
+  ],
+  "alpha_centroid": [
+    625.4628533627688,
+    617.8190161555905
+  ],
+  "padding_px": {
+    "left": 72,
+    "top": 142,
+    "right": 74,
+    "bottom": 144
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 766422,
+  "partial_alpha_pixels": 27791,
+  "interior_hole_pixels": 2720,
+  "partial_alpha_green_fringe_pixels": 2633,
+  "alpha_sha256": "d3039b14c190ad8708cef8d5868deaa26dc6027694497884149a6e03cb255a4f",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 347944,
+      "changed_visible_percent": 45.39848803922643,
+      "changed_bbox": [
+        159,
+        300,
+        1094,
+        911
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 71645,
+      "changed_visible_percent": 9.347983225951237,
+      "changed_bbox": [
+        352,
+        491,
+        906,
+        996
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/butterfly/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/butterfly/neutral-v1.webp",
+      "bytes": 279774,
+      "sha256": "344f8365eac3ebe3a157dd90653b9d5605e5aada34245ddd8b0ea1f1fa219e2a",
+      "pages_sha256": "344f8365eac3ebe3a157dd90653b9d5605e5aada34245ddd8b0ea1f1fa219e2a",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d3039b14c190ad8708cef8d5868deaa26dc6027694497884149a6e03cb255a4f",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/butterfly/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/butterfly/blink-v1.webp",
+      "bytes": 253080,
+      "sha256": "01aae4b4f8346f9b0b7893ebc60d2807f1ac03f60dfe6acdcefd265e37c0b3e7",
+      "pages_sha256": "01aae4b4f8346f9b0b7893ebc60d2807f1ac03f60dfe6acdcefd265e37c0b3e7",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d3039b14c190ad8708cef8d5868deaa26dc6027694497884149a6e03cb255a4f",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/butterfly/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/butterfly/roar-v1.webp",
+      "bytes": 277776,
+      "sha256": "fc70a490d0787c36d172dfd8679005abc97d255fb7de8397a0ade5fc28a508c3",
+      "pages_sha256": "fc70a490d0787c36d172dfd8679005abc97d255fb7de8397a0ade5fc28a508c3",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d3039b14c190ad8708cef8d5868deaa26dc6027694497884149a6e03cb255a4f",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

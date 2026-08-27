@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    256,
+    76,
+    996,
+    1192
+  ],
+  "alpha_centroid": [
+    625.0877761449743,
+    637.4839223033207
+  ],
+  "padding_px": {
+    "left": 256,
+    "top": 76,
+    "right": 258,
+    "bottom": 62
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 574336,
+  "partial_alpha_pixels": 11069,
+  "interior_hole_pixels": 1412,
+  "partial_alpha_green_fringe_pixels": 105,
+  "alpha_sha256": "3e9c05c1b5620f8ba170d7547d562a76895d7466192755421b09512355e3e83d",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 265143,
+      "changed_visible_percent": 46.165136784042794,
+      "changed_bbox": [
+        279,
+        304,
+        973,
+        893
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 114416,
+      "changed_visible_percent": 19.921439714731445,
+      "changed_bbox": [
+        367,
+        493,
+        892,
+        1088
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/goose/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/goose/neutral-v1.webp",
+      "bytes": 155632,
+      "sha256": "7881f5430c180f50b571fc89d75bdba18b2a22acd3d065bd770f546bbbabd9ef",
+      "pages_sha256": "7881f5430c180f50b571fc89d75bdba18b2a22acd3d065bd770f546bbbabd9ef",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "3e9c05c1b5620f8ba170d7547d562a76895d7466192755421b09512355e3e83d",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/goose/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/goose/blink-v1.webp",
+      "bytes": 129072,
+      "sha256": "98609c39edb7fb57b949f045bc13e40a8c46db801e13adb40bf4cfb9e8c88f90",
+      "pages_sha256": "98609c39edb7fb57b949f045bc13e40a8c46db801e13adb40bf4cfb9e8c88f90",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "3e9c05c1b5620f8ba170d7547d562a76895d7466192755421b09512355e3e83d",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/goose/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/goose/roar-v1.webp",
+      "bytes": 146942,
+      "sha256": "9bc90c30e304b57308f011affdb6029328fd33f6d1170932cbce198e0ed4b425",
+      "pages_sha256": "9bc90c30e304b57308f011affdb6029328fd33f6d1170932cbce198e0ed4b425",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "3e9c05c1b5620f8ba170d7547d562a76895d7466192755421b09512355e3e83d",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

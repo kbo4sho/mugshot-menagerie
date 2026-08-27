@@ -253,6 +253,12 @@ const RENDERED_MASK_VERSIONS: Record<string, string> = {
   squirrel: "v1",
   mouse: "v1",
   hamster: "v1",
+  duck: "v1",
+  goose: "v1",
+  swan: "v1",
+  crow: "v1",
+  butterfly: "v1",
+  ladybug: "v1",
 };
 
 const ANIMALS: Animal[] = ANIMAL_ROSTER.filter((animal) => animal.id in RENDERED_MASK_VERSIONS);
