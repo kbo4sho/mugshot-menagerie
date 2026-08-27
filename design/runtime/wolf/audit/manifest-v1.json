@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    131,
+    142,
+    1121,
+    1126
+  ],
+  "alpha_centroid": [
+    625.2612681097712,
+    646.0332584226101
+  ],
+  "padding_px": {
+    "left": 131,
+    "top": 142,
+    "right": 133,
+    "bottom": 128
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 722193,
+  "partial_alpha_pixels": 14509,
+  "interior_hole_pixels": 1384,
+  "partial_alpha_green_fringe_pixels": 202,
+  "alpha_sha256": "40a172651e6a20abb09b2a0d394a17be75c4d66c626844210462ff35b711f5f5",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 161923,
+      "changed_visible_percent": 22.42101488106365,
+      "changed_bbox": [
+        275,
+        491,
+        979,
+        822
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 125897,
+      "changed_visible_percent": 17.432597657412906,
+      "changed_bbox": [
+        352,
+        486,
+        904,
+        1094
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/wolf/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/wolf/neutral-v1.webp",
+      "bytes": 306312,
+      "sha256": "fccf864ae85af1cc535630fc9a25bf04a1921e6ce4c46427cc845691135c1161",
+      "pages_sha256": "fccf864ae85af1cc535630fc9a25bf04a1921e6ce4c46427cc845691135c1161",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "40a172651e6a20abb09b2a0d394a17be75c4d66c626844210462ff35b711f5f5",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/wolf/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/wolf/blink-v1.webp",
+      "bytes": 310310,
+      "sha256": "998f65dae3fa3123cbd9eb3a2e714e67b30ce4d89fcb4bc0517cc3cafcc38bc2",
+      "pages_sha256": "998f65dae3fa3123cbd9eb3a2e714e67b30ce4d89fcb4bc0517cc3cafcc38bc2",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "40a172651e6a20abb09b2a0d394a17be75c4d66c626844210462ff35b711f5f5",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/wolf/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/wolf/roar-v1.webp",
+      "bytes": 293184,
+      "sha256": "63d2817d26fec484770acfcd8db993113816f5f5dd29b4fa335c7495ea62e449",
+      "pages_sha256": "63d2817d26fec484770acfcd8db993113816f5f5dd29b4fa335c7495ea62e449",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "40a172651e6a20abb09b2a0d394a17be75c4d66c626844210462ff35b711f5f5",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

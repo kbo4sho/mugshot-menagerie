@@ -205,6 +205,12 @@ const RENDERED_MASK_VERSIONS: Record<string, string> = {
   tiger: "v3",
   unicorn: "v2",
   zebra: "v1",
+  wolf: "v1",
+  moose: "v1",
+  ram: "v1",
+  alpaca: "v1",
+  toucan: "v1",
+  peacock: "v1",
 };
 
 const ANIMALS: Animal[] = ANIMAL_ROSTER.filter((animal) => animal.id in RENDERED_MASK_VERSIONS);

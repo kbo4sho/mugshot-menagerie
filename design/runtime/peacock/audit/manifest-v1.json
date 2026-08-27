@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    196,
+    91,
+    1057,
+    1143
+  ],
+  "alpha_centroid": [
+    625.8674525552382,
+    694.819038448533
+  ],
+  "padding_px": {
+    "left": 196,
+    "top": 91,
+    "right": 197,
+    "bottom": 111
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 621038,
+  "partial_alpha_pixels": 52911,
+  "interior_hole_pixels": 2405,
+  "partial_alpha_green_fringe_pixels": 2354,
+  "alpha_sha256": "503e944d32ee8cb003762b503ca5dab7663b7d8900b0c46da482fd1e59869fef",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 160653,
+      "changed_visible_percent": 25.868465375709697,
+      "changed_bbox": [
+        270,
+        492,
+        983,
+        837
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 136943,
+      "changed_visible_percent": 22.050663566480633,
+      "changed_bbox": [
+        346,
+        490,
+        909,
+        1094
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/peacock/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/peacock/neutral-v1.webp",
+      "bytes": 348270,
+      "sha256": "b21c67305eb94254784d3fb48bac053c79c37a0aedb703d90b8eef6076cd4960",
+      "pages_sha256": "b21c67305eb94254784d3fb48bac053c79c37a0aedb703d90b8eef6076cd4960",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "503e944d32ee8cb003762b503ca5dab7663b7d8900b0c46da482fd1e59869fef",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/peacock/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/peacock/blink-v1.webp",
+      "bytes": 350824,
+      "sha256": "ee9df90eb56b3be15eafe1ded0bb6c83a868ebef8eb749283d599f2f82de1a33",
+      "pages_sha256": "ee9df90eb56b3be15eafe1ded0bb6c83a868ebef8eb749283d599f2f82de1a33",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "503e944d32ee8cb003762b503ca5dab7663b7d8900b0c46da482fd1e59869fef",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/peacock/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/peacock/roar-v1.webp",
+      "bytes": 338314,
+      "sha256": "856332c566bc8df81c40c9f8180c9bc85bac5fbea7b80348d278a1925df2547c",
+      "pages_sha256": "856332c566bc8df81c40c9f8180c9bc85bac5fbea7b80348d278a1925df2547c",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "503e944d32ee8cb003762b503ca5dab7663b7d8900b0c46da482fd1e59869fef",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    180,
+    142,
+    1073,
+    1089
+  ],
+  "alpha_centroid": [
+    626.2327391110632,
+    640.6479639188109
+  ],
+  "padding_px": {
+    "left": 180,
+    "top": 142,
+    "right": 181,
+    "bottom": 165
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 621709,
+  "partial_alpha_pixels": 18893,
+  "interior_hole_pixels": 1333,
+  "partial_alpha_green_fringe_pixels": 846,
+  "alpha_sha256": "fa398b8293a20ac14976bd933bec96cae101ef70dc9b0158baa2a3cce8cae41a",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 145664,
+      "changed_visible_percent": 23.429610959468175,
+      "changed_bbox": [
+        282,
+        483,
+        985,
+        841
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 128044,
+      "changed_visible_percent": 20.595487599503947,
+      "changed_bbox": [
+        348,
+        487,
+        910,
+        1067
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/toucan/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/toucan/neutral-v1.webp",
+      "bytes": 231734,
+      "sha256": "8a6e6712d0a2ec55c08df27a382f63b99219411f460ae8ba2eae8d6ffdce0acb",
+      "pages_sha256": "8a6e6712d0a2ec55c08df27a382f63b99219411f460ae8ba2eae8d6ffdce0acb",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "fa398b8293a20ac14976bd933bec96cae101ef70dc9b0158baa2a3cce8cae41a",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/toucan/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/toucan/blink-v1.webp",
+      "bytes": 224036,
+      "sha256": "8bf5159b2e45546282b112b5b3b94d438a9552f2b1a9171c1a4d2858d97df6aa",
+      "pages_sha256": "8bf5159b2e45546282b112b5b3b94d438a9552f2b1a9171c1a4d2858d97df6aa",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "fa398b8293a20ac14976bd933bec96cae101ef70dc9b0158baa2a3cce8cae41a",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/toucan/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/toucan/roar-v1.webp",
+      "bytes": 226246,
+      "sha256": "281f3274fa56e284430965d9dcea33d289099db5e9a31922892fe7e3fa749a10",
+      "pages_sha256": "281f3274fa56e284430965d9dcea33d289099db5e9a31922892fe7e3fa749a10",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "fa398b8293a20ac14976bd933bec96cae101ef70dc9b0158baa2a3cce8cae41a",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}
