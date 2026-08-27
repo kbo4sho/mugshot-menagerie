@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    219,
+    93,
+    1028,
+    1129
+  ],
+  "alpha_centroid": [
+    624.4335361117352,
+    602.4940833050676
+  ],
+  "padding_px": {
+    "left": 219,
+    "top": 93,
+    "right": 226,
+    "bottom": 125
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 681039,
+  "partial_alpha_pixels": 11367,
+  "interior_hole_pixels": 1442,
+  "partial_alpha_green_fringe_pixels": 889,
+  "alpha_sha256": "d3c0d71e55e9cfa7f89f22c986a9982408e9c12ad762cbf08d3ae04d734f87dd",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 170510,
+      "changed_visible_percent": 25.03674532589176,
+      "changed_bbox": [
+        273,
+        485,
+        980,
+        833
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 140374,
+      "changed_visible_percent": 20.611741765155887,
+      "changed_bbox": [
+        352,
+        493,
+        903,
+        1101
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/horse/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/horse/neutral-v1.webp",
+      "bytes": 354532,
+      "sha256": "a59d808662f0529b5873f4e02254428a1d6561958195e8fddf43d52aaaa13e64",
+      "pages_sha256": "a59d808662f0529b5873f4e02254428a1d6561958195e8fddf43d52aaaa13e64",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d3c0d71e55e9cfa7f89f22c986a9982408e9c12ad762cbf08d3ae04d734f87dd",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/horse/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/horse/blink-v1.webp",
+      "bytes": 350012,
+      "sha256": "141bdbaf8a6915674b0c949872cf089eebf5fc5d3a95f301f056bda458749ec2",
+      "pages_sha256": "141bdbaf8a6915674b0c949872cf089eebf5fc5d3a95f301f056bda458749ec2",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d3c0d71e55e9cfa7f89f22c986a9982408e9c12ad762cbf08d3ae04d734f87dd",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/horse/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/horse/roar-v1.webp",
+      "bytes": 342350,
+      "sha256": "1ed26b78b2f37cc6cbd0fd234267726200db8326afaf510aa415d5dbc6365f4a",
+      "pages_sha256": "1ed26b78b2f37cc6cbd0fd234267726200db8326afaf510aa415d5dbc6365f4a",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d3c0d71e55e9cfa7f89f22c986a9982408e9c12ad762cbf08d3ae04d734f87dd",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

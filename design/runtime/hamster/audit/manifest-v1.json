@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    86,
+    162,
+    1168,
+    1099
+  ],
+  "alpha_centroid": [
+    627.3209156950211,
+    641.8930320022843
+  ],
+  "padding_px": {
+    "left": 86,
+    "top": 162,
+    "right": 86,
+    "bottom": 155
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 854564,
+  "partial_alpha_pixels": 14134,
+  "interior_hole_pixels": 1321,
+  "partial_alpha_green_fringe_pixels": 660,
+  "alpha_sha256": "9c02ff63a3d4518a29fddc79af4776ad79d59f1cfa248d2ee7ae25efe48ef5c5",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 154780,
+      "changed_visible_percent": 18.112160119078265,
+      "changed_bbox": [
+        274,
+        488,
+        982,
+        828
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 121929,
+      "changed_visible_percent": 14.267977588571481,
+      "changed_bbox": [
+        347,
+        494,
+        909,
+        1076
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/hamster/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/hamster/neutral-v1.webp",
+      "bytes": 358002,
+      "sha256": "07d5eb92ba8d16286a28f04330cda76acfb7d5132fd5406ba08c0b564a5a8474",
+      "pages_sha256": "07d5eb92ba8d16286a28f04330cda76acfb7d5132fd5406ba08c0b564a5a8474",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "9c02ff63a3d4518a29fddc79af4776ad79d59f1cfa248d2ee7ae25efe48ef5c5",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/hamster/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/hamster/blink-v1.webp",
+      "bytes": 359098,
+      "sha256": "71b9065bca4e460aacdc9199a05d58c155d96bc341aa8448e9046ed02661d312",
+      "pages_sha256": "71b9065bca4e460aacdc9199a05d58c155d96bc341aa8448e9046ed02661d312",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "9c02ff63a3d4518a29fddc79af4776ad79d59f1cfa248d2ee7ae25efe48ef5c5",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/hamster/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/hamster/roar-v1.webp",
+      "bytes": 348560,
+      "sha256": "450d6ca25f507e4ede8ccaa67098fa9512f67ce40f9bf577566b893b24671cce",
+      "pages_sha256": "450d6ca25f507e4ede8ccaa67098fa9512f67ce40f9bf577566b893b24671cce",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "9c02ff63a3d4518a29fddc79af4776ad79d59f1cfa248d2ee7ae25efe48ef5c5",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}
