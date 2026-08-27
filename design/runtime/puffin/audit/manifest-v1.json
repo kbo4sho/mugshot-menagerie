@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    131,
+    163,
+    1122,
+    1078
+  ],
+  "alpha_centroid": [
+    626.0828124038849,
+    641.8038398184664
+  ],
+  "padding_px": {
+    "left": 131,
+    "top": 163,
+    "right": 132,
+    "bottom": 176
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 731545,
+  "partial_alpha_pixels": 10206,
+  "interior_hole_pixels": 1151,
+  "partial_alpha_green_fringe_pixels": 612,
+  "alpha_sha256": "92c7d3d97cbab00fe85c8b7664ce1e07c78a1e2cf0022be81c41dae322381c18",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 145503,
+      "changed_visible_percent": 19.889822225563705,
+      "changed_bbox": [
+        275,
+        484,
+        979,
+        831
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 103944,
+      "changed_visible_percent": 14.208831992563683,
+      "changed_bbox": [
+        347,
+        488,
+        904,
+        1057
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/puffin/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/puffin/neutral-v1.webp",
+      "bytes": 266294,
+      "sha256": "1a55ed7cec651db273a964df9679533fbe5ae2ef3a7847a0630cc3de9aabea0d",
+      "pages_sha256": "1a55ed7cec651db273a964df9679533fbe5ae2ef3a7847a0630cc3de9aabea0d",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "92c7d3d97cbab00fe85c8b7664ce1e07c78a1e2cf0022be81c41dae322381c18",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/puffin/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/puffin/blink-v1.webp",
+      "bytes": 255502,
+      "sha256": "3b4f56ea7a5ce8e5fe8c68c2dc81f5efb595957c5c67b720ad39aa5df7b4dbba",
+      "pages_sha256": "3b4f56ea7a5ce8e5fe8c68c2dc81f5efb595957c5c67b720ad39aa5df7b4dbba",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "92c7d3d97cbab00fe85c8b7664ce1e07c78a1e2cf0022be81c41dae322381c18",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/puffin/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/puffin/roar-v1.webp",
+      "bytes": 255524,
+      "sha256": "cb5abfa29bf83aab322d5ff73a152d05df4e21f8eeb4139a3abbd8c844dd58a3",
+      "pages_sha256": "cb5abfa29bf83aab322d5ff73a152d05df4e21f8eeb4139a3abbd8c844dd58a3",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "92c7d3d97cbab00fe85c8b7664ce1e07c78a1e2cf0022be81c41dae322381c18",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

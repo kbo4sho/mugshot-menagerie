@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    110,
+    147,
+    1143,
+    1106
+  ],
+  "alpha_centroid": [
+    625.8178832053094,
+    633.3778362839912
+  ],
+  "padding_px": {
+    "left": 110,
+    "top": 147,
+    "right": 111,
+    "bottom": 148
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 802194,
+  "partial_alpha_pixels": 12142,
+  "interior_hole_pixels": 1539,
+  "partial_alpha_green_fringe_pixels": 1256,
+  "alpha_sha256": "56e432ae20510248c6725d1ed3636eb7efeb2244aac352e39d7dd8a489b0de39",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 166090,
+      "changed_visible_percent": 20.704467996519547,
+      "changed_bbox": [
+        274,
+        488,
+        979,
+        830
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 118260,
+      "changed_visible_percent": 14.742069873372277,
+      "changed_bbox": [
+        356,
+        490,
+        901,
+        1084
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/beaver/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/beaver/neutral-v1.webp",
+      "bytes": 422948,
+      "sha256": "52dbf9ba6b0f8653f9cb170d166bf97c012c0f1a5704536854e9bce4bf9dc210",
+      "pages_sha256": "52dbf9ba6b0f8653f9cb170d166bf97c012c0f1a5704536854e9bce4bf9dc210",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "56e432ae20510248c6725d1ed3636eb7efeb2244aac352e39d7dd8a489b0de39",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/beaver/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/beaver/blink-v1.webp",
+      "bytes": 431360,
+      "sha256": "867a1504f85d18b5e0c69034625ef594c76fa4079dd354a23e64a64ebb1200d0",
+      "pages_sha256": "867a1504f85d18b5e0c69034625ef594c76fa4079dd354a23e64a64ebb1200d0",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "56e432ae20510248c6725d1ed3636eb7efeb2244aac352e39d7dd8a489b0de39",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/beaver/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/beaver/roar-v1.webp",
+      "bytes": 411564,
+      "sha256": "704ee7e5813853056039688c2677ca1acfb6b07c71f53b6e3d2216eb0a9846f0",
+      "pages_sha256": "704ee7e5813853056039688c2677ca1acfb6b07c71f53b6e3d2216eb0a9846f0",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "56e432ae20510248c6725d1ed3636eb7efeb2244aac352e39d7dd8a489b0de39",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

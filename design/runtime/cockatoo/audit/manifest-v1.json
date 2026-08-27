@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    184,
+    65,
+    1058,
+    1167
+  ],
+  "alpha_centroid": [
+    620.2615100374778,
+    678.4837939454668
+  ],
+  "padding_px": {
+    "left": 184,
+    "top": 65,
+    "right": 196,
+    "bottom": 87
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 664659,
+  "partial_alpha_pixels": 12782,
+  "interior_hole_pixels": 1685,
+  "partial_alpha_green_fringe_pixels": 162,
+  "alpha_sha256": "59464f07ce8ba792a9c854d71541abe17ae55263282cb3c7b3fca383cc46169e",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 140648,
+      "changed_visible_percent": 21.1609261290376,
+      "changed_bbox": [
+        279,
+        500,
+        973,
+        838
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 121133,
+      "changed_visible_percent": 18.224834087855577,
+      "changed_bbox": [
+        358,
+        500,
+        897,
+        1102
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/cockatoo/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/cockatoo/neutral-v1.webp",
+      "bytes": 221344,
+      "sha256": "f35b75880750ac7353b3b99c6e6d95d7fd33d98a3059258159097d1b49bbce81",
+      "pages_sha256": "f35b75880750ac7353b3b99c6e6d95d7fd33d98a3059258159097d1b49bbce81",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "59464f07ce8ba792a9c854d71541abe17ae55263282cb3c7b3fca383cc46169e",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/cockatoo/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/cockatoo/blink-v1.webp",
+      "bytes": 210216,
+      "sha256": "bfe73a35388746e4b19175dcd1f60ce77813935c06c744ebacf1cd402e0ddf0f",
+      "pages_sha256": "bfe73a35388746e4b19175dcd1f60ce77813935c06c744ebacf1cd402e0ddf0f",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "59464f07ce8ba792a9c854d71541abe17ae55263282cb3c7b3fca383cc46169e",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/cockatoo/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/cockatoo/roar-v1.webp",
+      "bytes": 209778,
+      "sha256": "c8a5b65b1af9dab62a4bf133f650a330ec24e922f47133a9dea9a5313180dceb",
+      "pages_sha256": "c8a5b65b1af9dab62a4bf133f650a330ec24e922f47133a9dea9a5313180dceb",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "59464f07ce8ba792a9c854d71541abe17ae55263282cb3c7b3fca383cc46169e",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

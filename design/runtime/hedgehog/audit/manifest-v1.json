@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    71,
+    131,
+    1182,
+    1096
+  ],
+  "alpha_centroid": [
+    625.6447619586019,
+    647.2369516556029
+  ],
+  "padding_px": {
+    "left": 71,
+    "top": 131,
+    "right": 72,
+    "bottom": 158
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 831389,
+  "partial_alpha_pixels": 16319,
+  "interior_hole_pixels": 1799,
+  "partial_alpha_green_fringe_pixels": 729,
+  "alpha_sha256": "193221ff8116020cf1a2c3a72862cb624a0930c687e2e833b2be6872ac960f08",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 161293,
+      "changed_visible_percent": 19.400425071777473,
+      "changed_bbox": [
+        277,
+        493,
+        981,
+        832
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 133907,
+      "changed_visible_percent": 16.10641949797267,
+      "changed_bbox": [
+        354,
+        494,
+        900,
+        1075
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/hedgehog/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/hedgehog/neutral-v1.webp",
+      "bytes": 456300,
+      "sha256": "929cdc3d6725fc7d2668eaac83706c9a91e284a30087fd47665b3462d162c350",
+      "pages_sha256": "929cdc3d6725fc7d2668eaac83706c9a91e284a30087fd47665b3462d162c350",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "193221ff8116020cf1a2c3a72862cb624a0930c687e2e833b2be6872ac960f08",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/hedgehog/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/hedgehog/blink-v1.webp",
+      "bytes": 451432,
+      "sha256": "e6715ccadaeece515c98b53c41975a603eaf6dee3d5c578a7c154f87fa94ba99",
+      "pages_sha256": "e6715ccadaeece515c98b53c41975a603eaf6dee3d5c578a7c154f87fa94ba99",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "193221ff8116020cf1a2c3a72862cb624a0930c687e2e833b2be6872ac960f08",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/hedgehog/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/hedgehog/roar-v1.webp",
+      "bytes": 442344,
+      "sha256": "fb034c3fc00844886ae0a804e444e49994bad04b6b564db6aba39603f96c0774",
+      "pages_sha256": "fb034c3fc00844886ae0a804e444e49994bad04b6b564db6aba39603f96c0774",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "193221ff8116020cf1a2c3a72862cb624a0930c687e2e833b2be6872ac960f08",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}
