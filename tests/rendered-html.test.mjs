@@ -24,7 +24,7 @@ test("server-renders the Giggle Zoo experience and privacy promise", async () =>
   const html = await response.text();
   assert.match(html, /Giggle Zoo/);
   assert.match(html, /Your face just/);
-  assert.match(html, />98</);
+  assert.match(html, />100</);
   assert.match(html, /6<\/strong><span>Friends at once/);
   assert.match(html, /0<\/strong><span>Photos saved/);
   assert.match(html, /no account and no uploads/i);
@@ -51,10 +51,10 @@ test("keeps the 100-animal catalog and ships only rendered packs live", async ()
   const versionBlock = page.match(/const RENDERED_MASK_VERSIONS:[^{]+\{([\s\S]*?)\n\};/);
   assert.ok(versionBlock, "rendered mask registry is missing");
   const packs = [...versionBlock[1].matchAll(/(\w+):\s*"(v\d+)"/g)].map(([, animal]) => animal);
-  assert.equal(packs.length, 98);
+  assert.equal(packs.length, 100);
   assert.match(page, /const ANIMALS: Animal\[] = ANIMAL_ROSTER\.filter/);
   assert.ok(packs.every((id) => entries.some((animal) => animal.id === id)), "a rendered pack is missing from the catalog");
-  assert.ok(!packs.includes("mantis"), "unfinished mantis should stay out of the live roster");
+  assert.deepEqual(new Set(packs), new Set(entries.map(({ id }) => id)), "every catalog animal should have a rendered pack");
 });
 
 test("keeps camera, tracking, shuffle, stop, fullscreen, and renderer diagnostics wired", async () => {

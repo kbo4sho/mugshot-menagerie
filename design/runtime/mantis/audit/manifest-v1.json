@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    70,
+    105,
+    1181,
+    1136
+  ],
+  "alpha_centroid": [
+    622.9705378989843,
+    704.6671621677127
+  ],
+  "padding_px": {
+    "left": 70,
+    "top": 105,
+    "right": 73,
+    "bottom": 118
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 511267,
+  "partial_alpha_pixels": 15386,
+  "interior_hole_pixels": 2590,
+  "partial_alpha_green_fringe_pixels": 4192,
+  "alpha_sha256": "6ba3378049999645062eb8e03cd2f31c1f97480d081c678ab3f12dc96c26e48c",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 335401,
+      "changed_visible_percent": 65.60192619511919,
+      "changed_bbox": [
+        174,
+        456,
+        1072,
+        935
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 129967,
+      "changed_visible_percent": 25.420572812248786,
+      "changed_bbox": [
+        356,
+        499,
+        901,
+        1100
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/mantis/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/mantis/neutral-v1.webp",
+      "bytes": 144746,
+      "sha256": "a2dd245ff18547f2eff1ee286789a5743577914c48dffd69658e7236ca92ef67",
+      "pages_sha256": "a2dd245ff18547f2eff1ee286789a5743577914c48dffd69658e7236ca92ef67",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "6ba3378049999645062eb8e03cd2f31c1f97480d081c678ab3f12dc96c26e48c",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/mantis/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/mantis/blink-v1.webp",
+      "bytes": 137894,
+      "sha256": "cd0ac3ec4aea9c37ed67fb1dc818571c3dd3e50821d8936e0e4562de7acd1cf1",
+      "pages_sha256": "cd0ac3ec4aea9c37ed67fb1dc818571c3dd3e50821d8936e0e4562de7acd1cf1",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "6ba3378049999645062eb8e03cd2f31c1f97480d081c678ab3f12dc96c26e48c",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/mantis/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/mantis/roar-v1.webp",
+      "bytes": 147314,
+      "sha256": "136f500009458babd8d8c89aa5b27b012593dc1b42132354b1402e01333efa69",
+      "pages_sha256": "136f500009458babd8d8c89aa5b27b012593dc1b42132354b1402e01333efa69",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "6ba3378049999645062eb8e03cd2f31c1f97480d081c678ab3f12dc96c26e48c",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}
