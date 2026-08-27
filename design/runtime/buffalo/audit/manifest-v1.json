@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    79,
+    236,
+    1169,
+    1012
+  ],
+  "alpha_centroid": [
+    624.5402272923287,
+    619.3341648366959
+  ],
+  "padding_px": {
+    "left": 79,
+    "top": 236,
+    "right": 85,
+    "bottom": 242
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 602924,
+  "partial_alpha_pixels": 14023,
+  "interior_hole_pixels": 1880,
+  "partial_alpha_green_fringe_pixels": 1056,
+  "alpha_sha256": "26f1e1a24e665ca95f19077da086f7bfb6d148aa016b842212c1125995cfc235",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 153287,
+      "changed_visible_percent": 25.423934028169388,
+      "changed_bbox": [
+        281,
+        494,
+        976,
+        827
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 104402,
+      "changed_visible_percent": 17.315946951854627,
+      "changed_bbox": [
+        355,
+        494,
+        899,
+        991
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/buffalo/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/buffalo/neutral-v1.webp",
+      "bytes": 255818,
+      "sha256": "9428bc984c5bf5668e5083bdfe19e488d4dd1d4f4da1fce32a8d6c839534a738",
+      "pages_sha256": "9428bc984c5bf5668e5083bdfe19e488d4dd1d4f4da1fce32a8d6c839534a738",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "26f1e1a24e665ca95f19077da086f7bfb6d148aa016b842212c1125995cfc235",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/buffalo/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/buffalo/blink-v1.webp",
+      "bytes": 258484,
+      "sha256": "8975578cc120871b78b3defc8c64d6b15112f3cf1072278235716d6290f014b1",
+      "pages_sha256": "8975578cc120871b78b3defc8c64d6b15112f3cf1072278235716d6290f014b1",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "26f1e1a24e665ca95f19077da086f7bfb6d148aa016b842212c1125995cfc235",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/buffalo/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/buffalo/roar-v1.webp",
+      "bytes": 251644,
+      "sha256": "fc04a2e4a4a1839457ca0d17a3a48053eecec9af159b6f779cb06d80a50910d2",
+      "pages_sha256": "fc04a2e4a4a1839457ca0d17a3a48053eecec9af159b6f779cb06d80a50910d2",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "26f1e1a24e665ca95f19077da086f7bfb6d148aa016b842212c1125995cfc235",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

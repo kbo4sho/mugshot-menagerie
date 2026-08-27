@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    89,
+    149,
+    1164,
+    1103
+  ],
+  "alpha_centroid": [
+    626.0170248845436,
+    604.3128807120088
+  ],
+  "padding_px": {
+    "left": 89,
+    "top": 149,
+    "right": 90,
+    "bottom": 151
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 799653,
+  "partial_alpha_pixels": 15898,
+  "interior_hole_pixels": 1875,
+  "partial_alpha_green_fringe_pixels": 1099,
+  "alpha_sha256": "0aa94d6724ea7df0da4bf7e29476215ed0a4c44bfe93ba3fc96eb294d5feb26f",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 171462,
+      "changed_visible_percent": 21.442050489399776,
+      "changed_bbox": [
+        272,
+        491,
+        982,
+        834
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 125597,
+      "changed_visible_percent": 15.706437667338207,
+      "changed_bbox": [
+        351,
+        493,
+        905,
+        1081
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/hyena/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/hyena/neutral-v1.webp",
+      "bytes": 451098,
+      "sha256": "139ffe59f9e0be64c8530c7586dcf51a1eb04df8c07e2419617f094fdf4ecc9a",
+      "pages_sha256": "139ffe59f9e0be64c8530c7586dcf51a1eb04df8c07e2419617f094fdf4ecc9a",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "0aa94d6724ea7df0da4bf7e29476215ed0a4c44bfe93ba3fc96eb294d5feb26f",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/hyena/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/hyena/blink-v1.webp",
+      "bytes": 469606,
+      "sha256": "29c3691639aeacaa546f8bae3dd1b41845ef587b85f0eb3b48e391b05ca90ed7",
+      "pages_sha256": "29c3691639aeacaa546f8bae3dd1b41845ef587b85f0eb3b48e391b05ca90ed7",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "0aa94d6724ea7df0da4bf7e29476215ed0a4c44bfe93ba3fc96eb294d5feb26f",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/hyena/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/hyena/roar-v1.webp",
+      "bytes": 441634,
+      "sha256": "e4798091f4720b922e6f3e3790a27d5e8f5ae2798371e11e219ca1e6ec147525",
+      "pages_sha256": "e4798091f4720b922e6f3e3790a27d5e8f5ae2798371e11e219ca1e6ec147525",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "0aa94d6724ea7df0da4bf7e29476215ed0a4c44bfe93ba3fc96eb294d5feb26f",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

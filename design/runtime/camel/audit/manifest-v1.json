@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    118,
+    146,
+    1135,
+    1112
+  ],
+  "alpha_centroid": [
+    625.413949235447,
+    631.1132907174018
+  ],
+  "padding_px": {
+    "left": 118,
+    "top": 146,
+    "right": 119,
+    "bottom": 142
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 726176,
+  "partial_alpha_pixels": 13040,
+  "interior_hole_pixels": 1824,
+  "partial_alpha_green_fringe_pixels": 1063,
+  "alpha_sha256": "8b664cd550859d55bd237ef09820b61d8e2143c90c517367e0b17ba3c5bb7f9d",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 161374,
+      "changed_visible_percent": 22.222436434142686,
+      "changed_bbox": [
+        271,
+        484,
+        981,
+        827
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 131762,
+      "changed_visible_percent": 18.144637112766052,
+      "changed_bbox": [
+        358,
+        495,
+        903,
+        1088
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/camel/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/camel/neutral-v1.webp",
+      "bytes": 321202,
+      "sha256": "fe82750396aecfa1a64e80bdd0c5e3bea91d546b0e38e8b100759133430a26bf",
+      "pages_sha256": "fe82750396aecfa1a64e80bdd0c5e3bea91d546b0e38e8b100759133430a26bf",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "8b664cd550859d55bd237ef09820b61d8e2143c90c517367e0b17ba3c5bb7f9d",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/camel/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/camel/blink-v1.webp",
+      "bytes": 321532,
+      "sha256": "f585d5a539ff18836ff23bed9603601e4c58c46d05e0df4a21c41cf4d60c61bc",
+      "pages_sha256": "f585d5a539ff18836ff23bed9603601e4c58c46d05e0df4a21c41cf4d60c61bc",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "8b664cd550859d55bd237ef09820b61d8e2143c90c517367e0b17ba3c5bb7f9d",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/camel/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/camel/roar-v1.webp",
+      "bytes": 312228,
+      "sha256": "ea6ab77736b163aaf5f769c09367d19b1c780414194367c845ed78c401eaf6b1",
+      "pages_sha256": "ea6ab77736b163aaf5f769c09367d19b1c780414194367c845ed78c401eaf6b1",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "8b664cd550859d55bd237ef09820b61d8e2143c90c517367e0b17ba3c5bb7f9d",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}
