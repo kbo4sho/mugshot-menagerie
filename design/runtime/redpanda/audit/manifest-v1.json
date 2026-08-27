@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    115,
+    179,
+    1141,
+    1083
+  ],
+  "alpha_centroid": [
+    627.6245072039668,
+    614.6360193257331
+  ],
+  "padding_px": {
+    "left": 115,
+    "top": 179,
+    "right": 113,
+    "bottom": 171
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 787344,
+  "partial_alpha_pixels": 18519,
+  "interior_hole_pixels": 1071,
+  "partial_alpha_green_fringe_pixels": 928,
+  "alpha_sha256": "343a35f86f2c1b96557eec06a124acc52b231b464f546df4632fc6b598c38a5e",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 163506,
+      "changed_visible_percent": 20.766780466987747,
+      "changed_bbox": [
+        270,
+        485,
+        983,
+        835
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 127945,
+      "changed_visible_percent": 16.25020321485907,
+      "changed_bbox": [
+        350,
+        487,
+        906,
+        1060
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/redpanda/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/redpanda/neutral-v1.webp",
+      "bytes": 424816,
+      "sha256": "043154b5f4684b81de5bf2d2e86155ec2f2111b146b86cea34093ccad07d6151",
+      "pages_sha256": "043154b5f4684b81de5bf2d2e86155ec2f2111b146b86cea34093ccad07d6151",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "343a35f86f2c1b96557eec06a124acc52b231b464f546df4632fc6b598c38a5e",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/redpanda/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/redpanda/blink-v1.webp",
+      "bytes": 427558,
+      "sha256": "d2c46f89f5efd337e760ade63247c6511eae3510421bf64d78f18adef24e1409",
+      "pages_sha256": "d2c46f89f5efd337e760ade63247c6511eae3510421bf64d78f18adef24e1409",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "343a35f86f2c1b96557eec06a124acc52b231b464f546df4632fc6b598c38a5e",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/redpanda/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/redpanda/roar-v1.webp",
+      "bytes": 417412,
+      "sha256": "8d6680b983d1a8e733d84493abf944e3a700d0ae9bb4e8d21d61b7fa943d46d5",
+      "pages_sha256": "8d6680b983d1a8e733d84493abf944e3a700d0ae9bb4e8d21d61b7fa943d46d5",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "343a35f86f2c1b96557eec06a124acc52b231b464f546df4632fc6b598c38a5e",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}

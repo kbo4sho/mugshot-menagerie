@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "runtime_dimensions": [
+    1254,
+    1254
+  ],
+  "review_dimensions": [
+    380,
+    380
+  ],
+  "localized_expression_rois": true,
+  "post_key_subject_scale": 0.94,
+  "webp_quality": 95,
+  "alpha_bbox": [
+    133,
+    190,
+    1122,
+    1065
+  ],
+  "alpha_centroid": [
+    625.9412124093966,
+    614.4567410871133
+  ],
+  "padding_px": {
+    "left": 133,
+    "top": 190,
+    "right": 132,
+    "bottom": 189
+  },
+  "corner_alpha": {
+    "top_left": 0,
+    "top_right": 0,
+    "bottom_left": 0,
+    "bottom_right": 0
+  },
+  "nonzero_alpha_pixels": 708721,
+  "partial_alpha_pixels": 10864,
+  "interior_hole_pixels": 1401,
+  "partial_alpha_green_fringe_pixels": 678,
+  "alpha_sha256": "d0245c536b0a11f7de190c65092327dced9158d2bc82baaf87b9355511ba2d7f",
+  "state_stability": {
+    "blink": {
+      "changed_visible_pixels": 157991,
+      "changed_visible_percent": 22.29241125915558,
+      "changed_bbox": [
+        275,
+        493,
+        981,
+        835
+      ]
+    },
+    "roar": {
+      "changed_visible_pixels": 107312,
+      "changed_visible_percent": 15.141642479903938,
+      "changed_bbox": [
+        350,
+        496,
+        905,
+        1044
+      ]
+    }
+  },
+  "exports": {
+    "neutral": {
+      "public_path": "public/masks/cheetah/neutral-v1.webp",
+      "pages_path": "github-pages/public/masks/cheetah/neutral-v1.webp",
+      "bytes": 328394,
+      "sha256": "c826d1db3df170f30bbe7110567eef45eceb194b70eac0a1d5c580f8b951ca38",
+      "pages_sha256": "c826d1db3df170f30bbe7110567eef45eceb194b70eac0a1d5c580f8b951ca38",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d0245c536b0a11f7de190c65092327dced9158d2bc82baaf87b9355511ba2d7f",
+      "decoded_alpha_matches_master": true
+    },
+    "blink": {
+      "public_path": "public/masks/cheetah/blink-v1.webp",
+      "pages_path": "github-pages/public/masks/cheetah/blink-v1.webp",
+      "bytes": 329142,
+      "sha256": "5567d8ef1b64427b02d6252ad5376f52ee40f18c1f67f712c8831a027223efe5",
+      "pages_sha256": "5567d8ef1b64427b02d6252ad5376f52ee40f18c1f67f712c8831a027223efe5",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d0245c536b0a11f7de190c65092327dced9158d2bc82baaf87b9355511ba2d7f",
+      "decoded_alpha_matches_master": true
+    },
+    "roar": {
+      "public_path": "public/masks/cheetah/roar-v1.webp",
+      "pages_path": "github-pages/public/masks/cheetah/roar-v1.webp",
+      "bytes": 322150,
+      "sha256": "e0a4ff9fca848b5d6d2ac37beb87dc6588dc36d8a138bf8d1e3b373e3b1c1e16",
+      "pages_sha256": "e0a4ff9fca848b5d6d2ac37beb87dc6588dc36d8a138bf8d1e3b373e3b1c1e16",
+      "pages_byte_equal": true,
+      "has_alph_chunk": true,
+      "decoded_alpha_sha256": "d0245c536b0a11f7de190c65092327dced9158d2bc82baaf87b9355511ba2d7f",
+      "decoded_alpha_matches_master": true
+    }
+  }
+}
