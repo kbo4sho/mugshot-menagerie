@@ -2612,12 +2612,11 @@ export default function Home() {
 
   return (
     <main className="site-shell">
-      <div className="zoo-canopy canopy-left" aria-hidden="true"><i /><i /><i /><i /></div>
-      <div className="zoo-canopy canopy-right" aria-hidden="true"><i /><i /><i /><i /></div>
-      <div className="paw-trail" aria-hidden="true"><span>●</span><span>●</span><span>●</span><span>●</span></div>
+      <div className="playroom-glow glow-one" aria-hidden="true" />
+      <div className="playroom-glow glow-two" aria-hidden="true" />
       <header className="topbar">
         <a className="brand" href="#top" aria-label="Giggle Zoo home">
-          <span className="brand-burst" aria-hidden="true">🦁</span>
+          <span className="brand-burst" aria-hidden="true"><img src="/masks/lion/neutral-v1.webp" alt="" /></span>
           <span>Giggle</span>
           <strong>Zoo!</strong>
         </a>
@@ -2652,7 +2651,6 @@ export default function Home() {
         <div className="game-wrap">
           <div className="habitat-sign camera-habitat-sign" aria-hidden="true"><span>YOU ARE HERE</span> Face Safari</div>
           <div className={`camera-shell state-${cameraState}`} ref={cameraShellRef}>
-            <div className="tape tape-top" aria-hidden="true">Keeper-approved silliness</div>
             <div className="camera-hud">
               <div className={`live-badge ${isLive ? "is-live" : ""}`}>
                 <span /> {isLive ? "Zoo is open" : "Zoo is snoozing"}
@@ -2668,7 +2666,7 @@ export default function Home() {
 
               {!isLive && !isBusy && cameraState !== "error" && (
                 <div className="poster-state">
-                  <DemoMascot />
+                  <img className="poster-pal" src="/masks/bumblebee/neutral-v1.webp" alt="" />
                   <p>{cameraState === "off" ? "The zoo is snoozing." : "Which animal will you be?"}</p>
                   <span>{cameraState === "off" ? "Your camera is safely off." : "Put your face in the picture"}</span>
                 </div>
@@ -2728,7 +2726,6 @@ export default function Home() {
                 </button>
               )}
             </div>
-            <div className="tape tape-bottom" aria-hidden="true">Big smiles welcome</div>
           </div>
 
           <div className="animal-ticket" aria-live="polite" key={shuffleCount}>
