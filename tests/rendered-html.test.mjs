@@ -81,6 +81,7 @@ test("keeps camera, tracking, shuffle, stop, fullscreen, and renderer diagnostic
   assert.match(page, /const RENDERED_MASK_SOURCES/);
   assert.match(page, /preloadRenderedMask\(ANIMALS\[animalIndex\]\.id\)/);
   assert.match(page, /drawRenderedMask\(ctx, animal, pose, coverageX, coverageY\)/);
+  assert.match(page, /if \(RENDERED_MASK_SOURCES\[animal\.id\]\) \{/);
   assert.match(page, /blendRenderedMaskRgba\(/);
   assert.match(page, /putImageData\(renderedMaskOutput/);
   assert.match(page, /<RenderedMaskProof animalIndex=\{focusIndex\}/);

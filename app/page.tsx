@@ -1808,6 +1808,14 @@ function drawAnimal(ctx: CanvasRenderingContext2D, animalIndex: number, pose: Po
     return;
   }
 
+  // Every live animal has a rendered mask pack. If its images are still
+  // decoding, leave this frame clear instead of flashing the retired canvas
+  // illustration before the new character is ready.
+  if (RENDERED_MASK_SOURCES[animal.id]) {
+    ctx.restore();
+    return;
+  }
+
   if (animal.id === "capybara") {
     ellipse(ctx, -92, -96, 30, 42, animal.dark);
     ellipse(ctx, 92, -96, 30, 42, animal.dark);
