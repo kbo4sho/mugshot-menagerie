@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { blendRenderedMaskSample, getRenderedMaskBlendWeights } from "../app/rendered-mask-blend.mjs";
+import { selectRenderedMaskState } from "../app/rendered-mask-blend.mjs";
 
 const pageUrl = new URL("../app/page.tsx", import.meta.url);
 
@@ -82,8 +82,8 @@ test("keeps camera, tracking, shuffle, stop, fullscreen, and renderer diagnostic
   assert.match(page, /preloadRenderedMask\(ANIMALS\[animalIndex\]\.id\)/);
   assert.match(page, /drawRenderedMask\(ctx, animal, pose, coverageX, coverageY\)/);
   assert.match(page, /if \(RENDERED_MASK_SOURCES\[animal\.id\]\) \{/);
-  assert.match(page, /blendRenderedMaskRgba\(/);
-  assert.match(page, /putImageData\(renderedMaskOutput/);
+  assert.match(page, /selectRenderedMaskState\(/);
+  assert.doesNotMatch(page, /blendRenderedMaskRgba\(/);
   assert.match(page, /<RenderedMaskProof animalIndex=\{focusIndex\}/);
   assert.match(page, /forcedAnimalRef\.current \?\? randomAnimal\(\)/);
   assert.match(page, /drawAnimal\(ctx, animalIndex/);
@@ -117,63 +117,10 @@ test("ships every registered rendered runtime state pack with transparency", asy
   }
 });
 
-test("rendered mask blend weights preserve the fallback and bridge cleanly through mid-roar", () => {
-  const blinkWeight = .25;
-  const samples = [
-    { roar: 0, expected: [.75, .25, 0, 0] },
-    { roar: .1, expected: [.6, .2, .2, 0] },
-    { roar: .25, expected: [.375, .125, .5, 0] },
-    { roar: .5, expected: [0, 0, 1, 0] },
-    { roar: .75, expected: [0, 0, .5, .5] },
-    { roar: 1, expected: [0, 0, 0, 1] },
-  ];
-
-  for (const { roar, expected } of samples) {
-    const weights = getRenderedMaskBlendWeights(blinkWeight, roar, true);
-    const actual = [weights.neutral, weights.blink, weights.roarMid, weights.roar];
-    actual.forEach((weight, index) => assert.ok(Math.abs(weight - expected[index]) < 1e-12));
-    assert.ok(Math.abs(actual.reduce((sum, weight) => sum + weight, 0) - 1) < 1e-12);
-  }
-
-  for (const roarWeight of [0, .1, .25, .5, .75, 1]) {
-    const weights = getRenderedMaskBlendWeights(blinkWeight, roarWeight, false);
-    assert.deepEqual(weights, {
-      neutral: (1 - blinkWeight) * (1 - roarWeight),
-      blink: blinkWeight * (1 - roarWeight),
-      roarMid: 0,
-      roar: roarWeight,
-    });
-    assert.ok(Math.abs(Object.values(weights).reduce((sum, weight) => sum + weight, 0) - 1) < 1e-12);
-  }
-});
-
-test("rendered mask cream-cavity mixes keep cocoa instead of a gray-brown bowl", () => {
-  const cream = [240, 164, 85, 255];
-  const cocoa = [64, 15, 9, 255];
-  const ghost = [149, 87, 46];
-  const early = getRenderedMaskBlendWeights(0, .25, true);
-  const late = getRenderedMaskBlendWeights(0, .75, true);
-  const earlyPixel = blendRenderedMaskSample({
-    neutral: cream,
-    blink: cream,
-    roarMid: cocoa,
-    roar: cocoa,
-  }, early);
-  const latePixel = blendRenderedMaskSample({
-    neutral: cream,
-    blink: cream,
-    roarMid: cream,
-    roar: cocoa,
-  }, late);
-  const distance = (pixel) => Math.hypot(pixel[0] - ghost[0], pixel[1] - ghost[1], pixel[2] - ghost[2]);
-  assert.ok(distance(earlyPixel) > 40, `early mix ${earlyPixel.slice(0, 3)} is too close to the ghost bowl`);
-  assert.ok(distance(latePixel) > 40, `late mix ${latePixel.slice(0, 3)} is too close to the ghost bowl`);
-  const midtone = [127, 109, 95, 255];
-  const lateMidtone = blendRenderedMaskSample({
-    neutral: midtone,
-    blink: midtone,
-    roarMid: midtone,
-    roar: cocoa,
-  }, late);
-  assert.ok(Math.max(lateMidtone[0], lateMidtone[1], lateMidtone[2]) < 80, `midtone late mix ${lateMidtone.slice(0, 3)} should snap to cocoa`);
+test("rendered masks select one authored expression without transparent blending", () => {
+  assert.equal(selectRenderedMaskState(0, 0, false), "neutral");
+  assert.equal(selectRenderedMaskState(.7, 0, false), "blink");
+  assert.equal(selectRenderedMaskState(.7, .7, false), "roar");
+  assert.equal(selectRenderedMaskState(0, .4, true), "roarMid");
+  assert.equal(selectRenderedMaskState(0, .4, false), "neutral");
 });

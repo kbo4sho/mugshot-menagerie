@@ -12,7 +12,7 @@ import {
   type FaceLandmarkerResult,
   type NormalizedLandmark,
 } from "@mediapipe/tasks-vision";
-import { blendRenderedMaskRgba, getRenderedMaskBlendWeights } from "./rendered-mask-blend.mjs";
+import { selectRenderedMaskState } from "./rendered-mask-blend.mjs";
 
 type CameraState = "idle" | "requesting" | "warming" | "live" | "error" | "off";
 
@@ -1747,38 +1747,17 @@ function drawRenderedMask(
 
   const blinkWeight = clamp(Math.max(pose.blinkLeft, pose.blinkRight) * 1.14);
   const roarWeight = clamp((pose.mouth - .08) * 1.22);
-  const blendWeights = getRenderedMaskBlendWeights(blinkWeight, roarWeight, Boolean(sources.roarMid));
+  const selectedState = selectRenderedMaskState(blinkWeight, roarWeight, Boolean(sources.roarMid));
+  const selectedImage = selectedState === "roarMid" ? roarMid : { neutral, blink, roar }[selectedState];
   const drawX = -190;
   const drawY = -225;
   const drawSize = 380;
-  const blendSurface = getRenderedMaskBlendSurface(drawSize);
-  if (!blendSurface) return false;
-  const neutralPixels = getRenderedMaskPixels(neutral!, drawSize);
-  const blinkPixels = getRenderedMaskPixels(blink!, drawSize);
-  const roarPixels = getRenderedMaskPixels(roar!, drawSize);
-  const roarMidPixels = roarMid ? getRenderedMaskPixels(roarMid, drawSize) : null;
-  if (!neutralPixels || !blinkPixels || !roarPixels || (roarMid && !roarMidPixels)) return false;
-
-  const { canvas: blendCanvas, context: blendCtx } = blendSurface;
-  if (!renderedMaskOutput || renderedMaskOutput.width !== drawSize) {
-    renderedMaskOutput = blendCtx.createImageData(drawSize, drawSize);
-  }
-  blendRenderedMaskRgba(
-    {
-      neutral: neutralPixels,
-      blink: blinkPixels,
-      roarMid: roarMidPixels,
-      roar: roarPixels,
-    },
-    blendWeights,
-    renderedMaskOutput.data,
-  );
-  blendCtx.putImageData(renderedMaskOutput, 0, 0);
+  if (!selectedImage) return false;
 
   ctx.save();
   ctx.scale(1, coverageX / coverageY);
   ctx.globalAlpha = 1;
-  ctx.drawImage(blendCanvas, drawX, drawY, drawSize, drawSize);
+  ctx.drawImage(selectedImage, drawX, drawY, drawSize, drawSize);
   ctx.shadowColor = "transparent";
   ctx.shadowBlur = 0;
   ctx.shadowOffsetY = 0;

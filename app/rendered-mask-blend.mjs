@@ -1,3 +1,21 @@
+export const RENDERED_MASK_THRESHOLDS = {
+  blink: .52,
+  roarMid: .28,
+  roar: .62,
+};
+
+/**
+ * Choose exactly one authored expression frame. Keeping selection discrete
+ * prevents partially transparent facial features when someone holds an
+ * expression between two poses.
+ */
+export function selectRenderedMaskState(blinkWeight, roarWeight, hasRoarMid) {
+  if (roarWeight >= RENDERED_MASK_THRESHOLDS.roar) return "roar";
+  if (hasRoarMid && roarWeight >= RENDERED_MASK_THRESHOLDS.roarMid) return "roarMid";
+  if (blinkWeight >= RENDERED_MASK_THRESHOLDS.blink) return "blink";
+  return "neutral";
+}
+
 /**
  * Return normalized source weights for the rendered-mask compositor.
  *
@@ -161,5 +179,4 @@ function copyPixel(source, index, target) {
   target[2] = source[index + 2];
   target[3] = source[index + 3];
 }
-
 
